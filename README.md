@@ -17,6 +17,14 @@ Open `index.html`, or serve this folder with any static web server. Personal dat
 
 Only the five public app files are uploaded by the workflow. Personal quotes typed into the running app stay in browser storage and are never committed to the repository.
 
-## Customize
+## iPhone Home Screen widget
+
+Install Scriptable on your iPhone, create a script named **Motive**, and paste in `widget/Motive.js`. Run it online once to cache the 405 built-in reminders, then add a medium Scriptable widget to your Home Screen and select the Motive script in its settings.
+
+The widget has its own daily rotation and does not read browser-local favorites, personal quotes, or web reading history. The 405 built-in quotes appear once each over 405 consecutive calendar days before the rotation starts again. After the first successful cache, the widget works offline. iOS decides the actual refresh time, so a new quote may appear after midnight rather than exactly at midnight.
+
+`scripts/export-quotes.cjs` exports the same built-in quote library as JSON at deployment time. No remote JavaScript is downloaded or executed by the widget.
+
+## Customize the website
 
 Edit the original reminders in `quotes.js` or at the top of `app.js`; edit colors in `styles.css`. Reminders intentionally use the attribution “A Motive reminder” instead of unverified author names. Daily quotes follow the visitor’s local calendar date. Run `node --test tests/quotes.test.cjs` to check library uniqueness, full shuffle cycles, theme changes, and persisted history.

@@ -22,13 +22,18 @@ jobs:
         run: |
           node --check app.js
           node --check quotes.js
+          node scripts/export-quotes.cjs
           node --test tests/quotes.test.cjs
+          node --test tests/widget.test.cjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Prepare public files
         run: |
           mkdir public
           cp index.html styles.css app.js quotes.js icon.svg public/
+          cp quotes.json public/
+          mkdir public/widget
+          cp widget/Motive.js public/widget/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:

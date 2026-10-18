@@ -1,0 +1,2432 @@
+[
+  {
+    "id": "motive-1",
+    "text": "You don’t need to see the whole staircase. Just make your next step a kind one.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-2",
+    "text": "You are allowed to be a beginner and still be someone worth believing in.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-3",
+    "text": "A little progress, repeated, can become a life you’re proud of.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-4",
+    "text": "Give your attention to the next useful thing. The rest can wait a moment.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-5",
+    "text": "Rest is part of the rhythm. You don’t have to earn a softer day.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-6",
+    "text": "You’ve made it through uncertain days before. Take this one a step at a time.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-7",
+    "text": "Your voice does not have to be the loudest to deserve a place in the room.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-8",
+    "text": "Build a habit small enough to keep on an ordinary Tuesday.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-9",
+    "text": "You can appreciate where you are and still be curious about what comes next.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-10",
+    "text": "Loosen your shoulders. Take a breath. This moment only asks you to be here.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-11",
+    "text": "Starting again is a skill. Every return is a little act of courage.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-12",
+    "text": "Your pace is allowed to look different from someone else’s.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-13",
+    "text": "Protect a little time for what matters, and let that be enough for today.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-14",
+    "text": "Try the thing. Learn a little. Adjust. You’re allowed to grow as you go.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-15",
+    "text": "Not every thought needs an answer. Some can pass like clouds.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-16",
+    "text": "A hard chapter can be part of your story without becoming the whole story.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-17",
+    "text": "You don’t have to feel fearless to take one brave step.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-18",
+    "text": "Make the next action clear enough that you can begin before you feel ready.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-19",
+    "text": "Notice what is getting easier. Quiet progress is still progress.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-20",
+    "text": "Leave a little space in your day for simply being a person.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-21",
+    "text": "Showing up imperfectly still gives tomorrow something to build on.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-22",
+    "text": "Let your own values have a louder vote than someone else’s expectations.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-23",
+    "text": "You can do one thing well without doing everything at once.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-24",
+    "text": "Change can start with one honest question and a little willingness.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-25",
+    "text": "Some days, enough is a meal, a breath, and a little kindness to yourself.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-26",
+    "text": "Make a little room for possibility. You haven’t met every good day yet.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-27",
+    "text": "Practice trusting the person who keeps choosing to try: you.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-28",
+    "text": "Begin with five honest minutes. Small beginnings count.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-29",
+    "text": "You can outgrow an old version of yourself with gratitude, not shame.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-30",
+    "text": "Come back to what is here: your breath, your feet, this small moment.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-1",
+    "text": "Your needs deserve a place in your plans.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-2",
+    "text": "Stand by the work you did when nobody was watching.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-3",
+    "text": "You can speak honestly without having every answer.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-4",
+    "text": "Let your choices reflect your character rather than your doubts.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-5",
+    "text": "You bring a perspective that this room has not heard yet.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-6",
+    "text": "An awkward first attempt does not cancel your potential.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-7",
+    "text": "Give yourself permission to take up the space you need.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-8",
+    "text": "You can be uncertain about the outcome and certain about your effort.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-9",
+    "text": "The way you treat yourself becomes part of the way you move through the world.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-10",
+    "text": "You have something to contribute before you have something to prove.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-11",
+    "text": "Choose clothes, words, and goals that let you recognize yourself.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-12",
+    "text": "Your boundaries can be clear even when your voice shakes.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-13",
+    "text": "You can accept a compliment without making yourself smaller.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-14",
+    "text": "Trust the preparation you have already put in.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-15",
+    "text": "A thoughtful question can be your strongest contribution.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-16",
+    "text": "You do not need a crowd to agree before you respect your own judgment.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-17",
+    "text": "Give your ideas a chance to exist outside your notebook.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-18",
+    "text": "Being overlooked once does not make you invisible forever.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-19",
+    "text": "Walk into the opportunity as someone who belongs in the conversation.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-20",
+    "text": "Let your experience count as evidence of what you can handle.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-21",
+    "text": "You can be warm without making yourself endlessly available.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-22",
+    "text": "Make decisions your future self can understand, even if others do not.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-23",
+    "text": "You are more than the impression you made in one nervous moment.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-24",
+    "text": "Confidence can sound like a calm, considered no.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-25",
+    "text": "Let yourself finish the sentence before you decide it was foolish.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-26",
+    "text": "Ask for the clarification you need to do your best work.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-27",
+    "text": "Your worth does not rise and fall with your inbox.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-28",
+    "text": "Believe the people who appreciate your presence without demanding a performance.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-29",
+    "text": "You can learn from criticism without adopting every judgment.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-30",
+    "text": "Take your own ambition seriously enough to give it time.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-31",
+    "text": "You deserve friendships where you can stop rehearsing your personality.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-32",
+    "text": "Your preferences are useful information, not an inconvenience.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-33",
+    "text": "The courage to introduce yourself can open an unexpected door.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-34",
+    "text": "Let the quality of your effort speak at its own volume.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-35",
+    "text": "You can respect expertise while trusting your ability to learn.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-36",
+    "text": "Nobody else can decide what a meaningful life feels like to you.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-37",
+    "text": "You have survived being misunderstood without losing who you are.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-38",
+    "text": "Keep your promises to yourself in small, visible ways.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-39",
+    "text": "Your right to ask does not depend on getting a yes.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-40",
+    "text": "You can change your mind without losing your integrity.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-41",
+    "text": "There is dignity in naming what you want clearly.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-42",
+    "text": "Let your posture make a little more room for your breath.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-43",
+    "text": "You do not need to turn your personality into an apology.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-44",
+    "text": "Bring your whole attention instead of a perfect impression.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-45",
+    "text": "It is possible to be proud of yourself and still have room to improve.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-46",
+    "text": "Your accomplishments remain real on the days you doubt them.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-47",
+    "text": "Give your own advice the consideration you give a stranger's opinion.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-48",
+    "text": "Let your confidence rest on practice rather than applause.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-49",
+    "text": "You can enter a new chapter without pretending to be someone else.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-50",
+    "text": "Recognize the strengths that feel ordinary because you use them every day.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-51",
+    "text": "You are allowed to enjoy being good at something.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-52",
+    "text": "An invitation to try is not a demand to be flawless.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-53",
+    "text": "You can advocate for yourself with kindness and precision.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-54",
+    "text": "The first person to take your dream seriously can be you.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-55",
+    "text": "Your presence can matter even when your contribution is quiet.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-56",
+    "text": "Release the habit of explaining every harmless choice.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-57",
+    "text": "You are allowed to ask for fair credit for your work.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-58",
+    "text": "Self-respect is a practice you can return to after a difficult choice.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-59",
+    "text": "Bring the version of yourself that can listen and still disagree.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-60",
+    "text": "Your story has room for successes you have not imagined yet.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-61",
+    "text": "You can be new to the role and still be right for the opportunity.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-62",
+    "text": "Let a clear value guide you when confidence feels far away.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-63",
+    "text": "Your kindness becomes stronger when it includes you.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-64",
+    "text": "You can offer your work before you know how it will be received.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-65",
+    "text": "Practice being on your own side during uncomfortable conversations.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-66",
+    "text": "Your achievements do not need someone else's disappointment to matter.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-67",
+    "text": "Let yourself want more without insulting where you started.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-68",
+    "text": "There is strength in saying that you need a moment to think.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-69",
+    "text": "You can trust yourself to respond even when you cannot predict.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-70",
+    "text": "Hold your head up for the effort, not just the result.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-71",
+    "text": "The person you are becoming deserves your patient support.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-72",
+    "text": "Choose one thing today that expresses what you believe in.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-73",
+    "text": "You are allowed to celebrate a victory before chasing another.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-74",
+    "text": "Your self-respect can remain steady through someone else's disapproval.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-confidence-75",
+    "text": "You can belong without blending into every expectation.",
+    "category": "Confidence",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-1",
+    "text": "Give your best hour to something you would be glad to finish.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-2",
+    "text": "Clear one surface and make a place for your attention to land.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-3",
+    "text": "Write the next step as an action you can actually take.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-4",
+    "text": "A shorter list can be a more honest commitment.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-5",
+    "text": "Close the extra tab and return to the question in front of you.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-6",
+    "text": "Make a beginning before you redesign the entire plan.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-7",
+    "text": "An appointment with your own work deserves to be kept.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-8",
+    "text": "Let the timer hold the boundary while you do the task.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-9",
+    "text": "Put the tools for your good habit within easy reach.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-10",
+    "text": "Decide what finished means before you begin polishing.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-11",
+    "text": "Return to the task without turning the distraction into a story about yourself.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-12",
+    "text": "Your calendar should have room for the work behind your goals.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-13",
+    "text": "Choose a place to stop so that starting again feels possible.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-14",
+    "text": "Protect your attention as carefully as you protect your money.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-15",
+    "text": "Do the preparation that makes tomorrow's beginning easier.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-16",
+    "text": "You do not have to answer every notification at the moment it arrives.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-17",
+    "text": "Let the important task have a turn before the easy tasks take over.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-18",
+    "text": "One well-chosen priority can organize an entire morning.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-19",
+    "text": "Break the vague project into a first visible result.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-20",
+    "text": "Give your mind fewer decisions to make at the starting line.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-21",
+    "text": "A routine works best when it fits the life you actually have.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-22",
+    "text": "Track the effort you can control instead of refreshing the outcome.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-23",
+    "text": "Leave a note for yourself about where to resume.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-24",
+    "text": "Slow down enough to do the part that prevents rework.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-25",
+    "text": "Finish the paragraph before you judge the whole piece.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-26",
+    "text": "Use your energy where it changes the result.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-27",
+    "text": "Make the useful action easier than the familiar distraction.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-28",
+    "text": "Choose a realistic deadline and give it an honest place in your day.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-29",
+    "text": "The next ten minutes can have a purpose even when the whole day feels scattered.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-30",
+    "text": "Stop collecting advice long enough to practice one useful idea.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-31",
+    "text": "You can say later to a good idea so you can finish the current one.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-32",
+    "text": "Give each commitment the space its real effort requires.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-33",
+    "text": "Arrange your environment to support the person you want to be.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-34",
+    "text": "Progress becomes easier to see when you define a clear milestone.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-35",
+    "text": "Let the plan be simple enough to remember when you are tired.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-36",
+    "text": "The purpose of a system is to help you act, not to become another project.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-37",
+    "text": "Start with the part that reduces the most uncertainty.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-38",
+    "text": "Your concentration deserves a recovery break before it collapses.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-39",
+    "text": "Read the instructions carefully enough to begin in the right direction.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-40",
+    "text": "Keep the promise small when the day is crowded.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-41",
+    "text": "Not every urgent request deserves your most creative hour.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-42",
+    "text": "Choose an order that makes the next task easier.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-43",
+    "text": "Set out what you need before motivation has a chance to negotiate.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-44",
+    "text": "Let repetition remove the need to decide from scratch.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-45",
+    "text": "Work at a pace you can return to tomorrow.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-46",
+    "text": "A useful draft gives you something real to improve.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-47",
+    "text": "Make room for review instead of hoping everything went right.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-48",
+    "text": "Attention grows stronger when you bring it back gently.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-49",
+    "text": "Set a boundary around the work you keep postponing for everyone else.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-50",
+    "text": "Reduce the friction between having the intention and taking the action.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-51",
+    "text": "An unfinished task can be scheduled instead of carried in your head.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-52",
+    "text": "Define the smallest version that still serves the purpose.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-53",
+    "text": "Let the results of practice guide the next round of effort.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-54",
+    "text": "Give the difficult part a place in the plan, not just the easy parts.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-55",
+    "text": "You can move a project forward without feeling inspired by every step.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-56",
+    "text": "Spend a moment choosing before you spend an hour reacting.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-57",
+    "text": "Build a habit around a cue you already encounter.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-58",
+    "text": "Your future attention will appreciate a tidy handoff.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-59",
+    "text": "Doing less deliberately can make room for doing better.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-60",
+    "text": "Put a little distance between yourself and the distraction you know too well.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-61",
+    "text": "Name the obstacle before you add more effort.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-62",
+    "text": "Let the question of what matters come before the question of what is next.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-63",
+    "text": "Make the first minute so clear that beginning feels ordinary.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-64",
+    "text": "You can honor a deadline without making panic your only method.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-65",
+    "text": "Take notes that help you act rather than notes that merely look complete.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-66",
+    "text": "Choose a stopping point that preserves tomorrow's energy.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-67",
+    "text": "Return to the reason you started when the details feel endless.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-68",
+    "text": "An intentional pause can protect the quality of the next hour.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-69",
+    "text": "Move one commitment out of your head and onto a reliable list.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-70",
+    "text": "Let consistency be measured in returns, not uninterrupted streaks.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-71",
+    "text": "The right tool is the one that helps you complete the work.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-72",
+    "text": "Prepare a fallback version of your habit for difficult days.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-73",
+    "text": "Give your attention a destination before you open your phone.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-74",
+    "text": "You can refuse an unnecessary task without refusing to be helpful.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-focus-75",
+    "text": "Leave enough time to finish with care.",
+    "category": "Focus",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-1",
+    "text": "When the plan breaks, look for the next thing that still works.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-2",
+    "text": "You can ask for help before you reach the end of your strength.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-3",
+    "text": "A setback gives you information about the path, not a verdict on your future.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-4",
+    "text": "There is no shame in taking the slower route through a difficult season.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-5",
+    "text": "Hold onto one useful routine when everything else feels uncertain.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-6",
+    "text": "You can be tired of the struggle and still care about what comes next.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-7",
+    "text": "Let someone walk beside you through the part you cannot hurry.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-8",
+    "text": "Begin again from the resources you have today.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-9",
+    "text": "Your disappointment deserves honesty, and your future deserves a chance.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-10",
+    "text": "The day can improve without becoming perfect.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-11",
+    "text": "An unexpected detour may require a different map, not a different dream.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-12",
+    "text": "Take care of the person doing the hard work: you.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-13",
+    "text": "You do not have to turn every painful experience into a lesson immediately.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-14",
+    "text": "Make your next decision from the present, not from the worst moment behind you.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-15",
+    "text": "Keep a little evidence of the times you found a way through.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-16",
+    "text": "You can grieve an ending while making space for another beginning.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-17",
+    "text": "The strength to continue sometimes starts with a proper meal and some sleep.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-18",
+    "text": "Your effort still counts when the outcome takes longer than expected.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-19",
+    "text": "Choose the support that makes the load manageable.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-20",
+    "text": "You can repair a mistake without spending the day punishing yourself.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-21",
+    "text": "Let an ordinary good moment interrupt a difficult day.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-22",
+    "text": "The next attempt can be different because you know more now.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-23",
+    "text": "You do not need a cheerful explanation for a genuinely hard situation.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-24",
+    "text": "Protect the part of yourself that still wants to try.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-25",
+    "text": "You can be honest about the difficulty without declaring the effort hopeless.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-26",
+    "text": "Let the challenge shrink to the size of the next decision.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-27",
+    "text": "Recovering your footing is a worthwhile use of time.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-28",
+    "text": "You can carry a little hope without making promises about the outcome.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-29",
+    "text": "Give yourself credit for the work that survival sometimes requires.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-30",
+    "text": "Some strength looks like reaching out instead of withdrawing.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-31",
+    "text": "You can rebuild trust in yourself through one manageable promise.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-32",
+    "text": "The habits you return to can become handrails on uncertain days.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-33",
+    "text": "You are allowed to pause before deciding whether to continue.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-34",
+    "text": "Let the people who care know what would actually help.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-35",
+    "text": "Adjusting the goal can be a thoughtful response to new information.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-36",
+    "text": "You can have a difficult morning and still choose a gentle evening.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-37",
+    "text": "An interrupted journey is still a journey you can resume.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-38",
+    "text": "Make space for frustration without giving it every decision.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-39",
+    "text": "You can set down a burden that was never yours to carry.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-40",
+    "text": "The fact that it hurts does not mean you are handling it badly.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-41",
+    "text": "Choose the next safe step when the larger path is unclear.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-42",
+    "text": "There may be more ways forward than the one that just closed.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-43",
+    "text": "Keep the lessons from the attempt without keeping every harsh thought about it.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-44",
+    "text": "You can lower the pace without giving up your direction.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-45",
+    "text": "Let today be a day of repair if that is what you need.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-46",
+    "text": "You are allowed to need more time after something difficult.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-47",
+    "text": "The ability to adapt can matter more than the ability to insist.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-48",
+    "text": "A fresh start can happen in the middle of an ordinary afternoon.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-49",
+    "text": "Allow a little kindness into the place where you expected criticism.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-50",
+    "text": "You can miss the old plan and still make a useful new one.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-51",
+    "text": "One uncomfortable conversation can be the beginning of a lighter burden.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-52",
+    "text": "Your next chapter can be shaped by more than what went wrong.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-53",
+    "text": "Keep looking for what is possible without denying what is hard.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-54",
+    "text": "You can learn to carry uncertainty without letting it lead every choice.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-55",
+    "text": "An honest rest can be part of a determined response.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-56",
+    "text": "Let your recovery have its own rhythm.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-57",
+    "text": "You are not required to turn pain into productivity.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-58",
+    "text": "The strength you need today may be quieter than you expected.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-59",
+    "text": "Give tomorrow the benefit of not being decided by today's mood.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-60",
+    "text": "You can return with a smaller plan and a wiser boundary.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-61",
+    "text": "Reach for what steadies you before reaching for what numbs the question.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-62",
+    "text": "Let one trusted person know that the day has been heavy.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-63",
+    "text": "A difficult result can change your strategy without changing your values.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-64",
+    "text": "You can feel discouraged and still complete one caring action.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-65",
+    "text": "Do not measure your entire future from the bottom of a difficult hour.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-66",
+    "text": "Some doors open only after you give yourself permission to look elsewhere.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-67",
+    "text": "You can keep your heart open while becoming more careful with your trust.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-68",
+    "text": "The effort of rebuilding deserves as much respect as the first achievement.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-69",
+    "text": "Meet the unexpected with the resources of the present.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-70",
+    "text": "There is courage in letting a workable plan replace a perfect one.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-71",
+    "text": "You are allowed to let a good day be good without preparing for its loss.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-72",
+    "text": "Remember the small comforts that have helped you through before.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-73",
+    "text": "When you cannot solve the whole problem, reduce one part of the strain.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-74",
+    "text": "Your willingness to seek another route is a form of progress.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-resilience-75",
+    "text": "Leave room for a future that surprises your disappointment.",
+    "category": "Resilience",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-1",
+    "text": "Curiosity can turn an uncomfortable gap into a useful question.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-2",
+    "text": "Let a mistake become something you examine instead of something you hide.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-3",
+    "text": "Try listening for the part of the feedback that you can use.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-4",
+    "text": "You are allowed to revise a belief when experience gives you better evidence.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-5",
+    "text": "Make a little room each week for learning without performing.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-6",
+    "text": "Practice the skill at the level where you can actually improve it.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-7",
+    "text": "Your first version only needs to teach you what the second version needs.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-8",
+    "text": "Ask what changed when something finally starts to work.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-9",
+    "text": "Let your questions become more specific as your understanding deepens.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-10",
+    "text": "The next useful teacher may be someone you did not expect.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-11",
+    "text": "Being challenged can reveal a skill worth developing.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-12",
+    "text": "You can appreciate your old choices while making better-informed ones now.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-13",
+    "text": "Make something small enough to finish and real enough to learn from.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-14",
+    "text": "An honest reflection can save you from repeating an expensive lesson.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-15",
+    "text": "Go looking for an example that expands what you think is possible.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-16",
+    "text": "Learn the principle behind the advice before applying it everywhere.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-17",
+    "text": "You can be proud of a skill that still needs practice.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-18",
+    "text": "Give yourself a chance to be surprised by a new interest.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-19",
+    "text": "Understanding someone else's perspective can strengthen your own thinking.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-20",
+    "text": "Change becomes practical when you name the behavior you want to practice.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-21",
+    "text": "You are allowed to become interested in a different future.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-22",
+    "text": "An experiment can be worthwhile even when its answer is no.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-23",
+    "text": "Let practice be a conversation with the work, not a trial of your worth.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-24",
+    "text": "The habit of asking why can lead you beyond the familiar answer.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-25",
+    "text": "Look for the difference between what feels difficult and what is truly impossible.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-26",
+    "text": "You can begin learning without announcing a new identity.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-27",
+    "text": "Write down what worked so that improvement has a memory.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-28",
+    "text": "Growth sometimes means choosing a healthier definition of success.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-29",
+    "text": "Spend time with people who make thoughtful questions feel welcome.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-30",
+    "text": "You can learn something useful from a person you do not agree with entirely.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-31",
+    "text": "Give a new method a fair attempt before deciding it is not for you.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-32",
+    "text": "The willingness to be corrected keeps your understanding alive.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-33",
+    "text": "Your future options can grow with the skills you practice today.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-34",
+    "text": "Make a little room between receiving feedback and defending yourself.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-35",
+    "text": "Explore the interest that keeps returning when the day gets quiet.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-36",
+    "text": "Let your goals change as your knowledge of yourself becomes clearer.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-37",
+    "text": "You can outgrow a habit without turning your past into an enemy.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-38",
+    "text": "Improvement often begins with noticing a pattern honestly.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-39",
+    "text": "Take the time to understand the part you usually rush past.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-40",
+    "text": "A good question can be a more useful achievement than a quick answer.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-41",
+    "text": "Share what you are learning while leaving room for what you do not know.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-42",
+    "text": "Practice explaining the idea simply enough to discover your own gaps.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-43",
+    "text": "You can ask for an example instead of pretending to understand.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-44",
+    "text": "Keep the curiosity that made you begin before comparison made you hesitate.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-45",
+    "text": "Your interests do not have to become a business to deserve your time.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-46",
+    "text": "Let a small experiment test a large assumption.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-47",
+    "text": "Make learning visible by using something you just discovered.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-48",
+    "text": "You can choose a mentor for a skill without borrowing their whole life.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-49",
+    "text": "Become familiar with the feeling of improving through repetition.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-50",
+    "text": "Some progress begins with admitting that the old method has stopped helping.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-51",
+    "text": "Read something that makes your familiar question feel new.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-52",
+    "text": "Leave a little room in your plans for a better idea.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-53",
+    "text": "You can change your habits without changing everything at once.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-54",
+    "text": "Let the work show you which skill needs your next hour.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-55",
+    "text": "The ability to ask for feedback is a skill worth practicing too.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-56",
+    "text": "Your understanding can deepen even when the answer becomes less simple.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-57",
+    "text": "Try the unfamiliar route when the cost of experimenting is small.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-58",
+    "text": "You can move beyond a label that no longer describes you.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-59",
+    "text": "The skill you admire may have an ordinary first lesson you can take today.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-60",
+    "text": "Use comparison to find a technique, not to assign yourself a rank.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-61",
+    "text": "Notice when a former challenge becomes something you can help others with.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-62",
+    "text": "Give your new habits enough repetitions to become familiar.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-63",
+    "text": "Keep a record of questions that deserve more than a hurried answer.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-64",
+    "text": "You are allowed to leave an achievement behind when your values change.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-65",
+    "text": "Let your definition of progress include becoming easier to live with.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-66",
+    "text": "Learning to listen can improve work that has nothing to do with speaking.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-67",
+    "text": "Choose one assumption to examine before you build another plan on it.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-68",
+    "text": "You can learn a great deal by finishing something modest.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-69",
+    "text": "Be curious about the person you are when you feel most at ease.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-70",
+    "text": "Your next useful insight may arrive while you are trying rather than planning.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-71",
+    "text": "Make room for a version of success that includes your well-being.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-72",
+    "text": "You do not need to erase your starting point to appreciate how far you have come.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-73",
+    "text": "Let the outcome of a small test refine the direction of your ambition.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-74",
+    "text": "Develop the patience to understand before you try to master.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-growth-75",
+    "text": "Become someone who can say that you learned something today.",
+    "category": "Growth",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-1",
+    "text": "You can leave an unanswered message until you have the space to respond.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-2",
+    "text": "Let the next breath arrive without trying to improve it.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-3",
+    "text": "There is no prize for carrying tomorrow's worries through tonight.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-4",
+    "text": "Set down your phone and notice the room that is holding you.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-5",
+    "text": "You are allowed a few minutes that produce nothing measurable.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-6",
+    "text": "Unclench your hands before you decide what to do next.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-7",
+    "text": "Let a familiar sound bring your attention back to the present.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-8",
+    "text": "Your day can have a quiet corner that belongs to nobody else's urgency.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-9",
+    "text": "Take a sip of water and give yourself a moment between tasks.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-10",
+    "text": "You can appreciate a peaceful moment without making it last forever.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-11",
+    "text": "Some questions become easier after a night of rest.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-12",
+    "text": "Open a window if you can and notice the air against your skin.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-13",
+    "text": "You do not have to solve a feeling to sit with it kindly.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-14",
+    "text": "Let the ordinary comfort of a warm drink have your full attention.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-15",
+    "text": "Your body deserves care before it has to demand it.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-16",
+    "text": "Make a little less noise around the thing you are trying to understand.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-17",
+    "text": "You can let a conversation end without replaying every sentence tonight.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-18",
+    "text": "Sit somewhere comfortable without turning the pause into a task.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-19",
+    "text": "Choose one gentle thing to do before the day becomes busy again.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-20",
+    "text": "Let the light in the room be something you notice.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-21",
+    "text": "You can put a boundary around how much news you carry today.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-22",
+    "text": "An unhurried meal is a worthwhile part of a full life.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-23",
+    "text": "Give the evening a softer beginning than the afternoon had.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-24",
+    "text": "It is okay to want silence after a day full of voices.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-25",
+    "text": "You can choose a simple pleasure without making it a reward.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-26",
+    "text": "Let your feet remind you that you are here, on this ground.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-27",
+    "text": "Not every open space in your schedule needs to be filled.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-28",
+    "text": "Pause long enough to tell the difference between hunger, fatigue, and urgency.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-29",
+    "text": "You can enjoy the walk without counting what it accomplishes.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-30",
+    "text": "Give yourself a transition between the workday and the rest of your life.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-31",
+    "text": "Let a harmless imperfection remain unfixed for a while.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-32",
+    "text": "You are allowed to choose the quieter plan.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-33",
+    "text": "Release one expectation that the day no longer has room to hold.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-34",
+    "text": "Turn down the volume of the room before asking more of your mind.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-35",
+    "text": "You do not have to rehearse every possible conversation in advance.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-36",
+    "text": "Let your attention rest on one ordinary object for a moment.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-37",
+    "text": "A familiar routine can offer comfort without needing to be exciting.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-38",
+    "text": "You can take the scenic route when there is no need to hurry.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-39",
+    "text": "Put your work somewhere you can leave it until tomorrow.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-40",
+    "text": "The sky can be worth looking at even on a completely ordinary day.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-41",
+    "text": "You are allowed to be unavailable while you recover your energy.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-42",
+    "text": "Make your next movement a little less rushed.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-43",
+    "text": "There is room for a quiet yes to something you enjoy.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-44",
+    "text": "Let a pleasant moment stay simple instead of documenting every part of it.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-45",
+    "text": "You can stop preparing for the day once the day is over.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-46",
+    "text": "Give your senses something gentle to pay attention to.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-47",
+    "text": "Choose a little order where it brings comfort, and leave the rest for later.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-48",
+    "text": "A slow stretch can be a kind way to mark a new beginning.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-49",
+    "text": "You do not have to make every free hour useful to someone else.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-50",
+    "text": "Notice whether the pace you are keeping is a pace you chose.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-51",
+    "text": "Allow the music to be the only thing you do for a few minutes.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-52",
+    "text": "You can let another person have the last word without losing your peace.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-53",
+    "text": "The task will still exist after you have taken a proper break.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-54",
+    "text": "Make a place for beauty that does not ask anything of you.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-55",
+    "text": "You are allowed to stop checking for a result you cannot change tonight.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-56",
+    "text": "Let a small household ritual become an invitation to slow down.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-57",
+    "text": "You can care deeply without staying constantly on alert.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-58",
+    "text": "Rest your eyes on something farther away than a screen.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-59",
+    "text": "A quiet morning can begin with one less thing to rush through.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-60",
+    "text": "Let the room be quiet enough for you to hear what you need.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-61",
+    "text": "You do not have to earn the right to feel comfortable in your own home.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-62",
+    "text": "Choose one place where you will let good enough be enough today.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-63",
+    "text": "Leave a little breathing space between your commitments.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-64",
+    "text": "You can take a moment to settle before you answer.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-65",
+    "text": "Notice the weight of the chair supporting you without needing to do anything.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-66",
+    "text": "Let yourself enjoy the absence of a problem for a little while.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-67",
+    "text": "You can make tomorrow's plan and then stop working on tomorrow.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-68",
+    "text": "Give your mind a familiar, gentle place to return to.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-69",
+    "text": "It is possible to care about the future and still enjoy this afternoon.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-70",
+    "text": "You are allowed to let a slow day remain slow.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-71",
+    "text": "Put one unnecessary obligation back where it came from.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-72",
+    "text": "Let a little fresh air be part of how you begin again.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-73",
+    "text": "You can lower the demands on yourself without lowering your worth.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-74",
+    "text": "Make time for the kind of company that lets your shoulders relax.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  },
+  {
+    "id": "motive-extra-calm-75",
+    "text": "This pause does not need an explanation to be worthwhile.",
+    "category": "Calm",
+    "author": "A Motive reminder"
+  }
+]
