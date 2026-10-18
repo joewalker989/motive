@@ -67,3 +67,7 @@ The widget code is tested using mocked Scriptable APIs. Its final appearance and
 ### Background rotation
 
 **Change picture** immediately switches photos and enables a different photo on each new quote, including within the same theme. **Match quote** restores meaning-based scenes. The current mode is displayed beside the controls; fixed scenes are explicitly labeled. Downloads use the exact photo currently displayed. Scene choices and rotation survive reopening.
+
+### Widget v4 troubleshooting
+
+Tapping this Scriptable widget opens Scriptable; it cannot guarantee a Home Screen refresh in place. All tap targets now use the same destination and no longer claim instant refresh. Replace the complete on-device script after a website update. The preview title includes MOTIVE v4. In Edit Widget, clear old parameters or use All,photo,60: legacy sage/dark parameters override copied defaults. Photo download/render failures now display PHOTO UNAVAILABLE instead of silently hiding the failure. Photos use a 60% readability overlay. iOS schedules actual Home Screen refreshes.

@@ -49,7 +49,7 @@ widget.backgroundColor = new Color(style!=='sage'?'1D3026':'E5EACB');
 widget.setPadding(15,18,15,18);
 const runURL = URLScheme.forRunningScript();
 widget.url = runURL+(runURL.includes('?')?'&':'?')+`refresh=1&category=${encodeURIComponent(category)}&style=${style}&minutes=${minutes}`;
-const title = widget.addText('✳  MOTIVE'+(category==='All'?'':' · '+category.toUpperCase()));
+const title = widget.addText('✳  MOTIVE v4'+(category==='All'?'':' · '+category.toUpperCase()));
 title.font = Font.boldSystemFont(10);title.textColor = new Color(style!=='sage'?'EDF1E2':'526441');
 widget.addSpacer();
 try {
@@ -68,6 +68,7 @@ try {
     seen.add(quote.id);saved.seen=[...seen];saved.selection={category,slot,id:quote.id};
   }
   try{files.writeString(cachePath,JSON.stringify(saved));}catch{}
+  let photoUnavailable=false;
   if(style==='photo'){
     try{
       const scene=getQuoteScene(quote);const imagePath=files.joinPath(files.documentsDirectory(),'motive-scene-'+scene.key+'.jpg');let photo;
@@ -75,16 +76,15 @@ try {
       if(!photo){const imageRequest=new Request(site+scene.image.replace(/^\.\//,''));imageRequest.timeoutInterval=8;photo=await imageRequest.loadImage();try{files.writeImage(imagePath,photo);}catch{}}
       const width=600;const height=config.widgetFamily==='small'?600:config.widgetFamily==='large'?630:300;const drawing=new DrawContext();drawing.size=new Size(width,height);drawing.opaque=true;
       const scale=Math.max(width/photo.size.width,height/photo.size.height);const photoWidth=photo.size.width*scale;const photoHeight=photo.size.height*scale;
-      drawing.drawImageInRect(photo,new Rect((width-photoWidth)/2,(height-photoHeight)/2,photoWidth,photoHeight));drawing.setFillColor(new Color('06140F',.74));drawing.fillRect(new Rect(0,0,width,height));widget.backgroundImage=drawing.getImage();
-    }catch{}
+      drawing.drawImageInRect(photo,new Rect((width-photoWidth)/2,(height-photoHeight)/2,photoWidth,photoHeight));drawing.setFillColor(new Color('06140F',.60));drawing.fillRect(new Rect(0,0,width,height));widget.backgroundImage=drawing.getImage();
+    }catch{photoUnavailable=true;}
   }
   const text=widget.addText('“'+quote.text+'”');
   text.font=Font.semiboldSystemFont(config.widgetFamily==='small'?14:17);
   text.textColor=new Color(style!=='sage'?'EDF1E2':'25382D');text.minimumScaleFactor=0.65;text.lineLimit=config.widgetFamily==='small'?6:5;
   widget.addSpacer();
-  const footer=widget.addText(config.widgetFamily==='small'?'TAP FOR ANOTHER':'TAP QUOTE FOR ANOTHER · OPEN MOTIVE ↗');
+  const footer=widget.addText(photoUnavailable?'PHOTO UNAVAILABLE · RUN ONLINE IN SCRIPTABLE':style==='photo'?'PHOTO · OPENS IN SCRIPTABLE':'PLAIN STYLE · OPENS IN SCRIPTABLE');
   footer.font=Font.mediumSystemFont(8);footer.textColor=new Color(style!=='sage'?'E3EBD7':'657153');
-  if(config.widgetFamily!=='small')footer.url=site;
   widget.refreshAfterDate=minutes===1440?new Date(now.getFullYear(),now.getMonth(),now.getDate()+1,0,5):new Date((Math.floor(now.getTime()/(minutes*60000))+1)*minutes*60000);
 }catch{
   const help=widget.addText('Connect to the internet, then run Motive in Scriptable once to load your quotes.');
