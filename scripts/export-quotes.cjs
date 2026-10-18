@@ -4,6 +4,7 @@ const vm = require('node:vm');
 const root = path.join(__dirname, '..');
 const context = vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root, 'quotes.js'), 'utf8'), context);
+vm.runInContext(fs.readFileSync(path.join(root, 'daily-quotes.js'), 'utf8'), context);
 const app = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 vm.runInContext(app.slice(0, app.indexOf('const $ =')), context);
 const json = vm.runInContext('JSON.stringify(uniqueQuotes(reminders), null, 2)', context);

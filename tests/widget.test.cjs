@@ -1,25 +1,28 @@
-const {test} = require('node:test');
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const path = require('node:path');
-const root = path.join(__dirname, '..');
-const source = fs.readFileSync(path.join(root,'widget/Motive.js'),'utf8');
-const quotes = JSON.parse(fs.readFileSync(path.join(root,'quotes.json'),'utf8'));
-const AsyncFunction = Object.getPrototypeOf(async function(){}).constructor;
-async function run({cache, offline=false, day=0}={}) {
-  const output={texts:[], fetched:0, completed:false};
-  class ListWidget {setPadding(){} addSpacer(){} addText(text){output.texts.push(text);return {};} async presentMedium(){output.preview=true;}}
-  const clock = new Date(2026,0,1+day,12);
-  class Clock extends Date {constructor(...args){super(...(args.length?args:[clock.getTime()]));} static now(){return clock.getTime();}}
-  const files={joinPath:(a,b)=>a+'/'+b,documentsDirectory:()=>'/documents',readString:()=>{if(!cache)throw Error('Missing');return cache;},writeString:(p,data)=>{output.cache=data;}};
-  class Request {async loadJSON(){output.fetched++;if(offline)throw Error('Offline');return quotes;}}
-  const Font={boldSystemFont(){},semiboldSystemFont(){},mediumSystemFont(){},systemFont(){}};
-  const Script={setWidget:widget=>{output.widget=widget;},complete:()=>{output.completed=true;}};
-  await new AsyncFunction('FileManager','ListWidget','Color','Font','Request','config','Script','Date',source)({local:()=>files},ListWidget,class Color{},Font,Request,{widgetFamily:'medium',runsInApp:true},Script,Clock);
-  return output;
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.join(__dirname,'..');
+const source=fs.readFileSync(path.join(root,'widget/Motive.js'),'utf8');
+const quotes=JSON.parse(fs.readFileSync(path.join(root,'quotes.json'),'utf8'));
+const AsyncFunction=Object.getPrototypeOf(async function(){}).constructor;
+async function run({store=new Map(),offline=false,day=0,hour=12,runsInApp=false,query={},parameter='',remote=quotes}={}){
+ const output={texts:[],fetched:0,completed:false,store};
+ class ListWidget{setPadding(){}addSpacer(){}addText(text){output.texts.push(text);return {};}async presentMedium(){output.preview=true;}}
+ const clock=new Date(2026,0,1+day,hour);
+ class Clock extends Date{constructor(...args){super(...(args.length?args:[clock.getTime()]));}static now(){return clock.getTime();}}
+ const files={joinPath:(a,b)=>a+'/'+b,documentsDirectory:()=>'/documents',readString:p=>{if(!store.has(p))throw Error('Missing');return store.get(p);},writeString:(p,data)=>{store.set(p,data);output.cache=JSON.parse(data);}};
+ class Request{async loadJSON(){output.fetched++;if(offline)throw Error('Offline');return remote;}}
+ const Font={boldSystemFont(){},semiboldSystemFont(){},mediumSystemFont(){},systemFont(){}};
+ const Script={setWidget:widget=>{output.widget=widget;},complete:()=>{output.completed=true;}};
+ await new AsyncFunction('FileManager','ListWidget','Color','Font','Request','config','Script','Date','args','URLScheme',source)({local:()=>files},ListWidget,class Color{},Font,Request,{widgetFamily:'medium',runsInApp},Script,Clock,{queryParameters:query,widgetParameter:parameter},{forRunningScript:()=> 'scriptable:///run?scriptName=Motive'});
+ return output;
 }
-test('first run downloads 405 unique quotes and prepares the widget',async()=>{const result=await run();assert.equal(result.fetched,1);assert.equal(JSON.parse(result.cache).length,405);assert.equal(result.widget.url,'https://joewalker989.github.io/motive/');assert.ok(result.completed&&result.preview);assert.equal(result.texts.length,3);});
-test('cached library works offline and same-day runs show the same quote',async()=>{const cache=JSON.stringify(quotes);const a=await run({cache,offline:true});const b=await run({cache,offline:true});assert.equal(a.fetched,0);assert.equal(a.texts[1],b.texts[1]);});
-test('405 consecutive calendar days display 405 different quotes',async()=>{const seen=new Set();for(let day=0;day<405;day++){const result=await run({day,cache:JSON.stringify(quotes),offline:true});assert.ok(!seen.has(result.texts[1]));seen.add(result.texts[1]);}assert.equal(seen.size,405);});
+test('first run downloads the growing quote library and prepares a tap-to-refresh widget',async()=>{const result=await run({runsInApp:true});assert.equal(result.fetched,1);assert.equal(result.cache.quotes.length,quotes.length);assert.ok(quotes.length>=505);assert.match(result.widget.url,/refresh=1/);assert.ok(result.completed&&result.preview);assert.equal(result.texts.length,3);});
+test('background runs in the same interval keep one quote and use cached data offline',async()=>{const first=await run();const second=await run({store:first.store,offline:true});assert.equal(second.fetched,0);assert.equal(first.texts[1],second.texts[1]);});
+test('a complete library cycle across calendar days has no repeated quotes',async()=>{const first=await run();const seen=new Set([first.texts[1]]);for(let day=1;day<quotes.length;day++){const result=await run({day,store:first.store,offline:true});assert.ok(!seen.has(result.texts[1]));seen.add(result.texts[1]);}assert.equal(seen.size,quotes.length);});
 test('first launch offline displays setup instructions, not a broken widget',async()=>{const result=await run({offline:true});assert.match(result.texts[1],/Connect to the internet/);assert.ok(result.completed);});
-test('invalid cache is replaced by a valid download',async()=>{const result=await run({cache:'[]'});assert.equal(result.fetched,1);assert.equal(JSON.parse(result.cache).length,405);});
+test('legacy cached quote arrays migrate and work offline',async()=>{const store=new Map([['/documents/motive-quotes-v1.json',JSON.stringify(quotes)]]);const result=await run({store,offline:true});assert.equal(result.cache.quotes.length,quotes.length);assert.equal(result.cache.seen.length,1);});
+test('tapping or manually running selects a different unread quote immediately',async()=>{const first=await run();const next=await run({store:first.store,query:{refresh:'1'}});assert.notEqual(first.texts[1],next.texts[1]);assert.equal(next.cache.seen.length,2);const third=await run({store:first.store,runsInApp:true});assert.notEqual(third.texts[1],next.texts[1]);assert.equal(third.cache.seen.length,3);});
+test('new published additions download on the next day without losing history',async()=>{const first=await run();const remote=[...quotes,{id:'test-new-id',text:'An entirely new reminder for a future day.',category:'Growth',author:'A Motive reminder'}];const result=await run({store:first.store,day:1,remote});assert.equal(result.fetched,1);assert.equal(result.cache.quotes.length,quotes.length+1);assert.equal(result.cache.seen.length,2);});
+test('theme, category, and refresh interval can be selected by widget parameters',async()=>{const result=await run({parameter:'Calm,dark,15'});assert.match(result.texts[0],/CALM/);assert.match(result.widget.url,/style=dark&minutes=15/);assert.equal(result.cache.selection.category,'Calm');assert.ok(quotes.filter(q=>q.category==='Calm').some(q=>result.texts[1].includes(q.text)));});
