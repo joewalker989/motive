@@ -1,13 +1,27 @@
 'use strict';
-state.background=['auto','none',...Object.keys(quoteScenes)].includes(state.background)?state.background:'auto';
+state.background=['auto','rotate','none',...Object.keys(quoteScenes)].includes(state.background)?state.background:'auto';
 state.backgroundDarkness=typeof state.backgroundDarkness==='number'?Math.max(.55,Math.min(.85,state.backgroundDarkness)):.7;
 const quotePhotoCache=new Map();
-function updateQuoteBackground(quote=current){
-  const scene=getQuoteScene(quote,state.background);const card=$('quote-card');
+let displayedQuoteScene=null;
+function updateQuoteBackground(quote=current,changePicture=false){
+  let scene=getQuoteScene(quote,state.background);const card=$('quote-card');
+  if(state.background==='rotate'){
+    const previous=state.photoRotation;
+    if(!changePicture&&previous?.quoteId===quote.id&&quoteScenes[previous.key])scene={...quoteScenes[previous.key],key:previous.key};
+    else {
+      const keys=Object.keys(quoteScenes);const last=previous?.key||card.dataset.scene;
+      // Prefer the meaning-matched image, choosing another view when it would repeat.
+      if(scene.key===last) {const alternatives=keys.filter(key=>key!==last);const key=alternatives[Math.floor(Math.random()*alternatives.length)];scene={...quoteScenes[key],key};}
+      state.photoRotation={quoteId:quote.id,key:scene.key};persist();
+    }
+  }
+  displayedQuoteScene=scene;
   card.classList.toggle('has-scene',!!scene);card.dataset.scene=scene?.key||'none';
   card.style.setProperty('--quote-scene',scene?`url("${scene.image}")`:'none');
   card.style.setProperty('--scene-darkness',String(state.backgroundDarkness));
-  $('scene-caption').textContent=scene?`${scene.label} · ${scene.meaning}`:'Plain background · A little room for your words.';
+  const mode=state.background==='auto'?'Auto match':state.background==='rotate'?'Changes with every quote':'Fixed picture';
+  $('scene-caption').textContent=scene?`${mode} · ${scene.label} · ${scene.meaning}`:'Plain background · A little room for your words.';
+  $('scene-options-button').textContent=scene?`${mode} ▾`:'Background settings ▾';
   $('background-button').textContent=scene?'▧ Photo on':'▧ Photo off';$('background-button').setAttribute('aria-pressed',String(!!scene));
   $('background-select').value=state.background;$('background-darkness').value=String(Math.round(state.backgroundDarkness*100));$('darkness-value').textContent=`${Math.round(state.backgroundDarkness*100)}%`;
 }
@@ -16,9 +30,11 @@ function loadQuotePhoto(scene){
   return quotePhotoCache.get(scene.key);
 }
 $('background-button').addEventListener('click',()=>{state.background=state.background==='none'?'auto':'none';persist();updateQuoteBackground();});
+$('change-picture-button').addEventListener('click',()=>{state.photoRotation={quoteId:current.id,key:displayedQuoteScene?.key};state.background='rotate';updateQuoteBackground(current,true);persist();toast('Pictures will change with every new quote.');});
+$('auto-picture-button').addEventListener('click',()=>{state.background='auto';persist();updateQuoteBackground();toast('Backgrounds now follow each quote’s meaning.');});
 $('scene-options-button').addEventListener('click',()=>$('background-dialog').showModal());
 $('close-background').addEventListener('click',()=>$('background-dialog').close());
-$('background-select').addEventListener('change',()=>{const value=$('background-select').value;state.background=['auto','none',...Object.keys(quoteScenes)].includes(value)?value:'auto';persist();updateQuoteBackground();});
+$('background-select').addEventListener('change',()=>{const value=$('background-select').value;state.background=['auto','rotate','none',...Object.keys(quoteScenes)].includes(value)?value:'auto';persist();updateQuoteBackground();});
 $('background-darkness').addEventListener('input',()=>{const value=Number($('background-darkness').value)/100;state.backgroundDarkness=Number.isFinite(value)?Math.max(.55,Math.min(.85,value)):.7;persist();updateQuoteBackground();});
 state.collections = Array.isArray(state.collections) ? state.collections.filter(c=>c && typeof c.id==='string' && typeof c.name==='string' && Array.isArray(c.quoteIds)).map(c=>({id:c.id,name:c.name.slice(0,40),quoteIds:c.quoteIds.filter(id=>typeof id==='string')})) : [];
 state.activity = state.activity && typeof state.activity==='object' ? state.activity : {};
@@ -107,7 +123,7 @@ $('restart-button').addEventListener('click',()=>{state.seen=[current.id];state.
 $('share-button').addEventListener('click',async()=>{const text=`“${current.text}” — ${current.author}`;if(navigator.share){try{await navigator.share({title:'A little motivation from Motive',text,url:location.href});}catch(error){if(error.name!=='AbortError')toast('Sharing is unavailable here. Use the copy button instead.');}}else $('copy-button').click();});
 async function createQuoteCanvas(quote,wallpaper=false){
   const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=wallpaper?1920:1350;const ctx=canvas.getContext('2d');
-  const scene=getQuoteScene(quote,state.background);let photo=null;if(scene){try{photo=await loadQuotePhoto(scene);}catch{toast('Photo unavailable. Using a plain background for this image.');}}
+  const scene=displayedQuoteScene;let photo=null;if(scene){try{photo=await loadQuotePhoto(scene);}catch{toast('Photo unavailable. Using a plain background for this image.');}}
   const dark=!!photo||state.theme==='dark';ctx.fillStyle=dark?'#1d3026':'#e5eacb';ctx.fillRect(0,0,canvas.width,canvas.height);
   if(photo){const scale=Math.max(canvas.width/photo.naturalWidth,canvas.height/photo.naturalHeight);const width=photo.naturalWidth*scale;const height=photo.naturalHeight*scale;ctx.drawImage(photo,(canvas.width-width)/2,(canvas.height-height)/2,width,height);ctx.fillStyle=`rgba(6,20,15,${state.backgroundDarkness})`;ctx.fillRect(0,0,canvas.width,canvas.height);}
   ctx.fillStyle=dark?'#f6f8ef':'#25382d';ctx.font='bold 34px sans-serif';ctx.fillText('✳  motive.',90,wallpaper?510:120);

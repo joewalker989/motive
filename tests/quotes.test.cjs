@@ -10,6 +10,33 @@ const sceneSource = fs.readFileSync(path.join(root, 'scenes.js'), 'utf8');
 const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const featureSource = fs.readFileSync(path.join(root, 'enhancements.js'), 'utf8');
 
+test('changing the picture rotates every new quote without repeating consecutive photos',()=>{
+  const app=openApp();app.loadExtras();
+  const first=app.get('quote-card').dataset.scene;
+  app.get('change-picture-button').handlers.click();
+  assert.equal(app.run('state.background'),'rotate');
+  assert.notEqual(app.get('quote-card').dataset.scene,first);
+  app.filter('Calm');
+  for(let i=0;i<30;i++){
+    const previous=app.get('quote-card').dataset.scene;app.next();
+    assert.notEqual(app.get('quote-card').dataset.scene,previous);
+    const scene=app.get('quote-card').dataset.scene;app.run('updateQuoteBackground()');
+    assert.equal(app.get('quote-card').dataset.scene,scene,'Settings must not change the displayed image');
+    assert.equal(app.run('displayedQuoteScene.key'),scene,'Downloads must use the displayed image');
+  }
+  assert.match(app.get('scene-caption').textContent,/Changes with every quote/);
+});
+
+test('automatic matching restores a fixed picture and rotation settings survive reopening',()=>{
+  let app=openApp();app.loadExtras();app.get('background-select').value='sunrise';app.get('background-select').handlers.change();
+  assert.match(app.get('scene-caption').textContent,/Fixed picture/);
+  app.get('auto-picture-button').handlers.click();assert.equal(app.run('state.background'),'auto');
+  assert.equal(app.get('quote-card').dataset.scene,app.run('getQuoteScene(current).key'));
+  app.get('change-picture-button').handlers.click();app.run('state.freshOnOpen=false;persist()');
+  const scene=app.get('quote-card').dataset.scene;app=openApp(app.storage);app.loadExtras();
+  assert.equal(app.run('state.background'),'rotate');assert.equal(app.get('quote-card').dataset.scene,scene);
+});
+
 function openApp(storage = new Map()) {
   const nodes = new Map();
   const node = () => ({textContent:'', value:'', dataset:{},style:{setProperty(key,value){this[key]=value;}}, children:[], handlers:{}, attrs:{}, classList:{toggle(){},add(){},remove(){}}, setAttribute(k,v){this.attrs[k]=v;}, append(...items){this.children.push(...items);}, replaceChildren(...items){this.children=items;}, addEventListener(event,handler){this.handlers[event]=handler;}, scrollIntoView(){}, focus(){}, showModal(){}, close(){}, reset(){}, setCustomValidity(message){this.validityMessage=message;}, reportValidity(){}, remove(){}, select(){}});
