@@ -19,13 +19,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check JavaScript
-        run: node --check app.js
+        run: |
+          node --check app.js
+          node --check quotes.js
+          node --test tests/quotes.test.cjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Prepare public files
         run: |
           mkdir public
-          cp index.html styles.css app.js icon.svg public/
+          cp index.html styles.css app.js quotes.js icon.svg public/
           touch public/.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
