@@ -6,17 +6,19 @@ const vm = require('node:vm');
 const root = path.join(__dirname, '..');
 const librarySource = fs.readFileSync(path.join(root, 'quotes.js'), 'utf8');
 const dailySource = fs.readFileSync(path.join(root, 'daily-quotes.js'), 'utf8');
+const sceneSource = fs.readFileSync(path.join(root, 'scenes.js'), 'utf8');
 const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const featureSource = fs.readFileSync(path.join(root, 'enhancements.js'), 'utf8');
 
 function openApp(storage = new Map()) {
   const nodes = new Map();
-  const node = () => ({textContent:'', value:'', dataset:{}, children:[], handlers:{}, attrs:{}, classList:{toggle(){},add(){},remove(){}}, setAttribute(k,v){this.attrs[k]=v;}, append(...items){this.children.push(...items);}, replaceChildren(...items){this.children=items;}, addEventListener(event,handler){this.handlers[event]=handler;}, scrollIntoView(){}, focus(){}, showModal(){}, close(){}, reset(){}, setCustomValidity(message){this.validityMessage=message;}, reportValidity(){}, remove(){}, select(){}});
+  const node = () => ({textContent:'', value:'', dataset:{},style:{setProperty(key,value){this[key]=value;}}, children:[], handlers:{}, attrs:{}, classList:{toggle(){},add(){},remove(){}}, setAttribute(k,v){this.attrs[k]=v;}, append(...items){this.children.push(...items);}, replaceChildren(...items){this.children=items;}, addEventListener(event,handler){this.handlers[event]=handler;}, scrollIntoView(){}, focus(){}, showModal(){}, close(){}, reset(){}, setCustomValidity(message){this.validityMessage=message;}, reportValidity(){}, remove(){}, select(){}});
   const get = id => {if(!nodes.has(id)) nodes.set(id,node()); return nodes.get(id);};
   const filters = ['All','Confidence','Focus','Resilience','Growth','Calm'].map(category=>Object.assign(node(),{dataset:{category}}));
   const context = vm.createContext({console, Date, Math, Set, window:{addEventListener(){}},location:{protocol:'file:',href:'https://example.com/'},document:{hidden:false,handlers:{},documentElement:{dataset:{}},getElementById:get,querySelectorAll:()=>filters,createElement:node,createTextNode:text=>({textContent:text}),addEventListener(event,fn){(this.handlers[event]??=[]).push(fn);},body:node()}, localStorage:{getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,value)},matchMedia:()=>({matches:true}),setTimeout:()=>0,clearTimeout(){},setInterval:()=>1,clearInterval(){},navigator:{onLine:true}});
   vm.runInContext(librarySource,context);
   vm.runInContext(dailySource,context);
+  vm.runInContext(sceneSource,context);
   vm.runInContext(appSource,context);
   return {context,storage,get,filters,run:code=>vm.runInContext(code,context),loadExtras:()=>vm.runInContext(featureSource,context),next:()=>get('next-button').handlers.click(),filter:category=>get('filters').handlers.click({target:{closest:()=>filters.find(f=>f.dataset.category===category)}})};
 }
@@ -139,3 +141,20 @@ test('intention completion is recorded once and can be undone',()=>{
 test('color theme survives reload and restart preserves favorites and collections',()=>{
   let app=openApp();app.loadExtras();app.get('theme-button').handlers.click();const theme=app.run('state.theme');app.run('state.saved=["motive-8"];state.collections=[{id:"collection-a",name:"Work",quoteIds:["motive-8"]}]');app.get('restart-button').handlers.click();assert.equal(app.run('state.seen.length'),1);assert.equal(app.run('state.saved[0]'),'motive-8');assert.equal(app.run('state.collections.length'),1);app=openApp(app.storage);app.loadExtras();assert.equal(app.run('state.theme'),theme);
 });
+
+test('scene matching considers meaning as well as category and covers every quote',()=>{
+  const app=openApp();
+  assert.equal(app.run('getQuoteScene({text:"Take a breath and rest.",category:"Growth"}).key'),'water');
+  assert.equal(app.run('getQuoteScene({text:"Write your next task in the notebook.",category:"Confidence"}).key'),'workspace');
+  assert.equal(app.run('getQuoteScene({text:"Climb the mountain one step at a time.",category:"Resilience"}).key'),'summit');
+  assert.equal(app.run('getQuoteScene({text:"Learn with curiosity and grow.",category:"Growth"}).key'),'forest');
+  assert.ok(app.run('reminders.every(q=>Object.keys(quoteScenes).includes(getQuoteScene(q).key))'));
+  assert.equal(app.run('getQuoteScene(reminders[0],"none")'),null);
+  assert.equal(app.run('getQuoteScene(reminders[0],"sunrise").key'),'sunrise');
+});
+
+test('photo toggle, scene choices, and readable darkness are retained across visits',()=>{
+  let app=openApp();app.loadExtras();app.get('background-button').handlers.click();assert.equal(app.run('state.background'),'none');assert.equal(app.get('quote-card').dataset.scene,'none');app.get('background-select').value='water';app.get('background-select').handlers.change();assert.equal(app.get('quote-card').dataset.scene,'water');app.get('background-darkness').value='5';app.get('background-darkness').handlers.input();assert.equal(app.run('state.backgroundDarkness'),.55);app=openApp(app.storage);app.loadExtras();assert.equal(app.run('state.background'),'water');assert.equal(app.get('quote-card').dataset.scene,'water');assert.equal(app.run('state.backgroundDarkness'),.55);
+});
+
+test('featured cards include three matching reminders for every selected theme',()=>{const app=openApp();app.loadExtras();for(const theme of ['Confidence','Focus','Resilience','Growth','Calm']){app.filter(theme);assert.equal(app.get('quote-grid').children.length,3);for(const card of app.get('quote-grid').children)assert.equal(card.children[0].textContent,theme.toUpperCase());}});

@@ -1,4 +1,25 @@
 'use strict';
+state.background=['auto','none',...Object.keys(quoteScenes)].includes(state.background)?state.background:'auto';
+state.backgroundDarkness=typeof state.backgroundDarkness==='number'?Math.max(.55,Math.min(.85,state.backgroundDarkness)):.7;
+const quotePhotoCache=new Map();
+function updateQuoteBackground(quote=current){
+  const scene=getQuoteScene(quote,state.background);const card=$('quote-card');
+  card.classList.toggle('has-scene',!!scene);card.dataset.scene=scene?.key||'none';
+  card.style.setProperty('--quote-scene',scene?`url("${scene.image}")`:'none');
+  card.style.setProperty('--scene-darkness',String(state.backgroundDarkness));
+  $('scene-caption').textContent=scene?`${scene.label} · ${scene.meaning}`:'Plain background · A little room for your words.';
+  $('background-button').textContent=scene?'▧ Photo on':'▧ Photo off';$('background-button').setAttribute('aria-pressed',String(!!scene));
+  $('background-select').value=state.background;$('background-darkness').value=String(Math.round(state.backgroundDarkness*100));$('darkness-value').textContent=`${Math.round(state.backgroundDarkness*100)}%`;
+}
+function loadQuotePhoto(scene){
+  if(!quotePhotoCache.has(scene.key))quotePhotoCache.set(scene.key,new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>{quotePhotoCache.delete(scene.key);reject(Error('Photo unavailable'));};image.src=scene.image;}));
+  return quotePhotoCache.get(scene.key);
+}
+$('background-button').addEventListener('click',()=>{state.background=state.background==='none'?'auto':'none';persist();updateQuoteBackground();});
+$('scene-options-button').addEventListener('click',()=>$('background-dialog').showModal());
+$('close-background').addEventListener('click',()=>$('background-dialog').close());
+$('background-select').addEventListener('change',()=>{const value=$('background-select').value;state.background=['auto','none',...Object.keys(quoteScenes)].includes(value)?value:'auto';persist();updateQuoteBackground();});
+$('background-darkness').addEventListener('input',()=>{const value=Number($('background-darkness').value)/100;state.backgroundDarkness=Number.isFinite(value)?Math.max(.55,Math.min(.85,value)):.7;persist();updateQuoteBackground();});
 state.collections = Array.isArray(state.collections) ? state.collections.filter(c=>c && typeof c.id==='string' && typeof c.name==='string' && Array.isArray(c.quoteIds)).map(c=>({id:c.id,name:c.name.slice(0,40),quoteIds:c.quoteIds.filter(id=>typeof id==='string')})) : [];
 state.activity = state.activity && typeof state.activity==='object' ? state.activity : {};
 const validDay = value => typeof value==='string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && !Number.isNaN(Date.parse(value+'T12:00:00Z')) && new Date(value+'T12:00:00Z').toISOString().slice(0,10)===value;
@@ -84,16 +105,18 @@ $('restore-button').addEventListener('click',()=>$('backup-file').click());
 $('backup-file').addEventListener('change',async()=>{const file=$('backup-file').files[0];if(!file)return;try{if(file.size>2*1024*1024)throw Error('Choose a backup smaller than 2 MB.');const merged=mergeBackup(JSON.parse(await file.text()));Object.assign(state,merged);persist();collectionOptions();renderCollection();updateSave();updateGreeting();loadIntention();updateStats();$('backup-status').textContent='Backup merged. Your existing words and favorites were kept.';}catch(error){$('backup-status').textContent=error instanceof SyntaxError?'This file is not a valid Motive backup.':error.message;}$('backup-file').value='';});
 $('restart-button').addEventListener('click',()=>{state.seen=[current.id];state.daily=null;persist();showQuote(current);$('backup-status').textContent='Quote rotation restarted. Saved quotes and collections were kept.';});
 $('share-button').addEventListener('click',async()=>{const text=`“${current.text}” — ${current.author}`;if(navigator.share){try{await navigator.share({title:'A little motivation from Motive',text,url:location.href});}catch(error){if(error.name!=='AbortError')toast('Sharing is unavailable here. Use the copy button instead.');}}else $('copy-button').click();});
-$('image-button').addEventListener('click',()=>{
-  try{
-    const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=1350;const ctx=canvas.getContext('2d');
-    ctx.fillStyle=state.theme==='dark'?'#1d3026':'#e5eacb';ctx.fillRect(0,0,1080,1350);ctx.fillStyle=state.theme==='dark'?'#edf1e2':'#25382d';ctx.font='bold 34px sans-serif';ctx.fillText('✳  motive.',90,120);
-    let fontSize=current.text.length>240?38:current.text.length>160?44:52;let lines;
-    do{ctx.font=`${fontSize}px sans-serif`;lines=[];let line='';for(const word of `“${current.text}”`.split(/\s+/)){if(ctx.measureText(word).width>900){if(line){lines.push(line);line='';}for(const char of word){if(ctx.measureText(line+char).width>900){lines.push(line);line='';}line+=char;}}else{const next=line?line+' '+word:word;if(ctx.measureText(next).width>900&&line){lines.push(line);line=word;}else line=next;}}if(line)lines.push(line);if(lines.length*fontSize*1.4<=800||fontSize<=26)break;fontSize-=2;}while(true);
-    const lineHeight=fontSize*1.4;let y=Math.max(260,650-lines.length*lineHeight/2);for(const text of lines){ctx.fillText(text,90,y);y+=lineHeight;}
-    ctx.font='24px sans-serif';ctx.fillText('— '+current.author,90,Math.min(1150,y+48));ctx.font='20px sans-serif';ctx.fillText('A LITTLE FORWARD, EVERY DAY.',90,1240);canvas.toBlob(blob=>{if(blob){downloadFile(blob,'motive-quote.png');toast('Your quote image is ready.');}},'image/png');
-  }catch{toast('The image could not be created. You can still copy the quote.');}
-});
+async function createQuoteCanvas(quote,wallpaper=false){
+  const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=wallpaper?1920:1350;const ctx=canvas.getContext('2d');
+  const scene=getQuoteScene(quote,state.background);let photo=null;if(scene){try{photo=await loadQuotePhoto(scene);}catch{toast('Photo unavailable. Using a plain background for this image.');}}
+  const dark=!!photo||state.theme==='dark';ctx.fillStyle=dark?'#1d3026':'#e5eacb';ctx.fillRect(0,0,canvas.width,canvas.height);
+  if(photo){const scale=Math.max(canvas.width/photo.naturalWidth,canvas.height/photo.naturalHeight);const width=photo.naturalWidth*scale;const height=photo.naturalHeight*scale;ctx.drawImage(photo,(canvas.width-width)/2,(canvas.height-height)/2,width,height);ctx.fillStyle=`rgba(6,20,15,${state.backgroundDarkness})`;ctx.fillRect(0,0,canvas.width,canvas.height);}
+  ctx.fillStyle=dark?'#f6f8ef':'#25382d';ctx.font='bold 34px sans-serif';ctx.fillText('✳  motive.',90,wallpaper?510:120);
+  let fontSize=quote.text.length>240?38:quote.text.length>160?44:52;let lines;
+  do{ctx.font=`${fontSize}px sans-serif`;lines=[];let line='';for(const word of `“${quote.text}”`.split(/\s+/)){if(ctx.measureText(word).width>900){if(line){lines.push(line);line='';}for(const char of word){if(ctx.measureText(line+char).width>900){lines.push(line);line='';}line+=char;}}else{const next=line?line+' '+word:word;if(ctx.measureText(next).width>900&&line){lines.push(line);line=word;}else line=next;}}if(line)lines.push(line);if(lines.length*fontSize*1.4<=800||fontSize<=26)break;fontSize-=2;}while(true);
+  const lineHeight=fontSize*1.4;let y=Math.max(wallpaper?650:260,(wallpaper?1000:650)-lines.length*lineHeight/2);for(const text of lines){ctx.fillText(text,90,y);y+=lineHeight;}
+  ctx.font='24px sans-serif';ctx.fillText('— '+quote.author,90,Math.min(wallpaper?1680:1150,y+48));ctx.font='20px sans-serif';ctx.fillText('A LITTLE FORWARD, EVERY DAY.',90,wallpaper?1780:1240);return canvas;
+}
+for(const [id,wallpaper]of [['image-button',false],['wallpaper-button',true]])$(id).addEventListener('click',async()=>{const button=$(id);button.disabled=true;const quote={...current};try{const canvas=await createQuoteCanvas(quote,wallpaper);const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw Error('Image unavailable');downloadFile(blob,wallpaper?'motive-phone-wallpaper.png':'motive-quote.png');toast(wallpaper?'Wallpaper downloaded. Save it to Photos, then choose it in iPhone wallpaper settings.':'Your quote image is ready.');}catch{toast('The image could not be created. You can still copy the quote.');}finally{button.disabled=false;}});
 function stopBreathing() { clearInterval(breathingTimer);breathingTimer=null;$('breathing-orb').classList.remove('expand');$('start-breathe').textContent='Start a one-minute pause'; }
 $('breathe-button').addEventListener('click',()=>{$('breathing-prompt').textContent='Let your shoulders soften.';$('breathe-dialog').showModal();});
 $('close-breathe').addEventListener('click',()=>{stopBreathing();$('breathe-dialog').close();});
@@ -106,4 +129,4 @@ function connectionStatus() { $('connection-status').textContent=navigator.onLin
 window.addEventListener('online',connectionStatus);window.addEventListener('offline',connectionStatus);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){recordVisit();updateStats();}else if(breathingTimer){stopBreathing();$('breathing-prompt').textContent='Paused. Begin again whenever you’re ready.';}});
 if('serviceWorker' in navigator && /^https?:$/.test(location.protocol))navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready).then(()=>{if(navigator.onLine!==false)$('connection-status').textContent='Ready to open offline';}).catch(()=>{$('connection-status').textContent='Offline setup unavailable. Try reopening online.';});
-applyTheme(state.theme);collectionOptions();recordVisit();updateStats();connectionStatus();renderCollection();
+applyTheme(state.theme);collectionOptions();recordVisit();updateStats();connectionStatus();renderCollection();updateQuoteBackground();

@@ -13,6 +13,8 @@ A personal motivation space with a growing library of original reminders across 
 - Daily visit streaks and intention completion tracking.
 - Light, sage, and dark themes.
 - Native share-sheet support when available, copied quote text, and downloadable quote images.
+- Five original photo scenes matched locally to each quote's words and theme, with an on/off switch, manual scene choices, and readable darkness controls.
+- Phone-wallpaper downloads that use the selected scene, leaving room above the quote for the iPhone clock.
 - One-minute optional breathing pause with reduced-motion support.
 - Backup export and safe merging on import, including duplicate detection and quote-reference remapping.
 - Installable web app with offline caching after a successful online visit.
@@ -27,6 +29,14 @@ In Safari, choose **Share > Add to Home Screen**. The app installs with its own 
 To display an actual quote on the Home Screen, install Scriptable and follow **Your space > Show quotes on my Home Screen**. Choose a quote theme, color, and requested interval, then copy the customized code into a Scriptable script named Motive. Replacing an older script is necessary to receive the new widget features.
 
 The widget downloads the built-in quote feed once per online calendar day, falls back to its local cache offline, and preserves non-repeating reading history as new quotes arrive. It has its own history and does not read browser-local personal quotes or favorites. It requests refreshes every 15 minutes, hourly, every 3 hours, or daily, but **iOS controls actual refresh timing**. Tapping the quote runs Scriptable and displays a fresh quote in an app preview; the Home Screen widget updates when iOS next runs it. It cannot reliably change on every phone unlock. The website's fresh-on-return option applies only while opening or returning to Motive.
+
+Choose **Matching photo** in the widget guide to copy code with photo backgrounds enabled. The widget caches each scene locally and uses a dark plain fallback if an image is unavailable. Existing Scriptable installations need the updated code pasted once; the script does not download or execute remote JavaScript.
+
+## Quote backgrounds
+
+`scenes.js` matches keywords and the quote category to a mountain path, sunrise, forest, still lake, or quiet workspace. Matching happens locally, including for personal quotes. The **Photo on/off** button switches between photos and a plain card; **Scene** opens manual scene selection and a darkness slider. Controls persist across visits.
+
+Photos are original generated assets stored under `assets/backgrounds/`. Their generation prompts and saved paths are documented in [Backgrounds.md](Backgrounds.md). `scripts/export-quotes.cjs` also synchronizes the same scene rules into the standalone Scriptable script. Keep the scene-rule markers intact when editing the widget. Offline installation caches all five compressed photos.
 
 ## Original quote library
 

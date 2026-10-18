@@ -87,6 +87,7 @@ function showQuote(quote) {
   $('quote-position').textContent = `${pool.filter(q => state.seen.includes(q.id)).length} of ${pool.length} explored · No repeats until the set is complete`;
   persist();
   updateSave();
+  if(typeof updateQuoteBackground==='function')updateQuoteBackground(quote);
 }
 function updateSave() {
   const saved = state.saved.includes(current.id);
@@ -107,7 +108,7 @@ function renderCollection() {
   else if (collectionMode === 'personal') quotes = allQuotes().filter(q => q.id.startsWith('personal-'));
   else if (customCollection) quotes = allQuotes().filter(q => customCollection.quoteIds.includes(q.id));
   else if (collectionMode === 'all' || searchTerm) quotes = allQuotes();
-  else quotes = [...state.custom.slice().reverse(), ...reminders.slice(0,3)];
+  else quotes = [...state.custom.filter(matchesCategory).slice().reverse(), ...reminders.filter(matchesCategory).slice(0,3)];
   quotes = quotes.filter(q => matchesCategory(q) && `${q.text} ${q.author} ${q.category}`.toLowerCase().includes(searchTerm.toLowerCase()));
   if (customCollection) $('collection-title').textContent = customCollection.name;
   else if (collectionMode === 'all' || searchTerm) $('collection-title').textContent = 'Find the words you need.';

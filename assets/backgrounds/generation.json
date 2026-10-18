@@ -1,0 +1,27 @@
+[
+  {
+    "asset": "assets/backgrounds/summit.jpg",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: landscape background photograph for a motivational quote card in the Motive app. Scene: a solitary mountain path winding toward a distant high alpine summit, mist in the valleys, a thin warm break of light after a storm; mood of perseverance and taking the next step. Premium natural editorial landscape/lifestyle photography, genuine texture, restrained earthy sage and blue palette with warm light. Landscape 3:2 framing. Keep visual interest mainly along edges and lower third; the broad central region should remain quiet and low contrast to support overlaid quote text. No people, text, lettering, logos, watermarks, UI, collage, border, or typography. One single continuous full-bleed photograph."
+  },
+  {
+    "asset": "assets/backgrounds/sunrise.jpg",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: landscape background photograph for a motivational quote card in the Motive app. Scene: a luminous golden sunrise over a low rolling coastal landscape, soft grasses, a wide open horizon and subtle rays of warm light; mood of confidence and possibility. Premium natural editorial landscape/lifestyle photography, genuine texture, restrained earthy sage and blue palette with warm light. Landscape 3:2 framing. Keep visual interest mainly along edges and lower third; the broad central region should remain quiet and low contrast to support overlaid quote text. No people, text, lettering, logos, watermarks, UI, collage, border, or typography. One single continuous full-bleed photograph."
+  },
+  {
+    "asset": "assets/backgrounds/forest.jpg",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: landscape background photograph for a motivational quote card in the Motive app. Scene: a quiet sunlit forest with a young green sapling growing among ferns and tall old trees, a gentle path and filtered morning light; mood of growth and learning. Premium natural editorial landscape/lifestyle photography, genuine texture, restrained earthy sage and blue palette with warm light. Landscape 3:2 framing. Keep visual interest mainly along edges and lower third; the broad central region should remain quiet and low contrast to support overlaid quote text. No people, text, lettering, logos, watermarks, UI, collage, border, or typography. One single continuous full-bleed photograph."
+  },
+  {
+    "asset": "assets/backgrounds/water.jpg",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: landscape background photograph for a motivational quote card in the Motive app. Scene: a still blue-green lake at dawn, delicate mist, distant wooded hills and a few soft ripples in the foreground; mood of calm, rest and breathing. Premium natural editorial landscape/lifestyle photography, genuine texture, restrained earthy sage and blue palette with warm light. Landscape 3:2 framing. Keep visual interest mainly along edges and lower third; the broad central region should remain quiet and low contrast to support overlaid quote text. No people, text, lettering, logos, watermarks, UI, collage, border, or typography. One single continuous full-bleed photograph."
+  },
+  {
+    "asset": "assets/backgrounds/workspace.jpg",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: photorealistic-natural. Asset type: landscape background photograph for a motivational quote card in the Motive app. Scene: a thoughtfully arranged wooden desk beside a tall window, one open unmarked notebook, a simple pen, soft leaves outside, gentle side light and uncluttered composition; mood of focus, patience and creative work. Premium natural editorial landscape/lifestyle photography, genuine texture, restrained earthy sage and blue palette with warm light. Landscape 3:2 framing. Keep visual interest mainly along edges and lower third; the broad central region should remain quiet and low contrast to support overlaid quote text. No people, text, lettering, logos, watermarks, UI, collage, border, or typography. One single continuous full-bleed photograph."
+  }
+]
