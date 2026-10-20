@@ -24,6 +24,8 @@ jobs:
       - name: Generate Xcode project
         working-directory: ios
         run: xcodegen generate
+      - name: Package source with the generated project
+        run: zip -qr Motive-iPhone-source.zip ios quotes.json assets/backgrounds
       - name: Choose an available iPhone simulator
         run: |
           python3 - <<'PY'
@@ -55,6 +57,7 @@ jobs:
           name: Motive-simulator-build
           path: |
             ios-build.log
+            Motive-iPhone-source.zip
             TestResults.xcresult
             motive-iphone.png
             build/Build/Products/Debug-iphonesimulator/Motive.app

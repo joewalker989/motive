@@ -18,6 +18,8 @@ The native app has separate device-local data from the website and Scriptable. N
 
 ## Open on a Mac
 
+The successful GitHub Actions build also supplies `Motive-iPhone-source.zip` inside its artifact. That ZIP already includes `Motive.xcodeproj`: extract it and open that project in Xcode, skipping XcodeGen installation and generation below.
+
 1. Install Xcode from Apple's Mac App Store and open it once.
 2. Install XcodeGen from its official Homebrew package: `brew install xcodegen`.
 3. Download this repository. In Terminal, enter its `ios` folder and run `xcodegen generate`.
