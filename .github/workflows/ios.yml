@@ -48,13 +48,7 @@ jobs:
       - name: Capture simulator preview
         if: success()
         run: |
-          STATE=$(xcrun simctl list devices available -j | python3 -c 'import json,os,sys; print(next(d["state"] for items in json.load(sys.stdin)["devices"].values() for d in items if d["udid"] == os.environ["SIMULATOR_ID"]))')
-          if [ "$STATE" != "Booted" ]; then xcrun simctl boot "$SIMULATOR_ID"; fi
-          xcrun simctl bootstatus "$SIMULATOR_ID" -b
-          xcrun simctl install "$SIMULATOR_ID" build/Build/Products/Debug-iphonesimulator/Motive.app
-          xcrun simctl launch "$SIMULATOR_ID" com.joewalker989.motive
-          sleep 4
-          xcrun simctl io "$SIMULATOR_ID" screenshot motive-iphone.png
+          xcrun xcresulttool export attachments --path TestResults.xcresult --output-path screenshots
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -63,6 +57,6 @@ jobs:
             ios-build.log
             Motive-iPhone-source.zip
             TestResults.xcresult
-            motive-iphone.png
+            screenshots
             build/Build/Products/Debug-iphonesimulator/Motive.app
           retention-days: 14

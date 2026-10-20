@@ -1,7 +1,24 @@
 import XCTest
+import UIKit
 @testable import Motive
 
 final class MotiveTests: XCTestCase {
+    @MainActor
+    func testCaptureAppPreview() async throws {
+        // Capture the running app on the already-booted test simulator.
+        try await Task.sleep(nanoseconds: 2_000_000_000)
+        let windows = UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.flatMap(\.windows)
+        let window = try XCTUnwrap(windows.first { $0.isKeyWindow })
+        XCTAssertGreaterThan(window.bounds.width, 0)
+        let renderer = UIGraphicsImageRenderer(bounds: window.bounds)
+        let image = renderer.image { _ in
+            XCTAssertTrue(window.drawHierarchy(in: window.bounds, afterScreenUpdates: true))
+        }
+        let attachment = XCTAttachment(image: image)
+        attachment.name = "Motive iPhone preview"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
     func testConfiguredAppGroupIsAccessible() throws {
         let store = try QuoteStore()
         XCTAssertGreaterThanOrEqual(try store.snapshot().count, 400)
