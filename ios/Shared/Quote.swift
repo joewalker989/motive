@@ -9,7 +9,7 @@ struct Quote: Codable, Identifiable, Equatable, Sendable {
     static let example = Quote(id: "preview", text: "A little forward, every day.", category: "Growth", author: "Motive")
     static let categories = ["All", "Confidence", "Focus", "Resilience", "Growth", "Calm"]
     static func textKey(_ text: String) -> String {
-        String(text.precomposedStringWithCompatibilityMapping.lowercased().unicodeScalars.filter { CharacterSet.alphanumerics.contains($0) })
+        String(String.UnicodeScalarView(text.precomposedStringWithCompatibilityMapping.lowercased().unicodeScalars.filter { CharacterSet.alphanumerics.contains($0) }))
     }
 
     static func validLibrary(_ quotes: [Quote]) -> Bool {
