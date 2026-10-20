@@ -9,6 +9,7 @@ const dailySource = fs.readFileSync(path.join(root, 'daily-quotes.js'), 'utf8');
 const sceneSource = fs.readFileSync(path.join(root, 'scenes.js'), 'utf8');
 const appSource = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
 const featureSource = fs.readFileSync(path.join(root, 'enhancements.js'), 'utf8');
+const companionSource = fs.readFileSync(path.join(root, 'companion.js'), 'utf8');
 
 test('changing the picture rotates every new quote without repeating consecutive photos',()=>{
   const app=openApp();app.loadExtras();
@@ -47,7 +48,7 @@ function openApp(storage = new Map()) {
   vm.runInContext(dailySource,context);
   vm.runInContext(sceneSource,context);
   vm.runInContext(appSource,context);
-  return {context,storage,get,filters,run:code=>vm.runInContext(code,context),loadExtras:()=>vm.runInContext(featureSource,context),next:()=>get('next-button').handlers.click(),filter:category=>get('filters').handlers.click({target:{closest:()=>filters.find(f=>f.dataset.category===category)}})};
+  return {context,storage,get,filters,run:code=>vm.runInContext(code,context),loadExtras:()=>vm.runInContext(featureSource,context),loadCompanion:()=>vm.runInContext(companionSource,context),next:()=>get('next-button').handlers.click(),filter:category=>get('filters').handlers.click({target:{closest:()=>filters.find(f=>f.dataset.category===category)}})};
 }
 
 test('at least 400 distinct reminders and unique IDs, with substantial coverage in all five themes', () => {
@@ -185,3 +186,32 @@ test('photo toggle, scene choices, and readable darkness are retained across vis
 });
 
 test('featured cards include three matching reminders for every selected theme',()=>{const app=openApp();app.loadExtras();for(const theme of ['Confidence','Focus','Resilience','Growth','Calm']){app.filter(theme);assert.equal(app.get('quote-grid').children.length,3);for(const card of app.get('quote-grid').children)assert.equal(card.children[0].textContent,theme.toUpperCase());}});
+
+
+
+test('check-ins select unread themed quotes and retain the current daily reflection',()=>{
+ const app=openApp();app.loadExtras();app.loadCompanion();app.run('state.companion.journal[dayKey()]={note:"A good conversation",mood:""}');const old=app.run('current.id');
+ app.get('arrival-overwhelmed').handlers.click();assert.equal(app.run('category'),'Calm');assert.equal(app.run('current.category'),'Calm');assert.notEqual(app.run('current.id'),old);assert.equal(app.run('state.companion.journal[dayKey()].note'),'A good conversation');assert.equal(app.get('arrival-overwhelmed').attrs['aria-pressed'],'true');
+});
+
+test('personal reason and reflections survive reopening and are included in backups',()=>{
+ let app=openApp();app.loadExtras();app.loadCompanion();app.get('personal-why-input').value='Be present for my family.';app.get('why-form').handlers.submit({preventDefault(){}});app.get('reflection-input').value='I made time to listen.';app.get('reflection-form').handlers.submit({preventDefault(){}});const backup=app.run('backupData()');assert.equal(backup.data.companion.why,'Be present for my family.');app=openApp(app.storage);app.loadExtras();app.loadCompanion();assert.equal(app.get('personal-why-text').textContent,'Be present for my family.');assert.equal(app.run('state.companion.journal[dayKey()].note'),'I made time to listen.');
+});
+
+test('recent quotes are capped and intentional revisits do not consume the unread cycle',()=>{
+ let app=openApp();app.loadExtras();app.loadCompanion();const first=app.run('current.id');for(let i=0;i<40;i++)app.next();assert.equal(app.run('state.companion.recent.length'),30);assert.ok(!app.run('state.companion.recent').includes(first));const before=app.run('JSON.stringify(state.seen)');app.run('showQuote(reminders.find(q=>!state.seen.includes(q.id)),{revisit:true})');assert.equal(app.run('JSON.stringify(state.seen)'),before);app.run('state.freshOnOpen=false;persist()');app=openApp(app.storage);app.loadExtras();app.loadCompanion();assert.equal(app.run('JSON.stringify(state.seen)'),before);
+});
+
+test('using an action idea leaves the saved intention unchanged until the user saves it',()=>{
+ const app=openApp();app.loadExtras();app.loadCompanion();app.run('state.intention={day:dayKey(),text:"My existing intention"}');const first=app.get('action-idea').textContent;app.get('another-action').handlers.click();assert.notEqual(app.get('action-idea').textContent,first);app.get('use-action').handlers.click();assert.equal(app.get('intention-input').value,app.get('action-idea').textContent);assert.equal(app.run('state.intention.text'),'My existing intention');assert.ok(app.run('Object.values(actionIdeas).flat().every(text=>text.length<=160)'));
+});
+
+test('personal-space backup import preserves local notes and remaps new personal quote history',()=>{
+ const app=openApp();app.loadExtras();app.loadCompanion();app.run('state.companion.why="My reason";state.companion.journal[dayKey()]={mood:"low",note:"Local memory"}');const today=app.run('dayKey()');
+ const backup={app:'motive',version:1,data:{custom:[{id:'personal-history',text:'A distinct personal history reminder.',author:'Me',category:'Growth'}],saved:[],companion:{why:'Imported reason',recent:['personal-history'],journal:{[today]:{mood:'curious',note:'Imported memory'},'2026-01-01':{note:'Earlier memory',mood:''}}}}};
+ app.run('Object.assign(state,mergeBackup('+JSON.stringify(backup)+'))');assert.equal(app.run('state.companion.why'),'My reason');assert.equal(app.run('state.companion.journal[dayKey()].note'),'Local memory');assert.equal(app.run('state.companion.journal["2026-01-01"].note'),'Earlier memory');assert.ok(app.run('state.companion.recent.includes("personal-history")'));
+});
+
+test('malformed private notes are rejected without modifying data and only 90 journal days are retained',()=>{
+ const app=openApp();app.loadExtras();app.loadCompanion();const before=app.run('JSON.stringify(state)');assert.throws(()=>app.run('mergeBackup({app:"motive",version:1,data:{custom:[],saved:[],companion:{journal:{"2026-10-01":{note:42}}}}})'));assert.equal(app.run('JSON.stringify(state)'),before);app.run('const journal={};for(let i=0;i<110;i++){const day=new Date(Date.UTC(2025,0,1+i)).toISOString().slice(0,10);journal[day]={note:"A memory",mood:""};}state.companion=cleanCompanion({journal})');assert.equal(app.run('Object.keys(state.companion.journal).length'),90);assert.ok(!app.run('Object.hasOwn(state.companion.journal,"2025-01-01")'));
+});

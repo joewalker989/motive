@@ -76,3 +76,9 @@ Tapping this Scriptable widget opens Scriptable; it cannot guarantee a Home Scre
 ## Native iPhone app
 
 The `ios` folder contains a SwiftUI app and an interactive WidgetKit extension for iOS 17+. Its Next quote button changes the widget without opening Scriptable. App and widget share native reading history, favorites, themes, and offline photos through an App Group. Native data remains separate from website/Scriptable data. See [iPhone setup](ios/README.md) for Mac/Xcode, signing, and on-device testing. The Build Motive iPhone app workflow generates an Xcode project and runs simulator tests; a simulator artifact is not installable on a physical iPhone. Windows users can use GitHub for future signed TestFlight builds after Apple developer setup; see [iPhone next steps](iPhone-setup.md).
+
+## Free personal-space additions
+
+The optional check-in opens from a compact panel and chooses a fresh quote for the selected mood/theme. A personal My why reminder, practical action ideas, last 30 distinct viewed quotes, and daily reflections live in companion.js. Use this idea fills the intention editor for review; it does not silently replace a saved intention. Read again is an explicit revisit and leaves unread-cycle history intact, including when reopening with fresh-on-open disabled.
+
+The latest 90 dated check-in/reflection entries are retained, with the most recent seven earlier written reflections shown in the editor. Your reason, reflections, check-ins, and recent history are included in downloaded backups. Imports preserve existing local reasons/notes, merge other dates, validate fields, and remap imported personal quote IDs. All text is rendered as text, never HTML. These features work offline after the app's online cache setup and remain separate from Scriptable and the parked native iPhone source. No fees, account, server storage, medical assessment, or background-notification service is added.

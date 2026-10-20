@@ -76,18 +76,19 @@ function updateGreeting() {
   $('greeting').textContent = state.name ? `A little inspiration for you, ${state.name}.` : 'Make room for a little inspiration.';
   $('profile-button').textContent = state.name ? [...state.name][0].toUpperCase() : 'Y';
 }
-function showQuote(quote) {
+function showQuote(quote,{revisit=false}={}) {
   current = quote;
   $('quote-text').textContent = quote.text;
   $('quote-author').textContent = quote.author;
   $('quote-category').textContent = category === 'All' && state.daily?.day === dayKey() && quote.id === state.daily.id ? 'YOUR DAILY REMINDER' : quote.category.toUpperCase();
-  if (!state.seen.includes(quote.id)) state.seen.push(quote.id);
-  state.currentQuote = {day: dayKey(), id: quote.id, category};
+  if (!revisit && !state.seen.includes(quote.id)) state.seen.push(quote.id);
+  state.currentQuote = {day: dayKey(), id: quote.id, category, revisit};
   const pool = allQuotes().filter(q => category === 'All' || q.category === category);
   $('quote-position').textContent = `${pool.filter(q => state.seen.includes(q.id)).length} of ${pool.length} explored · No repeats until the set is complete`;
   persist();
   updateSave();
   if(typeof updateQuoteBackground==='function')updateQuoteBackground(quote);
+  if(typeof companionQuoteChanged==='function')companionQuoteChanged(quote);
 }
 function updateSave() {
   const saved = state.saved.includes(current.id);
@@ -152,6 +153,7 @@ function loadIntention() { const today = state.intention.day === dayKey() && typ
 document.addEventListener('visibilitychange', () => { if (!document.hidden) {if(currentDay !== dayKey()){currentDay = dayKey(); updateGreeting(); loadIntention();showQuote(category==='All'?dailyQuote():nextQuote());}else if(state.freshOnOpen)showQuote(nextQuote());} });
 const restoredQuote = !state.freshOnOpen && state.currentQuote?.day === dayKey() && allQuotes().find(q => q.id === state.currentQuote.id);
 if (restoredQuote && categories.includes(state.currentQuote.category)) category = state.currentQuote.category;
-updateGreeting(); loadIntention(); showQuote(restoredQuote || (state.daily?.day===dayKey()?nextQuote():dailyQuote())); setView(false);
+updateGreeting(); loadIntention(); showQuote(restoredQuote || (state.daily?.day===dayKey()?nextQuote():dailyQuote()),{revisit:!!restoredQuote&&state.currentQuote?.revisit}); setView(false);
 for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === category; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); }
 if (!storageAvailable) toast('Browser storage is unavailable. Changes last for this visit only.');
+
