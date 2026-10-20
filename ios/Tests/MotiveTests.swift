@@ -2,6 +2,10 @@ import XCTest
 @testable import Motive
 
 final class MotiveTests: XCTestCase {
+    func testConfiguredAppGroupIsAccessible() throws {
+        let store = try QuoteStore()
+        XCTAssertGreaterThanOrEqual(try store.snapshot().count, 400)
+    }
     private var library: [Quote] {
         (0..<20).map { Quote(id: "test-\($0)", text: "Distinct reminder \($0)", category: $0 < 10 ? "Calm" : "Growth", author: "Motive") }
     }

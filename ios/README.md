@@ -12,7 +12,7 @@ Native SwiftUI iPhone/iPad app and WidgetKit extension for iOS 17 or later. The 
 - Native share sheet, saved quotes, accessible labels, and Dynamic Type.
 - Daily online feed checks that merge additions without removing existing quote IDs or favorites.
 - Cross-process file locking and atomic writes for shared storage.
-- An unsigned simulator build and tests in GitHub Actions. No Apple secrets are required for that check.
+- A simulator build with local ad-hoc signing and tests in GitHub Actions. No Apple secrets are required for that check; simulator signing is not valid iPhone distribution signing.
 
 The native app has separate device-local data from the website and Scriptable. No cloud sync, automatic website-data migration, reminders, App Store release, or refresh-on-unlock is claimed. Hourly automatic updates remain subject to iOS scheduling. Interactive button actions use Apple's WidgetKit/App Intents mechanism.
 
