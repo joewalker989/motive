@@ -1,5 +1,9 @@
 # Motive
 
+## Wellbeing studio
+
+Use **Feeling overwhelmed?** for guided meditation, gentle breathing, grounding, and a 1–20 minute timer with pause/resume. The free studio also adds read-aloud, audio collections and voice recordings, personal photo/video backgrounds, image typography controls, morning/evening journaling with media, seven-day journeys, mood history, a vision board, encrypted journal storage, full media backups, calendar reminders, and optional encrypted WebDAV sync. English/Spanish/French studio navigation and original affirmation cards are included; the main library and detailed guidance remain English. See [Wellbeing guide](Wellbeing.md) for usage, privacy, backup differences, and platform limits. Native-only additions remain source until the iPhone/Watch builds are signed and installed.
+
 [Open Motive](https://joewalker989.github.io/motive/)
 
 A personal motivation space with a growing library of original reminders across Confidence, Focus, Resilience, Growth, and Calm. Built without a framework, build dependencies, API keys, or a backend.

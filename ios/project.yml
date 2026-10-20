@@ -34,6 +34,12 @@ targets:
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.lifestyle
+        INFOPLIST_KEY_NSFaceIDUsageDescription: Unlock your private Motive journal.
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleURLTypes:
+          - CFBundleURLSchemes: [motive]
     entitlements:
       path: App/Motive.entitlements
       properties:
@@ -71,6 +77,28 @@ targets:
       properties:
         com.apple.security.application-groups:
           - $(APP_GROUP_IDENTIFIER)
+  MotiveWatch:
+    type: application
+    platform: watchOS
+    deploymentTarget: '10.0'
+    sources:
+      - Watch
+      - Shared/Quote.swift
+      - path: Shared/PrivacyInfo.xcprivacy
+        buildPhase: resources
+      - path: ../quotes.json
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.joewalker989.motive.watch
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Motive
+        INFOPLIST_KEY_WKApplication: YES
+        INFOPLIST_KEY_WKWatchOnly: YES
+        INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES
+        TARGETED_DEVICE_FAMILY: '4'
+        SDKROOT: watchos
+        SUPPORTED_PLATFORMS: watchos watchsimulator
   MotiveTests:
     type: bundle.unit-test
     platform: iOS
@@ -83,6 +111,10 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.joewalker989.motive.tests
         GENERATE_INFOPLIST_FILE: YES
 schemes:
+  MotiveWatch:
+    build:
+      targets:
+        MotiveWatch: all
   Motive:
     build:
       targets:

@@ -103,4 +103,29 @@ final class MotiveTests: XCTestCase {
         quotes[399] = Quote(id: "id-399", text: "REMINDER, NUMBER 0!", category: "Calm", author: "Motive")
         XCTAssertFalse(Quote.validLibrary(quotes))
     }
+    func testNotificationPreparationKeepsReadingHistory() throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+        defer { try? FileManager.default.removeItem(at: directory) }
+        let store = try QuoteStore(root: directory)
+        let before = try store.snapshot()
+        let quotes = try store.notificationQuotes()
+        XCTAssertEqual(quotes.count, 7)
+        XCTAssertEqual(Set(quotes.map(\.id)).count, 7)
+        XCTAssertEqual(try store.snapshot().quote.id, before.quote.id)
+    }
+    @MainActor
+    func testNativeTimerCanPauseAndResumeWithoutCompletingEarly() {
+        let pause = NativePause()
+        pause.start(minutes: 3)
+        pause.tick(now: Date().addingTimeInterval(12))
+        XCTAssertGreaterThan(pause.elapsed, 11)
+        XCTAssertGreaterThan(pause.remaining, 160)
+        pause.pause()
+        XCTAssertFalse(pause.running)
+        pause.resume()
+        XCTAssertTrue(pause.running)
+        pause.finish()
+        XCTAssertFalse(pause.running)
+        XCTAssertEqual(pause.remaining, 0)
+    }
 }

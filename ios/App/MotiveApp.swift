@@ -35,6 +35,7 @@ struct MotiveHome: View {
     @Environment(\.scenePhase) private var phase
     @State private var showSaved = false
     @State private var showHelp = false
+    @State private var showWellbeing = false
     private let ink = Color(red: 0.14, green: 0.23, blue: 0.18)
     var body: some View {
         NavigationStack {
@@ -43,6 +44,7 @@ struct MotiveHome: View {
                     Text(Date.now, format: .dateTime.weekday(.wide).month(.wide).day()).font(.caption).textCase(.uppercase).foregroundStyle(.secondary)
                     Text("A little forward,\nevery day.").font(.largeTitle.bold()).foregroundStyle(ink)
                     Text("A fresh perspective. A moment for you.").foregroundStyle(.secondary)
+                    Button { showWellbeing = true } label: { Label("Feeling overwhelmed? Take a pause", systemImage: "wind") }.tint(ink)
                     if let snapshot = model.snapshot {
                         Picker("What do you need today?", selection: Binding(get: { snapshot.category }, set: { model.load(category: $0) })) {
                             ForEach(Quote.categories, id: \.self) { Text($0).tag($0) }
@@ -108,6 +110,8 @@ struct MotiveHome: View {
                 }
             }
             .task { await model.refresh() }
+            .sheet(isPresented: $showWellbeing) { NativeWellbeing() }
+            .onOpenURL { url in if url.scheme == "motive", url.host == "calm" { showWellbeing = true } }
             .onChange(of: phase) { _, next in if next == .active { Task { await model.refresh() } } }
             .refreshable { await model.refresh() }
         }.preferredColorScheme(.light)

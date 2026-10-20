@@ -49,12 +49,19 @@ jobs:
         if: success()
         run: |
           xcrun xcresulttool export attachments --path TestResults.xcresult --output-path screenshots
+      - name: Build standalone Watch app
+        run: |
+          xcodebuild build -project ios/Motive.xcodeproj -scheme MotiveWatch \
+            -destination 'generic/platform=watchOS Simulator' -derivedDataPath watch-build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO | tee watch-build.log
+        shell: bash -eo pipefail {0}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: Motive-simulator-build
           path: |
             ios-build.log
+            watch-build.log
             Motive-iPhone-source.zip
             TestResults.xcresult
             screenshots

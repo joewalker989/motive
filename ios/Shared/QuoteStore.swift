@@ -85,6 +85,10 @@ struct QuoteStore {
     func favorites() throws -> [Quote] {
         try locked { let state = try stateUnlocked(); return try libraryUnlocked().filter { state.favorites.contains($0.id) } }
     }
+    func notificationQuotes() throws -> [Quote] {
+        // Preparing reminders must not consume the app/widget's unread rotation.
+        try locked { Array(try libraryUnlocked().shuffled().prefix(7)) }
+    }
     func refreshLibraryIfNeeded(now: Date = Date()) async {
         let day = ISO8601DateFormatter().string(from: Calendar.current.startOfDay(for: now))
         let checked = root.appendingPathComponent("checked-day.txt")

@@ -50,6 +50,12 @@ struct MotiveWidgetView: View {
     let entry: MotiveEntry
     @Environment(\.widgetFamily) private var family
     var body: some View {
+        if family == .accessoryRectangular || family == .accessoryInline {
+            VStack(alignment: .leading, spacing: 3) {
+                if family == .accessoryRectangular { Text("MOTIVE").font(.caption2.bold()) }
+                Text(entry.quote.text).font(.caption).lineLimit(family == .accessoryInline ? 1 : 3)
+            }.containerBackground(for: .widget) { Color.clear }
+        } else {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
                 Label("MOTIVE", systemImage: "sparkle").font(.caption2.bold()).tracking(1)
@@ -76,6 +82,7 @@ struct MotiveWidgetView: View {
         .foregroundStyle(.white)
         .padding(16)
         .containerBackground(for: .widget) { QuoteBackground(scene: entry.scene) }
+        }
     }
 }
 
@@ -85,7 +92,7 @@ struct MotiveWidget: Widget {
         StaticConfiguration(kind: QuoteStore.widgetKind, provider: MotiveProvider()) { entry in MotiveWidgetView(entry: entry) }
             .configurationDisplayName("A little perspective")
             .description("A photo, a kind reminder, and a Next quote button. Choose your theme in Motive.")
-            .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+            .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .accessoryRectangular, .accessoryInline])
             .contentMarginsDisabled()
     }
 }
