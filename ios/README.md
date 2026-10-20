@@ -29,6 +29,8 @@ Resources reference the repository's existing `quotes.json` and `assets/backgrou
 
 ## Install on your own iPhone
 
+**Windows-only route:** you do not need to purchase a Mac. GitHub's Mac runner can build a signed release and upload it to TestFlight after Apple Developer Program membership, App Store Connect, certificates/profiles, and secure signing configuration are set up. That distribution setup has not been completed. See [the plain-language next steps](../iPhone-setup.md). The instructions below are the alternative route for someone who has access to Xcode on a Mac.
+
 The Windows computer can prepare source and use GitHub's Mac runner, but it cannot install a signed iPhone app by itself.
 
 1. In Xcode → Settings → Accounts, sign in with your Apple account yourself.
