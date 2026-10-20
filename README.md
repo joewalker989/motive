@@ -71,3 +71,8 @@ The widget code is tested using mocked Scriptable APIs. Its final appearance and
 ### Widget v4 troubleshooting
 
 Tapping this Scriptable widget opens Scriptable; it cannot guarantee a Home Screen refresh in place. All tap targets now use the same destination and no longer claim instant refresh. Replace the complete on-device script after a website update. The preview title includes MOTIVE v4. In Edit Widget, clear old parameters or use All,photo,60: legacy sage/dark parameters override copied defaults. Photo download/render failures now display PHOTO UNAVAILABLE instead of silently hiding the failure. Photos use a 60% readability overlay. iOS schedules actual Home Screen refreshes.
+
+
+## Native iPhone app
+
+The `ios` folder contains a SwiftUI app and an interactive WidgetKit extension for iOS 17+. Its Next quote button changes the widget without opening Scriptable. App and widget share native reading history, favorites, themes, and offline photos through an App Group. Native data remains separate from website/Scriptable data. See [iPhone setup](ios/README.md) for Mac/Xcode, signing, and on-device testing. The Build Motive iPhone app workflow generates an Xcode project and runs simulator tests; a simulator artifact is not installable on a physical iPhone.

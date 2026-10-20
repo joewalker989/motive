@@ -1,0 +1,8 @@
+Motive.xcodeproj/
+build/
+DerivedData/
+*.xcresult/
+*.xcuserstate
+xcuserdata/
+*.p12
+*.mobileprovision

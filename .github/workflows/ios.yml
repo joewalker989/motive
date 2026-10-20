@@ -1,0 +1,61 @@
+name: Build Motive iPhone app
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ios/**'
+      - 'quotes.json'
+      - 'assets/backgrounds/**'
+      - '.github/workflows/ios.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: motive-ios-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  simulator:
+    runs-on: macos-15
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install project generator
+        run: brew install xcodegen
+      - name: Generate Xcode project
+        working-directory: ios
+        run: xcodegen generate
+      - name: Choose an available iPhone simulator
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          devices = json.loads(subprocess.check_output(['xcrun', 'simctl', 'list', 'devices', 'available', '-j']))['devices']
+          candidates = [device for runtime, items in devices.items() if 'iOS' in runtime for device in items if device['isAvailable'] and 'iPhone' in device['name']]
+          if not candidates:
+              raise SystemExit('No iPhone simulator is available')
+          with open(os.environ['GITHUB_ENV'], 'a') as output:
+              output.write('SIMULATOR_ID=' + candidates[0]['udid'] + '\n')
+          PY
+      - name: Build and test app and widget
+        run: |
+          xcodebuild test -project ios/Motive.xcodeproj -scheme Motive \
+            -destination "platform=iOS Simulator,id=$SIMULATOR_ID" \
+            -derivedDataPath build -resultBundlePath TestResults.xcresult \
+            CODE_SIGNING_ALLOWED=NO | tee ios-build.log
+        shell: bash -eo pipefail {0}
+      - name: Capture simulator preview
+        if: success()
+        run: |
+          xcrun simctl install "$SIMULATOR_ID" build/Build/Products/Debug-iphonesimulator/Motive.app
+          xcrun simctl launch "$SIMULATOR_ID" com.joewalker989.motive
+          sleep 4
+          xcrun simctl io "$SIMULATOR_ID" screenshot motive-iphone.png
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Motive-simulator-build
+          path: |
+            ios-build.log
+            TestResults.xcresult
+            motive-iphone.png
+            build/Build/Products/Debug-iphonesimulator/Motive.app
+          retention-days: 14
