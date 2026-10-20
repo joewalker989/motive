@@ -112,6 +112,7 @@ struct MotiveHome: View {
             .task { await model.refresh() }
             .sheet(isPresented: $showWellbeing) { NativeWellbeing() }
             .onOpenURL { url in if url.scheme == "motive", url.host == "calm" { showWellbeing = true } }
+            .onReceive(MotiveNavigation.shared.$openCalm) { open in if open { showWellbeing = true; MotiveNavigation.shared.openCalm = false } }
             .onChange(of: phase) { _, next in if next == .active { Task { await model.refresh() } } }
             .refreshable { await model.refresh() }
         }.preferredColorScheme(.light)

@@ -4,6 +4,12 @@ import LocalAuthentication
 import UserNotifications
 import AppIntents
 
+@MainActor
+final class MotiveNavigation: ObservableObject {
+    static let shared = MotiveNavigation()
+    @Published var openCalm = false
+}
+
 struct MotiveReadQuote: AppIntent {
     static var title: LocalizedStringResource = "Read a Motive quote"
     static var description = IntentDescription("Read a fresh, original reminder.")
@@ -16,8 +22,9 @@ struct MotiveReadQuote: AppIntent {
 struct MotiveOpenMeditation: AppIntent {
     static var title: LocalizedStringResource = "Open a calming Motive session"
     static var openAppWhenRun = true
-    func perform() async throws -> some IntentResult & OpensIntent {
-        .result(opensIntent: OpenURLIntent(URL(string: "motive://calm")!))
+    func perform() async throws -> some IntentResult {
+        await MainActor.run { MotiveNavigation.shared.openCalm = true }
+        return .result()
     }
 }
 
