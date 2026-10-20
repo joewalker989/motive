@@ -10,6 +10,8 @@ The sessions are optional comfort tools, not treatment. Breathing copy follows t
 
 ## Added tools
 
+Use **Voice options** beside Read aloud on the main screen to choose an available English device voice, preview it, and save reading speed/tone. The Stop reading button cancels speech. These settings also apply to spoken guidance and quote playlists; other-language affirmations choose a matching device voice. Voice availability varies by device, and a saved unavailable voice falls back to an automatic matching voice. Some device voices require connectivity. Recorded audio uses its original voice and playback speed.
+
 - Device speech reads quotes and original affirmations; short playlists use saved quotes, a theme, or recorded reminders. Browser/device voices and offline speech availability vary.
 - Microphone recordings start only after an explicit Record action, last at most one minute, and stop on leaving the screen. No microphone data is sent to a server by default.
 - Personal JPEG/PNG/WebP backgrounds resize locally. Optional muted MP4/WebM backgrounds are capped at 12 MB. Image exports capture a still frame. The regular scene and photo on/off controls remain available.
