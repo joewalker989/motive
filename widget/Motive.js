@@ -4,6 +4,9 @@ const widgetDefaults = {category:'All',style:'photo',refreshMinutes:60};
 'use strict';
 // Local keyword matching; personal quote text never leaves this browser.
 const quoteScenes = {
+  craft:{label:'Hands at work',meaning:'Patience, practice, and the courage to make something imperfect.',category:'Growth',kind:'craft',added:'2026-10-21',image:'./assets/backgrounds/craft.jpg',words:['practice','practic','repair','clay','pottery','craft','make something','skill','early draft','teach','learning','borrowed tool']},
+  support:{label:'A little support',meaning:'A reminder that help, friendship, and belonging can be part of your strength.',category:'Confidence',kind:'people',added:'2026-10-21',image:'./assets/backgrounds/support.jpg',words:['support','help','friend','listen','conversation','belong','ask for','shared success','second pair of hands','thank you']},
+  color:{label:'Room for possibility',meaning:'Color and movement for fresh ideas, self-expression, and a new direction.',category:'Confidence',kind:'abstract',added:'2026-10-21',image:'./assets/backgrounds/color.jpg',words:['possibility','new direction','express','creativ','color','imagin','preference','first attempt','unfamiliar','new idea']},
   summit:{label:'Mountain path',meaning:'A reminder that progress is made one step at a time.',category:'Resilience',image:'./assets/backgrounds/summit.jpg',words:['mountain','path','step','staircase','climb','obstacle','persever','setback','rebuild','struggle','keep going','begin again','try again','hard chapter','storm']},
   sunrise:{label:'Open horizon',meaning:'A little light for courage, confidence, and new possibilities.',category:'Confidence',image:'./assets/backgrounds/sunrise.jpg',words:['confidence','believe','voice','worth','brave','belong','trust yourself','self-respect','opportunity','possibilit','dream','sunrise','courage','your strengths']},
   forest:{label:'Growing forest',meaning:'Growth takes patience, curiosity, and room to change.',category:'Growth',image:'./assets/backgrounds/forest.jpg',words:['growth','grow','learn','sapling','seed','curios','discover','understand','experiment','improve','new skill','change','question','beginner']},
@@ -49,7 +52,7 @@ widget.backgroundColor = new Color(style!=='sage'?'1D3026':'E5EACB');
 widget.setPadding(15,18,15,18);
 const runURL = URLScheme.forRunningScript();
 widget.url = runURL+(runURL.includes('?')?'&':'?')+`refresh=1&category=${encodeURIComponent(category)}&style=${style}&minutes=${minutes}`;
-const title = widget.addText('✳  MOTIVE v4'+(category==='All'?'':' · '+category.toUpperCase()));
+const title = widget.addText('✳  MOTIVE v5'+(category==='All'?'':' · '+category.toUpperCase()));
 title.font = Font.boldSystemFont(10);title.textColor = new Color(style!=='sage'?'EDF1E2':'526441');
 widget.addSpacer();
 try {
@@ -71,7 +74,7 @@ try {
   let photoUnavailable=false;
   if(style==='photo'){
     try{
-      const scene=getQuoteScene(quote);const imagePath=files.joinPath(files.documentsDirectory(),'motive-scene-'+scene.key+'.jpg');let photo;
+      const sharedPhoto=quote.photo;const scene=sharedPhoto&&/^[a-z0-9-]{1,80}$/.test(sharedPhoto.key)&&/^\.\/assets\/backgrounds\/[a-z0-9-]+\.jpg$/.test(sharedPhoto.image)?sharedPhoto:getQuoteScene(quote);const imagePath=files.joinPath(files.documentsDirectory(),'motive-scene-'+scene.key+'.jpg');let photo;
       try{photo=files.readImage(imagePath);}catch{}
       if(!photo){const imageRequest=new Request(site+scene.image.replace(/^\.\//,''));imageRequest.timeoutInterval=8;photo=await imageRequest.loadImage();try{files.writeImage(imagePath,photo);}catch{}}
       const width=600;const height=config.widgetFamily==='small'?600:config.widgetFamily==='large'?630:300;const drawing=new DrawContext();drawing.size=new Size(width,height);drawing.opaque=true;

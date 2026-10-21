@@ -21,14 +21,17 @@ struct Quote: Codable, Identifiable, Equatable, Sendable {
 }
 
 enum PhotoScene {
-    static let keys = ["summit", "sunrise", "forest", "water", "workspace"]
+    static let keys = ["craft","support","color","summit","sunrise","forest","water","workspace"]
     static func match(_ quote: Quote) -> String {
         let rules: [(String, String, [String])] = [
-            ("summit", "Resilience", ["mountain", "path", "step", "climb", "setback", "rebuild", "storm"]),
-            ("sunrise", "Confidence", ["confidence", "believe", "brave", "worth", "voice", "courage", "possibility"]),
-            ("forest", "Growth", ["growth", "grow", "learn", "seed", "curiosity", "discover", "experiment"]),
-            ("water", "Calm", ["calm", "breath", "rest", "sleep", "quiet", "peace", "pause"]),
-            ("workspace", "Focus", ["focus", "attention", "notebook", "write", "desk", "work", "task", "routine"])
+            ("craft", "Growth", ["practice","practic","repair","clay","pottery","craft","make something","skill","early draft","teach","learning","borrowed tool"]),
+            ("support", "Confidence", ["support","help","friend","listen","conversation","belong","ask for","shared success","second pair of hands","thank you"]),
+            ("color", "Confidence", ["possibility","new direction","express","creativ","color","imagin","preference","first attempt","unfamiliar","new idea"]),
+            ("summit", "Resilience", ["mountain","path","step","staircase","climb","obstacle","persever","setback","rebuild","struggle","keep going","begin again","try again","hard chapter","storm"]),
+            ("sunrise", "Confidence", ["confidence","believe","voice","worth","brave","belong","trust yourself","self-respect","opportunity","possibilit","dream","sunrise","courage","your strengths"]),
+            ("forest", "Growth", ["growth","grow","learn","sapling","seed","curios","discover","understand","experiment","improve","new skill","change","question","beginner"]),
+            ("water", "Calm", ["calm","breath","rest","sleep","quiet","peace","soften","relax","stillness","unhurried","comfort","recover your energy","slow down","pause"]),
+            ("workspace", "Focus", ["focus","attention","notebook","write","pen","desk","work","task","project","deadline","discipline","routine","habit","finish","concentration"])
         ]
         let words = quote.text.lowercased().components(separatedBy: CharacterSet.letters.inverted).filter { !$0.isEmpty }
         var best = "sunrise", highest = -1

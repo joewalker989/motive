@@ -23,5 +23,23 @@
     "asset": "assets/backgrounds/workspace.jpg",
     "tool": "built-in image_gen",
     "prompt": "Use case: photorealistic-natural. Asset type: landscape background photograph for a motivational quote card in the Motive app. Scene: a thoughtfully arranged wooden desk beside a tall window, one open unmarked notebook, a simple pen, soft leaves outside, gentle side light and uncluttered composition; mood of focus, patience and creative work. Premium natural editorial landscape/lifestyle photography, genuine texture, restrained earthy sage and blue palette with warm light. Landscape 3:2 framing. Keep visual interest mainly along edges and lower third; the broad central region should remain quiet and low contrast to support overlaid quote text. No people, text, lettering, logos, watermarks, UI, collage, border, or typography. One single continuous full-bleed photograph."
+  },
+  {
+    "asset": "assets/backgrounds/craft.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-21",
+    "prompt": "Create an original photorealistic editorial photograph for a motivational quote app background. Horizontal 3:2 composition. Close-up of adult hands patiently shaping a simple clay bowl on a pottery wheel, natural skin texture, warm daylight, clay and wood textures, a real working studio softly out of focus. Theme: learning through practice and starting again. Not scenery. Quiet, uncluttered central composition that works beneath a dark text overlay; subject remains recognizable at phone and widget sizes. No text, typography, logos, watermark, borders or collage."
+  },
+  {
+    "asset": "assets/backgrounds/support.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-21",
+    "prompt": "Create an original photorealistic editorial photograph for a motivational quote app background. Horizontal 3:2 composition. Close-up of two adult people's hands across a small cafe table, one resting gently on the other's forearm in a natural supportive gesture, diverse natural skin tones, soft warm daylight, comfortable everyday clothing, blurred simple cafe background. Theme: accepting help and belonging. No faces needed, realistic anatomy and restrained emotion. Clear visual subject, generous calm negative space suitable under a dark quote overlay, recognizable on small widgets. No text, logos, watermark, borders or collage."
+  },
+  {
+    "asset": "assets/backgrounds/color.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-21",
+    "prompt": "Create an original sophisticated abstract painted illustration for a motivation app background. Horizontal 3:2 composition. Large organic overlapping shapes like cut paper and brushed pigment in deep teal, warm terracotta, muted golden yellow and soft coral. Theme: courage to try a new direction. Bold but calm, tactile matte paper grain, flowing composition with a quiet central area for a quote overlay, not a landscape or scenery, no representational objects. Works at phone and small widget sizes. No text, lettering, logos, watermark, borders or collage."
   }
 ]

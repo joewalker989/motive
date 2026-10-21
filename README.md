@@ -19,7 +19,7 @@ A personal motivation space with a growing library of original reminders across 
 - Daily visit streaks and intention completion tracking.
 - Light, sage, and dark themes.
 - Native share-sheet support when available, copied quote text, and downloadable quote images.
-- Five original photo scenes matched locally to each quote's words and theme, with an on/off switch, manual scene choices, and readable darkness controls.
+- A growing set of original pictures and abstract artwork matched locally to each quote's words and theme, with an on/off switch, manual scene choices, and readable darkness controls.
 - Phone-wallpaper downloads that use the selected scene, leaving room above the quote for the iPhone clock.
 - One-minute optional breathing pause with reduced-motion support.
 - Backup export and safe merging on import, including duplicate detection and quote-reference remapping.
@@ -40,9 +40,9 @@ Choose **Matching photo** in the widget guide to copy code with photo background
 
 ## Quote backgrounds
 
-`scenes.js` matches keywords and the quote category to a mountain path, sunrise, forest, still lake, or quiet workspace. Matching happens locally, including for personal quotes. The **Photo on/off** button switches between photos and a plain card; **Scene** opens manual scene selection and a darkness slider. Controls persist across visits.
+`scenes.js` matches keywords and the quote category to scenery, hands making pottery, a supportive moment, or abstract color. Matching happens locally, including for personal quotes. The **Photo on/off** button switches between photos and a plain card; **Scene** opens manual scene selection and a darkness slider. Controls persist across visits.
 
-Photos are original generated assets stored under `assets/backgrounds/`. Their generation prompts and saved paths are documented in [Backgrounds.md](Backgrounds.md). `scripts/export-quotes.cjs` also synchronizes the same scene rules into the standalone Scriptable script. Keep the scene-rule markers intact when editing the widget. Offline installation caches all five compressed photos.
+Photos are original generated assets stored under `assets/backgrounds/`. Their generation prompts and saved paths are documented in [Backgrounds.md](Backgrounds.md). `scripts/export-quotes.cjs` also synchronizes the same scene rules into the standalone Scriptable script. Keep the scene-rule markers intact when editing the widget. Offline installation caches all eight current compressed pictures.
 
 ## Original quote library
 
@@ -74,9 +74,9 @@ The widget code is tested using mocked Scriptable APIs. Its final appearance and
 
 **Change picture** immediately switches photos and enables a different photo on each new quote, including within the same theme. **Match quote** restores meaning-based scenes. The current mode is displayed beside the controls; fixed scenes are explicitly labeled. Downloads use the exact photo currently displayed. Scene choices and rotation survive reopening.
 
-### Widget v4 troubleshooting
+### Widget v5 troubleshooting
 
-Tapping this Scriptable widget opens Scriptable; it cannot guarantee a Home Screen refresh in place. All tap targets now use the same destination and no longer claim instant refresh. Replace the complete on-device script after a website update. The preview title includes MOTIVE v4. In Edit Widget, clear old parameters or use All,photo,60: legacy sage/dark parameters override copied defaults. Photo download/render failures now display PHOTO UNAVAILABLE instead of silently hiding the failure. Photos use a 60% readability overlay. iOS schedules actual Home Screen refreshes.
+Tapping this Scriptable widget opens Scriptable; it cannot guarantee a Home Screen refresh in place. All tap targets now use the same destination and no longer claim instant refresh. Replace the complete on-device script after a website update. The preview title includes MOTIVE v5. In Edit Widget, clear old parameters or use All,photo,60: legacy sage/dark parameters override copied defaults. Photo download/render failures now display PHOTO UNAVAILABLE instead of silently hiding the failure. Photos use a 60% readability overlay. iOS schedules actual Home Screen refreshes.
 
 
 ## Native iPhone app
@@ -88,3 +88,10 @@ The `ios` folder contains a SwiftUI app and an interactive WidgetKit extension f
 The optional check-in opens from a compact panel and chooses a fresh quote for the selected mood/theme. A personal My why reminder, practical action ideas, last 30 distinct viewed quotes, and daily reflections live in companion.js. Use this idea fills the intention editor for review; it does not silently replace a saved intention. Read again is an explicit revisit and leaves unread-cycle history intact, including when reopening with fresh-on-open disabled.
 
 The latest 90 dated check-in/reflection entries are retained, with the most recent seven earlier written reflections shown in the editor. Your reason, reflections, check-ins, and recent history are included in downloaded backups. Imports preserve existing local reasons/notes, merge other dates, validate fields, and remap imported personal quote IDs. All text is rendered as text, never HTML. These features work offline after the app's online cache setup and remain separate from Scriptable and the parked native iPhone source. No fees, account, server storage, medical assessment, or background-notification service is added.
+
+
+## Voice recovery and growing pictures
+
+Read-aloud now resumes paused speech, retains its utterance, retries a failed selected voice with the automatic voice, and reports silent startup instead of waiting forever. Open Voice options for Reset voice and Test speaker. Physical iPhone speech still needs an on-device check; in-app browser and device sound settings can affect playback. See [Voice and picture update](Voice-and-pictures.md).
+
+Scriptable v5 accepts safe same-site picture paths from the daily quote feed. Replace the saved widget script once using the website setup guide. Future published pictures then download with the next online daily feed check, subject to iOS refresh timing. Older v4 scripts keep working with their embedded picture rules.

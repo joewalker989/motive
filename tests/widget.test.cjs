@@ -31,10 +31,12 @@ test('theme, category, and refresh interval can be selected by widget parameters
 test('photo widgets use a matching locally cached background and remain readable offline',async()=>{const first=await run({parameter:'Calm,photo,60'});assert.ok(first.widget.backgroundImage);const selected=quotes.find(q=>'“'+q.text+'”'===first.texts[1]);const scene=require('node:vm').runInNewContext(fs.readFileSync(path.join(root,'scenes.js'),'utf8')+';getQuoteScene('+JSON.stringify(selected)+').key');assert.ok(first.photo.source.endsWith('/'+scene+'.jpg'));const second=await run({parameter:'Calm,photo,60',store:first.store,offline:true});assert.ok(second.widget.backgroundImage);assert.equal(second.imagesFetched,0);});
 
 test('plain widget style does not fetch background photos',async()=>{const result=await run({parameter:'All,sage,60'});assert.equal(result.imagesFetched,0);assert.equal(result.widget.backgroundImage,undefined);});
+test('a new picture published through the feed works without changing the widget scene list',async()=>{const remote=quotes.map(q=>({...q,photo:{key:'daily-future-art',image:'./assets/backgrounds/daily-future-art.jpg'}}));const result=await run({remote});assert.ok(result.photo.source.endsWith('/daily-future-art.jpg'));const offline=await run({store:result.store,offline:true});assert.equal(offline.imagesFetched,0);assert.ok(offline.widget.backgroundImage);});
+test('untrusted photo metadata cannot fetch outside the published background folder',async()=>{const remote=quotes.map(q=>({...q,photo:{key:'bad',image:'https://other.example/private.jpg'}}));const result=await run({remote});assert.ok(result.photo.source.startsWith('https://joewalker989.github.io/motive/assets/backgrounds/'));});
 
 
 test('widget identifies the installed version and explains its tap destination',async()=>{
- const result=await run({runsInApp:true});assert.match(result.texts[0],/MOTIVE v4/);assert.match(result.texts[2],/OPENS IN SCRIPTABLE/);assert.doesNotMatch(result.texts[2],/TAP FOR ANOTHER/);assert.ok(result.widget.url.startsWith('scriptable://'));
+ const result=await run({runsInApp:true});assert.match(result.texts[0],/MOTIVE v5/);assert.match(result.texts[2],/OPENS IN SCRIPTABLE/);assert.doesNotMatch(result.texts[2],/TAP FOR ANOTHER/);assert.ok(result.widget.url.startsWith('scriptable://'));
 });
 
 test('photo failures keep the quote readable and expose recovery instructions',async()=>{

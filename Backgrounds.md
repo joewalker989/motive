@@ -1,6 +1,6 @@
 # Backgrounds for Motive
 
-Five original scenes created with the built-in image-generation tool. The photos match quote wording and themes locally, and remain available offline after installation.
+Eight original backgrounds created with the built-in image-generation tool. Pictures include scenery, everyday people, craft, and abstract color. They match quote wording and themes locally, and remain available offline after installation.
 
 | Scene | Meaning | Saved asset |
 | --- | --- | --- |
@@ -13,3 +13,14 @@ Five original scenes created with the built-in image-generation tool. The photos
 The [complete prompt set](assets/backgrounds/generation.json) records the exact scene briefs used with the built-in tool. Images were saved as JPEGs at their generated 1536 × 1024 dimensions for a smaller app download. The original PNGs remain preserved at the image-generation tool's saved location.
 
 Use **Scene** in the app to choose a specific view or adjust darkness. **Quote image** downloads a 1080 × 1350 image; **Phone wallpaper** downloads a 1080 × 1920 image with room for the clock. A dark overlay keeps text readable. Selecting **Plain background** also produces plain quote-image downloads.
+
+
+## Added October 21, 2026
+
+| Picture | Meaning | Saved asset |
+| --- | --- | --- |
+| Hands at work | Practice, learning, patient effort | [craft.jpg](assets/backgrounds/craft.jpg) |
+| A little support | Help, friendship, belonging | [support.jpg](assets/backgrounds/support.jpg) |
+| Room for possibility | Self-expression, creativity, fresh directions | [color.jpg](assets/backgrounds/color.jpg) |
+
+Generated with the built-in image tool. Exact prompts are appended in generation.json. The daily task is configured to add at least one new picture alongside the quote additions, subject to image-tool availability; see [Voice and pictures](Voice-and-pictures.md).
