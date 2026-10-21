@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import AVFoundation
 import LocalAuthentication
 import UserNotifications
@@ -83,6 +84,7 @@ struct NativeWellbeing: View {
     @State private var minutes = 3
     @State private var mode = "Gentle breathing"
     @State private var natural = false
+    @State private var haptics = false
     @State private var note = ""
     @State private var entries: [NativeJournalEntry] = []
     @State private var unlocked = false
@@ -108,6 +110,7 @@ struct NativeWellbeing: View {
                     Picker("Session", selection: $mode) { ForEach(["Gentle breathing", "Ground in the room", "Quiet timer"], id: \.self) { Text($0) } }.disabled(timer.running || timer.elapsed > 0 && timer.remaining > 0)
                     Picker("Minutes", selection: $minutes) { ForEach([1, 3, 5, 10, 15, 20], id: \.self) { Text("\($0)").tag($0) } }.disabled(timer.running)
                     Toggle("Follow my own breathing pace", isOn: $natural)
+                    Toggle("Gentle vibration at breathing changes", isOn: $haptics)
                     VStack(spacing: 18) {
                         Image(systemName: "wind").font(.system(size: 45)).foregroundStyle(.green).accessibilityHidden(true)
                         Text(String(format: "%d:%02d", Int(ceil(timer.remaining)) / 60, Int(ceil(timer.remaining)) % 60)).font(.system(size: 48, weight: .light, design: .rounded)).monospacedDigit().accessibilityLabel("Time remaining")
@@ -151,6 +154,9 @@ struct NativeWellbeing: View {
             .navigationTitle("A little space")
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
             .onReceive(ticker) { timer.tick(now: $0) }
+            .onChange(of: phase) { _, _ in
+                if haptics && timer.running && !natural && mode == "Gentle breathing" && scene == .active { UIImpactFeedbackGenerator(style: .soft).impactOccurred(intensity: 0.5) }
+            }
             .onChange(of: scene) { _, next in if next != .active { timer.pause(); lock() } }
             .onDisappear { timer.pause(); lock() }
         }

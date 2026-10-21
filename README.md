@@ -1,5 +1,7 @@
 # Motive
 
+Open **Your daily practice** for recurring habits, a month/year mood calendar, custom moods and activities, quote tags, daily meditation, sleep stories and timer, gentle movement, and optional local AI connection. The journal now has full-history search, recovery, CSV, and Print / Save as PDF. See [Daily practice and remaining platform features](Daily-practice.md) for exact delivered status and limits.
+
 ## Wellbeing studio
 
 Use **Feeling overwhelmed?** for guided meditation, gentle breathing, grounding, and a 1–20 minute timer with pause/resume. The free studio also adds read-aloud, audio collections and voice recordings, personal photo/video backgrounds, image typography controls, morning/evening journaling with media, seven-day journeys, mood history, a vision board, encrypted journal storage, full media backups, calendar reminders, and optional encrypted WebDAV sync. English/Spanish/French studio navigation and original affirmation cards are included; the main library and detailed guidance remain English. See [Wellbeing guide](Wellbeing.md) for usage, privacy, backup differences, and platform limits. Native-only additions remain source until the iPhone/Watch builds are signed and installed.
@@ -61,7 +63,7 @@ Run from the repository root:
 
 ```text
 node scripts/export-quotes.cjs
-node --test tests/quotes.test.cjs tests/widget.test.cjs tests/offline.test.cjs
+node --test tests/quotes.test.cjs tests/widget.test.cjs tests/offline.test.cjs tests/wellbeing.test.cjs
 ```
 
 Tests cover complete non-repeating cycles, dynamic library size, filter changes, persisted history, fresh-on-return behavior, collections, backup safety, streaks, intention completion, widget refresh slots, new quote-feed additions, cache migration, offline asset responses, and app icons.

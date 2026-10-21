@@ -27,6 +27,8 @@ jobs:
           node --check companion.js
           node --check wellbeing-core.js
           node --check wellbeing.js
+          node --check growth-core.js
+          node --check growth.js
           node --check scenes.js
           node --check sw.js
           node scripts/export-quotes.cjs
@@ -39,7 +41,7 @@ jobs:
       - name: Prepare public files
         run: |
           mkdir public
-          cp index.html styles.css app.js quotes.js daily-quotes.js scenes.js enhancements.js companion.js wellbeing-core.js wellbeing.js wellbeing.css sw.js manifest.webmanifest icon.svg public/
+          cp index.html styles.css app.js quotes.js daily-quotes.js scenes.js enhancements.js companion.js wellbeing-core.js wellbeing.js wellbeing.css growth-core.js growth.js sw.js manifest.webmanifest icon.svg public/
           cp quotes.json public/
           cp -r icons public/
           cp -r assets public/

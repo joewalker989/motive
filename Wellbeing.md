@@ -45,3 +45,8 @@ Native features require a signed installed build. These source additions do not 
 ## Verification
 
 Run `node --test tests/quotes.test.cjs tests/widget.test.cjs tests/offline.test.cjs tests/wellbeing.test.cjs`. The new suite covers timer boundaries, pause/resume, no breath holds, prompt variation, encryption/recovery, locked writes, backup validation and merging, calendar alarms, and sync guards. Native CI builds/tests iPhone and widget, then builds the standalone Watch app.
+
+
+## Daily practice expansion
+
+See [Daily-practice.md](Daily-practice.md) for journal search/recovery/exports, habits, mood calendar, tags, sleep, movement, local AI connection, vibration, and the remaining native/content requirements. Retained journal deletions are encrypted when enabling the vault. New practice/media records require a full studio backup.

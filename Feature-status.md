@@ -1,5 +1,7 @@
 # The 20-feature update
 
+This page documents the earlier feature set. For the second competitor list and its current completed/partial/pending status, see [Daily practice](Daily-practice.md).
+
 The website remains free. “Native source” means implemented in the Xcode project, not installed or activated on an iPhone/Watch. The user's regular Apple account and Windows computer do not provide a signed native installation.
 
 | Requested feature | Delivered status |
