@@ -41,5 +41,11 @@
     "tool": "built-in image_gen",
     "date": "2026-10-21",
     "prompt": "Create an original sophisticated abstract painted illustration for a motivation app background. Horizontal 3:2 composition. Large organic overlapping shapes like cut paper and brushed pigment in deep teal, warm terracotta, muted golden yellow and soft coral. Theme: courage to try a new direction. Bold but calm, tactile matte paper grain, flowing composition with a quiet central area for a quote overlay, not a landscape or scenery, no representational objects. Works at phone and small widget sizes. No text, lettering, logos, watermark, borders or collage."
+  },
+  {
+    "asset": "assets/backgrounds/daily-2026-10-22-mending.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-22",
+    "prompt": "Use case: photorealistic-natural. Asset type: original background photograph for Motive motivational quote cards and small widgets. Horizontal 3:2 image, 1536 by 1024. A close natural editorial photograph of adult hands carefully repairing a small tear in the sleeve of a plain indigo cotton jacket with a needle and warm golden thread, jacket resting on a simple wooden table beside a softly lit window. Theme: patient repair, resourcefulness, and continuing with what you have. Realistic hands and fabric texture, a single coherent photograph, no visible face or recognizable person. Put the recognizable stitching gesture in the lower third with quiet dark blue fabric across the center so white quote text remains readable under a dark overlay. Restrained warm daylight, comfortable everyday mood. No text, lettering, labels, logos, watermark, collage, or borders."
   }
 ]

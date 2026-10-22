@@ -1651,5 +1651,355 @@ const dailyReminders = [
     "category": "Calm",
     "author": "A Motive reminder",
     "date": "2026-10-21"
+  },
+{
+    "id": "daily-2026-10-22-confidence-01",
+    "text": "You can introduce yourself without listing the reasons someone might dismiss you.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-02",
+    "text": "Let your first answer reflect your preference before you start negotiating it away.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-03",
+    "text": "A chair at the table is useful only if you let yourself sit down.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-04",
+    "text": "When praise arrives, try receiving the specific thing someone noticed.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-05",
+    "text": "You can ask for the instructions again and still be the right person for the work.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-06",
+    "text": "Wear the choice you like without rehearsing a defense of it all morning.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-07",
+    "text": "Your experience belongs in the discussion even when it comes from a different route.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-08",
+    "text": "The person reading your application needs your evidence, not your apology.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-09",
+    "text": "You are allowed to change your introduction as you get to know yourself better.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-confidence-10",
+    "text": "Before volunteering for extra work, check whether your yes has room behind it.",
+    "category": "Confidence",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-01",
+    "text": "Write the question you are answering at the top of the page; let it guide what stays.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-02",
+    "text": "Save the interesting side road in a note so you can finish the road you chose.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-03",
+    "text": "Before opening another tab, name what you expect to find there.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-04",
+    "text": "Make the next handoff clear enough that tomorrow does not begin with detective work.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-05",
+    "text": "Give the difficult paragraph a rough sentence to work with.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-06",
+    "text": "Put the tool for your next task within reach before your break begins.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-07",
+    "text": "When a task keeps expanding, write down what a useful stopping point looks like.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-08",
+    "text": "Read the instructions once with your hands away from the keyboard.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-09",
+    "text": "A short list of decisions can move a project farther than another page of possibilities.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-focus-10",
+    "text": "Leave yourself a one-line starting note before closing the work tonight.",
+    "category": "Focus",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-01",
+    "text": "A repaired sleeve can carry another season; usefulness does not require an untouched beginning.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-02",
+    "text": "Name what the interruption actually changed before rewriting the whole plan.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-03",
+    "text": "You can be disappointed with the outcome and still keep the part you learned.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-04",
+    "text": "If the first route closes, bring your purpose with you when you ask for directions.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-05",
+    "text": "After a difficult conversation, take care of the ordinary needs that were waiting.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-06",
+    "text": "Mending a small tear today can be enough work for these hands.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-07",
+    "text": "Let a missed appointment lead to a new arrangement rather than a verdict on your character.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-08",
+    "text": "The repair may need a different thread from the one that made the original seam.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-09",
+    "text": "You can return to something meaningful without pretending the interruption was easy.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-resilience-10",
+    "text": "When a setback arrives, tell one trusted person what practical help would make tomorrow simpler.",
+    "category": "Resilience",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-01",
+    "text": "Ask an experienced person what they check before they call the work finished.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-02",
+    "text": "Try explaining the idea in everyday words; the missing pieces often become easier to see.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-03",
+    "text": "Keep a sample of your early work so improvement has something concrete to stand beside.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-04",
+    "text": "A useful correction tells you where to practice next, not where your ability ends.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-05",
+    "text": "Learning to mend begins with noticing which part can still hold together.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-06",
+    "text": "Choose one small technique to repeat before collecting five more tutorials.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-07",
+    "text": "You can retire a method with gratitude for the work it helped you do.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-08",
+    "text": "Write down the surprising result before memory tidies it into what you expected.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-09",
+    "text": "Let a thoughtful question count as participation while you are learning the room.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-growth-10",
+    "text": "Practice asking for an example when an explanation stays too abstract.",
+    "category": "Growth",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-01",
+    "text": "You can set the cup down and feel both hands free for a moment.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-02",
+    "text": "Let the room have its ordinary sounds without turning each one into a task.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-03",
+    "text": "The message can remain a draft while you decide what you mean.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-04",
+    "text": "Choose a comfortable place to wait; waiting does not need an extra layer of discomfort.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-05",
+    "text": "One quiet meal does not have to become a plan for improving your whole life.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-06",
+    "text": "Give your eyes a nearby, familiar object to rest on between decisions.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-07",
+    "text": "You may close a conversation kindly before you have used up all your energy.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-08",
+    "text": "Leave a little space between hearing a request and offering an answer.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-09",
+    "text": "Let the last few minutes of the evening belong to something that asks very little of you.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
+  },
+  {
+    "id": "daily-2026-10-22-calm-10",
+    "text": "A slower pace can begin with how gently you put away the thing in your hand.",
+    "category": "Calm",
+    "author": "A Motive reminder",
+    "date": "2026-10-22"
   }
 ];
