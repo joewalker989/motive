@@ -79,7 +79,6 @@ function updateGreeting() {
 function showQuote(quote,{revisit=false}={}) {
   current = quote;
   $('quote-text').textContent = quote.text;
-  $('quote-author').textContent = quote.author;
   $('quote-category').textContent = category === 'All' && state.daily?.day === dayKey() && quote.id === state.daily.id ? 'YOUR DAILY REMINDER' : quote.category.toUpperCase();
   if (!revisit && !state.seen.includes(quote.id)) state.seen.push(quote.id);
   state.currentQuote = {day: dayKey(), id: quote.id, category, revisit};
