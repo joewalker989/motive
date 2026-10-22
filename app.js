@@ -156,3 +156,19 @@ updateGreeting(); loadIntention(); showQuote(restoredQuote || (state.daily?.day=
 for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === category; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); }
 if (!storageAvailable) toast('Browser storage is unavailable. Changes last for this visit only.');
 
+// A persistent mobile scroll control stays visible even when iOS hides native scrollbars.
+const filterStrip=$('filters'),filterScroll=$('filter-scroll');
+function syncFilterScroll(){
+  const maximum=Math.max(0,(filterStrip.scrollWidth||0)-(filterStrip.clientWidth||0));
+  const position=maximum?Math.max(0,Math.min(100,(filterStrip.scrollLeft||0)/maximum*100)):0;
+  filterScroll.value=String(position);filterScroll.disabled=!maximum;
+  $('filter-scroll-control').hidden=!maximum;
+  filterScroll.setAttribute('aria-valuetext',Math.round(position)+' percent scrolled');
+  $('filter-scroll-hint').textContent=position>=99?'← Swipe or drag to go back':position>1?'← More categories →':'Swipe or drag for more categories →';
+}
+filterScroll.addEventListener('input',()=>{const maximum=Math.max(0,(filterStrip.scrollWidth||0)-(filterStrip.clientWidth||0));filterStrip.scrollLeft=maximum*Number(filterScroll.value)/100;syncFilterScroll();});
+filterStrip.addEventListener('scroll',syncFilterScroll,{passive:true});
+window.addEventListener('resize',syncFilterScroll);
+if(window.ResizeObserver)new window.ResizeObserver(syncFilterScroll).observe(filterStrip);
+syncFilterScroll();
+
