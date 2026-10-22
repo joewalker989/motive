@@ -51,8 +51,8 @@ const widget = new ListWidget();
 widget.backgroundColor = new Color(style!=='sage'?'1D3026':'E5EACB');
 widget.setPadding(15,18,15,18);
 const runURL = URLScheme.forRunningScript();
-widget.url = runURL+(runURL.includes('?')?'&':'?')+`refresh=1&category=${encodeURIComponent(category)}&style=${style}&minutes=${minutes}`;
-const title = widget.addText('✳  MOTIVE v5'+(category==='All'?'':' · '+category.toUpperCase()));
+widget.url = config.widgetFamily==='small'?site:runURL+(runURL.includes('?')?'&':'?')+`refresh=1&category=${encodeURIComponent(category)}&style=${style}&minutes=${minutes}`;
+const title = widget.addText('✳  MOTIVE v6'+(category==='All'?'':' · '+category.toUpperCase()));
 title.font = Font.boldSystemFont(10);title.textColor = new Color(style!=='sage'?'EDF1E2':'526441');
 widget.addSpacer();
 try {
@@ -86,13 +86,15 @@ try {
   text.font=Font.semiboldSystemFont(config.widgetFamily==='small'?14:17);
   text.textColor=new Color(style!=='sage'?'EDF1E2':'25382D');text.minimumScaleFactor=0.65;text.lineLimit=config.widgetFamily==='small'?6:5;
   widget.addSpacer();
-  const footer=widget.addText(photoUnavailable?'PHOTO UNAVAILABLE · RUN ONLINE IN SCRIPTABLE':style==='photo'?'PHOTO · OPENS IN SCRIPTABLE':'PLAIN STYLE · OPENS IN SCRIPTABLE');
+  const footer=widget.addText(photoUnavailable?'PHOTO UNAVAILABLE · RUN ONLINE IN SCRIPTABLE':config.widgetFamily==='small'?'TAP TO OPEN WEBSITE':style==='photo'?'PHOTO · OPENS IN SCRIPTABLE':'PLAIN STYLE · OPENS IN SCRIPTABLE');
   footer.font=Font.mediumSystemFont(8);footer.textColor=new Color(style!=='sage'?'E3EBD7':'657153');
   widget.refreshAfterDate=minutes===1440?new Date(now.getFullYear(),now.getMonth(),now.getDate()+1,0,5):new Date((Math.floor(now.getTime()/(minutes*60000))+1)*minutes*60000);
 }catch{
   const help=widget.addText('Connect to the internet, then run Motive in Scriptable once to load your quotes.');
   help.font=Font.systemFont(14);help.textColor=new Color(style!=='sage'?'EDF1E2':'25382D');widget.refreshAfterDate=new Date(Date.now()+15*60000);
 }
+widget.addSpacer(3);
+const websiteLink=widget.addText('Go to website '+String.fromCharCode(8599));websiteLink.url=site;websiteLink.font=Font.semiboldSystemFont(10);websiteLink.textColor=new Color(style!=='sage'?'EDF1E2':'25382D');websiteLink.lineLimit=1;
 Script.setWidget(widget);
 if(config.runsInApp)await widget.presentMedium();
 Script.complete();

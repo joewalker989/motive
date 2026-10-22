@@ -1,5 +1,5 @@
 'use strict';
-const CACHE = 'motive-offline-v11';
+const CACHE = 'motive-offline-v12';
 const ASSETS = ['./','./index.html','./styles.css','./quotes.js','./daily-quotes.js','./scenes.js','./app.js','./enhancements.js','./companion.js','./wellbeing-core.js','./wellbeing.js','./wellbeing.css','./growth-core.js','./growth.js','./icon.svg','./manifest.webmanifest','./quotes.json','./widget/Motive.js','./icons/icon-192.png','./icons/icon-512.png','./icons/apple-touch-icon.png','./assets/backgrounds/craft.jpg','./assets/backgrounds/support.jpg','./assets/backgrounds/color.jpg','./assets/backgrounds/summit.jpg','./assets/backgrounds/sunrise.jpg','./assets/backgrounds/forest.jpg','./assets/backgrounds/water.jpg','./assets/backgrounds/workspace.jpg'];
 self.addEventListener('install', event => {event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));});
 self.addEventListener('activate', event => {event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('motive-offline-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()));});

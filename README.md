@@ -34,7 +34,7 @@ In Safari, choose **Share > Add to Home Screen**. The app installs with its own 
 
 To display an actual quote on the Home Screen, install Scriptable and follow **Your space > Show quotes on my Home Screen**. Choose a quote theme, color, and requested interval, then copy the customized code into a Scriptable script named Motive. Replacing an older script is necessary to receive the new widget features.
 
-The widget downloads the built-in quote feed once per online calendar day, falls back to its local cache offline, and preserves non-repeating reading history as new quotes arrive. It has its own history and does not read browser-local personal quotes or favorites. It requests refreshes every 15 minutes, hourly, every 3 hours, or daily, but **iOS controls actual refresh timing**. Tapping the quote runs Scriptable and displays a fresh quote in an app preview; the Home Screen widget updates when iOS next runs it. It cannot reliably change on every phone unlock. The website's fresh-on-return option applies only while opening or returning to Motive.
+The widget downloads the built-in quote feed once per online calendar day, falls back to its local cache offline, and preserves non-repeating reading history as new quotes arrive. It has its own history and does not read browser-local personal quotes or favorites. It requests refreshes every 15 minutes, hourly, every 3 hours, or daily, but **iOS controls actual refresh timing**. On medium and large widgets, tapping the quote runs Scriptable and displays a fresh quote in an app preview; Go to website opens Motive. A small widget opens the website from any tap; the Home Screen widget updates when iOS next runs it. It cannot reliably change on every phone unlock. The website's fresh-on-return option applies only while opening or returning to Motive.
 
 Choose **Matching photo** in the widget guide to copy code with photo backgrounds enabled. The widget caches each scene locally and uses a dark plain fallback if an image is unavailable. Existing Scriptable installations need the updated code pasted once; the script does not download or execute remote JavaScript.
 
@@ -74,9 +74,9 @@ The widget code is tested using mocked Scriptable APIs. Its final appearance and
 
 **Change picture** immediately switches photos and enables a different photo on each new quote, including within the same theme. **Match quote** restores meaning-based scenes. The current mode is displayed beside the controls; fixed scenes are explicitly labeled. Downloads use the exact photo currently displayed. Scene choices and rotation survive reopening.
 
-### Widget v5 troubleshooting
+### Widget v6 troubleshooting
 
-Tapping this Scriptable widget opens Scriptable; it cannot guarantee a Home Screen refresh in place. All tap targets now use the same destination and no longer claim instant refresh. Replace the complete on-device script after a website update. The preview title includes MOTIVE v5. In Edit Widget, clear old parameters or use All,photo,60: legacy sage/dark parameters override copied defaults. Photo download/render failures now display PHOTO UNAVAILABLE instead of silently hiding the failure. Photos use a 60% readability overlay. iOS schedules actual Home Screen refreshes.
+Medium and large widgets have a Go to website link and a separate quote tap that opens Scriptable. Small widgets open the website from any tap. No tap guarantees a Home Screen refresh in place. Replace the complete on-device script after a website update. The preview title includes MOTIVE v6. In Edit Widget, clear old parameters or use All,photo,60: legacy sage/dark parameters override copied defaults. Photo download/render failures now display PHOTO UNAVAILABLE instead of silently hiding the failure. Photos use a 60% readability overlay. iOS schedules actual Home Screen refreshes.
 
 
 ## Native iPhone app
@@ -94,4 +94,9 @@ The latest 90 dated check-in/reflection entries are retained, with the most rece
 
 Read-aloud now resumes paused speech, retains its utterance, retries a failed selected voice with the automatic voice, and reports silent startup instead of waiting forever. Open Voice options for Reset voice and Test speaker. Physical iPhone speech still needs an on-device check; in-app browser and device sound settings can affect playback. See [Voice and picture update](Voice-and-pictures.md).
 
-Scriptable v5 accepts safe same-site picture paths from the daily quote feed. Replace the saved widget script once using the website setup guide. Future published pictures then download with the next online daily feed check, subject to iOS refresh timing. Older v4 scripts keep working with their embedded picture rules.
+Scriptable v6 accepts safe same-site picture paths from the daily quote feed. Replace the saved widget script once using the website setup guide. Future published pictures then download with the next online daily feed check, subject to iOS refresh timing. Older v4 scripts keep working with their embedded picture rules.
+
+
+### Go to website
+
+The Scriptable widget now has a Go to website link. Medium and large widgets support the separate link; the quote still opens Scriptable. Small widgets have one tap target, so any tap opens Motive in the browser. Replace the saved script once and look for MOTIVE v6. The website widget guide also includes a clickable Go to website link.
