@@ -47,5 +47,11 @@
     "tool": "built-in image_gen",
     "date": "2026-10-22",
     "prompt": "Use case: photorealistic-natural. Asset type: original background photograph for Motive motivational quote cards and small widgets. Horizontal 3:2 image, 1536 by 1024. A close natural editorial photograph of adult hands carefully repairing a small tear in the sleeve of a plain indigo cotton jacket with a needle and warm golden thread, jacket resting on a simple wooden table beside a softly lit window. Theme: patient repair, resourcefulness, and continuing with what you have. Realistic hands and fabric texture, a single coherent photograph, no visible face or recognizable person. Put the recognizable stitching gesture in the lower third with quiet dark blue fabric across the center so white quote text remains readable under a dark overlay. Restrained warm daylight, comfortable everyday mood. No text, lettering, labels, logos, watermark, collage, or borders."
+  },
+  {
+    "asset": "assets/backgrounds/daily-2026-10-23-resting-cat.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-23",
+    "prompt": "Use case: photorealistic-natural. Asset type: original background photograph for Motive quote cards and phone widgets. Create a horizontal 1536 by 1024 editorial photograph of an ordinary ginger cat curled comfortably asleep on a dark sage upholstered chair beside a softly lit apartment window. Theme: permission to rest and a small place of comfort. Cat lies in the lower right third, paws and face naturally relaxed, realistic fur and anatomy. Broad quiet shadowed upholstery across the center and upper left supports white quote text beneath a dark overlay. Gentle cloudy daylight, modest everyday interior, natural textures, warm and reassuring rather than staged. One continuous photo. No text, letters, logos, watermark, collage, borders, recognizable people, or extra animals."
   }
 ]

@@ -1,6 +1,7 @@
 'use strict';
 // Local keyword matching; personal quote text never leaves this browser.
 const quoteScenes = {
+  restingCat:{label:'A soft place to rest',meaning:'Everyday comfort and permission to leave a quiet moment unmeasured.',category:'Calm',kind:'animal',added:'2026-10-23',image:'./assets/backgrounds/daily-2026-10-23-resting-cat.jpg',words:['cat','curled','chair','cushion','blanket','comfort','soft place','rest']},
   mending:{label:'A patient repair',meaning:'Care, resourcefulness, and continuing with what can still be useful.',category:'Resilience',kind:'craft',added:'2026-10-22',image:'./assets/backgrounds/daily-2026-10-22-mending.jpg',words:['mend','mending','repaired sleeve','small tear','stitch','thread','seam','repair']},
   craft:{label:'Hands at work',meaning:'Patience, practice, and the courage to make something imperfect.',category:'Growth',kind:'craft',added:'2026-10-21',image:'./assets/backgrounds/craft.jpg',words:['practice','practic','repair','clay','pottery','craft','make something','skill','early draft','teach','learning','borrowed tool']},
   support:{label:'A little support',meaning:'A reminder that help, friendship, and belonging can be part of your strength.',category:'Confidence',kind:'people',added:'2026-10-21',image:'./assets/backgrounds/support.jpg',words:['support','help','friend','listen','conversation','belong','ask for','shared success','second pair of hands','thank you']},

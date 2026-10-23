@@ -21,9 +21,11 @@ struct Quote: Codable, Identifiable, Equatable, Sendable {
 }
 
 enum PhotoScene {
-    static let keys = ["mending","craft","support","color","summit","sunrise","forest","water","workspace"]
+    static let keys = ["restingCat","mending","craft","support","color","summit","sunrise","forest","water","workspace"]
+    static let resourceNames: [String: String] = ["restingCat": "daily-2026-10-23-resting-cat", "mending": "daily-2026-10-22-mending", "craft": "craft", "support": "support", "color": "color", "summit": "summit", "sunrise": "sunrise", "forest": "forest", "water": "water", "workspace": "workspace"]
     static func match(_ quote: Quote) -> String {
         let rules: [(String, String, [String])] = [
+            ("restingCat", "Calm", ["cat","curled","chair","cushion","blanket","comfort","soft place","rest"]),
             ("mending", "Resilience", ["mend","mending","repaired sleeve","small tear","stitch","thread","seam","repair"]),
             ("craft", "Growth", ["practice","practic","repair","clay","pottery","craft","make something","skill","early draft","teach","learning","borrowed tool"]),
             ("support", "Confidence", ["support","help","friend","listen","conversation","belong","ask for","shared success","second pair of hands","thank you"]),

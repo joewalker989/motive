@@ -57,7 +57,10 @@ final class MotiveTests: XCTestCase {
         let url = try XCTUnwrap(Bundle.main.url(forResource: "quotes", withExtension: "json"))
         let quotes = try JSONDecoder().decode([Quote].self, from: Data(contentsOf: url))
         XCTAssertTrue(Quote.validLibrary(quotes))
-        for key in PhotoScene.keys { XCTAssertNotNil(Bundle.main.url(forResource: key, withExtension: "jpg", subdirectory: "backgrounds")) }
+        for key in PhotoScene.keys {
+            let resource = try XCTUnwrap(PhotoScene.resourceNames[key], "Missing resource mapping for \(key)")
+            XCTAssertNotNil(Bundle.main.url(forResource: resource, withExtension: "jpg", subdirectory: "backgrounds"), "Missing bundled picture for \(key)")
+        }
     }
     func testWidgetReadPreservesManuallySelectedQuoteUntilNextInterval() throws {
         let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
