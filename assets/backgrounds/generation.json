@@ -53,5 +53,11 @@
     "tool": "built-in image_gen",
     "date": "2026-10-23",
     "prompt": "Use case: photorealistic-natural. Asset type: original background photograph for Motive quote cards and phone widgets. Create a horizontal 1536 by 1024 editorial photograph of an ordinary ginger cat curled comfortably asleep on a dark sage upholstered chair beside a softly lit apartment window. Theme: permission to rest and a small place of comfort. Cat lies in the lower right third, paws and face naturally relaxed, realistic fur and anatomy. Broad quiet shadowed upholstery across the center and upper left supports white quote text beneath a dark overlay. Gentle cloudy daylight, modest everyday interior, natural textures, warm and reassuring rather than staged. One continuous photo. No text, letters, logos, watermark, collage, borders, recognizable people, or extra animals."
+  },
+  {
+    "asset": "assets/backgrounds/daily-2026-10-24-origami.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-24",
+    "prompt": "Use case: photorealistic-natural. Asset type: original background photo for Motive motivational quote cards and small widgets. Create a horizontal 1536 by 1024 natural editorial photograph of one handmade terracotta paper origami crane resting on a dark teal wooden table, with one partly folded sheet of cream paper nearby. Theme: learning through small adjustments, patience, and making a new shape from ordinary materials. Quiet everyday creative workspace, subtle visible paper fibers and imperfect creases, soft side daylight, no hands or people. Crane in the lower right third, a broad uncluttered softly shadowed area across the middle and upper left suitable for white quote text under a dark overlay. Recognizable coherent crane silhouette at small widget size. One single continuous photograph, no collage, writing, text, logos, watermarks, borders, or diagrams."
   }
 ]
