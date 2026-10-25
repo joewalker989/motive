@@ -59,5 +59,11 @@
     "tool": "built-in image_gen",
     "date": "2026-10-24",
     "prompt": "Use case: photorealistic-natural. Asset type: original background photo for Motive motivational quote cards and small widgets. Create a horizontal 1536 by 1024 natural editorial photograph of one handmade terracotta paper origami crane resting on a dark teal wooden table, with one partly folded sheet of cream paper nearby. Theme: learning through small adjustments, patience, and making a new shape from ordinary materials. Quiet everyday creative workspace, subtle visible paper fibers and imperfect creases, soft side daylight, no hands or people. Crane in the lower right third, a broad uncluttered softly shadowed area across the middle and upper left suitable for white quote text under a dark overlay. Recognizable coherent crane silhouette at small widget size. One single continuous photograph, no collage, writing, text, logos, watermarks, borders, or diagrams."
+  },
+  {
+    "asset": "assets/backgrounds/daily-2026-10-25-shared-meal.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-25",
+    "prompt": "Use case: photorealistic-natural. Asset type: original quote background for Motive cards and small phone widgets. Horizontal 1536 by 1024 natural editorial photograph of two ordinary adults preparing a modest shared meal at a kitchen counter, one passing a wooden bowl of colorful roasted vegetables to the other. Show torsos and natural hands only, faces outside the frame, plain everyday clothing, no resemblance to any named person. Theme: cooperation, accepting a contribution, and belonging in everyday life. Bowl and handoff in lower right third, softly shadowed dark blue kitchen wall occupying the quiet middle and upper left for white quote text under a dark overlay. Warm window daylight, realistic anatomy, ceramic and wood textures, welcoming lived-in room. A single continuous photographic scene. No text, labels, logos, watermark, collage, borders, or advertising."
   }
 ]

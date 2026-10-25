@@ -21,10 +21,11 @@ struct Quote: Codable, Identifiable, Equatable, Sendable {
 }
 
 enum PhotoScene {
-    static let keys = ["origami","restingCat","mending","craft","support","color","summit","sunrise","forest","water","workspace"]
-    static let resourceNames: [String: String] = ["origami": "daily-2026-10-24-origami", "restingCat": "daily-2026-10-23-resting-cat", "mending": "daily-2026-10-22-mending", "craft": "craft", "support": "support", "color": "color", "summit": "summit", "sunrise": "sunrise", "forest": "forest", "water": "water", "workspace": "workspace"]
+    static let keys = ["sharedMeal","origami","restingCat","mending","craft","support","color","summit","sunrise","forest","water","workspace"]
+    static let resourceNames: [String: String] = ["sharedMeal": "daily-2026-10-25-shared-meal", "origami": "daily-2026-10-24-origami", "restingCat": "daily-2026-10-23-resting-cat", "mending": "daily-2026-10-22-mending", "craft": "craft", "support": "support", "color": "color", "summit": "summit", "sunrise": "sunrise", "forest": "forest", "water": "water", "workspace": "workspace"]
     static func match(_ quote: Quote) -> String {
         let rules: [(String, String, [String])] = [
+            ("sharedMeal", "Confidence", ["shared meal","meal","bowl","recipe","cook","ingredients","contribution","share","table","team"]),
             ("origami", "Growth", ["origami","crane","fold","crease","paper","practice sheet"]),
             ("restingCat", "Calm", ["cat","curled","chair","cushion","blanket","comfort","soft place","rest"]),
             ("mending", "Resilience", ["mend","mending","repaired sleeve","small tear","stitch","thread","seam","repair"]),
