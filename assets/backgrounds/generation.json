@@ -65,5 +65,11 @@
     "tool": "built-in image_gen",
     "date": "2026-10-25",
     "prompt": "Use case: photorealistic-natural. Asset type: original quote background for Motive cards and small phone widgets. Horizontal 1536 by 1024 natural editorial photograph of two ordinary adults preparing a modest shared meal at a kitchen counter, one passing a wooden bowl of colorful roasted vegetables to the other. Show torsos and natural hands only, faces outside the frame, plain everyday clothing, no resemblance to any named person. Theme: cooperation, accepting a contribution, and belonging in everyday life. Bowl and handoff in lower right third, softly shadowed dark blue kitchen wall occupying the quiet middle and upper left for white quote text under a dark overlay. Warm window daylight, realistic anatomy, ceramic and wood textures, welcoming lived-in room. A single continuous photographic scene. No text, labels, logos, watermark, collage, borders, or advertising."
+  },
+  {
+    "asset": "assets/backgrounds/daily-2026-10-28-metronome.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-28",
+    "prompt": "Use case: photorealistic-natural. Asset type: original background photograph for Motive motivational quote cards and small widgets. Horizontal 1536 by 1024 natural editorial close-up of a simple wooden mechanical metronome resting on the dark wood of an upright piano in a modest quiet practice room. Theme: finding a sustainable rhythm, patient practice, and giving each note its space. Metronome stands in the lower right third, its small pendulum recognizable, piano keys partially visible at bottom edge. Broad softly shadowed uncluttered dark wood across center and upper left for white quote text under a dark overlay. Gentle window daylight, authentic wood grain and brass texture, calm everyday atmosphere. No people. One continuous photograph. No readable numbers, text, brand names, labels, logos, watermarks, collage, borders, or sheet music."
   }
 ]

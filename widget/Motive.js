@@ -4,6 +4,7 @@ const widgetDefaults = {category:'All',style:'photo',refreshMinutes:60};
 'use strict';
 // Local keyword matching; personal quote text never leaves this browser.
 const quoteScenes = {
+  metronome:{label:'A rhythm you can keep',meaning:'Patient practice, deliberate attention, and room between commitments.',category:'Focus',kind:'object',added:'2026-10-28',image:'./assets/backgrounds/daily-2026-10-28-metronome.jpg',words:['metronome','tempo','rhythm','instrument','piano','notes','song','measure slowly','pace you can follow']},
   sharedMeal:{label:'Something to share',meaning:'Cooperation, belonging, and the everyday value of a contribution.',category:'Confidence',kind:'people',added:'2026-10-25',image:'./assets/backgrounds/daily-2026-10-25-shared-meal.jpg',words:['shared meal','meal','bowl','recipe','cook','ingredients','contribution','share','table','team']},
   origami:{label:'One fold at a time',meaning:'Learning through small adjustments and letting an unfamiliar shape emerge.',category:'Growth',kind:'object',added:'2026-10-24',image:'./assets/backgrounds/daily-2026-10-24-origami.jpg',words:['origami','crane','fold','crease','paper','practice sheet']},
   restingCat:{label:'A soft place to rest',meaning:'Everyday comfort and permission to leave a quiet moment unmeasured.',category:'Calm',kind:'animal',added:'2026-10-23',image:'./assets/backgrounds/daily-2026-10-23-resting-cat.jpg',words:['cat','curled','chair','cushion','blanket','comfort','soft place','rest']},
