@@ -2,7 +2,7 @@
 state.background=['auto','rotate','none',...Object.keys(quoteScenes)].includes(state.background)?state.background:'auto';
 state.backgroundDarkness=typeof state.backgroundDarkness==='number'?Math.max(.55,Math.min(.85,state.backgroundDarkness)):.7;
 const quotePhotoCache=new Map();
-let displayedQuoteScene=null;
+let displayedQuoteScene=null,photoWatchGeneration=0;
 function updateQuoteBackground(quote=current,changePicture=false){
   let scene=getQuoteScene(quote,state.background);const card=$('quote-card');
   if(state.background==='rotate'){
@@ -24,7 +24,15 @@ function updateQuoteBackground(quote=current,changePicture=false){
   $('scene-options-button').textContent=scene?`${mode} ▾`:'Background settings ▾';
   $('background-button').textContent=scene?'▧ Photo on':'▧ Photo off';$('background-button').setAttribute('aria-pressed',String(!!scene));
   $('background-select').value=state.background;$('background-darkness').value=String(Math.round(state.backgroundDarkness*100));$('darkness-value').textContent=`${Math.round(state.backgroundDarkness*100)}%`;
+  watchQuotePhoto(scene);
 }
+function watchQuotePhoto(scene){
+ const generation=++photoWatchGeneration;const recovery=$('photo-recovery');recovery.hidden=true;$('photo-recovery-status').textContent='';
+ if(!scene||typeof Image==='undefined')return;
+ const card=$('quote-card');loadQuotePhoto(scene).then(()=>{if(generation!==photoWatchGeneration||displayedQuoteScene?.key!==scene.key)return;card.style.setProperty('--quote-scene',`url("${scene.image}")`);card.classList.add('has-scene');}).catch(()=>{if(generation!==photoWatchGeneration||displayedQuoteScene?.key!==scene.key)return;card.style.setProperty('--quote-scene','none');card.classList.remove('has-scene');recovery.hidden=false;$('photo-recovery-status').textContent='This photo could not load. Your quote is still here. Reconnect and retry, or use a plain background.';});
+}
+$('photo-retry').addEventListener('click',()=>{if(displayedQuoteScene)quotePhotoCache.delete(displayedQuoteScene.key);updateQuoteBackground();});
+$('photo-use-plain').addEventListener('click',()=>{state.background='none';persist();updateQuoteBackground();});
 function loadQuotePhoto(scene){
   if(!quotePhotoCache.has(scene.key))quotePhotoCache.set(scene.key,new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>{quotePhotoCache.delete(scene.key);reject(Error('Photo unavailable'));};image.src=scene.image;}));
   return quotePhotoCache.get(scene.key);
@@ -143,9 +151,31 @@ $('breathe-button').addEventListener('click',()=>{$('breathing-prompt').textCont
 $('close-breathe').addEventListener('click',()=>{stopBreathing();$('breathe-dialog').close();});
 $('breathe-dialog').addEventListener('close',stopBreathing);
 $('start-breathe').addEventListener('click',()=>{if(breathingTimer){stopBreathing();$('breathing-prompt').textContent='Come back whenever you need a moment.';return;}const started=Date.now();let lastPhase='';const tick=()=>{const elapsed=Math.floor((Date.now()-started)/1000);if(elapsed>=60){stopBreathing();$('breathing-prompt').textContent='One quiet minute, just for you.';return;}const phase=elapsed%10<4?'Breathe in gently.':'Breathe out slowly.';if(phase!==lastPhase){$('breathing-prompt').textContent=phase;lastPhase=phase;}$('breathing-orb').classList.toggle('expand',elapsed%10<4);$('start-breathe').textContent=`${60-elapsed}s remaining · Stop`;};breathingTimer=setInterval(tick,1000);tick();});
-$('widget-help-button').addEventListener('click',()=>{$('settings-dialog').close();$('widget-dialog').showModal();});
+let widgetPreviewFamily='medium',widgetPreviewIndex=0,widgetPreviewGeneration=0;
+function widgetSettings(){return {category:categories.includes($('widget-category').value)?$('widget-category').value:'All',style:['photo','sage','dark'].includes($('widget-style').value)?$('widget-style').value:'photo',refreshMinutes:[15,60,180,1440].includes(Number($('widget-minutes').value))?Number($('widget-minutes').value):60};}
+function widgetPreviewModel(settings,quote,family='medium'){
+ const size=['small','medium','large'].includes(family)?family:'medium';const photo=settings.style==='photo';
+ return {family:size,title:'✳  MOTIVE v6'+(settings.category==='All'?'':' · '+settings.category.toUpperCase()),text:'“'+quote.text+'”',scene:photo?getQuoteScene(quote):null,background:settings.style==='sage'?'#E5EACB':'#1D3026',color:settings.style==='sage'?'#25382D':'#EDF1E2',fontSize:size==='small'?14:17,lines:size==='small'?6:5,footer:size==='small'?'TAP TO OPEN WEBSITE':photo?'PHOTO · OPENS IN SCRIPTABLE':'PLAIN STYLE · OPENS IN SCRIPTABLE',destination:size==='small'?'Any tap opens Motive in your browser.':'The quote opens a new preview in Scriptable. Go to website opens Motive.'};
+}
+function fitWidgetPreview(){const text=$('widget-preview-text'),base=widgetPreviewFamily==='small'?14:17;let size=base;text.style.fontSize=size+'px';while(text.scrollHeight>text.clientHeight+1&&size>base*.65){size=Math.max(base*.65,size-.5);text.style.fontSize=size+'px';}}
+function renderWidgetPreview(){
+ const settings=widgetSettings(),pool=reminders.filter(q=>settings.category==='All'||q.category===settings.category);if(!pool.length)return;
+ const quote=pool[widgetPreviewIndex%pool.length],model=widgetPreviewModel(settings,quote,widgetPreviewFamily),generation=++widgetPreviewGeneration,card=$('widget-preview-card'),photo=$('widget-preview-photo');
+ card.dataset.family=model.family;card.dataset.style=settings.style;card.dataset.quoteId=quote.id;card.style.backgroundColor=model.background;card.style.color=model.color;card.style.setProperty('--widget-lines',String(model.lines));
+ $('widget-preview-title').textContent=model.title;$('widget-preview-text').textContent=model.text;$('widget-preview-text').style.fontSize=model.fontSize+'px';$('widget-preview-footer').textContent=model.footer;$('widget-preview-destination').textContent=model.destination;$('widget-preview-size-name').textContent=model.family;
+ const parameter=settings.category+','+settings.style+','+settings.refreshMinutes;$('widget-parameter').textContent=parameter;
+ $('widget-preview-timing').textContent='Requested interval: '+({15:'15 minutes',60:'1 hour',180:'3 hours',1440:'once a day'}[settings.refreshMinutes])+'. iOS controls actual refresh timing.';
+ for(const family of ['small','medium','large'])$('widget-size-'+family).setAttribute('aria-pressed',String(family===model.family));
+ photo.hidden=true;card.dataset.photoReady='false';photo.onload=()=>{if(!model.scene||generation!==widgetPreviewGeneration)return;photo.hidden=false;card.dataset.photoReady='true';$('widget-preview-footer').textContent=model.footer;};photo.onerror=()=>{if(!model.scene||generation!==widgetPreviewGeneration)return;photo.hidden=true;card.dataset.photoReady='false';$('widget-preview-footer').textContent='PHOTO UNAVAILABLE · RUN ONLINE IN SCRIPTABLE';};
+ if(model.scene)photo.src=model.scene.image;else photo.removeAttribute('src');
+ fitWidgetPreview();if(typeof requestAnimationFrame==='function')requestAnimationFrame(fitWidgetPreview);
+}
+for(const family of ['small','medium','large'])$('widget-size-'+family).addEventListener('click',()=>{widgetPreviewFamily=family;renderWidgetPreview();});
+for(const id of ['widget-category','widget-style','widget-minutes'])$(id).addEventListener('change',()=>{if(id==='widget-category')widgetPreviewIndex=0;renderWidgetPreview();});
+$('widget-preview-another').addEventListener('click',()=>{widgetPreviewIndex++;renderWidgetPreview();});window.addEventListener('resize',()=>{if($('widget-dialog').open)fitWidgetPreview();});
+$('widget-help-button').addEventListener('click',()=>{$('settings-dialog').close();$('widget-dialog').showModal();renderWidgetPreview();});
 $('close-widget').addEventListener('click',()=>$('widget-dialog').close());
-$('copy-widget-button').addEventListener('click',async()=>{try{const response=await fetch('./widget/Motive.js');if(!response.ok)throw Error('Unavailable');const defaults={category:$('widget-category').value,style:$('widget-style').value,refreshMinutes:Number($('widget-minutes').value)};const code=(await response.text()).replace(/^const widgetDefaults =.*;$/m,'const widgetDefaults = '+JSON.stringify(defaults)+';');if(!navigator.clipboard?.writeText)throw Error('Clipboard unavailable');await navigator.clipboard.writeText(code);$('widget-status').textContent='Copied. Replace ALL old Motive code in Scriptable and run it online. Check for MOTIVE v4 and a photo. Then hold your Home Screen widget → Edit Widget → clear its old Parameter, or use All,photo,60 for photo quotes.';}catch{$('widget-status').replaceChildren(document.createTextNode('Open the default code, select all, and copy: '));const link=document.createElement('a');link.href='./widget/Motive.js';link.textContent='Open widget code';link.target='_blank';link.rel='noopener';$('widget-status').append(link);}});
+$('copy-widget-button').addEventListener('click',async()=>{try{const response=await fetch('./widget/Motive.js');if(!response.ok)throw Error('Unavailable');const defaults=widgetSettings();const code=(await response.text()).replace(/^const widgetDefaults =.*;$/m,'const widgetDefaults = '+JSON.stringify(defaults)+';');if(!navigator.clipboard?.writeText)throw Error('Clipboard unavailable');await navigator.clipboard.writeText(code);$('widget-status').textContent='Copied. Replace ALL old Motive code in Scriptable and run it online. Check for MOTIVE v6. Hold your Home Screen widget → Edit Widget → set Parameter to '+defaults.category+','+defaults.style+','+defaults.refreshMinutes+'. Old parameters override copied settings.';}catch{$('widget-status').replaceChildren(document.createTextNode('Open the default code, select all, and copy: '));const link=document.createElement('a');link.href='./widget/Motive.js';link.textContent='Open widget code';link.target='_blank';link.rel='noopener';$('widget-status').append(link);}});
 function connectionStatus() { $('connection-status').textContent=navigator.onLine===false?'Offline · Your space stays with you':''; }
 window.addEventListener('online',connectionStatus);window.addEventListener('offline',connectionStatus);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){recordVisit();updateStats();}else if(breathingTimer){stopBreathing();$('breathing-prompt').textContent='Paused. Begin again whenever you’re ready.';}});

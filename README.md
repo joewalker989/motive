@@ -40,6 +40,14 @@ Choose **Matching photo** in the widget guide to copy code with photo background
 
 ## Quote backgrounds
 
+### Preview your widget
+
+Open **Your space → Show quotes on my Home Screen**. Choose a theme, photo/plain background, and requested interval, then switch between **Small**, **Medium**, and **Large** previews. The sample uses the widget's matching pictures, 60% photo overlay, colors, title, and tap explanations. iPhone fonts and text fitting can differ from this browser layout preview. **Preview another quote** uses built-in quotes without changing website reading history. The preview and copied script use the same settings, and the guide shows the exact parameter to enter in Scriptable. Existing on-device parameters override copied defaults. Actual Home Screen refresh timing remains controlled by iOS.
+
+### If a card photo does not load
+
+The main quote stays readable on a plain card, with **Retry photo** and **Use plain background** beneath it. Retry requests the same chosen photo without advancing the quote or changing reading history. Personal photo records are retained, including when switching to a plain card. An older photo request cannot clear a newer background. Active video backgrounds keep their existing playback behavior.
+
 `scenes.js` matches keywords and the quote category to scenery, hands making pottery, a supportive moment, or abstract color. Matching happens locally, including for personal quotes. The **Photo on/off** button switches between photos and a plain card; **Scene** opens manual scene selection and a darkness slider. Controls persist across visits.
 
 Photos are original generated assets stored under `assets/backgrounds/`. Their generation prompts and saved paths are documented in [Backgrounds.md](Backgrounds.md). `scripts/export-quotes.cjs` also synchronizes the same scene rules into the standalone Scriptable script. Keep the scene-rule markers intact when editing the widget. Offline installation caches all eight current compressed pictures.
