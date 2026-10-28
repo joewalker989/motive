@@ -32,11 +32,14 @@ jobs:
           node --check scenes.js
           node --check sw.js
           node --check content-status.js
+          node --check scripts/daily-update.cjs
+          node --check scripts/export-quotes.cjs
           node scripts/export-quotes.cjs
           node --test tests/quotes.test.cjs
           node --test tests/widget.test.cjs
           node --test tests/offline.test.cjs
           node --test tests/content-status.test.cjs
+          node --test tests/daily-update.test.cjs
           node --test tests/wellbeing.test.cjs
       - name: Configure Pages
         uses: actions/configure-pages@v5

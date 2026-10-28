@@ -112,3 +112,7 @@ The Scriptable widget now has a Go to website link. Medium and large widgets sup
 ## Content freshness
 
 In Your space > Fresh quotes & pictures, see the number of built-in quotes and pictures loaded on this page, their newest dated additions, and the last successful online check on this browser. A check also runs when opening the app or reconnecting. It compares public library fingerprints against a network-only status file; offline failures never claim the library is current. If the published library differs, finish unsaved writing before choosing Reopen with published content. Checking never changes reading history or personal data and does not refresh Scriptable. The exporter regenerates content-status.json whenever quotes or scenes change; include it in publication. Run `node --test tests/content-status.test.cjs` with the existing checks.
+
+## Interrupted daily updates
+
+Daily maintenance can resume a partially added quote batch, identify unfinished picture registration, and repair generated feeds without repeating records. See [Daily update recovery](Daily-update-recovery.md). Run `node scripts/daily-update.cjs` to inspect the current New York date, and add `--repair` to rebuild the quote feed, public content status, and widget/native scene mappings. Run `node --test tests/daily-update.test.cjs` with the existing checks. A complete local report still requires an expected-SHA push and a successful Pages deployment for the published head.

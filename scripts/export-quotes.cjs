@@ -2,6 +2,8 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 const root = path.join(__dirname, '..');
+const outputs = new Map();
+const {atomicWrite} = require('./daily-update.cjs');
 const context = vm.createContext({});
 vm.runInContext(fs.readFileSync(path.join(root, 'quotes.js'), 'utf8'), context);
 vm.runInContext(fs.readFileSync(path.join(root, 'daily-quotes.js'), 'utf8'), context);
@@ -11,14 +13,14 @@ vm.runInContext(fs.readFileSync(path.join(root,'scenes.js'),'utf8'),context);
 const json = vm.runInContext('JSON.stringify(uniqueQuotes(reminders).map(q=>{const scene=getQuoteScene(q);return {...q,photo:{key:scene.key,image:scene.image}}}), null, 2)', context);
 const quotes = JSON.parse(json);
 if (quotes.length < 400) throw Error('The widget requires at least 400 quotes.');
-fs.writeFileSync(path.join(root, 'quotes.json'), json + '\n');
+outputs.set(path.join(root, 'quotes.json'), json + '\n');
 console.log(`Exported ${quotes.length} unique widget quotes.`);
 const sceneRules=fs.readFileSync(path.join(root,'scenes.js'),'utf8');
 const widgetPath=path.join(root,'widget/Motive.js');
 const widgetSource=fs.readFileSync(widgetPath,'utf8');
 const marker=/\/\/ BEGIN MOTIVE SCENE RULES[\s\S]*?\/\/ END MOTIVE SCENE RULES/;
 if(!marker.test(widgetSource))throw Error('Widget scene-rule markers are missing.');
-fs.writeFileSync(widgetPath,widgetSource.replace(marker,()=>`// BEGIN MOTIVE SCENE RULES\n${sceneRules}\n// END MOTIVE SCENE RULES`));
+outputs.set(widgetPath,widgetSource.replace(marker,()=>`// BEGIN MOTIVE SCENE RULES\n${sceneRules}\n// END MOTIVE SCENE RULES`));
 console.log('Synchronized widget background matching rules.');
 
 const sceneContext=vm.createContext({});vm.runInContext(sceneRules,sceneContext);const scenes=vm.runInContext('quoteScenes',sceneContext);
@@ -29,9 +31,13 @@ if(/    static let resourceNames: \[String: String\] = \[[^\n]+\]/.test(native))
 else native=native.replace(/(    static let keys = \[[^\n]+\])/,(_,keys)=>keys+'\n'+resourceNames);
 const nativeRules=Object.entries(scenes).map(([key,scene])=>'            ('+JSON.stringify(key)+', '+JSON.stringify(scene.category)+', '+JSON.stringify(scene.words)+')').join(',\n');
 native=native.replace(/(let rules: \[\(String, String, \[String\]\)\] = \[)[\s\S]*?\n        \]/,(_,begin)=>begin+'\n'+nativeRules+'\n        ]');
-fs.writeFileSync(nativePath,native);console.log('Synchronized native photo scene rules.');
+outputs.set(nativePath,native);console.log('Synchronized native photo scene rules.');
 
 vm.runInContext(fs.readFileSync(path.join(root,'content-status.js'),'utf8'),context);
 const status=vm.runInContext('contentSnapshot(uniqueQuotes(reminders),quoteScenes)',context);
-fs.writeFileSync(path.join(root,'content-status.json'),JSON.stringify(status,null,2)+'\n');
+outputs.set(path.join(root,'content-status.json'),JSON.stringify(status,null,2)+'\n');
 console.log('Exported public content status.');
+
+// Validate every output before replacing any file. A rerun repairs interruption between files.
+for(const [file,content] of outputs){if(fs.existsSync(file)&&fs.readFileSync(file,'utf8')===content)continue;atomicWrite(file,content);}
+console.log('Generated feeds saved; unchanged files kept.');
