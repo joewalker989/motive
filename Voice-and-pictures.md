@@ -1,5 +1,11 @@
 # Read-aloud and growing pictures
 
+## Direct recovery and device sound check
+
+When reading times out or fails, the quote card now offers **Try automatic voice** and **Sound help**. Try automatic voice resets the voice, speed, and tone to usable defaults and reads the current quote from that tap. It keeps your quote and reading history. Speech API errors leave the controls usable.
+
+In **Voice options → Check reading on this device**, play the short test sentence and choose **I heard it** or **Still silent**. Only your explicit answer confirms audible speech; browser start/end events do not prove that your speaker made sound. This check stays in the current page session and sends no diagnostic report. Still silent stops speech and offers speaker, volume, Bluetooth, reset, and Safari guidance. Audible playback still requires checking on the actual iPhone.
+
 ## If a quote is silent
 
 Refresh Motive online once, then tap **Read aloud**. In **Voice options**, try **Reset voice**, then **Read this quote**. Automatic now lets the device choose its English voice instead of forcing a listed voice that may be unavailable offline. Selected voices, pace, and tone remain supported.
