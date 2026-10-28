@@ -9,8 +9,8 @@ Roadmap requested October 27, 2026. Work follows the 100-item comparison in the 
 | 3 | Picture-loading recovery | Implemented October 28: readable main-card fallback, Retry photo, plain background choice, personal-photo preservation, and stale-image guards. All 93 web tests passed; browser checks covered failure, retry, and plain mode. |
 | 4 | Latest content-update status | Implemented October 28: loaded counts/dates, network-only comparison, last successful online check, offline/failure messages, and an explicit reopen choice. |
 | 5 | Recover interrupted daily publication | Implemented October 28: missing-slot inspection, conflict-safe quote resumption, picture registration checks, and repeatable feed repair with atomic file replacement. Deployment verification remains required. |
-| 6 | Safe update-ready notice | Next. |
-| 7 | Unified navigation | Queued. |
+| 6 | Safe update-ready notice | Implemented October 28: dismissible notice, settings access, explicit reopen confirmation, waiting-worker approval, first-install suppression, and activation timeout recovery. Unsaved drafts are not auto-backed-up. |
+| 7 | Unified navigation | Next. |
 | 8 | Simple home-screen mode | Queued. |
 | 9 | Skippable first-use walkthrough | Queued. |
 | 10 | Clear full-backup choice | Queued. |

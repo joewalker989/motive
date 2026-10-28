@@ -26,14 +26,14 @@ if(typeof document!=='undefined'){
    if(latest.version!==1||!Number.isInteger(latest.quoteCount)||!Number.isInteger(latest.photoCount)||latest.quoteCount<400||latest.photoCount<1||!['quoteRevision','photoRevision'].every(key=>typeof latest[key]==='string'&&/^[a-f0-9]{1,8}$/.test(latest[key])))throw Error('Invalid content status');
    const same=latest.quoteRevision===loadedContent.quoteRevision&&latest.photoRevision===loadedContent.photoRevision;
    contentNode('content-check-status').textContent=same?'Your loaded quotes and pictures match the latest published library.':'A different published library is available ('+latest.quoteCount+' quotes, '+latest.photoCount+' pictures). Finish any writing, then reopen to load it.';
-   contentNode('content-reload').hidden=same;
+   contentNode('content-reload').hidden=same;if(!same&&typeof offerMotiveContentUpdate==='function')offerMotiveContentUpdate();
    try{localStorage.setItem('motive-content-check',JSON.stringify({checkedAt:new Date().toISOString()}));}catch{}
    showContentCheckTime();
   }catch{contentNode('content-check-status').textContent='Could not confirm the latest content. Your loaded library is still available. Reconnect and try again.';}
   finally{clearTimeout(timeout);checkingContent=false;contentNode('content-check').disabled=false;}
  }
  contentNode('content-check').addEventListener('click',checkContent);
- contentNode('content-reload').addEventListener('click',()=>location.reload());
+ contentNode('content-reload').addEventListener('click',()=>{if(typeof requestMotiveUpdate==='function')requestMotiveUpdate();else location.reload();});
  window.addEventListener('online',checkContent);
  window.addEventListener('offline',()=>{contentNode('content-check-status').textContent='You are offline. Showing the library already loaded; reconnect to check for newer content.';});
  checkContent();

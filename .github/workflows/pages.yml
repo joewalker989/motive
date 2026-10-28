@@ -32,6 +32,7 @@ jobs:
           node --check scenes.js
           node --check sw.js
           node --check content-status.js
+          node --check update-ready.js
           node --check scripts/daily-update.cjs
           node --check scripts/export-quotes.cjs
           node scripts/export-quotes.cjs
@@ -39,6 +40,7 @@ jobs:
           node --test tests/widget.test.cjs
           node --test tests/offline.test.cjs
           node --test tests/content-status.test.cjs
+          node --test tests/update-ready.test.cjs
           node --test tests/daily-update.test.cjs
           node --test tests/wellbeing.test.cjs
       - name: Configure Pages
@@ -47,7 +49,7 @@ jobs:
         run: |
           mkdir public
           cp index.html styles.css app.js quotes.js daily-quotes.js scenes.js enhancements.js companion.js wellbeing-core.js wellbeing.js wellbeing.css growth-core.js growth.js sw.js manifest.webmanifest icon.svg public/
-          cp quotes.json content-status.json content-status.js public/
+          cp quotes.json content-status.json content-status.js update-ready.js public/
           cp -r icons public/
           cp -r assets public/
           mkdir public/widget

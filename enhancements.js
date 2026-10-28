@@ -179,6 +179,7 @@ $('copy-widget-button').addEventListener('click',async()=>{try{const response=aw
 function connectionStatus() { $('connection-status').textContent=navigator.onLine===false?'Offline · Your space stays with you':''; }
 window.addEventListener('online',connectionStatus);window.addEventListener('offline',connectionStatus);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){recordVisit();updateStats();}else if(breathingTimer){stopBreathing();$('breathing-prompt').textContent='Paused. Begin again whenever you’re ready.';}});
-if('serviceWorker' in navigator && /^https?:$/.test(location.protocol))navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready).then(()=>{if(navigator.onLine!==false)$('connection-status').textContent='Ready to open offline';}).catch(()=>{$('connection-status').textContent='Offline setup unavailable. Try reopening online.';});
+let motiveWorkerRegistration=null;
+if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){motiveWorkerRegistration=navigator.serviceWorker.register('./sw.js');motiveWorkerRegistration.then(()=>navigator.serviceWorker.ready).then(()=>{if(navigator.onLine!==false)$('connection-status').textContent='Ready to open offline';}).catch(()=>{$('connection-status').textContent='Offline setup unavailable. Try reopening online.';});}
 applyTheme(state.theme);collectionOptions();recordVisit();updateStats();connectionStatus();renderCollection();updateQuoteBackground();
 

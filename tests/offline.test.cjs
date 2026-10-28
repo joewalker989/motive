@@ -5,13 +5,13 @@ const path=require('node:path');
 const vm=require('node:vm');
 const root=path.join(__dirname,'..');
 function worker(online=true){
-  const handlers={};const cache=new Map();const removed=[];
+  const handlers={};const cache=new Map();const removed=[];let skips=0;
   const bucket={addAll:async paths=>{for(const item of paths)cache.set(item,new Response(item));},put:async(req,response)=>cache.set(typeof req==='string'?req:req.url,response),match:async req=>cache.get(typeof req==='string'?req:req.url)};
-  const context=vm.createContext({URL,Response,AbortController,setTimeout,clearTimeout,self:{location:{origin:'https://example.com'},addEventListener:(event,fn)=>handlers[event]=fn,skipWaiting:async()=>{},clients:{claim:async()=>{}}},caches:{open:async()=>bucket,keys:async()=>['motive-offline-old','another-app-cache'],delete:async key=>removed.push(key)},fetch:async req=>{if(!online)throw Error('offline');return new Response('fresh '+req.url);}});
+  const context=vm.createContext({URL,Response,AbortController,setTimeout,clearTimeout,self:{location:{origin:'https://example.com'},addEventListener:(event,fn)=>handlers[event]=fn,skipWaiting:async()=>{skips++;},clients:{claim:async()=>{}}},caches:{open:async()=>bucket,keys:async()=>['motive-offline-old','another-app-cache'],delete:async key=>removed.push(key)},fetch:async req=>{if(!online)throw Error('offline');return new Response('fresh '+req.url);}});
   vm.runInContext(fs.readFileSync(path.join(root,'sw.js'),'utf8'),context);
   async function lifecycle(name){let pending;handlers[name]({waitUntil:promise=>pending=promise});await pending;}
   async function request(req){let pending;handlers.fetch({request:req,respondWith:promise=>pending=promise});return pending;}
-  return {context,cache,removed,lifecycle,request};
+  return {context,cache,removed,lifecycle,request,handlers,skips:()=>skips};
 }
 test('offline installation includes only existing public assets and clears only old Motive caches',async()=>{const w=worker();const assets=vm.runInContext('ASSETS',w.context);for(const asset of assets)assert.ok(fs.existsSync(path.join(root,asset==='./'?'index.html':asset.split('?')[0])),asset);await w.lifecycle('install');await w.lifecycle('activate');assert.deepEqual(w.removed,['motive-offline-old']);assert.ok(w.cache.has('./enhancements.js'));assert.ok(w.cache.has('./companion.js'));});
 test('offline navigation and quote feed are served from the installed cache',async()=>{const w=worker(false);await w.lifecycle('install');const page=await w.request({method:'GET',url:'https://example.com/motive/',mode:'navigate'});assert.equal(await page.text(),'./index.html');w.cache.set('https://example.com/motive/quotes.json',new Response('[1,2,3]'));const feed=await w.request({method:'GET',url:'https://example.com/motive/quotes.json'});assert.equal(await feed.text(),'[1,2,3]');});
@@ -20,3 +20,5 @@ test('installable app icons have the declared PNG dimensions',()=>{const manifes
 
 
 test('content freshness checks bypass offline cache entirely',async()=>{const w=worker(false);await w.lifecycle('install');assert.equal(await w.request({method:'GET',url:'https://example.com/motive/content-status.json'}),undefined);});
+
+test('worker installation waits for explicit update approval before skipWaiting',async()=>{const w=worker();await w.lifecycle('install');assert.equal(w.skips(),0);let pending;w.handlers.message({data:{type:'OTHER'},waitUntil:promise=>pending=promise});assert.equal(w.skips(),0);w.handlers.message({data:{type:'MOTIVE_ACTIVATE_UPDATE'},waitUntil:promise=>pending=promise});await pending;assert.equal(w.skips(),1);});
