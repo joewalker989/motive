@@ -108,3 +108,7 @@ Scriptable v6 accepts safe same-site picture paths from the daily quote feed. Re
 ### Go to website
 
 The Scriptable widget now has a Go to website link. Medium and large widgets support the separate link; the quote still opens Scriptable. Small widgets have one tap target, so any tap opens Motive in the browser. Replace the saved script once and look for MOTIVE v6. The website widget guide also includes a clickable Go to website link.
+
+## Content freshness
+
+In Your space > Fresh quotes & pictures, see the number of built-in quotes and pictures loaded on this page, their newest dated additions, and the last successful online check on this browser. A check also runs when opening the app or reconnecting. It compares public library fingerprints against a network-only status file; offline failures never claim the library is current. If the published library differs, finish unsaved writing before choosing Reopen with published content. Checking never changes reading history or personal data and does not refresh Scriptable. The exporter regenerates content-status.json whenever quotes or scenes change; include it in publication. Run `node --test tests/content-status.test.cjs` with the existing checks.

@@ -30,3 +30,8 @@ else native=native.replace(/(    static let keys = \[[^\n]+\])/,(_,keys)=>keys+'
 const nativeRules=Object.entries(scenes).map(([key,scene])=>'            ('+JSON.stringify(key)+', '+JSON.stringify(scene.category)+', '+JSON.stringify(scene.words)+')').join(',\n');
 native=native.replace(/(let rules: \[\(String, String, \[String\]\)\] = \[)[\s\S]*?\n        \]/,(_,begin)=>begin+'\n'+nativeRules+'\n        ]');
 fs.writeFileSync(nativePath,native);console.log('Synchronized native photo scene rules.');
+
+vm.runInContext(fs.readFileSync(path.join(root,'content-status.js'),'utf8'),context);
+const status=vm.runInContext('contentSnapshot(uniqueQuotes(reminders),quoteScenes)',context);
+fs.writeFileSync(path.join(root,'content-status.json'),JSON.stringify(status,null,2)+'\n');
+console.log('Exported public content status.');

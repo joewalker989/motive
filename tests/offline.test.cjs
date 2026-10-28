@@ -18,3 +18,5 @@ test('offline navigation and quote feed are served from the installed cache',asy
 test('online requests update the cache and external requests are left alone',async()=>{const w=worker(true);const url='https://example.com/motive/app.js';const response=await w.request({method:'GET',url});assert.equal(await response.text(),'fresh '+url);assert.equal(await w.cache.get(url).text(),'fresh '+url);assert.equal(await w.request({method:'GET',url:'https://other.example/app.js'}),undefined);});
 test('installable app icons have the declared PNG dimensions',()=>{const manifest=JSON.parse(fs.readFileSync(path.join(root,'manifest.webmanifest'),'utf8'));for(const icon of manifest.icons){const png=fs.readFileSync(path.join(root,icon.src));assert.equal(png.subarray(1,4).toString(),'PNG');assert.equal(`${png.readUInt32BE(16)}x${png.readUInt32BE(20)}`,icon.sizes);}});
 
+
+test('content freshness checks bypass offline cache entirely',async()=>{const w=worker(false);await w.lifecycle('install');assert.equal(await w.request({method:'GET',url:'https://example.com/motive/content-status.json'}),undefined);});
