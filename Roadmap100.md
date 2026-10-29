@@ -34,16 +34,16 @@ Requested October 29, 2026. Free website first. This is the persistent scope lis
 | 28 | Original-content provenance | Implemented; device speech, clipboard, downloads and browser print follow platform support |
 | 29 | Report a content problem locally | Implemented; device speech, clipboard, downloads and browser print follow platform support |
 | 30 | Printable quote packs | Implemented; device speech, clipboard, downloads and browser print follow platform support |
-| 31 | Background thumbnail gallery | Queued for implementation or audit |
-| 32 | Picture-subject preferences | Queued for implementation or audit |
-| 33 | Keep a picture for a quote | Queued for implementation or audit |
-| 34 | Automatic readability choices | Queued for implementation or audit |
-| 35 | Wallpaper crop choices | Queued for implementation or audit |
-| 36 | Favorite picture album | Queued for implementation or audit |
-| 37 | Picture rotation cooldown | Queued for implementation or audit |
-| 38 | More image export formats | Queued for implementation or audit |
-| 39 | Move quote text in exports | Queued for implementation or audit |
-| 40 | Saved design presets | Queued for implementation or audit |
+| 31 | Background thumbnail gallery | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 32 | Picture-subject preferences | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 33 | Keep a picture for a quote | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 34 | Automatic readability choices | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 35 | Wallpaper crop choices | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 36 | Favorite picture album | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 37 | Picture rotation cooldown | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 38 | More image export formats | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 39 | Move quote text in exports | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
+| 40 | Saved design presets | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
 | 41 | Human recording library imports | Queued for implementation or audit |
 | 42 | Remember language and voice choices | Queued for implementation or audit |
 | 43 | Highlight spoken words | Queued for implementation or audit |

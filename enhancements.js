@@ -9,12 +9,13 @@ function updateQuoteBackground(quote=current,changePicture=false){
     const previous=state.photoRotation;
     if(!changePicture&&previous?.quoteId===quote.id&&quoteScenes[previous.key])scene={...quoteScenes[previous.key],key:previous.key};
     else {
-      const keys=Object.keys(quoteScenes);const last=previous?.key||card.dataset.scene;
+      const keys=typeof motiveSceneKeys==='function'?motiveSceneKeys():Object.keys(quoteScenes);const last=previous?.key||card.dataset.scene;
       // Prefer the meaning-matched image, choosing another view when it would repeat.
       if(scene.key===last) {const alternatives=keys.filter(key=>key!==last);const key=alternatives[Math.floor(Math.random()*alternatives.length)];scene={...quoteScenes[key],key};}
       state.photoRotation={quoteId:quote.id,key:scene.key};persist();
     }
   }
+  if(typeof resolveMotiveScene==='function')scene=resolveMotiveScene(quote,state.background,scene,changePicture);
   displayedQuoteScene=scene;
   card.classList.toggle('has-scene',!!scene);card.dataset.scene=scene?.key||'none';
   card.style.setProperty('--quote-scene',scene?`url("${scene.image}")`:'none');
@@ -102,7 +103,7 @@ $('settings-button').addEventListener('click',()=>$('settings-dialog').showModal
 $('close-settings').addEventListener('click',()=>$('settings-dialog').close());
 $('intention-done').addEventListener('change',()=>{const today=dayKey();state.activity.completed=state.activity.completed.filter(day=>day!==today);if($('intention-done').checked)state.activity.completed.push(today);persist();$('intention-feedback').textContent=$('intention-done').checked?'You made a little room for what matters.':'';});
 function downloadFile(blob,name) { const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000); }
-function backupData() { return {app:'motive',version:1,exportedAt:new Date().toISOString(),data:{name:state.name,custom:state.custom,saved:state.saved,seen:state.seen,collections:state.collections,activity:state.activity,intention:state.intention,theme:state.theme,companion:state.companion,studio:state.studio,experience:state.experience,preferences:state.preferences}}; }
+function backupData() { return {app:'motive',version:1,exportedAt:new Date().toISOString(),data:{name:state.name,custom:state.custom,saved:state.saved,seen:state.seen,collections:state.collections,activity:state.activity,intention:state.intention,theme:state.theme,companion:state.companion,studio:state.studio,experience:state.experience,preferences:state.preferences,pictures:state.pictures}}; }
 function mergeBackup(backup) {
   if(!backup || backup.app!=='motive' || backup.version!==1 || !backup.data || !Array.isArray(backup.data.custom) || !Array.isArray(backup.data.saved))throw Error('Choose a Motive backup file downloaded from this app.');
   const incoming=backup.data;
@@ -127,7 +128,8 @@ function mergeBackup(backup) {
   const studio=typeof cleanStudioPreferences==='function'?cleanStudioPreferences(incoming.studio):state.studio;
   const experience=typeof cleanMotiveExperience==='function'?cleanMotiveExperience(incoming.experience||state.experience):state.experience;
   const preferences=typeof cleanMotivePreferences==='function'?cleanMotivePreferences({...state.preferences,...incoming.preferences,hidden:[...(state.preferences?.hidden||[]),...mapIds(incoming.preferences?.hidden)],notes:{...Object.fromEntries(Object.entries(incoming.preferences?.notes||{}).filter(([,note])=>typeof note==='string').map(([id,note])=>[mapIds([id])[0],note]).filter(([id])=>id)),...state.preferences?.notes}}):state.preferences;
-  return {custom,saved,collections,activity,intention,companion,studio,experience,preferences,seen:[...new Set([...state.seen,...mapIds(incoming.seen)])],name:state.name||(typeof incoming.name==='string'?incoming.name.slice(0,35):'')};
+  const pictures=typeof cleanMotivePictures==='function'?cleanMotivePictures({...state.pictures,...incoming.pictures,pins:{...Object.fromEntries(Object.entries(incoming.pictures?.pins||{}).map(([id,key])=>[mapIds([id])[0],key]).filter(([id])=>id)),...state.pictures?.pins}},quoteScenes):state.pictures;
+  return {custom,saved,collections,activity,intention,companion,studio,experience,preferences,pictures,seen:[...new Set([...state.seen,...mapIds(incoming.seen)])],name:state.name||(typeof incoming.name==='string'?incoming.name.slice(0,35):'')};
 }
 $('backup-button').addEventListener('click',()=>{downloadFile(new Blob([JSON.stringify(backupData(),null,2)],{type:'application/json'}),`motive-backup-${dayKey()}.json`);$('backup-status').textContent='Backup downloaded. Keep it somewhere you can find it again.';});
 $('restore-button').addEventListener('click',()=>$('backup-file').click());
@@ -135,6 +137,7 @@ $('backup-file').addEventListener('change',async()=>{const file=$('backup-file')
 $('restart-button').addEventListener('click',()=>{state.seen=[current.id];state.daily=null;persist();showQuote(current);$('backup-status').textContent='Quote rotation restarted. Saved quotes and collections were kept.';});
 $('share-button').addEventListener('click',async()=>{const text=`“${current.text}” — ${current.author}`;if(navigator.share){try{await navigator.share({title:'A little motivation from Motive',text,url:location.href});}catch(error){if(error.name!=='AbortError')toast('Sharing is unavailable here. Use the copy button instead.');}}else $('copy-button').click();});
 async function createQuoteCanvas(quote,wallpaper=false){
+  if(typeof renderMotiveCanvas==='function')return renderMotiveCanvas(quote,wallpaper);
   const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=wallpaper?1920:1350;const ctx=canvas.getContext('2d');
   const scene=displayedQuoteScene;let photo=null;if(scene){try{photo=await loadQuotePhoto(scene);}catch{toast('Photo unavailable. Using a plain background for this image.');}}
   const dark=!!photo||state.theme==='dark';ctx.fillStyle=dark?'#1d3026':'#e5eacb';ctx.fillRect(0,0,canvas.width,canvas.height);
@@ -147,7 +150,7 @@ async function createQuoteCanvas(quote,wallpaper=false){
   const lineHeight=fontSize*1.4;let y=Math.max(wallpaper?650:260,(wallpaper?1000:650)-lines.length*lineHeight/2);ctx.textAlign=design.align==='center'?'center':'left';for(const text of lines){ctx.fillText(text,design.align==='center'?540:90,y);y+=lineHeight;}ctx.textAlign='left';
   ctx.font='24px sans-serif';ctx.fillText('— '+quote.author,90,Math.min(wallpaper?1680:1150,y+48));ctx.font='20px sans-serif';ctx.fillText('A LITTLE FORWARD, EVERY DAY.',90,wallpaper?1780:1240);return canvas;
 }
-for(const [id,wallpaper]of [['image-button',false],['wallpaper-button',true]])$(id).addEventListener('click',async()=>{const button=$(id);button.disabled=true;const quote={...current};try{const canvas=await createQuoteCanvas(quote,wallpaper);const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw Error('Image unavailable');downloadFile(blob,wallpaper?'motive-phone-wallpaper.png':'motive-quote.png');toast(wallpaper?'Wallpaper downloaded. Save it to Photos, then choose it in iPhone wallpaper settings.':'Your quote image is ready.');}catch{toast('The image could not be created. You can still copy the quote.');}finally{button.disabled=false;}});
+for(const [id,wallpaper]of [['image-button',false],['wallpaper-button',true]])$(id).addEventListener('click',async()=>{const button=$(id);button.disabled=true;const quote={...current};try{const canvas=await createQuoteCanvas(quote,wallpaper);const blob=await new Promise(resolve=>canvas.toBlob(resolve,state.pictures?.format||'image/png',.9));if(!blob)throw Error('Image unavailable');const extension=blob.type==='image/jpeg'?'jpg':blob.type==='image/webp'?'webp':'png';downloadFile(blob,(wallpaper?'motive-phone-wallpaper':'motive-quote')+'.'+extension);toast(wallpaper?'Wallpaper downloaded. Save it to Photos, then choose it in iPhone wallpaper settings.':'Your quote image is ready.');}catch{toast('The image could not be created. You can still copy the quote.');}finally{button.disabled=false;}});
 function stopBreathing() { clearInterval(breathingTimer);breathingTimer=null;$('breathing-orb').classList.remove('expand');$('start-breathe').textContent='Start a one-minute pause'; }
 $('breathe-button').addEventListener('click',()=>{$('breathing-prompt').textContent='Let your shoulders soften.';$('breathe-dialog').showModal();});
 $('close-breathe').addEventListener('click',()=>{stopBreathing();$('breathe-dialog').close();});
