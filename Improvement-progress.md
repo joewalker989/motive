@@ -10,8 +10,8 @@ Roadmap requested October 27, 2026. Work follows the 100-item comparison in the 
 | 4 | Latest content-update status | Implemented October 28: loaded counts/dates, network-only comparison, last successful online check, offline/failure messages, and an explicit reopen choice. |
 | 5 | Recover interrupted daily publication | Implemented October 28: missing-slot inspection, conflict-safe quote resumption, picture registration checks, and repeatable feed repair with atomic file replacement. Deployment verification remains required. |
 | 6 | Safe update-ready notice | Implemented October 28: dismissible notice, settings access, explicit reopen confirmation, waiting-worker approval, first-install suppression, and activation timeout recovery. Unsaved drafts are not auto-backed-up. |
-| 7 | Unified navigation | Next. |
-| 8 | Simple home-screen mode | Queued. |
+| 7 | Unified navigation | Implemented October 29: five shared destinations, a phone-friendly sticky header, matching menus in wellbeing/practice/settings, location markers, focus handling, and guards for active recording or unfinished locked-journal content. |
+| 8 | Simple home-screen mode | Next. |
 | 9 | Skippable first-use walkthrough | Queued. |
 | 10 | Clear full-backup choice | Queued. |
 
