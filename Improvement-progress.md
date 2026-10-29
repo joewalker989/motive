@@ -24,3 +24,5 @@ October 29 continuation: items 41–50 are published. Items 51–59 and 61–70 
 October 29 personal-practice checkpoint: items 71–80 implemented with encrypted draft migration/lock tests, multiple-check-in preservation, templates, review/timeline, habit plans and reversible progress display. Remaining work begins at accessibility/storage items 81–90, followed by platform audit 91–100.
 
 October 29 accessibility/privacy checkpoint: 81, 83, 84, 86, 87, 89 and selected-studio scope of 90 implemented. 82 has keyboard/semantic review, with physical assistive-technology checks pending. 85 and 88 remain unfinished. The next group is broader encryption, language coverage, then the platform/sharing audit; do not repeat the delivered controls.
+
+October 29 encryption checkpoint: item 88 implemented for optional voice, imported story and vision collections. Existing journal passphrase, stable record IDs, queued recording references and raw encrypted backups retained; transactional migration and lock-race tests added. Other personal data stays outside that scope. Remaining independent work starts with language coverage (85), then 91–100 platform/sharing audit.

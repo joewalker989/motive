@@ -91,7 +91,7 @@ Requested October 29, 2026. Free website first. This is the persistent scope lis
 | 85 | Complete Spanish/French translations | Pending: complete library/guidance Spanish and French translation; existing studio labels and affirmations remain partial |
 | 86 | Storage health overview | Implemented: approximate origin usage/quota and active/recovery record counts |
 | 87 | Backup import preview | Implemented: quote/full backup validation and count preview, cancellation, explicit merge, vault checks |
-| 88 | Encrypt additional personal records | Pending: broader record encryption requires migration and rendering work; journals and recovery drafts stay encrypted |
+| 88 | Encrypt additional personal records | Implemented opt-in vault protection for standalone voice/story recordings and vision pictures, including titles/transcripts; favorites, moods, habits and backgrounds remain outside |
 | 89 | Privacy dashboard | Implemented: local-storage/encryption boundaries, optional connection state, separate-backup explanation |
 | 90 | Selective data deletion | Implemented: selected studio-record recovery/restore and typed-confirmation permanent purge, stale-review rejection; quote preferences/history excluded |
 | 91 | Installed native interactive widget | Requires separate platform/service work; free website cannot activate it |

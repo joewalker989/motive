@@ -42,7 +42,7 @@ function growthCard(title,note=''){const a=document.createElement('article');a.c
 async function openGrowth(page=0){try{studioRecords=await dbRead();await archiveLegacyMoods();growthDialog.showModal();if(typeof refreshMotiveNavigation==='function')refreshMotiveNavigation();showGrowth(page);}catch(e){toast(e.message);}}
 function showGrowth(page){stopSleep();stopMovement();growthPage=page;for(let i=0;i<7;i++){$('growth-'+i).hidden=i!==page;$('growth-nav-'+i).setAttribute('aria-pressed',String(i===page));}if(page===0)renderToday();if(page===1)renderHabits();if(page===2)renderMoods();if(page===3)renderTags();if(page===4){renderStory();renderNarration();}if(page===5)renderMovementVideos();}
 $('growth-button').onclick=()=>openGrowth();$('growth-close').onclick=()=>growthDialog.close();for(let i=0;i<7;i++)$('growth-nav-'+i).onclick=()=>showGrowth(i);
-function growthRows(kind){return studioRecords.filter(r=>r.kind===kind&&!r.deleted);}
+function growthRows(kind){return (typeof studioReadableRows==='function'?studioReadableRows():studioRecords).filter(r=>r.kind===kind&&!r.deleted&&r.payload);}
 function dayDate(){return dayKey();}
 function recommendationNow(){const latest=moodEntries().at(-1);return MG.recommendation({mood:latest?.key||defaultMoods.find(m=>m.label===latest?.label)?.id,goal:$('growth-goal').value,minutes:Number($('growth-minutes').value)||3,sessions:studioPrefs.sessions?.length||0,hour:new Date().getHours()});}
 function renderToday(){const rec=recommendationNow();growthMessage('recommend-title',rec.title);growthMessage('recommend-reason',rec.reason);const daily=MG.dailyMeditation(dayDate());growthMessage('daily-meditation-title',daily.title+' · today');growthMessage('daily-meditation-preview',daily.steps[0]);}
