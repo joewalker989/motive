@@ -64,6 +64,9 @@ jobs:
           node --check story-locales.js
           node --check story-locale-core.js
           node --check story-locale.js
+          node --check quote-locales.js
+          node --check quote-locale-core.js
+          node --check quote-locale.js
           node --check scripts/daily-update.cjs
           node --check scripts/export-quotes.cjs
           node scripts/export-quotes.cjs
@@ -84,6 +87,7 @@ jobs:
           node --test tests/media-vault.test.cjs
           node --test tests/guidance-locale.test.cjs
           node --test tests/story-locale.test.cjs
+          node --test tests/quote-locale.test.cjs
           node --test tests/home-experience.test.cjs
           node --test tests/daily-update.test.cjs
           node --test tests/wellbeing.test.cjs
@@ -93,7 +97,7 @@ jobs:
         run: |
           mkdir public
           cp index.html styles.css app.js quotes.js daily-quotes.js scenes.js enhancements.js companion.js wellbeing-core.js wellbeing.js wellbeing.css growth-core.js growth.js sw.js manifest.webmanifest icon.svg public/
-          cp quotes.json content-status.json content-status.js update-ready.js navigation.js home-experience.js preferences-core.js preferences.js discovery-core.js discovery.js image-studio-core.js image-studio.js audio-tools-core.js audio-tools.js calm-tools-core.js calm-tools.js rest-tools-core.js rest-tools.js offline-library.js practice-tools-core.js practice-tools.js access-tools-core.js access-tools.js privacy-tools-core.js privacy-tools.js backup-preview.js media-vault-core.js media-vault.js guidance-locales.js guidance-locale-core.js guidance-locale.js daily-guidance-locales.js story-locales.js story-locale-core.js story-locale.js public/
+          cp quotes.json content-status.json content-status.js update-ready.js navigation.js home-experience.js preferences-core.js preferences.js discovery-core.js discovery.js image-studio-core.js image-studio.js audio-tools-core.js audio-tools.js calm-tools-core.js calm-tools.js rest-tools-core.js rest-tools.js offline-library.js practice-tools-core.js practice-tools.js access-tools-core.js access-tools.js privacy-tools-core.js privacy-tools.js backup-preview.js media-vault-core.js media-vault.js guidance-locales.js guidance-locale-core.js guidance-locale.js daily-guidance-locales.js story-locales.js story-locale-core.js story-locale.js quote-locales.js quote-locale-core.js quote-locale.js public/
           cp -r icons public/
           cp -r assets public/
           mkdir public/widget

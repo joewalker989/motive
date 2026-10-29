@@ -80,7 +80,7 @@ function renderRecentQuotes(){
   for(const quote of recent){
     const item=document.createElement('article');item.className='recent-item';
     const theme=document.createElement('small');theme.textContent=quote.category;
-    const words=document.createElement('p');words.textContent=quote.text;
+    const words=document.createElement('p');const shown=typeof presentMotiveQuote==='function'?presentMotiveQuote(quote):{...quote,language:'en'};words.textContent=shown.text;words.setAttribute('lang',shown.language);
     const button=document.createElement('button');button.className='outline-button';button.textContent=quote.id===current.id?'Reading now':'Read again';button.disabled=quote.id===current.id;
     button.addEventListener('click',()=>{category='All';for(const filter of document.querySelectorAll('.filter')){const active=filter.dataset.category==='All';filter.classList.toggle('active',active);filter.setAttribute('aria-pressed',String(active));}showQuote(quote,{revisit:true});renderCollection();$('recent-dialog').close();$('quote-card').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'center'});toast('Revisited. Your new-quote rotation is kept.');});
     item.append(theme,words,button);list.append(item);

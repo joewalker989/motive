@@ -72,7 +72,7 @@ function collectionOptions() {
   selector.value=previous;
 }
 function openCollection(quote) {
-  collectionQuoteId=quote.id;$('collection-preview').textContent=`“${quote.text}”`;$('collection-error').textContent='';$('collection-name').value='';
+  collectionQuoteId=quote.id;$('collection-preview').textContent=`“${typeof presentMotiveQuote==='function'?presentMotiveQuote(quote).text:quote.text}”`;$('collection-preview').setAttribute('lang',typeof presentMotiveQuote==='function'?presentMotiveQuote(quote).language:'en');$('collection-error').textContent='';$('collection-name').value='';
   $('collection-picker').replaceChildren();const first=document.createElement('option');first.value='';first.textContent='Create a new collection below';$('collection-picker').append(first);
   for(const c of state.collections){const option=document.createElement('option');option.value=c.id;option.textContent=c.name;$('collection-picker').append(option);}
   $('collection-dialog').showModal();
@@ -140,9 +140,10 @@ $('backup-button').addEventListener('click',()=>{downloadFile(new Blob([JSON.str
 $('restore-button').addEventListener('click',()=>$('backup-file').click());
 $('backup-file').addEventListener('change',async()=>{const file=$('backup-file').files[0];if(!file)return;if(typeof previewMotiveBackup==='function'){await previewMotiveBackup(file,false);return;}try{if(file.size>2*1024*1024)throw Error('Choose a backup smaller than 2 MB.');const merged=mergeBackup(JSON.parse(await file.text()));Object.assign(state,merged);persist();collectionOptions();renderCollection();updateSave();updateGreeting();loadIntention();updateStats();if(typeof renderPersonalSpace==='function')renderPersonalSpace();if(typeof refreshStudioPreferences==='function')refreshStudioPreferences();if(typeof renderMotiveHome==='function')renderMotiveHome();if(typeof renderMotivePreferences==='function')renderMotivePreferences();if(typeof renderMotiveAudio==='function')renderMotiveAudio();if(typeof renderMotivePractice==='function')renderMotivePractice();if(typeof renderMotiveAccess==='function')renderMotiveAccess();$('backup-status').textContent='Backup merged. Your existing words and favorites were kept.';}catch(error){$('backup-status').textContent=error instanceof SyntaxError?'This file is not a valid Motive backup.':error.message;}$('backup-file').value='';});
 $('restart-button').addEventListener('click',()=>{state.seen=[current.id];state.daily=null;persist();showQuote(current);$('backup-status').textContent='Quote rotation restarted. Saved quotes and collections were kept.';});
-$('share-button').addEventListener('click',async()=>{const text=`“${current.text}” — ${current.author}`;if(navigator.share){try{await navigator.share({title:'A little motivation from Motive',text,url:location.href});}catch(error){if(error.name!=='AbortError')toast('Sharing is unavailable here. Use the copy button instead.');}}else $('copy-button').click();});
+$('share-button').addEventListener('click',async()=>{const text=typeof formattedMotiveQuote==='function'?formattedMotiveQuote(current):`“${current.text}” — ${current.author}`;if(navigator.share){try{await navigator.share({title:'A little motivation from Motive',text,url:location.href});}catch(error){if(error.name!=='AbortError')toast('Sharing is unavailable here. Use the copy button instead.');}}else $('copy-button').click();});
 async function createQuoteCanvas(quote,wallpaper=false){
   if(typeof renderMotiveCanvas==='function')return renderMotiveCanvas(quote,wallpaper);
+  const shown=typeof presentMotiveQuote==='function'?presentMotiveQuote(quote):quote;
   const canvas=document.createElement('canvas');canvas.width=1080;canvas.height=wallpaper?1920:1350;const ctx=canvas.getContext('2d');
   const scene=displayedQuoteScene;let photo=null;if(scene){try{photo=await loadQuotePhoto(scene);}catch{toast('Photo unavailable. Using a plain background for this image.');}}
   const dark=!!photo||state.theme==='dark';ctx.fillStyle=dark?'#1d3026':'#e5eacb';ctx.fillRect(0,0,canvas.width,canvas.height);
@@ -150,8 +151,8 @@ async function createQuoteCanvas(quote,wallpaper=false){
   ctx.fillStyle=dark?'#f6f8ef':'#25382d';ctx.font='bold 34px sans-serif';ctx.fillText('✳  motive.',90,wallpaper?510:120);
   const design=state.studio?.design||{};const font=['serif','sans-serif','monospace'].includes(design.font)?design.font:'sans-serif';
   if(/^#[0-9a-f]{6}$/i.test(design.color))ctx.fillStyle=design.color;
-  let fontSize=Number.isFinite(design.size)?Math.max(32,Math.min(60,design.size)):quote.text.length>240?38:quote.text.length>160?44:52;let lines;
-  do{ctx.font=`${fontSize}px ${font}`;lines=[];let line='';for(const word of `“${quote.text}”`.split(/\s+/)){if(ctx.measureText(word).width>900){if(line){lines.push(line);line='';}for(const char of word){if(ctx.measureText(line+char).width>900){lines.push(line);line='';}line+=char;}}else{const next=line?line+' '+word:word;if(ctx.measureText(next).width>900&&line){lines.push(line);line=word;}else line=next;}}if(line)lines.push(line);if(lines.length*fontSize*1.4<=800||fontSize<=26)break;fontSize-=2;}while(true);
+  let fontSize=Number.isFinite(design.size)?Math.max(32,Math.min(60,design.size)):shown.text.length>240?38:shown.text.length>160?44:52;let lines;
+  do{ctx.font=`${fontSize}px ${font}`;lines=[];let line='';for(const word of `“${shown.text}”`.split(/\s+/)){if(ctx.measureText(word).width>900){if(line){lines.push(line);line='';}for(const char of word){if(ctx.measureText(line+char).width>900){lines.push(line);line='';}line+=char;}}else{const next=line?line+' '+word:word;if(ctx.measureText(next).width>900&&line){lines.push(line);line=word;}else line=next;}}if(line)lines.push(line);if(lines.length*fontSize*1.4<=800||fontSize<=26)break;fontSize-=2;}while(true);
   const lineHeight=fontSize*1.4;let y=Math.max(wallpaper?650:260,(wallpaper?1000:650)-lines.length*lineHeight/2);ctx.textAlign=design.align==='center'?'center':'left';for(const text of lines){ctx.fillText(text,design.align==='center'?540:90,y);y+=lineHeight;}ctx.textAlign='left';
   ctx.font='24px sans-serif';ctx.fillText('— '+quote.author,90,Math.min(wallpaper?1680:1150,y+48));ctx.font='20px sans-serif';ctx.fillText('A LITTLE FORWARD, EVERY DAY.',90,wallpaper?1780:1240);return canvas;
 }
