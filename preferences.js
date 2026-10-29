@@ -9,7 +9,7 @@ $('undo-hide').addEventListener('click',()=>{state.preferences.hidden=state.pref
 $('restore-hidden').addEventListener('click',()=>{state.preferences.hidden=[];persist();renderMotivePreferences();$('preferences-status').textContent='Hidden quotes restored. Reading history stays where it was.';});
 $('reset-preferences').addEventListener('click',()=>{state.preferences=cleanMotivePreferences({});persist();renderMotivePreferences();renderMotivePersonalization();$('preferences-status').textContent='Quote preferences reset. Your saved words are still here.';});
 for(const style of ['I','You'])$('pair-'+style.toLowerCase()).addEventListener('click',()=>{state.preferences.pair=style;persist();renderMotivePersonalization();});
-$('pair-read').addEventListener('click',()=>speakWords($('pair-words').textContent,null,'en'));
+$('pair-read').addEventListener('click',()=>{stopSpeech();speakWords($('pair-words').textContent,null,'en');});
 $('favorite-revisit-open').addEventListener('click',()=>{const q=allQuotes().find(q=>q.id===$('favorite-revisit-open').dataset.quoteId);if(q)showQuote(q,{revisit:true});});
 $('new-quote').addEventListener('input',()=>{$('accept-similar').checked=false;$('similar-warning').hidden=true;});
 renderMotivePreferences();renderMotivePersonalization();

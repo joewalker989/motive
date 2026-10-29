@@ -44,16 +44,16 @@ Requested October 29, 2026. Free website first. This is the persistent scope lis
 | 38 | More image export formats | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
 | 39 | Move quote text in exports | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
 | 40 | Saved design presets | Implemented: website gallery, subjects, pins, contrast, crops, favorites, recent-picture avoidance, export shapes/formats, text placement, and saved designs |
-| 41 | Human recording library imports | Queued for implementation or audit |
-| 42 | Remember language and voice choices | Queued for implementation or audit |
-| 43 | Highlight spoken words | Queued for implementation or audit |
-| 44 | Editable listening queues | Queued for implementation or audit |
-| 45 | Skip audio backward or forward | Queued for implementation or audit |
-| 46 | Repeat a listening item | Queued for implementation or audit |
-| 47 | Separate voice and ambience volume | Queued for implementation or audit |
-| 48 | Audio fades | Queued for implementation or audit |
-| 49 | Trim imported recordings | Queued for implementation or audit |
-| 50 | Audio transcripts | Queued for implementation or audit |
+| 41 | Human recording library imports | Available via user-owned recording imports; no licensed instructor library bundled |
+| 42 | Remember language and voice choices | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 43 | Highlight spoken words | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 44 | Editable listening queues | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 45 | Skip audio backward or forward | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 46 | Repeat a listening item | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 47 | Separate voice and ambience volume | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 48 | Audio fades | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 49 | Trim imported recordings | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
+| 50 | Audio transcripts | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
 | 51 | One-tap settling session | Queued for implementation or audit |
 | 52 | Custom session minutes | Queued for implementation or audit |
 | 53 | Reusable session presets | Queued for implementation or audit |

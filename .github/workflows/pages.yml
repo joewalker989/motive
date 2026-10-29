@@ -41,6 +41,8 @@ jobs:
           node --check discovery.js
           node --check image-studio-core.js
           node --check image-studio.js
+          node --check audio-tools-core.js
+          node --check audio-tools.js
           node --check scripts/daily-update.cjs
           node --check scripts/export-quotes.cjs
           node scripts/export-quotes.cjs
@@ -53,6 +55,7 @@ jobs:
           node --test tests/preferences.test.cjs
           node --test tests/discovery.test.cjs
           node --test tests/image-studio.test.cjs
+          node --test tests/audio-tools.test.cjs
           node --test tests/home-experience.test.cjs
           node --test tests/daily-update.test.cjs
           node --test tests/wellbeing.test.cjs
@@ -62,7 +65,7 @@ jobs:
         run: |
           mkdir public
           cp index.html styles.css app.js quotes.js daily-quotes.js scenes.js enhancements.js companion.js wellbeing-core.js wellbeing.js wellbeing.css growth-core.js growth.js sw.js manifest.webmanifest icon.svg public/
-          cp quotes.json content-status.json content-status.js update-ready.js navigation.js home-experience.js preferences-core.js preferences.js discovery-core.js discovery.js image-studio-core.js image-studio.js public/
+          cp quotes.json content-status.json content-status.js update-ready.js navigation.js home-experience.js preferences-core.js preferences.js discovery-core.js discovery.js image-studio-core.js image-studio.js audio-tools-core.js audio-tools.js public/
           cp -r icons public/
           cp -r assets public/
           mkdir public/widget
