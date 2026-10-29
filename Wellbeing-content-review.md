@@ -13,3 +13,5 @@ Reference for general gentle, comfortable, unforced breathing: [NHS breathing ex
 Roadmap item 60 remains pending external expertise. Automated timer tests and code review cannot complete that item.
 
 The review scope also includes Spanish and French wording in guidance-locales.js. Code coverage and language metadata tests do not certify translation quality, clinical suitability or on-device speech behavior.
+
+Daily pause translations in daily-guidance-locales.js and story translations in story-locales.js are also included in the independent language/content review scope. Their coverage tests check completeness and source alignment, not professional certification.
