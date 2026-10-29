@@ -44,6 +44,7 @@ state.saved = Array.isArray(state.saved) ? [...new Set(state.saved.filter(id => 
 state.intention = state.intention && typeof state.intention === 'object' ? state.intention : {};
 state.seen = Array.isArray(state.seen) ? [...new Set(state.seen.filter(id => typeof id === 'string'))] : [];
 state.freshOnOpen = state.freshOnOpen !== false;
+if(typeof cleanMotivePreferences==='function')state.preferences=cleanMotivePreferences(state.preferences);
 let category = 'All';
 let savedView = false;
 let collectionMode = 'featured';
@@ -59,14 +60,16 @@ function allQuotes() { return uniqueQuotes([...reminders, ...state.custom]); }
 function persist() { try { localStorage.setItem('motive-v1', JSON.stringify(state)); } catch { storageAvailable = false; toast('Browser storage is unavailable. Changes last for this visit only.'); } if (typeof updateStats === 'function') updateStats(); }
 function toast(message) { $('toast').textContent = message; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').classList.remove('show'), 3500); }
 function nextQuote(theme = category) {
-  const pool = allQuotes().filter(q => theme === 'All' || q.category === theme);
+  let pool = allQuotes().filter(q => theme === 'All' || q.category === theme);
+  if(typeof filterMotivePool==='function')pool=filterMotivePool(pool,state.preferences);
+  if(!pool.length){toast('No quotes match this theme and your preferences. Try another theme or adjust preferences in Space.');return current||allQuotes()[0];}
   const result = pickUnseenQuote(pool, state.seen, current?.id || state.currentQuote?.id);
   state.seen = result.history;
   return result.quote;
 }
 function dailyQuote() {
   const existing = state.daily?.day === dayKey() && allQuotes().find(q => q.id === state.daily.id);
-  if (existing) return existing;
+  if (existing&&(typeof filterMotivePool!=='function'||filterMotivePool([existing],state.preferences).length)) return existing;
   const quote = nextQuote('All');
   state.daily = {day: dayKey(), id: quote.id};
   return quote;
@@ -82,12 +85,14 @@ function showQuote(quote,{revisit=false}={}) {
   $('quote-category').textContent = category === 'All' && state.daily?.day === dayKey() && quote.id === state.daily.id ? 'YOUR DAILY REMINDER' : quote.category.toUpperCase();
   if (!revisit && !state.seen.includes(quote.id)) state.seen.push(quote.id);
   state.currentQuote = {day: dayKey(), id: quote.id, category, revisit};
-  const pool = allQuotes().filter(q => category === 'All' || q.category === category);
+  let pool = allQuotes().filter(q => category === 'All' || q.category === category);
+  if(typeof filterMotivePool==='function')pool=filterMotivePool(pool,state.preferences);
   $('quote-position').textContent = `${pool.filter(q => state.seen.includes(q.id)).length} of ${pool.length} explored · No repeats until the set is complete`;
   persist();
   updateSave();
   if(typeof updateQuoteBackground==='function')updateQuoteBackground(quote);
   if(typeof companionQuoteChanged==='function')companionQuoteChanged(quote);
+  if(typeof renderMotivePersonalization==='function')renderMotivePersonalization();
 }
 function updateSave() {
   const saved = state.saved.includes(current.id);
@@ -109,7 +114,7 @@ function renderCollection() {
   else if (customCollection) quotes = allQuotes().filter(q => customCollection.quoteIds.includes(q.id));
   else if (collectionMode === 'all' || searchTerm) quotes = allQuotes();
   else quotes = [...state.custom.filter(matchesCategory).slice().reverse(), ...reminders.filter(matchesCategory).slice(0,3)];
-  quotes = quotes.filter(q => matchesCategory(q) && `${q.text} ${q.author} ${q.category}`.toLowerCase().includes(searchTerm.toLowerCase()));
+  quotes = quotes.filter(q => (typeof motiveLibraryMatches!=='function'||motiveLibraryMatches(q)) && matchesCategory(q) && `${q.text} ${q.author} ${q.category}`.toLowerCase().includes(searchTerm.toLowerCase()));
   if (customCollection) $('collection-title').textContent = customCollection.name;
   else if (collectionMode === 'all' || searchTerm) $('collection-title').textContent = 'Find the words you need.';
   else if (collectionMode === 'personal') $('collection-title').textContent = 'A reminder, in your words.';
@@ -140,7 +145,7 @@ $('today-tab').addEventListener('click', () => {if(typeof navigateMotive==='func
 $('copy-button').addEventListener('click', async () => { const text = `“${current.text}” — ${current.author}`; try { if (!navigator.clipboard?.writeText) throw Error('Clipboard unavailable'); await navigator.clipboard.writeText(text); toast('Copied. Carry a little inspiration with you.'); } catch { const field = document.createElement('textarea'); field.value = text; field.style.cssText = 'position:fixed;left:-9999px'; document.body.append(field); field.select(); try { const success = document.execCommand('copy'); toast(success ? 'Quote copied.' : 'Select the quote text to copy it.'); } catch { toast('Select the quote text to copy it.'); } field.remove(); } });
 $('add-button').addEventListener('click', () => { editingQuoteId=null;$('quote-form').reset();$('new-quote').setCustomValidity('');$('quote-dialog-title').textContent='A reminder, in your words.';$('quote-dialog').showModal(); $('new-quote').focus(); });
 $('close-dialog').addEventListener('click', () => $('quote-dialog').close());
-$('quote-form').addEventListener('submit', event => { event.preventDefault(); const text = $('new-quote').value.trim(); if (!text || allQuotes().some(q => q.id!==editingQuoteId && quoteKey(q.text) === quoteKey(text))) { $('new-quote').setCustomValidity(text ? 'These words are already in your library. Try a different reminder.' : 'Add a few words for your reminder.'); $('new-quote').reportValidity(); return; } const quote = {id:editingQuoteId||`personal-${Date.now()}-${Math.random().toString(36).slice(2,9)}`, text, author:$('new-author').value.trim() || 'A note to myself', category:$('new-category').value}; if(editingQuoteId) state.custom=state.custom.map(q=>q.id===editingQuoteId?quote:q);else state.custom.push(quote); if(!state.saved.includes(quote.id))state.saved.push(quote.id);editingQuoteId=null; persist(); category = 'All'; for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === 'All'; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); } showQuote(quote); renderCollection(); $('quote-dialog').close(); $('quote-form').reset(); if (storageAvailable) toast('Your words have a home here.'); });
+$('quote-form').addEventListener('submit', event => { event.preventDefault(); const text = $('new-quote').value.trim(); if (!text || allQuotes().some(q => q.id!==editingQuoteId && quoteKey(q.text) === quoteKey(text))) { $('new-quote').setCustomValidity(text ? 'These words are already in your library. Try a different reminder.' : 'Add a few words for your reminder.'); $('new-quote').reportValidity(); return; } if(typeof nearMotiveQuote==='function'){const similar=nearMotiveQuote(text,allQuotes(),editingQuoteId);if(similar&&!$('accept-similar').checked){$('similar-warning').hidden=false;$('similar-warning-text').textContent='This resembles a reminder already here: '+similar.text;return;}} const quote = {id:editingQuoteId||`personal-${Date.now()}-${Math.random().toString(36).slice(2,9)}`, text, author:$('new-author').value.trim() || 'A note to myself', category:$('new-category').value}; if(editingQuoteId) state.custom=state.custom.map(q=>q.id===editingQuoteId?quote:q);else state.custom.push(quote); if(!state.saved.includes(quote.id))state.saved.push(quote.id);editingQuoteId=null; persist(); category = 'All'; for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === 'All'; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); } showQuote(quote); renderCollection(); $('quote-dialog').close(); $('quote-form').reset(); if (storageAvailable) toast('Your words have a home here.'); });
 $('new-quote').addEventListener('input', () => $('new-quote').setCustomValidity(''));
 $('cancel-delete').addEventListener('click', () => { pendingDelete = null; $('delete-dialog').close(); });
 $('confirm-delete').addEventListener('click', () => { const id = pendingDelete; state.custom = state.custom.filter(q => q.id !== id); state.saved = state.saved.filter(savedId => savedId !== id); for(const c of state.collections||[])c.quoteIds=c.quoteIds.filter(qid=>qid!==id);persist(); if (current.id === id) showQuote(nextQuote()); updateSave(); renderCollection(); $('delete-dialog').close(); pendingDelete = null; });
@@ -151,8 +156,8 @@ $('intention-form').addEventListener('submit', event => { event.preventDefault()
 function loadIntention() { const today = state.intention.day === dayKey() && typeof state.intention.text === 'string'; $('intention-input').value = today ? state.intention.text : ''; $('intention-status').textContent = today && state.intention.text ? 'A small promise to yourself. Saved for today.' : ''; }
 document.addEventListener('visibilitychange', () => { if (!document.hidden) {if(currentDay !== dayKey()){currentDay = dayKey(); updateGreeting(); loadIntention();showQuote(category==='All'?dailyQuote():nextQuote());}else if(state.freshOnOpen)showQuote(nextQuote());} });
 const restoredQuote = !state.freshOnOpen && state.currentQuote?.day === dayKey() && allQuotes().find(q => q.id === state.currentQuote.id);
-if (restoredQuote && categories.includes(state.currentQuote.category)) category = state.currentQuote.category;
-updateGreeting(); loadIntention(); showQuote(restoredQuote || (state.daily?.day===dayKey()?nextQuote():dailyQuote()),{revisit:!!restoredQuote&&state.currentQuote?.revisit}); setView(false);
+if (restoredQuote && (typeof filterMotivePool!=='function'||filterMotivePool([restoredQuote],state.preferences).length) && categories.includes(state.currentQuote.category)) category = state.currentQuote.category;
+updateGreeting(); loadIntention(); showQuote((restoredQuote&&(typeof filterMotivePool!=='function'||filterMotivePool([restoredQuote],state.preferences).length)?restoredQuote:null) || (state.daily?.day===dayKey()?nextQuote():dailyQuote()),{revisit:!!restoredQuote&&state.currentQuote?.revisit}); setView(false);
 for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === category; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); }
 if (!storageAvailable) toast('Browser storage is unavailable. Changes last for this visit only.');
 

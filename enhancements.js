@@ -102,7 +102,7 @@ $('settings-button').addEventListener('click',()=>$('settings-dialog').showModal
 $('close-settings').addEventListener('click',()=>$('settings-dialog').close());
 $('intention-done').addEventListener('change',()=>{const today=dayKey();state.activity.completed=state.activity.completed.filter(day=>day!==today);if($('intention-done').checked)state.activity.completed.push(today);persist();$('intention-feedback').textContent=$('intention-done').checked?'You made a little room for what matters.':'';});
 function downloadFile(blob,name) { const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000); }
-function backupData() { return {app:'motive',version:1,exportedAt:new Date().toISOString(),data:{name:state.name,custom:state.custom,saved:state.saved,seen:state.seen,collections:state.collections,activity:state.activity,intention:state.intention,theme:state.theme,companion:state.companion,studio:state.studio}}; }
+function backupData() { return {app:'motive',version:1,exportedAt:new Date().toISOString(),data:{name:state.name,custom:state.custom,saved:state.saved,seen:state.seen,collections:state.collections,activity:state.activity,intention:state.intention,theme:state.theme,companion:state.companion,studio:state.studio,experience:state.experience,preferences:state.preferences}}; }
 function mergeBackup(backup) {
   if(!backup || backup.app!=='motive' || backup.version!==1 || !backup.data || !Array.isArray(backup.data.custom) || !Array.isArray(backup.data.saved))throw Error('Choose a Motive backup file downloaded from this app.');
   const incoming=backup.data;
@@ -125,7 +125,9 @@ function mergeBackup(backup) {
   let intention=state.intention;if(incoming.intention && validDay(incoming.intention.day) && typeof incoming.intention.text==='string' && incoming.intention.text.length<=160 && (!validDay(intention.day)||incoming.intention.day>intention.day))intention={day:incoming.intention.day,text:incoming.intention.text};
   const companion=incoming.companion!==undefined&&typeof mergeCompanionBackup==='function'?mergeCompanionBackup(incoming.companion,mapIds,validIds):state.companion;
   const studio=typeof cleanStudioPreferences==='function'?cleanStudioPreferences(incoming.studio):state.studio;
-  return {custom,saved,collections,activity,intention,companion,studio,seen:[...new Set([...state.seen,...mapIds(incoming.seen)])],name:state.name||(typeof incoming.name==='string'?incoming.name.slice(0,35):'')};
+  const experience=typeof cleanMotiveExperience==='function'?cleanMotiveExperience(incoming.experience||state.experience):state.experience;
+  const preferences=typeof cleanMotivePreferences==='function'?cleanMotivePreferences({...state.preferences,...incoming.preferences,hidden:[...(state.preferences?.hidden||[]),...mapIds(incoming.preferences?.hidden)],notes:{...Object.fromEntries(Object.entries(incoming.preferences?.notes||{}).filter(([,note])=>typeof note==='string').map(([id,note])=>[mapIds([id])[0],note]).filter(([id])=>id)),...state.preferences?.notes}}):state.preferences;
+  return {custom,saved,collections,activity,intention,companion,studio,experience,preferences,seen:[...new Set([...state.seen,...mapIds(incoming.seen)])],name:state.name||(typeof incoming.name==='string'?incoming.name.slice(0,35):'')};
 }
 $('backup-button').addEventListener('click',()=>{downloadFile(new Blob([JSON.stringify(backupData(),null,2)],{type:'application/json'}),`motive-backup-${dayKey()}.json`);$('backup-status').textContent='Backup downloaded. Keep it somewhere you can find it again.';});
 $('restore-button').addEventListener('click',()=>$('backup-file').click());

@@ -51,7 +51,8 @@ function renderPersonalSpace(){
 }
 function renderActionIdea(){
   const theme=actionIdeas[current.category]?current.category:'Growth';
-  $('action-idea').textContent=actionIdeas[theme][actionIndex%actionIdeas[theme].length];
+  const tailored=typeof motiveTailoredAction==='function'?motiveTailoredAction(current):null;const ideas=tailored?[tailored,...actionIdeas[theme]]:actionIdeas[theme];
+  $('action-idea').textContent=ideas[actionIndex%ideas.length];
 }
 function companionQuoteChanged(quote=current){
   state.companion.recent=[quote.id,...state.companion.recent.filter(id=>id!==quote.id)].slice(0,30);
