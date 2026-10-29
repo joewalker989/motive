@@ -18,3 +18,5 @@ Roadmap requested October 27, 2026. Work follows the 100-item comparison in the 
 Do not mark priority 1 fully verified from speech start/end events alone. Use Voice options → Check reading on this device on the physical iPhone. Continue independent work on priority 2 while awaiting that check.
 
 The complete scope and current delivery states are tracked in [Roadmap100.md](Roadmap100.md). Items 11–30 are now implemented except semantic near-duplicate detection, which remains a word-overlap warning plus manual paraphrase review.
+
+October 29 continuation: items 41–50 are published. Items 51–59 and 61–70 now have session/rest controls and tests; item 60 remains an independent expert review dependency. See Roadmap100.md for exact limits. Work continues through the remaining personal-space and platform items.

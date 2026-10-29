@@ -52,3 +52,6 @@ html[data-theme] .quote-card.has-scene{background-color:#152a21;background-image
 .audio-tools{margin-top:24px}.audio-tools>label,.audio-tools>select,.audio-tools>input,.audio-tools>textarea{display:block;width:100%;margin:10px 0}.audio-tools input[type=checkbox]{width:auto;display:inline}.audio-tools button{min-height:44px}.audio-tools li{padding:10px 0;border-bottom:1px solid var(--line)}.audio-tools li p{line-height:1.7}.audio-tools li button{margin-right:8px}.spoken-word{background:rgba(229,234,203,.3);border-radius:4px;text-decoration:underline;text-underline-offset:.15em}
 
 .audio-advanced{margin-top:22px;border-top:1px solid var(--line);padding-top:16px}.audio-advanced summary{cursor:pointer;font-weight:600;min-height:44px;line-height:1.6}.audio-advanced>label,.audio-advanced>select,.audio-advanced>input,.audio-advanced>textarea{display:block;width:100%;margin:10px 0}.audio-advanced input[type=checkbox]{width:auto;display:inline}
+
+#sleep-story-text{white-space:pre-line}
+#sleep-story-text.rest-dim{background:#171c1a;color:#e0e6dc;padding:1.3rem;border-radius:16px;line-height:1.9}#rest-routine-list label{display:flex;gap:.7rem;align-items:center;padding:.6rem 0}#rest-routine-list input{width:auto}

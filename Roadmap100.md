@@ -54,26 +54,26 @@ Requested October 29, 2026. Free website first. This is the persistent scope lis
 | 48 | Audio fades | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
 | 49 | Trim imported recordings | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
 | 50 | Audio transcripts | Implemented; word events/volume depend on the device voice, seeking/fades/trim apply to recordings, and transcripts are manual |
-| 51 | One-tap settling session | Queued for implementation or audit |
-| 52 | Custom session minutes | Queued for implementation or audit |
-| 53 | Reusable session presets | Queued for implementation or audit |
-| 54 | Optional session bells | Queued for implementation or audit |
-| 55 | Preparation delay | Queued for implementation or audit |
-| 56 | Comfortable breathing pace | Queued for implementation or audit |
-| 57 | Switch to grounding during a session | Queued for implementation or audit |
-| 58 | Multi-stage sessions | Queued for implementation or audit |
-| 59 | Optional session feedback | Queued for implementation or audit |
-| 60 | Expert review of wellbeing content | Requires external expertise/content review |
-| 61 | Expanded original sleep stories | Queued for implementation or audit |
-| 62 | Resume a story | Queued for implementation or audit |
-| 63 | More soundscapes | Queued for implementation or audit |
-| 64 | Focus-break cycles | Queued for implementation or audit |
-| 65 | Custom focus duration | Queued for implementation or audit |
-| 66 | Personal bedtime routine | Queued for implementation or audit |
-| 67 | Dim reading mode | Queued for implementation or audit |
-| 68 | Time-of-day shortcuts | Queued for implementation or audit |
-| 69 | Offline download manager | Queued for implementation or audit |
-| 70 | Session library filters | Queued for implementation or audit |
+| 51 | One-tap settling session | Implemented: silent one-minute grounding starts from the overwhelmed shortcut |
+| 52 | Custom session minutes | Implemented: 1–60 minutes |
+| 53 | Reusable session presets | Implemented: up to 12 local presets, included in quote backups |
+| 54 | Optional session bells | Implemented: optional synthesized soft bells; browser audio support required |
+| 55 | Preparation delay | Implemented: cancellable 0/3/5/10-second preparation |
+| 56 | Comfortable breathing pace | Implemented: natural pace or optional two-part counts, no holds |
+| 57 | Switch to grounding during a session | Implemented: remaining time preserved |
+| 58 | Multi-stage sessions | Implemented: grounding → selected pause → quiet for sessions at least 3 minutes |
+| 59 | Optional session feedback | Implemented: optional local preference answers; no assessment |
+| 60 | Expert review of wellbeing content | Pending independent qualified review; see Wellbeing-content-review.md |
+| 61 | Expanded original sleep stories | Implemented: 8 original short stories, synthetic device voice |
+| 62 | Resume a story | Implemented: paragraph-level resume for multi-paragraph stories; exact-word resume unavailable |
+| 63 | More soundscapes | Implemented: additional synthesized air, deep noise wash, and low tones in Calm |
+| 64 | Focus-break cycles | Implemented: 1–8 focus rounds with breaks; foreground clock checks, no closed-app alarm |
+| 65 | Custom focus duration | Implemented: custom focus 1–120 minutes, breaks 1–30 minutes |
+| 66 | Personal bedtime routine | Implemented: local routine text and temporary checkmarks |
+| 67 | Dim reading mode | Implemented: dim story reading area |
+| 68 | Time-of-day shortcuts | Implemented: local-time heading and morning/day/evening shortcuts |
+| 69 | Offline download manager | Implemented: public cache file count/size and missing-file downloads; browser may evict storage |
+| 70 | Session library filters | Implemented basic name filters for sessions and stories; no duration/tag faceting |
 | 71 | Journal draft recovery | Queued for implementation or audit |
 | 72 | Journal templates | Queued for implementation or audit |
 | 73 | Weekly reflection review | Queued for implementation or audit |
