@@ -48,6 +48,8 @@ jobs:
           node --check rest-tools-core.js
           node --check rest-tools.js
           node --check offline-library.js
+          node --check practice-tools-core.js
+          node --check practice-tools.js
           node --check scripts/daily-update.cjs
           node --check scripts/export-quotes.cjs
           node scripts/export-quotes.cjs
@@ -63,6 +65,7 @@ jobs:
           node --test tests/audio-tools.test.cjs
           node --test tests/calm-tools.test.cjs
           node --test tests/rest-tools.test.cjs
+          node --test tests/practice-tools.test.cjs
           node --test tests/home-experience.test.cjs
           node --test tests/daily-update.test.cjs
           node --test tests/wellbeing.test.cjs
@@ -72,7 +75,7 @@ jobs:
         run: |
           mkdir public
           cp index.html styles.css app.js quotes.js daily-quotes.js scenes.js enhancements.js companion.js wellbeing-core.js wellbeing.js wellbeing.css growth-core.js growth.js sw.js manifest.webmanifest icon.svg public/
-          cp quotes.json content-status.json content-status.js update-ready.js navigation.js home-experience.js preferences-core.js preferences.js discovery-core.js discovery.js image-studio-core.js image-studio.js audio-tools-core.js audio-tools.js calm-tools-core.js calm-tools.js rest-tools-core.js rest-tools.js offline-library.js public/
+          cp quotes.json content-status.json content-status.js update-ready.js navigation.js home-experience.js preferences-core.js preferences.js discovery-core.js discovery.js image-studio-core.js image-studio.js audio-tools-core.js audio-tools.js calm-tools-core.js calm-tools.js rest-tools-core.js rest-tools.js offline-library.js practice-tools-core.js practice-tools.js public/
           cp -r icons public/
           cp -r assets public/
           mkdir public/widget

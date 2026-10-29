@@ -74,16 +74,16 @@ Requested October 29, 2026. Free website first. This is the persistent scope lis
 | 68 | Time-of-day shortcuts | Implemented: local-time heading and morning/day/evening shortcuts |
 | 69 | Offline download manager | Implemented: public cache file count/size and missing-file downloads; browser may evict storage |
 | 70 | Session library filters | Implemented basic name filters for sessions and stories; no duration/tag faceting |
-| 71 | Journal draft recovery | Queued for implementation or audit |
-| 72 | Journal templates | Queued for implementation or audit |
-| 73 | Weekly reflection review | Queued for implementation or audit |
-| 74 | Multiple mood check-ins per day | Queued for implementation or audit |
-| 75 | Combined personal timeline | Queued for implementation or audit |
-| 76 | Smaller steps for habits | Queued for implementation or audit |
-| 77 | Weekday habit goals | Queued for implementation or audit |
-| 78 | Hide streaks and counts | Queued for implementation or audit |
-| 79 | If-then habit plans | Queued for implementation or audit |
-| 80 | Optional celebrations | Queued for implementation or audit |
+| 71 | Journal draft recovery | Implemented: opt-in text recovery using journal records and the same vault encryption; unsaved media excluded |
+| 72 | Journal templates | Implemented: three append-only writing templates |
+| 73 | Weekly reflection review | Implemented: weekly journal review with vault/session guards; current journal filters apply |
+| 74 | Multiple mood check-ins per day | Implemented: explicit Save check-in appends; calendar shows latest per day, arrival shortcut retains daily behavior |
+| 75 | Combined personal timeline | Implemented: combined recent activity metadata, excluding journal words and recovery drafts |
+| 76 | Smaller steps for habits | Implemented: smallest-step plans for each habit |
+| 77 | Weekday habit goals | Implemented: chosen weekdays control new marks; old history is retained |
+| 78 | Hide streaks and counts | Implemented: reversible hide for visit/completion and habit counts |
+| 79 | If-then habit plans | Implemented: per-habit cue and small-step wording |
+| 80 | Optional celebrations | Implemented: optional small habit-step celebration; off by default, reduced-motion support |
 | 81 | Large-text controls | Queued for implementation or audit |
 | 82 | Screen-reader navigation review | Queued for implementation or audit |
 | 83 | Optional timer announcements | Queued for implementation or audit |

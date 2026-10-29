@@ -55,3 +55,5 @@ html[data-theme] .quote-card.has-scene{background-color:#152a21;background-image
 
 #sleep-story-text{white-space:pre-line}
 #sleep-story-text.rest-dim{background:#171c1a;color:#e0e6dc;padding:1.3rem;border-radius:16px;line-height:1.9}#rest-routine-list label{display:flex;gap:.7rem;align-items:center;padding:.6rem 0}#rest-routine-list input{width:auto}
+
+.practice-quiet #streak-stat,.practice-quiet #completed-stat,.practice-quiet .practice-count{display:none!important}#practice-habit-days{display:flex;flex-wrap:wrap;gap:.5rem}#practice-habit-days label{display:flex;align-items:center;gap:.3rem}#practice-habit-days input{width:auto}.celebrating{color:var(--accent);animation:small-step .7s ease-out}@keyframes small-step{from{transform:translateY(6px);opacity:.2}to{transform:none;opacity:1}}@media(prefers-reduced-motion:reduce){.celebrating{animation:none}}

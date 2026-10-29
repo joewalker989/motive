@@ -20,3 +20,5 @@ Do not mark priority 1 fully verified from speech start/end events alone. Use Vo
 The complete scope and current delivery states are tracked in [Roadmap100.md](Roadmap100.md). Items 11–30 are now implemented except semantic near-duplicate detection, which remains a word-overlap warning plus manual paraphrase review.
 
 October 29 continuation: items 41–50 are published. Items 51–59 and 61–70 now have session/rest controls and tests; item 60 remains an independent expert review dependency. See Roadmap100.md for exact limits. Work continues through the remaining personal-space and platform items.
+
+October 29 personal-practice checkpoint: items 71–80 implemented with encrypted draft migration/lock tests, multiple-check-in preservation, templates, review/timeline, habit plans and reversible progress display. Remaining work begins at accessibility/storage items 81–90, followed by platform audit 91–100.
