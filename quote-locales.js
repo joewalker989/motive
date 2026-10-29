@@ -209,6 +209,216 @@ const motiveQuoteLocales={
     "sourceAuthor": "A Motive reminder",
     "es": "Vuelve a lo que está aquí: tu respiración, tus pies, este pequeño momento.",
     "fr": "Revenez à ce qui est ici : votre respiration, vos pieds, ce petit instant."
+  },
+  "motive-extra-confidence-1": {
+    "sourceText": "Your needs deserve a place in your plans.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tus necesidades merecen un lugar en tus planes.",
+    "fr": "Vos besoins méritent une place dans vos projets."
+  },
+  "motive-extra-confidence-2": {
+    "sourceText": "Stand by the work you did when nobody was watching.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Valora el trabajo que hiciste cuando nadie miraba.",
+    "fr": "Reconnaissez la valeur du travail que vous avez accompli sans témoin."
+  },
+  "motive-extra-confidence-3": {
+    "sourceText": "You can speak honestly without having every answer.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes hablar con sinceridad sin tener todas las respuestas.",
+    "fr": "Vous pouvez parler avec sincérité sans avoir toutes les réponses."
+  },
+  "motive-extra-confidence-4": {
+    "sourceText": "Let your choices reflect your character rather than your doubts.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Que tus decisiones reflejen tus valores más que tus dudas.",
+    "fr": "Laissez vos choix refléter vos valeurs plutôt que vos doutes."
+  },
+  "motive-extra-confidence-5": {
+    "sourceText": "You bring a perspective that this room has not heard yet.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Aportas una perspectiva que las personas de esta sala aún no han escuchado.",
+    "fr": "Vous apportez un point de vue que les personnes ici n’ont pas encore entendu."
+  },
+  "motive-extra-confidence-6": {
+    "sourceText": "An awkward first attempt does not cancel your potential.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un primer intento torpe no borra tu potencial.",
+    "fr": "Un premier essai maladroit n’efface pas votre potentiel."
+  },
+  "motive-extra-confidence-7": {
+    "sourceText": "Give yourself permission to take up the space you need.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Date permiso para ocupar el espacio que necesitas.",
+    "fr": "Accordez-vous le droit de prendre la place dont vous avez besoin."
+  },
+  "motive-extra-confidence-8": {
+    "sourceText": "You can be uncertain about the outcome and certain about your effort.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes tener dudas sobre el resultado y confianza en tu esfuerzo.",
+    "fr": "Vous pouvez douter du résultat tout en ayant confiance dans votre effort."
+  },
+  "motive-extra-confidence-9": {
+    "sourceText": "The way you treat yourself becomes part of the way you move through the world.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La forma en que te tratas influye en cómo te mueves por el mundo.",
+    "fr": "La façon dont vous vous traitez fait partie de votre manière d’avancer dans le monde."
+  },
+  "motive-extra-confidence-10": {
+    "sourceText": "You have something to contribute before you have something to prove.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Ya tienes algo que aportar antes de tener algo que demostrar.",
+    "fr": "Vous avez déjà quelque chose à apporter avant d’avoir quoi que ce soit à prouver."
+  },
+  "motive-extra-confidence-11": {
+    "sourceText": "Choose clothes, words, and goals that let you recognize yourself.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Elige ropa, palabras y metas en las que puedas reconocerte.",
+    "fr": "Choisissez des vêtements, des mots et des objectifs dans lesquels vous vous reconnaissez."
+  },
+  "motive-extra-confidence-12": {
+    "sourceText": "Your boundaries can be clear even when your voice shakes.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tus límites pueden ser claros aunque te tiemble la voz.",
+    "fr": "Vos limites peuvent être claires même lorsque votre voix tremble."
+  },
+  "motive-extra-confidence-13": {
+    "sourceText": "You can accept a compliment without making yourself smaller.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes aceptar un cumplido sin restarte valor.",
+    "fr": "Vous pouvez accepter un compliment sans vous dévaloriser."
+  },
+  "motive-extra-confidence-14": {
+    "sourceText": "Trust the preparation you have already put in.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Confía en la preparación que ya has hecho.",
+    "fr": "Faites confiance à la préparation que vous avez déjà accomplie."
+  },
+  "motive-extra-confidence-15": {
+    "sourceText": "A thoughtful question can be your strongest contribution.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una pregunta bien pensada puede ser tu mejor aportación.",
+    "fr": "Une question réfléchie peut être votre contribution la plus précieuse."
+  },
+  "motive-extra-confidence-16": {
+    "sourceText": "You do not need a crowd to agree before you respect your own judgment.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No necesitas que todo el mundo esté de acuerdo para respetar tu propio criterio.",
+    "fr": "Vous n’avez pas besoin de l’accord de tout le monde pour respecter votre propre jugement."
+  },
+  "motive-extra-confidence-17": {
+    "sourceText": "Give your ideas a chance to exist outside your notebook.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale a tus ideas la oportunidad de existir fuera de tu cuaderno.",
+    "fr": "Donnez à vos idées la chance d’exister en dehors de votre carnet."
+  },
+  "motive-extra-confidence-18": {
+    "sourceText": "Being overlooked once does not make you invisible forever.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Que una vez no te hayan tenido en cuenta no te vuelve invisible para siempre.",
+    "fr": "Passer inaperçu une fois ne vous rend pas invisible pour toujours."
+  },
+  "motive-extra-confidence-19": {
+    "sourceText": "Walk into the opportunity as someone who belongs in the conversation.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Aprovecha esa oportunidad sabiendo que tienes un lugar en la conversación.",
+    "fr": "Abordez cette occasion en sachant que vous avez votre place dans la conversation."
+  },
+  "motive-extra-confidence-20": {
+    "sourceText": "Let your experience count as evidence of what you can handle.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tu experiencia sea una prueba de lo que puedes afrontar.",
+    "fr": "Considérez votre expérience comme un indice de ce que vous pouvez affronter."
+  },
+  "motive-extra-confidence-21": {
+    "sourceText": "You can be warm without making yourself endlessly available.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes tratar a los demás con calidez sin estar siempre disponible.",
+    "fr": "Vous pouvez faire preuve de chaleur sans être disponible à tout moment."
+  },
+  "motive-extra-confidence-22": {
+    "sourceText": "Make decisions your future self can understand, even if others do not.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Toma decisiones que tu yo del futuro pueda comprender, aunque otras personas no las entiendan.",
+    "fr": "Prenez des décisions que votre futur vous pourra comprendre, même si les autres ne les comprennent pas."
+  },
+  "motive-extra-confidence-23": {
+    "sourceText": "You are more than the impression you made in one nervous moment.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Eres más que la impresión que causaste en un momento de nervios.",
+    "fr": "Vous êtes plus que l’impression laissée dans un moment de nervosité."
+  },
+  "motive-extra-confidence-24": {
+    "sourceText": "Confidence can sound like a calm, considered no.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La confianza puede expresarse con un no tranquilo y meditado.",
+    "fr": "La confiance peut s’exprimer par un non calme et réfléchi."
+  },
+  "motive-extra-confidence-25": {
+    "sourceText": "Let yourself finish the sentence before you decide it was foolish.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Permítete terminar la frase antes de decidir que era una tontería.",
+    "fr": "Laissez-vous finir votre phrase avant de décider qu’elle était stupide."
+  },
+  "motive-extra-confidence-26": {
+    "sourceText": "Ask for the clarification you need to do your best work.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Pide las aclaraciones que necesitas para hacer tu trabajo lo mejor posible.",
+    "fr": "Demandez les précisions dont vous avez besoin pour travailler de votre mieux."
+  },
+  "motive-extra-confidence-27": {
+    "sourceText": "Your worth does not rise and fall with your inbox.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu valor no sube ni baja con tu bandeja de entrada.",
+    "fr": "Votre valeur ne monte ni ne baisse au rythme de votre boîte de réception."
+  },
+  "motive-extra-confidence-28": {
+    "sourceText": "Believe the people who appreciate your presence without demanding a performance.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Cree a quienes valoran tu presencia sin exigirte que demuestres nada.",
+    "fr": "Croyez les personnes qui apprécient votre présence sans vous demander de faire vos preuves."
+  },
+  "motive-extra-confidence-29": {
+    "sourceText": "You can learn from criticism without adopting every judgment.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes aprender de las críticas sin hacer tuyos todos los juicios.",
+    "fr": "Vous pouvez apprendre des critiques sans adopter tous les jugements."
+  },
+  "motive-extra-confidence-30": {
+    "sourceText": "Take your own ambition seriously enough to give it time.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Toma tus propias aspiraciones lo bastante en serio como para dedicarles tiempo.",
+    "fr": "Prenez vos propres aspirations assez au sérieux pour leur consacrer du temps."
   }
 };
 if(typeof module!=='undefined')module.exports=motiveQuoteLocales;
