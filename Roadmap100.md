@@ -84,16 +84,16 @@ Requested October 29, 2026. Free website first. This is the persistent scope lis
 | 78 | Hide streaks and counts | Implemented: reversible hide for visit/completion and habit counts |
 | 79 | If-then habit plans | Implemented: per-habit cue and small-step wording |
 | 80 | Optional celebrations | Implemented: optional small habit-step celebration; off by default, reduced-motion support |
-| 81 | Large-text controls | Queued for implementation or audit |
-| 82 | Screen-reader navigation review | Queued for implementation or audit |
-| 83 | Optional timer announcements | Queued for implementation or audit |
-| 84 | Comfortable touch targets | Queued for implementation or audit |
-| 85 | Complete Spanish/French translations | Queued for implementation or audit |
-| 86 | Storage health overview | Queued for implementation or audit |
-| 87 | Backup import preview | Queued for implementation or audit |
-| 88 | Encrypt additional personal records | Queued for implementation or audit |
-| 89 | Privacy dashboard | Queued for implementation or audit |
-| 90 | Selective data deletion | Queued for implementation or audit |
+| 81 | Large-text controls | Implemented: Standard/Large/Extra large across controls and reading text, backed up |
+| 82 | Screen-reader navigation review | Keyboard/semantics reviewed: skip link, roving studio tabs, focus visibility; physical screen-reader testing pending |
+| 83 | Optional timer announcements | Implemented: opt-in screen-reader live-region milestones; visual seconds remain quiet |
+| 84 | Comfortable touch targets | Implemented: larger controls and checkbox labels; 390px extra-large layout checked |
+| 85 | Complete Spanish/French translations | Pending: complete library/guidance Spanish and French translation; existing studio labels and affirmations remain partial |
+| 86 | Storage health overview | Implemented: approximate origin usage/quota and active/recovery record counts |
+| 87 | Backup import preview | Implemented: quote/full backup validation and count preview, cancellation, explicit merge, vault checks |
+| 88 | Encrypt additional personal records | Pending: broader record encryption requires migration and rendering work; journals and recovery drafts stay encrypted |
+| 89 | Privacy dashboard | Implemented: local-storage/encryption boundaries, optional connection state, separate-backup explanation |
+| 90 | Selective data deletion | Implemented: selected studio-record recovery/restore and typed-confirmation permanent purge, stale-review rejection; quote preferences/history excluded |
 | 91 | Installed native interactive widget | Requires separate platform/service work; free website cannot activate it |
 | 92 | Android widget | Requires separate platform/service work; free website cannot activate it |
 | 93 | Background audio | Requires separate platform/service work; free website cannot activate it |
