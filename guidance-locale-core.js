@@ -1,0 +1,5 @@
+'use strict';
+function motiveGuidanceText(source,language,tables){const locale=['es','fr'].includes(language)?language:'en',text=locale==='en'?source:tables[locale]?.[source];return {text:typeof text==='string'&&text?text:source,language:typeof text==='string'&&text?locale:'en',translated:locale!=='en'&&typeof text==='string'&&!!text};}
+function motiveGuidanceSource(text,tables){if(Object.values(tables).some(table=>Object.hasOwn(table,text)))return text;for(const table of Object.values(tables))for(const [source,translation] of Object.entries(table))if(translation===text)return source;return text;}
+function motiveGuidanceCoverage(wellbeing,language,tables){const count=items=>({translated:items.filter(text=>motiveGuidanceText(text,language,tables).translated).length,total:items.length});return {sessions:count(['settle','even','ground','body','quiet'].flatMap(kind=>wellbeing.sessions[kind].steps)),prompts:count(Object.values(wellbeing.prompts).flat()),journeys:count(Object.values(wellbeing.journeys).flat())};}
+if(typeof module!=='undefined')module.exports={motiveGuidanceText,motiveGuidanceSource,motiveGuidanceCoverage};

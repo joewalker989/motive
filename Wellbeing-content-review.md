@@ -11,3 +11,5 @@ An independent suitably qualified reviewer should check the words, timing, acces
 Reference for general gentle, comfortable, unforced breathing: [NHS breathing exercises for stress](https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/breathing-exercises-for-stress/). This is a reference, not endorsement of Motive or its particular counts.
 
 Roadmap item 60 remains pending external expertise. Automated timer tests and code review cannot complete that item.
+
+The review scope also includes Spanish and French wording in guidance-locales.js. Code coverage and language metadata tests do not certify translation quality, clinical suitability or on-device speech behavior.
