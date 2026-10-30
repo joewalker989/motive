@@ -1,6 +1,20 @@
 'use strict';
 // Reviewed built-in control text only. Never pass personal records to these helpers.
 const motiveInterfaceLocales={
+"Give your quotes your own meaning":{"es": "Da tu propio significado a tus citas", "fr": "Donnez votre propre sens à vos citations"},
+"Tags for the current quote · commas":{"es": "Etiquetas para esta cita · separa con comas", "fr": "Étiquettes pour cette citation · séparez-les par des virgules"},
+"Morning, hard days, work":{"es": "Mañana, días difíciles, trabajo", "fr": "Matin, jours difficiles, travail"},
+"Save tags":{"es": "Guardar etiquetas", "fr": "Enregistrer les étiquettes"},
+"Find a tag":{"es": "Buscar una etiqueta", "fr": "Rechercher une étiquette"},
+"Type a tag":{"es": "Escribe una etiqueta", "fr": "Saisissez une étiquette"},
+"Show more tagged quotes":{"es": "Mostrar más citas etiquetadas", "fr": "Afficher plus de citations étiquetées"},
+"Tags saved.":{"es": "Etiquetas guardadas.", "fr": "Étiquettes enregistrées."},
+"No matching tagged quotes":{"es": "No hay citas etiquetadas coincidentes", "fr": "Aucune citation étiquetée correspondante"},
+"Save tags for a quote, or try a different tag.":{"es": "Guarda etiquetas para una cita o prueba otra etiqueta.", "fr": "Enregistrez des étiquettes pour une citation ou essayez une autre étiquette."},
+"Tagged quotes shown: {count}.":{"es": "Citas etiquetadas mostradas: {count}.", "fr": "Citations étiquetées affichées : {count}."},
+"Your tags stay on this device and are included in full studio backups. Tag searches use your own words, not translated labels.":{"es": "Tus etiquetas se guardan en este dispositivo y se incluyen en las copias completas del estudio. Las búsquedas usan tus propias palabras, sin traducir las etiquetas.", "fr": "Vos étiquettes restent sur cet appareil et sont incluses dans les sauvegardes complètes du studio. La recherche utilise vos propres mots, sans traduire les étiquettes."},
+"Open a quote before saving its tags.":{"es": "Abre una cita antes de guardar sus etiquetas.", "fr": "Ouvrez une citation avant d’enregistrer ses étiquettes."},
+
 "Habits that fit your life":{"es": "Hábitos que encajan en tu vida", "fr": "Des habitudes adaptées à votre vie"},
 "A small action":{"es": "Una pequeña acción", "fr": "Une petite action"},
 "Step outside, read a page…":{"es": "Salir un momento, leer una página…", "fr": "Sortir un instant, lire une page…"},
