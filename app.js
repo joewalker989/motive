@@ -74,9 +74,15 @@ function dailyQuote() {
   state.daily = {day: dayKey(), id: quote.id};
   return quote;
 }
+// Translate only literal interface templates; inserted personal values remain verbatim.
+function appInterface(source,values={}) { return typeof motiveInterfaceCurrent==='function'?motiveInterfaceCurrent(source,values):{text:source.replace(/\{(\w+)\}/g,(token,key)=>Object.prototype.hasOwnProperty.call(values,key)?String(values[key]):token),language:'en'}; }
+function appInterfaceNode(id,source,values={}) { const result=appInterface(source,values);$(id).textContent=result.text;$(id).setAttribute('lang',result.language); }
+function appInterfaceAttribute(node,attribute,source,values={}) { const result=appInterface(source,values);node.setAttribute(attribute,result.text);node.setAttribute('lang',result.language); }
 function updateGreeting() {
-  $('date-label').textContent = new Date().toLocaleDateString(undefined, {weekday:'long', month:'long', day:'numeric'}).toUpperCase();
-  $('greeting').textContent = state.name ? `A little inspiration for you, ${state.name}.` : 'Make room for a little inspiration.';
+  const language=appInterface('Make room for a little inspiration.').language;
+  const date=typeof motiveInterfaceDate==='function'?motiveInterfaceDate(new Date(),language):{text:new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'}).toUpperCase(),language:'en'};
+  $('date-label').textContent=date.text;$('date-label').setAttribute('lang',date.language);
+  appInterfaceNode('greeting',state.name?'A little inspiration for you, {name}.':'Make room for a little inspiration.',{name:state.name});
   $('profile-button').textContent = state.name ? [...state.name][0].toUpperCase() : 'Y';
 }
 function showQuote(quote,{revisit=false}={}) {
@@ -105,8 +111,8 @@ function updateSave() {
 function toggleSave(id) { state.saved = state.saved.includes(id) ? state.saved.filter(q => q !== id) : [...state.saved, id]; persist(); updateSave(); renderCollection(); }
 function renderCollection() {
   const grid = $('quote-grid'); grid.replaceChildren();
-  $('collection-title').textContent = savedView ? 'Words worth coming back to.' : 'Your own kind of motivation.';
-  $('collection-description').textContent = savedView ? 'All your saved reminders, together in one place.' : 'Keep the words that matter close. Add a reminder in your own voice.';
+  let collectionTitle = savedView ? 'Words worth coming back to.' : 'Your own kind of motivation.';
+  appInterfaceNode('collection-description',savedView ? 'All your saved reminders, together in one place.' : 'Keep the words that matter close. Add a reminder in your own voice.');
   const matchesCategory = q => category === 'All' || q.category === category;
   const customCollection = (state.collections || []).find(c => c.id === collectionMode);
   let quotes;
@@ -116,26 +122,26 @@ function renderCollection() {
   else if (collectionMode === 'all' || searchTerm) quotes = allQuotes();
   else quotes = [...state.custom.filter(matchesCategory).slice().reverse(), ...reminders.filter(matchesCategory).slice(0,3)];
   quotes = quotes.filter(q => (typeof motiveLibraryMatches!=='function'||motiveLibraryMatches(q)) && matchesCategory(q) && `${q.text} ${q.author} ${q.category}`.toLowerCase().includes(searchTerm.toLowerCase()));
-  if (customCollection) $('collection-title').textContent = customCollection.name;
-  else if (collectionMode === 'all' || searchTerm) $('collection-title').textContent = 'Find the words you need.';
-  else if (collectionMode === 'personal') $('collection-title').textContent = 'A reminder, in your words.';
-  $('results-count').textContent = `${quotes.length} ${quotes.length === 1 ? 'quote' : 'quotes'}${category !== 'All' ? ` · ${category}` : ''}`;
+  if (customCollection) {$('collection-title').textContent=customCollection.name;$('collection-title').setAttribute('lang','en');}
+  else {if (collectionMode === 'all' || searchTerm) collectionTitle='Find the words you need.';else if (collectionMode === 'personal') collectionTitle='A reminder, in your words.';appInterfaceNode('collection-title',collectionTitle);}
+  const countText=appInterface(quotes.length===1?'{count} quote':'{count} quotes',{count:quotes.length});
+  $('results-count').textContent=countText.text+(category!=='All'?' · '+appInterface(category).text:'');$('results-count').setAttribute('lang',countText.language);
   $('load-more').hidden = quotes.length <= visibleLimit;
   $('remove-collection').hidden = !customCollection;
-  if (!quotes.length) { const empty = document.createElement('div'); empty.className = 'empty-state'; empty.textContent = searchTerm ? 'No matching words yet. Try another search or a different theme.' : 'No quotes here yet. Save a quote or add your own words to begin.'; grid.append(empty); }
+  if (!quotes.length) { const empty = document.createElement('div'); empty.className = 'empty-state'; const result=appInterface(searchTerm ? 'No matching words yet. Try another search or a different theme.' : 'No quotes here yet. Save a quote or add your own words to begin.');empty.textContent=result.text;empty.setAttribute('lang',result.language); grid.append(empty); }
   for (const quote of quotes.slice(0,visibleLimit)) {
     const shown=typeof presentMotiveQuote==='function'?presentMotiveQuote(quote):quote;
     const card = document.createElement('article'); card.className = 'mini-card';
-    const label = document.createElement('span'); label.className = 'mini-label'; label.textContent = quote.category.toUpperCase();
+    const label = document.createElement('span'); label.className = 'mini-label'; const categoryText=appInterface(quote.category.toUpperCase());label.textContent=categoryText.text;label.setAttribute('lang',categoryText.language);
     const text = document.createElement('p'); text.textContent = `“${shown.text}”`;text.setAttribute('lang',shown.language||'en');
     const bottom = document.createElement('div'); bottom.className = 'mini-bottom';
     const author = document.createElement('small'); author.textContent = quote.author;
     const actions = document.createElement('div'); actions.className = 'mini-actions';
-    const save = document.createElement('button'); const isSaved = state.saved.includes(quote.id); save.textContent = isSaved ? '♥' : '♡'; save.setAttribute('aria-label', `${isSaved ? 'Unsave' : 'Save'} quote: ${shown.text}`); save.setAttribute('aria-pressed', String(isSaved)); save.addEventListener('click', () => toggleSave(quote.id)); actions.append(save);
-    const organize = document.createElement('button'); organize.textContent = '+'; organize.setAttribute('aria-label', `Organize quote: ${shown.text}`); organize.addEventListener('click', () => { if(typeof openCollection === 'function') openCollection(quote); }); actions.append(organize);
-    if(customCollection) { const ungroup = document.createElement('button'); ungroup.textContent = '−'; ungroup.setAttribute('aria-label', `Remove quote from collection: ${quote.text}`); ungroup.addEventListener('click',()=>{customCollection.quoteIds=customCollection.quoteIds.filter(id=>id!==quote.id);persist();renderCollection();});actions.append(ungroup); }
-    if(quote.id.startsWith('personal-')) { const edit=document.createElement('button');edit.textContent='✎';edit.setAttribute('aria-label',`Edit personal quote: ${quote.text}`);edit.addEventListener('click',()=>{editingQuoteId=quote.id;$('new-quote').value=quote.text;$('new-author').value=quote.author;$('new-category').value=quote.category;$('new-quote').setCustomValidity('');$('quote-dialog-title').textContent='Make these words yours again.';$('quote-dialog').showModal();});actions.append(edit); }
-    if (quote.id.startsWith('personal-')) { const remove = document.createElement('button'); remove.textContent = '×'; remove.setAttribute('aria-label', `Delete personal quote: ${quote.text}`); remove.addEventListener('click', () => { pendingDelete = quote.id; $('delete-dialog').showModal(); }); actions.append(remove); }
+    const save = document.createElement('button'); const isSaved = state.saved.includes(quote.id); save.textContent = isSaved ? '♥' : '♡'; appInterfaceAttribute(save,'aria-label',isSaved?'Unsave quote: {text}':'Save quote: {text}',{text:shown.text}); save.setAttribute('aria-pressed', String(isSaved)); save.addEventListener('click', () => toggleSave(quote.id)); actions.append(save);
+    const organize = document.createElement('button'); organize.textContent = '+'; appInterfaceAttribute(organize,'aria-label','Organize quote: {text}',{text:shown.text}); organize.addEventListener('click', () => { if(typeof openCollection === 'function') openCollection(quote); }); actions.append(organize);
+    if(customCollection) { const ungroup = document.createElement('button'); ungroup.textContent = '−'; appInterfaceAttribute(ungroup,'aria-label','Remove quote from collection: {text}',{text:shown.text}); ungroup.addEventListener('click',()=>{customCollection.quoteIds=customCollection.quoteIds.filter(id=>id!==quote.id);persist();renderCollection();});actions.append(ungroup); }
+    if(quote.id.startsWith('personal-')) { const edit=document.createElement('button');edit.textContent='✎';appInterfaceAttribute(edit,'aria-label','Edit personal quote: {text}',{text:quote.text});edit.addEventListener('click',()=>{editingQuoteId=quote.id;$('new-quote').value=quote.text;$('new-author').value=quote.author;$('new-category').value=quote.category;$('new-quote').setCustomValidity('');appInterfaceNode('quote-dialog-title','Make these words yours again.');$('quote-dialog').showModal();});actions.append(edit); }
+    if (quote.id.startsWith('personal-')) { const remove = document.createElement('button'); remove.textContent = '×'; appInterfaceAttribute(remove,'aria-label','Delete personal quote: {text}',{text:quote.text}); remove.addEventListener('click', () => { pendingDelete = quote.id; $('delete-dialog').showModal(); }); actions.append(remove); }
     bottom.append(author, actions); card.append(label, text, bottom); grid.append(card);
   }
 }
@@ -145,9 +151,9 @@ $('next-button').addEventListener('click', () => showQuote(nextQuote()));
 $('save-button').addEventListener('click', () => toggleSave(current.id));
 $('today-tab').addEventListener('click', () => {if(typeof navigateMotive==='function')navigateMotive('quotes');else setView(false);}); $('saved-tab').addEventListener('click', () => {if(typeof navigateMotive==='function')navigateMotive('saved');else setView(true);});
 $('copy-button').addEventListener('click', async () => { const text = typeof formattedMotiveQuote==='function'?formattedMotiveQuote(current):`“${current.text}” — ${current.author}`; try { if (!navigator.clipboard?.writeText) throw Error('Clipboard unavailable'); await navigator.clipboard.writeText(text); toast('Copied. Carry a little inspiration with you.'); } catch { const field = document.createElement('textarea'); field.value = text; field.style.cssText = 'position:fixed;left:-9999px'; document.body.append(field); field.select(); try { const success = document.execCommand('copy'); toast(success ? 'Quote copied.' : 'Select the quote text to copy it.'); } catch { toast('Select the quote text to copy it.'); } field.remove(); } });
-$('add-button').addEventListener('click', () => { editingQuoteId=null;$('quote-form').reset();$('new-quote').setCustomValidity('');$('quote-dialog-title').textContent='A reminder, in your words.';$('quote-dialog').showModal(); $('new-quote').focus(); });
+$('add-button').addEventListener('click', () => { editingQuoteId=null;$('quote-form').reset();$('new-quote').setCustomValidity('');appInterfaceNode('quote-dialog-title','A reminder, in your words.');$('quote-dialog').showModal(); $('new-quote').focus(); });
 $('close-dialog').addEventListener('click', () => $('quote-dialog').close());
-$('quote-form').addEventListener('submit', event => { event.preventDefault(); const text = $('new-quote').value.trim(); if (!text || allQuotes().some(q => q.id!==editingQuoteId && quoteKey(q.text) === quoteKey(text))) { $('new-quote').setCustomValidity(text ? 'These words are already in your library. Try a different reminder.' : 'Add a few words for your reminder.'); $('new-quote').reportValidity(); return; } if(typeof nearMotiveQuote==='function'){const similar=nearMotiveQuote(text,allQuotes(),editingQuoteId);if(similar&&!$('accept-similar').checked){$('similar-warning').hidden=false;$('similar-warning-text').textContent='This resembles a reminder already here: '+similar.text;return;}} const quote = {id:editingQuoteId||`personal-${Date.now()}-${Math.random().toString(36).slice(2,9)}`, text, author:$('new-author').value.trim() || 'A note to myself', category:$('new-category').value}; if(editingQuoteId) state.custom=state.custom.map(q=>q.id===editingQuoteId?quote:q);else state.custom.push(quote); if(!state.saved.includes(quote.id))state.saved.push(quote.id);editingQuoteId=null; persist(); category = 'All'; for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === 'All'; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); } showQuote(quote); renderCollection(); $('quote-dialog').close(); $('quote-form').reset(); if (storageAvailable) toast('Your words have a home here.'); });
+$('quote-form').addEventListener('submit', event => { event.preventDefault(); const text = $('new-quote').value.trim(); if (!text || allQuotes().some(q => q.id!==editingQuoteId && quoteKey(q.text) === quoteKey(text))) { $('new-quote').setCustomValidity(appInterface(text ? 'These words are already in your library. Try a different reminder.' : 'Add a few words for your reminder.').text); $('new-quote').reportValidity(); return; } if(typeof nearMotiveQuote==='function'){const similar=nearMotiveQuote(text,allQuotes(),editingQuoteId);if(similar&&!$('accept-similar').checked){$('similar-warning').hidden=false;appInterfaceNode('similar-warning-text','This resembles a reminder already here: {text}',{text:similar.text});return;}} const quote = {id:editingQuoteId||`personal-${Date.now()}-${Math.random().toString(36).slice(2,9)}`, text, author:$('new-author').value.trim() || 'A note to myself', category:$('new-category').value}; if(editingQuoteId) state.custom=state.custom.map(q=>q.id===editingQuoteId?quote:q);else state.custom.push(quote); if(!state.saved.includes(quote.id))state.saved.push(quote.id);editingQuoteId=null; persist(); category = 'All'; for (const filter of document.querySelectorAll('.filter')) { const active = filter.dataset.category === 'All'; filter.classList.toggle('active',active); filter.setAttribute('aria-pressed',String(active)); } showQuote(quote); renderCollection(); $('quote-dialog').close(); $('quote-form').reset(); if (storageAvailable) toast('Your words have a home here.'); });
 $('new-quote').addEventListener('input', () => $('new-quote').setCustomValidity(''));
 $('cancel-delete').addEventListener('click', () => { pendingDelete = null; $('delete-dialog').close(); });
 $('confirm-delete').addEventListener('click', () => { const id = pendingDelete; state.custom = state.custom.filter(q => q.id !== id); state.saved = state.saved.filter(savedId => savedId !== id); for(const c of state.collections||[])c.quoteIds=c.quoteIds.filter(qid=>qid!==id);persist(); if (current.id === id) showQuote(nextQuote()); updateSave(); renderCollection(); $('delete-dialog').close(); pendingDelete = null; });
@@ -170,8 +176,8 @@ function syncFilterScroll(){
   const position=maximum?Math.max(0,Math.min(100,(filterStrip.scrollLeft||0)/maximum*100)):0;
   filterScroll.value=String(position);filterScroll.disabled=!maximum;
   $('filter-scroll-control').hidden=!maximum;
-  filterScroll.setAttribute('aria-valuetext',Math.round(position)+' percent scrolled');
-  $('filter-scroll-hint').textContent=position>=99?'← Swipe or drag to go back':position>1?'← More categories →':'Swipe or drag for more categories →';
+  appInterfaceAttribute(filterScroll,'aria-valuetext','{count} percent scrolled',{count:Math.round(position)});
+  appInterfaceNode('filter-scroll-hint',position>=99?'← Swipe or drag to go back':position>1?'← More categories →':'Swipe or drag for more categories →');
 }
 filterScroll.addEventListener('input',()=>{const maximum=Math.max(0,(filterStrip.scrollWidth||0)-(filterStrip.clientWidth||0));filterStrip.scrollLeft=maximum*Number(filterScroll.value)/100;syncFilterScroll();});
 filterStrip.addEventListener('scroll',syncFilterScroll,{passive:true});

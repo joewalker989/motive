@@ -63,3 +63,9 @@ html[data-theme] .quote-card.has-scene{background-color:#152a21;background-image
 html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[data-text-size]:not([data-text-size=standard]) .motive-area-navigation{display:flex;overflow-x:auto;max-width:100%;scrollbar-width:thin}html[data-text-size]:not([data-text-size=standard]) #primary-navigation button,html[data-text-size]:not([data-text-size=standard]) .motive-area-navigation button{flex:0 0 auto;padding:10px 12px;white-space:nowrap}
 
 .studio-grid>*{min-width:0}.studio-dialog input,.studio-dialog select,.studio-dialog textarea{max-width:100%;min-width:0;box-sizing:border-box}.studio-dialog button{max-width:100%;overflow-wrap:anywhere}.studio-dialog .studio-row button{white-space:normal}@media(max-width:650px){.studio-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* Library controls must not give a checkbox the search field's flexible width. */
+.library-toolbar{flex-wrap:wrap}
+.library-toolbar input[type=checkbox]{flex:0 0 auto;width:22px;min-width:22px;max-width:22px}
+.library-toolbar>label:has(input[type=checkbox]){flex:0 1 auto;min-width:0;max-width:100%;white-space:normal}
+@media(max-width:600px){html[data-text-size]:not([data-text-size=standard]) .library-toolbar select{flex-basis:100%;width:100%;min-width:0;max-width:100%}}

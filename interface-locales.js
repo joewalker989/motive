@@ -400,6 +400,278 @@ const motiveInterfaceLocales={
   "Sound is not confirmed. Try Test speaker above, check media volume and Bluetooth, then Reset voice. On iPhone, open Motive directly in Safari and read the test sentence again.": {
     "es": "El sonido no está confirmado. Prueba Probar altavoz, revisa el volumen multimedia y Bluetooth, y después Restablecer voz. En iPhone, abre Motive directamente en Safari y vuelve a leer la frase de prueba.",
     "fr": "Le son n’est pas confirmé. Essayez Tester le haut-parleur, vérifiez le volume multimédia et Bluetooth, puis Réinitialiser la voix. Sur iPhone, ouvrez Motive directement dans Safari et relisez la phrase de test."
+  },
+  "Make room for a little inspiration.": {
+    "es": "Haz espacio para un poco de inspiración.",
+    "fr": "Faites une place à un peu d’inspiration."
+  },
+  "A little inspiration for you, {name}.": {
+    "es": "Un poco de inspiración para ti, {name}.",
+    "fr": "Un peu d’inspiration pour vous, {name}."
+  },
+  "You don’t have to have it all figured out. Just take the next step.": {
+    "es": "No tienes que tenerlo todo resuelto. Da el siguiente paso.",
+    "fr": "Vous n’avez pas besoin d’avoir tout compris. Faites simplement le prochain pas."
+  },
+  "A fresh perspective, every day": {
+    "es": "Una nueva perspectiva cada día",
+    "fr": "Un nouveau regard chaque jour"
+  },
+  "WHAT DO YOU NEED TODAY?": {
+    "es": "¿QUÉ NECESITAS HOY?",
+    "fr": "DE QUOI AVEZ-VOUS BESOIN AUJOURD’HUI ?"
+  },
+  "WORDS THAT FEEL LIKE YOU": {
+    "es": "PALABRAS QUE VAN CONTIGO",
+    "fr": "DES MOTS QUI VOUS RESSEMBLENT"
+  },
+  "Words worth coming back to.": {
+    "es": "Palabras a las que vale la pena volver.",
+    "fr": "Des mots à retrouver."
+  },
+  "Your own kind of motivation.": {
+    "es": "Tu propia forma de motivarte.",
+    "fr": "Votre propre façon de vous motiver."
+  },
+  "All your saved reminders, together in one place.": {
+    "es": "Todos tus recordatorios guardados en un solo lugar.",
+    "fr": "Tous vos rappels enregistrés au même endroit."
+  },
+  "Keep the words that matter close. Add a reminder in your own voice.": {
+    "es": "Ten cerca las palabras que importan. Añade un recordatorio con tu propia voz.",
+    "fr": "Gardez près de vous les mots qui comptent. Ajoutez un rappel avec vos propres mots."
+  },
+  "Find the words you need.": {
+    "es": "Encuentra las palabras que necesitas.",
+    "fr": "Trouvez les mots dont vous avez besoin."
+  },
+  "A reminder, in your words.": {
+    "es": "Un recordatorio con tus palabras.",
+    "fr": "Un rappel avec vos mots."
+  },
+  "Make these words yours again.": {
+    "es": "Vuelve a hacer tuyas estas palabras.",
+    "fr": "Réappropriez-vous ces mots."
+  },
+  "{count} quote": {
+    "es": "{count} cita",
+    "fr": "{count} citation"
+  },
+  "{count} quotes": {
+    "es": "{count} citas",
+    "fr": "{count} citations"
+  },
+  "Focus": {
+    "es": "Enfoque",
+    "fr": "Attention"
+  },
+  "Resilience": {
+    "es": "Resiliencia",
+    "fr": "Résilience"
+  },
+  "Growth": {
+    "es": "Crecimiento",
+    "fr": "Évolution"
+  },
+  "Calm": {
+    "es": "Calma",
+    "fr": "Calme"
+  },
+  "No matching words yet. Try another search or a different theme.": {
+    "es": "No hay coincidencias. Prueba otra búsqueda o un tema diferente.",
+    "fr": "Aucun résultat pour le moment. Essayez une autre recherche ou un autre thème."
+  },
+  "No quotes here yet. Save a quote or add your own words to begin.": {
+    "es": "Todavía no hay citas aquí. Guarda una cita o añade tus palabras para empezar.",
+    "fr": "Il n’y a pas encore de citations ici. Enregistrez une citation ou ajoutez vos mots pour commencer."
+  },
+  "Save quote: {text}": {
+    "es": "Guardar cita: {text}",
+    "fr": "Enregistrer la citation : {text}"
+  },
+  "Unsave quote: {text}": {
+    "es": "Quitar de guardadas: {text}",
+    "fr": "Retirer des citations enregistrées : {text}"
+  },
+  "Organize quote: {text}": {
+    "es": "Organizar cita: {text}",
+    "fr": "Organiser la citation : {text}"
+  },
+  "Remove quote from collection: {text}": {
+    "es": "Quitar cita de la colección: {text}",
+    "fr": "Retirer la citation de la collection : {text}"
+  },
+  "Edit personal quote: {text}": {
+    "es": "Editar cita personal: {text}",
+    "fr": "Modifier la citation personnelle : {text}"
+  },
+  "Delete personal quote: {text}": {
+    "es": "Eliminar cita personal: {text}",
+    "fr": "Supprimer la citation personnelle : {text}"
+  },
+  "＋ Add your own quote": {
+    "es": "＋ Añadir tu propia cita",
+    "fr": "＋ Ajouter votre citation"
+  },
+  "Search every quote": {
+    "es": "Buscar en todas las citas",
+    "fr": "Rechercher dans toutes les citations"
+  },
+  "Search all {count} quotes…": {
+    "es": "Buscar entre {count} citas…",
+    "fr": "Rechercher parmi {count} citations…"
+  },
+  "Choose a collection": {
+    "es": "Elegir una colección",
+    "fr": "Choisir une collection"
+  },
+  "Library quote length": {
+    "es": "Longitud de las citas",
+    "fr": "Longueur des citations"
+  },
+  "A few for today": {
+    "es": "Algunas para hoy",
+    "fr": "Quelques-unes pour aujourd’hui"
+  },
+  "All quotes": {
+    "es": "Todas las citas",
+    "fr": "Toutes les citations"
+  },
+  "Saved quotes": {
+    "es": "Citas guardadas",
+    "fr": "Citations enregistrées"
+  },
+  "My own words": {
+    "es": "Mis propias palabras",
+    "fr": "Mes propres mots"
+  },
+  "All lengths": {
+    "es": "Todas las longitudes",
+    "fr": "Toutes les longueurs"
+  },
+  "Up to 12 words": {
+    "es": "Hasta 12 palabras",
+    "fr": "Jusqu’à 12 mots"
+  },
+  "More than 12 words": {
+    "es": "Más de 12 palabras",
+    "fr": "Plus de 12 mots"
+  },
+  "Saved only": {
+    "es": "Solo guardadas",
+    "fr": "Enregistrées uniquement"
+  },
+  "Browse all →": {
+    "es": "Ver todas →",
+    "fr": "Tout parcourir →"
+  },
+  "Remove collection": {
+    "es": "Eliminar colección",
+    "fr": "Supprimer la collection"
+  },
+  "Show more quotes": {
+    "es": "Mostrar más citas",
+    "fr": "Afficher plus de citations"
+  },
+  "Your quote": {
+    "es": "Tu cita",
+    "fr": "Votre citation"
+  },
+  "What do you want to remind yourself?": {
+    "es": "¿Qué quieres recordarte?",
+    "fr": "Que souhaitez-vous vous rappeler ?"
+  },
+  "Attribution (optional)": {
+    "es": "Autoría (opcional)",
+    "fr": "Attribution (facultative)"
+  },
+  "A note to myself": {
+    "es": "Una nota para mí",
+    "fr": "Une note pour moi"
+  },
+  "What does it bring you?": {
+    "es": "¿Qué te aporta?",
+    "fr": "Que vous apporte-t-elle ?"
+  },
+  "Keep these words": {
+    "es": "Guardar estas palabras",
+    "fr": "Garder ces mots"
+  },
+  "I reviewed the similar reminder and want to keep my wording": {
+    "es": "Revisé el recordatorio similar y quiero conservar mis palabras",
+    "fr": "J’ai relu le rappel similaire et je souhaite conserver mes mots"
+  },
+  "These words are already in your library. Try a different reminder.": {
+    "es": "Estas palabras ya están en tu biblioteca. Prueba otro recordatorio.",
+    "fr": "Ces mots figurent déjà dans votre bibliothèque. Essayez un autre rappel."
+  },
+  "Add a few words for your reminder.": {
+    "es": "Añade unas palabras para tu recordatorio.",
+    "fr": "Ajoutez quelques mots pour votre rappel."
+  },
+  "This resembles a reminder already here: {text}": {
+    "es": "Esto se parece a un recordatorio que ya está aquí: {text}",
+    "fr": "Cela ressemble à un rappel déjà présent : {text}"
+  },
+  "Make this space yours.": {
+    "es": "Haz tuyo este espacio.",
+    "fr": "Faites de cet espace le vôtre."
+  },
+  "What should we call you?": {
+    "es": "¿Cómo quieres que te llamemos?",
+    "fr": "Comment souhaitez-vous que l’on vous appelle ?"
+  },
+  "Your first name": {
+    "es": "Tu nombre",
+    "fr": "Votre prénom"
+  },
+  "Save name": {
+    "es": "Guardar nombre",
+    "fr": "Enregistrer le prénom"
+  },
+  "Close": {
+    "es": "Cerrar",
+    "fr": "Fermer"
+  },
+  "Let these words go?": {
+    "es": "¿Quieres dejar ir estas palabras?",
+    "fr": "Laisser partir ces mots ?"
+  },
+  "This removes the personal quote from this browser.": {
+    "es": "Esto elimina la cita personal de este navegador.",
+    "fr": "Cela supprime la citation personnelle de ce navigateur."
+  },
+  "Keep quote": {
+    "es": "Conservar cita",
+    "fr": "Garder la citation"
+  },
+  "Delete quote": {
+    "es": "Eliminar cita",
+    "fr": "Supprimer la citation"
+  },
+  "Swipe or drag for more categories →": {
+    "es": "Desliza o arrastra para ver más temas →",
+    "fr": "Balayez ou faites glisser pour voir plus de thèmes →"
+  },
+  "← Swipe or drag to go back": {
+    "es": "← Desliza o arrastra para volver",
+    "fr": "← Balayez ou faites glisser pour revenir"
+  },
+  "← More categories →": {
+    "es": "← Más temas →",
+    "fr": "← Plus de thèmes →"
+  },
+  "{count} percent scrolled": {
+    "es": "Desplazamiento: {count} por ciento",
+    "fr": "Défilement : {count} pour cent"
+  },
+  "Scroll quote categories left or right": {
+    "es": "Desplazar los temas de citas a izquierda o derecha",
+    "fr": "Faire défiler les thèmes à gauche ou à droite"
+  },
+  "Built-in quote search uses the original English wording. Your personal words are searched as written.": {
+    "es": "La búsqueda de citas incluidas usa el texto original en inglés. Tus palabras personales se buscan tal como las escribiste.",
+    "fr": "La recherche des citations intégrées utilise le texte anglais d’origine. Vos mots personnels sont recherchés tels que vous les avez écrits."
   }
 };
 const motiveInterfaceContexts={'save-state':{'Saved':{es:'Guardada',fr:'Enregistrée'}}};
@@ -407,4 +679,7 @@ function motiveInterfaceTable(scope){return {...motiveInterfaceLocales,...motive
 function motiveInterfaceSource(text,scope){const table=motiveInterfaceTable(scope);if(Object.prototype.hasOwnProperty.call(table,text))return text;return Object.keys(table).find(source=>Object.values(table[source]).includes(text))||text;}
 function motiveInterfaceText(source,language,scope){const text=['es','fr'].includes(language)?motiveInterfaceTable(scope)[source]?.[language]:undefined;return {text:text||source,language:text?language:'en'};}
 function motiveInterfaceMessage(source,language,area){let m;if(area==='quote-position'&&(m=/^(\d+) of (\d+) explored · No repeats until the set is complete$/.exec(source))){return {text:language==='es'?m[1]+' de '+m[2]+' exploradas · Sin repetir hasta completar el conjunto':language==='fr'?m[1]+' sur '+m[2]+' explorées · Sans répétition avant la fin de la série':source,language:['es','fr'].includes(language)?language:'en'};}if(area==='voice-availability'&&(m=/^(\d+) English voices? (?:is|are) available\. Preview one before choosing\.$/.exec(source))){return {text:language==='es'?m[1]+(m[1]==='1'?' voz en inglés disponible.':' voces en inglés disponibles.')+' Prueba una antes de elegir.':language==='fr'?m[1]+(m[1]==='1'?' voix anglaise disponible.':' voix anglaises disponibles.')+' Écoutez un aperçu avant de choisir.':source,language:['es','fr'].includes(language)?language:'en'};}return motiveInterfaceText(source,language);}
-if(typeof module!=='undefined')module.exports={motiveInterfaceLocales,motiveInterfaceContexts,motiveInterfaceSource,motiveInterfaceText,motiveInterfaceMessage};
+function motiveInterfaceFormat(source,language,values={}){const result=motiveInterfaceText(source,language);return {...result,text:result.text.replace(/\{(\w+)\}/g,(token,key)=>Object.prototype.hasOwnProperty.call(values,key)?String(values[key]):token)};}
+function motiveInterfaceCurrent(source,values={}){const language=typeof state==='undefined'?'en':state.studio?.language;return motiveInterfaceFormat(source,['es','fr'].includes(language)?language:'en',values);}
+function motiveInterfaceDate(date,language){const locale=language==='es'?'es-ES':language==='fr'?'fr-FR':'en-US';return {text:date.toLocaleDateString(locale,{weekday:'long',month:'long',day:'numeric'}).toLocaleUpperCase(locale),language:['es','fr'].includes(language)?language:'en'};}
+if(typeof module!=='undefined')module.exports={motiveInterfaceLocales,motiveInterfaceContexts,motiveInterfaceSource,motiveInterfaceText,motiveInterfaceMessage,motiveInterfaceFormat,motiveInterfaceCurrent,motiveInterfaceDate};
