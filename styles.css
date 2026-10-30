@@ -74,3 +74,5 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #background-dialog .image-studio{grid-template-columns:minmax(0,1fr);min-width:0}#background-dialog .image-studio>*{min-width:0;max-width:100%;box-sizing:border-box}#background-dialog fieldset{min-inline-size:0}#background-dialog legend{max-width:100%;white-space:normal}#background-dialog .dialog-actions{flex-wrap:wrap}#background-dialog button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#background-dialog select,#background-dialog input{min-width:0;max-width:100%;box-sizing:border-box}
 
 #background-dialog input[type=checkbox]{width:22px;height:22px;flex:0 0 22px}
+
+#tour-dialog .dialog-actions{flex-wrap:wrap}#tour-dialog button{max-width:100%;white-space:normal;overflow-wrap:anywhere}

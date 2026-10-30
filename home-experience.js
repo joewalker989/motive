@@ -1,14 +1,14 @@
 'use strict';
 function cleanMotiveExperience(raw){const p=raw&&typeof raw==='object'?raw:{};return {simple:p.simple===true,walkthrough:p.walkthrough===true};}
 state.experience=cleanMotiveExperience(state.experience);
-function renderMotiveHome(){document.body.classList.toggle('motive-simple-home',state.experience.simple);document.body.dataset.homeView=savedView?'saved':'quotes';$('simple-home').checked=state.experience.simple;$('home-mode-button').textContent=state.experience.simple?'Show full home':'Use simple home';}
+function renderMotiveHome(){document.body.classList.toggle('motive-simple-home',state.experience.simple);document.body.dataset.homeView=savedView?'saved':'quotes';$('simple-home').checked=state.experience.simple;appInterfaceNode('home-mode-button',state.experience.simple?'Show full home':'Use simple home');}
 function changeMotiveHome(simple){state.experience.simple=simple;persist();renderMotiveHome();}
 $('home-mode-button').addEventListener('click',()=>changeMotiveHome(!state.experience.simple));
 $('simple-home').addEventListener('change',()=>changeMotiveHome($('simple-home').checked));
 const motiveSetView=setView;setView=function(saved){motiveSetView(saved);renderMotiveHome();};
 const motiveTour=[['A little forward, every day','Read a quote, tap Read aloud, save a favorite, or choose Another perspective. The website avoids repeats until your available set is complete.'],['Find what you need','Use Quotes, Saved, Wellbeing, Practice, and Space. Wellbeing contains calming sessions and your journal; Practice contains habits, mood history, sleep, and focus.'],['Make the home feel lighter','Simple home keeps the main quote and essential actions in view. Your other tools remain available in the menu. You can change back at any time.'],['Keep your words safe','Everything is kept on this browser unless you export or connect your own sync. A full backup includes journal entries and media; a smaller quote backup does not. Save unfinished writing before reopening an update.']];
 let motiveTourStep=0;
-function renderMotiveTour(){const [title,copy]=motiveTour[motiveTourStep];$('tour-step').textContent='Step '+(motiveTourStep+1)+' of '+motiveTour.length;$('tour-heading').textContent=title;$('tour-copy').textContent=copy;$('tour-back').disabled=motiveTourStep===0;$('tour-next').textContent=motiveTourStep===motiveTour.length-1?'Finish':'Next';}
+function renderMotiveTour(){const [title,copy]=motiveTour[motiveTourStep];appInterfaceNode('tour-step','Step {step} of {total}',{step:motiveTourStep+1,total:motiveTour.length});appInterfaceNode('tour-heading',title);appInterfaceNode('tour-copy',copy);$('tour-back').disabled=motiveTourStep===0;appInterfaceNode('tour-next',motiveTourStep===motiveTour.length-1?'Finish':'Next');}
 function openMotiveTour(){motiveTourStep=0;renderMotiveTour();$('tour-dialog').showModal();}
 function finishMotiveTour(){state.experience.walkthrough=true;persist();$('tour-dialog').close();}
 $('tour-start').addEventListener('click',openMotiveTour);$('tour-skip').addEventListener('click',finishMotiveTour);$('tour-dialog').addEventListener('cancel',finishMotiveTour);

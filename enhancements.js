@@ -53,15 +53,20 @@ state.activity.completed = Array.isArray(state.activity.completed) ? [...new Set
 let collectionQuoteId = null;
 let breathingTimer = null;
 const themes = ['light','sage','dark'];
-function applyTheme(theme) { state.theme=themes.includes(theme)?theme:'light';document.documentElement.dataset.theme=state.theme;$('theme-button').textContent=`Theme: ${state.theme[0].toUpperCase()+state.theme.slice(1)}`; }
+function renderMotiveTheme(){appInterfaceNode('theme-button',({light:'Theme: Light',sage:'Theme: Sage',dark:'Theme: Dark'})[state.theme]||'Theme: Light');}
+function applyTheme(theme) { state.theme=themes.includes(theme)?theme:'light';document.documentElement.dataset.theme=state.theme;renderMotiveTheme(); }
 function dayBefore(day) { const d=new Date(day+'T12:00:00Z');d.setUTCDate(d.getUTCDate()-1);return d.toISOString().slice(0,10); }
 function streakLength(days,today=dayKey()) { const visited=new Set(days);let cursor=today;let count=0;while(visited.has(cursor)){count++;cursor=dayBefore(cursor);}return count; }
-function updateStats() {
+function renderActivityLabels() {
   if(!state.activity)return;
   const streak=streakLength(state.activity.visits||[]);
-  $('streak-stat').textContent=`✧ ${streak} ${streak===1?'day':'days'} of showing up`;
+  appInterfaceNode('streak-stat',streak===1?'✧ {count} day of showing up':'✧ {count} days of showing up',{count:streak});
   const count=(state.activity.completed||[]).length;
-  $('completed-stat').textContent=`${count} ${count===1?'intention':'intentions'} followed through`;
+  appInterfaceNode('completed-stat',count===1?'{count} intention followed through':'{count} intentions followed through',{count});
+}
+function updateStats() {
+  if(!state.activity)return;
+  renderActivityLabels();
   $('intention-done').checked=(state.activity.completed||[]).includes(dayKey());
   $('intention-done').disabled=!(state.intention.day===dayKey() && state.intention.text);
 }

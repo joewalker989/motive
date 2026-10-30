@@ -1512,6 +1512,126 @@ const motiveInterfaceLocales={
   "Your photo ▾": {
     "es": "Tu foto ▾",
     "fr": "Votre photo ▾"
+  },
+  "A beginning that fits": {
+    "es": "Un comienzo a tu medida",
+    "fr": "Un départ à votre mesure"
+  },
+  "Practical preparation, adjusting your support, and starting at an unhurried pace.": {
+    "es": "Prepararte de forma práctica, ajustar lo que te sostiene y empezar sin prisas.",
+    "fr": "Se préparer concrètement, ajuster ses appuis et commencer sans hâte."
+  },
+  "A little forward, every day": {
+    "es": "Un poco hacia adelante, cada día",
+    "fr": "Un petit pas, chaque jour"
+  },
+  "Read a quote, tap Read aloud, save a favorite, or choose Another perspective. The website avoids repeats until your available set is complete.": {
+    "es": "Lee una cita, toca Leer en voz alta, guarda una favorita o elige Otra perspectiva. El sitio evita repeticiones hasta completar el conjunto disponible.",
+    "fr": "Lisez une citation, touchez Lire à voix haute, enregistrez un favori ou choisissez Un autre regard. Le site évite les répétitions jusqu’à la fin de la série disponible."
+  },
+  "Find what you need": {
+    "es": "Encuentra lo que necesitas",
+    "fr": "Trouvez ce dont vous avez besoin"
+  },
+  "Use Quotes, Saved, Wellbeing, Practice, and Space. Wellbeing contains calming sessions and your journal; Practice contains habits, mood history, sleep, and focus.": {
+    "es": "Usa Citas, Guardadas, Bienestar, Práctica y Mi espacio. Bienestar contiene las sesiones de calma y tu diario; Práctica incluye hábitos, el historial de ánimo, descanso y concentración.",
+    "fr": "Utilisez Citations, Enregistrées, Bien-être, Pratique et Mon espace. Bien-être contient les séances de calme et votre journal ; Pratique regroupe les habitudes, l’historique des humeurs, le repos et la concentration."
+  },
+  "Make the home feel lighter": {
+    "es": "Una pantalla de inicio más ligera",
+    "fr": "Allégez l’accueil"
+  },
+  "Simple home keeps the main quote and essential actions in view. Your other tools remain available in the menu. You can change back at any time.": {
+    "es": "El inicio sencillo mantiene a la vista la cita principal y las acciones esenciales. Las demás herramientas siguen en el menú. Puedes volver a la vista completa cuando quieras.",
+    "fr": "L’accueil simplifié garde la citation principale et les actions essentielles en vue. Les autres outils restent dans le menu. Vous pouvez revenir à la vue complète à tout moment."
+  },
+  "Keep your words safe": {
+    "es": "Cuida tus palabras",
+    "fr": "Gardez vos mots en sécurité"
+  },
+  "Everything is kept on this browser unless you export or connect your own sync. A full backup includes journal entries and media; a smaller quote backup does not. Save unfinished writing before reopening an update.": {
+    "es": "Todo se guarda en este navegador, salvo que exportes o conectes tu propia sincronización. Una copia completa incluye el diario y los archivos multimedia; una copia de citas más pequeña no. Guarda lo que estés escribiendo antes de reabrir una actualización.",
+    "fr": "Tout reste dans ce navigateur, sauf si vous exportez ou connectez votre propre synchronisation. Une sauvegarde complète inclut le journal et les médias ; une sauvegarde de citations plus petite ne les inclut pas. Enregistrez vos textes en cours avant de rouvrir une mise à jour."
+  },
+  "Step {step} of {total}": {
+    "es": "Paso {step} de {total}",
+    "fr": "Étape {step} sur {total}"
+  },
+  "Skip tour": {
+    "es": "Omitir recorrido",
+    "fr": "Passer la visite"
+  },
+  "Back": {
+    "es": "Atrás",
+    "fr": "Retour"
+  },
+  "Next": {
+    "es": "Siguiente",
+    "fr": "Suivant"
+  },
+  "Finish": {
+    "es": "Terminar",
+    "fr": "Terminer"
+  },
+  "Show full home": {
+    "es": "Mostrar inicio completo",
+    "fr": "Afficher l’accueil complet"
+  },
+  "Use simple home": {
+    "es": "Usar inicio sencillo",
+    "fr": "Utiliser l’accueil simplifié"
+  },
+  "A home that suits you": {
+    "es": "Un inicio a tu medida",
+    "fr": "Un accueil qui vous convient"
+  },
+  "Use a simpler home screen": {
+    "es": "Usar una pantalla de inicio más sencilla",
+    "fr": "Utiliser un accueil plus simple"
+  },
+  "Keep the quote and essential actions in view. Everything else remains available in the menu.": {
+    "es": "Mantén a la vista la cita y las acciones esenciales. Todo lo demás sigue en el menú.",
+    "fr": "Gardez la citation et les actions essentielles en vue. Tout le reste demeure dans le menu."
+  },
+  "Show me around": {
+    "es": "Mostrarme cómo funciona",
+    "fr": "Me faire visiter"
+  },
+  "Background gallery & image design": {
+    "es": "Galería de fondos y diseño de imágenes",
+    "fr": "Galerie de fonds et création d’images"
+  },
+  "Change color theme": {
+    "es": "Cambiar tema de color",
+    "fr": "Changer le thème de couleur"
+  },
+  "Theme: Light": {
+    "es": "Tema: Claro",
+    "fr": "Thème : Clair"
+  },
+  "Theme: Sage": {
+    "es": "Tema: Salvia",
+    "fr": "Thème : Sauge"
+  },
+  "Theme: Dark": {
+    "es": "Tema: Oscuro",
+    "fr": "Thème : Sombre"
+  },
+  "✧ {count} day of showing up": {
+    "es": "✧ {count} día por aquí",
+    "fr": "✧ {count} jour de présence"
+  },
+  "✧ {count} days of showing up": {
+    "es": "✧ {count} días por aquí",
+    "fr": "✧ {count} jours de présence"
+  },
+  "{count} intention followed through": {
+    "es": "{count} intención cumplida",
+    "fr": "{count} intention concrétisée"
+  },
+  "{count} intentions followed through": {
+    "es": "{count} intenciones cumplidas",
+    "fr": "{count} intentions concrétisées"
   }
 };
 const motiveInterfaceContexts={'save-state':{'Saved':{es:'Guardada',fr:'Enregistrée'}}};
