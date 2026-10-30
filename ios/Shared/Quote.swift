@@ -21,10 +21,11 @@ struct Quote: Codable, Identifiable, Equatable, Sendable {
 }
 
 enum PhotoScene {
-    static let keys = ["propagation","metronome","sharedMeal","origami","restingCat","mending","craft","support","color","summit","sunrise","forest","water","workspace"]
-    static let resourceNames: [String: String] = ["propagation": "daily-2026-10-29-plant-cutting", "metronome": "daily-2026-10-28-metronome", "sharedMeal": "daily-2026-10-25-shared-meal", "origami": "daily-2026-10-24-origami", "restingCat": "daily-2026-10-23-resting-cat", "mending": "daily-2026-10-22-mending", "craft": "craft", "support": "support", "color": "color", "summit": "summit", "sunrise": "sunrise", "forest": "forest", "water": "water", "workspace": "workspace"]
+    static let keys = ["walkingShoes","propagation","metronome","sharedMeal","origami","restingCat","mending","craft","support","color","summit","sunrise","forest","water","workspace"]
+    static let resourceNames: [String: String] = ["walkingShoes": "daily-2026-10-30-walking-shoes", "propagation": "daily-2026-10-29-plant-cutting", "metronome": "daily-2026-10-28-metronome", "sharedMeal": "daily-2026-10-25-shared-meal", "origami": "daily-2026-10-24-origami", "restingCat": "daily-2026-10-23-resting-cat", "mending": "daily-2026-10-22-mending", "craft": "craft", "support": "support", "color": "color", "summit": "summit", "sunrise": "sunrise", "forest": "forest", "water": "water", "workspace": "workspace"]
     static func match(_ quote: Quote) -> String {
         let rules: [(String, String, [String])] = [
+            ("walkingShoes", "Focus", ["shoelace","shoe","walking shoes","tying","laces","doorway","muddy","knot","before the walk","preparation"]),
             ("propagation", "Growth", ["plant cutting","cutting","propagat","rooted","roots","new leaves","windowsill"]),
             ("metronome", "Focus", ["metronome","tempo","rhythm","instrument","piano","notes","song","measure slowly","pace you can follow"]),
             ("sharedMeal", "Confidence", ["shared meal","meal","bowl","recipe","cook","ingredients","contribution","share","table","team"]),
