@@ -1908,6 +1908,230 @@ const motiveInterfaceLocales={
   "You can leave a little space around the next thing you do.": {
     "es": "Puedes dejar un poco de espacio alrededor de lo próximo que hagas.",
     "fr": "Vous pouvez laisser un peu d’espace autour de votre prochaine action."
+  },
+  "Find something in Motive": {
+    "es": "Encuentra algo en Motive",
+    "fr": "Trouvez quelque chose dans Motive"
+  },
+  "Close Motive search": {
+    "es": "Cerrar búsqueda de Motive",
+    "fr": "Fermer la recherche Motive"
+  },
+  "Words to find on this device": {
+    "es": "Palabras que buscar en este dispositivo",
+    "fr": "Mots à chercher sur cet appareil"
+  },
+  "Look in": {
+    "es": "Buscar en",
+    "fr": "Chercher dans"
+  },
+  "All included areas": {
+    "es": "Todas las áreas incluidas",
+    "fr": "Tous les espaces inclus"
+  },
+  "Collections": {
+    "es": "Colecciones",
+    "fr": "Collections"
+  },
+  "Recording names": {
+    "es": "Nombres de grabaciones",
+    "fr": "Noms des enregistrements"
+  },
+  "Habit names": {
+    "es": "Nombres de hábitos",
+    "fr": "Noms des habitudes"
+  },
+  "Motive tools": {
+    "es": "Herramientas de Motive",
+    "fr": "Outils de Motive"
+  },
+  "Journal text · opt in below": {
+    "es": "Texto del diario · activar abajo",
+    "fr": "Texte du journal · à activer ci-dessous"
+  },
+  "Include journal text in this search": {
+    "es": "Incluir el texto del diario en esta búsqueda",
+    "fr": "Inclure le texte du journal dans cette recherche"
+  },
+  "Local search only. Journal text is excluded by default and requires an unlocked journal when encryption is enabled. Results clear when you close search or lock the journal.": {
+    "es": "Búsqueda solo en este dispositivo. El texto del diario se excluye por defecto y requiere desbloquearlo si está cifrado. Los resultados se borran al cerrar la búsqueda o bloquear el diario.",
+    "fr": "Recherche uniquement sur cet appareil. Le texte du journal est exclu par défaut et nécessite son déverrouillage si le chiffrement est activé. Les résultats s’effacent à la fermeture de la recherche ou au verrouillage du journal."
+  },
+  "Built-in quotes match their original English words. Tool names also match the selected language. Personal records match their own words.": {
+    "es": "Las citas incluidas se buscan por sus palabras originales en inglés. Los nombres de herramientas también se buscan en el idioma elegido. Los registros personales se buscan tal como están escritos.",
+    "fr": "Les citations intégrées sont recherchées dans leur anglais d’origine. Les noms d’outils sont aussi recherchés dans la langue choisie. Les données personnelles sont recherchées avec leurs propres mots."
+  },
+  "Search this device": {
+    "es": "Buscar en este dispositivo",
+    "fr": "Rechercher sur cet appareil"
+  },
+  "Show more search results": {
+    "es": "Mostrar más resultados",
+    "fr": "Afficher plus de résultats"
+  },
+  "Searching this device…": {
+    "es": "Buscando en este dispositivo…",
+    "fr": "Recherche sur cet appareil…"
+  },
+  "{count} matching item on this device.": {
+    "es": "{count} resultado en este dispositivo.",
+    "fr": "{count} résultat sur cet appareil."
+  },
+  "{count} matching items on this device.": {
+    "es": "{count} resultados en este dispositivo.",
+    "fr": "{count} résultats sur cet appareil."
+  },
+  "Search again to apply the journal choice.": {
+    "es": "Busca de nuevo para aplicar la opción del diario.",
+    "fr": "Relancez la recherche pour appliquer le choix concernant le journal."
+  },
+  "Unlock the journal before including its text.": {
+    "es": "Desbloquea el diario antes de incluir su texto.",
+    "fr": "Déverrouillez le journal avant d’inclure son texte."
+  },
+  "The journal was locked. Search again after unlocking.": {
+    "es": "El diario se bloqueó. Desbloquéalo y busca de nuevo.",
+    "fr": "Le journal a été verrouillé. Relancez la recherche après l’avoir déverrouillé."
+  },
+  "Stop and save your recording before switching areas.": {
+    "es": "Detén y guarda la grabación antes de cambiar de área.",
+    "fr": "Arrêtez et enregistrez votre enregistrement avant de changer d’espace."
+  },
+  "Save your unfinished journal entry before leaving. Closing this area locks the journal and clears unsaved words and attachments.": {
+    "es": "Guarda la entrada del diario antes de salir. Cerrar esta área bloquea el diario y borra las palabras y adjuntos sin guardar.",
+    "fr": "Enregistrez votre entrée du journal avant de quitter cet espace. Sa fermeture verrouille le journal et efface les mots et pièces jointes non enregistrés."
+  },
+  "Quote collection": {
+    "es": "Colección de citas",
+    "fr": "Collection de citations"
+  },
+  "Daily practice habit": {
+    "es": "Hábito de práctica diaria",
+    "fr": "Habitude de pratique quotidienne"
+  },
+  "Local audio recording": {
+    "es": "Grabación de audio local",
+    "fr": "Enregistrement audio local"
+  },
+  "Motive tool · {area}": {
+    "es": "Herramienta de Motive · {area}",
+    "fr": "Outil de Motive · {area}"
+  },
+  "Calming sessions and breathing timers": {
+    "es": "Sesiones de calma y temporizadores de respiración",
+    "fr": "Séances de calme et minuteurs de respiration"
+  },
+  "Your listening queue": {
+    "es": "Tu cola de escucha",
+    "fr": "Votre file d’écoute"
+  },
+  "Trim a recording and download a short WAV clip": {
+    "es": "Recortar una grabación y descargar un fragmento WAV",
+    "fr": "Découper un enregistrement et télécharger un extrait WAV"
+  },
+  "Write a recording transcript": {
+    "es": "Escribir la transcripción de una grabación",
+    "fr": "Écrire la transcription d’un enregistrement"
+  },
+  "Choose read-aloud voices": {
+    "es": "Elegir voces de lectura",
+    "fr": "Choisir les voix de lecture"
+  },
+  "Journal and private reflections": {
+    "es": "Diario y reflexiones privadas",
+    "fr": "Journal et réflexions privées"
+  },
+  "Sleep stories and audio timer": {
+    "es": "Cuentos para dormir y temporizador de audio",
+    "fr": "Histoires pour dormir et minuteur audio"
+  },
+  "Mood history and check-ins": {
+    "es": "Historial de ánimo y registros personales",
+    "fr": "Historique des humeurs et points personnels"
+  },
+  "Download a full backup with media": {
+    "es": "Descargar copia completa con archivos multimedia",
+    "fr": "Télécharger une sauvegarde complète avec médias"
+  },
+  "Choose quote themes, length and wording": {
+    "es": "Elegir temas, longitud y estilo de citas",
+    "fr": "Choisir les thèmes, la longueur et le style des citations"
+  },
+  "Print a quote pack": {
+    "es": "Imprimir un conjunto de citas",
+    "fr": "Imprimer une sélection de citations"
+  },
+  "Print up to 40 quotes matching this library's filters. Choose Save as PDF in your browser if available.": {
+    "es": "Imprime hasta 40 citas que coincidan con los filtros de esta biblioteca. Elige Guardar como PDF en el navegador si está disponible.",
+    "fr": "Imprimez jusqu’à 40 citations correspondant aux filtres de la bibliothèque. Choisissez Enregistrer au format PDF dans votre navigateur si cette option est proposée."
+  },
+  "Include my own quotes in this readable export": {
+    "es": "Incluir mis propias citas en esta exportación legible",
+    "fr": "Inclure mes propres citations dans cet export lisible"
+  },
+  "Print matching quote pack": {
+    "es": "Imprimir las citas que coinciden",
+    "fr": "Imprimer la sélection correspondante"
+  },
+  "No quotes match this pack. Adjust your filters.": {
+    "es": "Ninguna cita coincide con este conjunto. Ajusta los filtros.",
+    "fr": "Aucune citation ne correspond à cette sélection. Ajustez les filtres."
+  },
+  "Allow the print window, then try again.": {
+    "es": "Permite la ventana de impresión y vuelve a intentarlo.",
+    "fr": "Autorisez la fenêtre d’impression, puis réessayez."
+  },
+  "Motive quote pack": {
+    "es": "Conjunto de citas de Motive",
+    "fr": "Sélection de citations Motive"
+  },
+  "Words to carry with you": {
+    "es": "Palabras para llevar contigo",
+    "fr": "Des mots à emporter"
+  },
+  "Print pack opened with {count} matching quotes, up to 40. Choose Save as PDF if your browser offers it.": {
+    "es": "Se abrió la impresión con {count} citas, hasta un máximo de 40. Elige Guardar como PDF si el navegador lo permite.",
+    "fr": "La sélection à imprimer contient {count} citations, dans la limite de 40. Choisissez Enregistrer au format PDF si votre navigateur le propose."
+  },
+  "Make a note about a content problem": {
+    "es": "Anotar un problema del contenido",
+    "fr": "Noter un problème de contenu"
+  },
+  "Download the currently displayed quote and your note for your own review. Nothing is sent or published.": {
+    "es": "Descarga la cita actual y tu nota para revisarlas por tu cuenta. No se envía ni publica nada.",
+    "fr": "Téléchargez la citation affichée et votre note pour votre propre examen. Rien n’est envoyé ni publié."
+  },
+  "What needs attention?": {
+    "es": "¿Qué necesita atención?",
+    "fr": "Quel point mérite attention ?"
+  },
+  "Download review note": {
+    "es": "Descargar nota de revisión",
+    "fr": "Télécharger la note de révision"
+  },
+  "Add a note about what needs attention.": {
+    "es": "Añade una nota sobre lo que necesita atención.",
+    "fr": "Ajoutez une note sur le point qui mérite attention."
+  },
+  "Review note downloaded. Nothing was sent or published.": {
+    "es": "Nota de revisión descargada. No se envió ni publicó nada.",
+    "fr": "Note de révision téléchargée. Rien n’a été envoyé ni publié."
+  },
+  "⌁ Your personal quotes, saved favorites, and intentions stay in this browser. Back them up in “Your space.”": {
+    "es": "⌁ Tus citas personales, favoritas e intenciones se quedan en este navegador. Haz una copia en «Mi espacio».",
+    "fr": "⌁ Vos citations personnelles, favoris et intentions restent dans ce navigateur. Sauvegardez-les dans «Mon espace»."
+  },
+  "A little perspective can change your whole day.": {
+    "es": "Un poco de perspectiva puede cambiar tu día.",
+    "fr": "Un peu de perspective peut changer votre journée."
+  },
+  "MADE FOR YOUR EVERYDAY": {
+    "es": "PARA TU DÍA A DÍA",
+    "fr": "POUR VOTRE QUOTIDIEN"
+  },
+  "{category} · {author}": {
+    "es": "{category} · {author}",
+    "fr": "{category} · {author}"
   }
 };
 const motiveInterfaceContexts={'save-state':{'Saved':{es:'Guardada',fr:'Enregistrée'}}};
