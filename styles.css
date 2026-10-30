@@ -76,3 +76,7 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #background-dialog input[type=checkbox]{width:22px;height:22px;flex:0 0 22px}
 
 #tour-dialog .dialog-actions{flex-wrap:wrap}#tour-dialog button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+
+.paired-reminder .dialog-actions,#preferences-actions{flex-wrap:wrap}.paired-reminder button,#preferences-actions button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#preferences-form fieldset{min-inline-size:0}
+
+#settings-dialog .settings-section{min-width:0}#settings-dialog button{min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere}#settings-dialog .motive-area-navigation button{white-space:nowrap}#settings-dialog .dialog-actions{flex-wrap:wrap}#preferences-form{grid-template-columns:minmax(0,1fr)}#preferences-form>*{min-width:0;max-width:100%;box-sizing:border-box}#settings-dialog select,#settings-dialog textarea{min-width:0;max-width:100%;box-sizing:border-box}

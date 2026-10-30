@@ -1632,6 +1632,282 @@ const motiveInterfaceLocales={
   "{count} intentions followed through": {
     "es": "{count} intenciones cumplidas",
     "fr": "{count} intentions concrétisées"
+  },
+  "Words that fit today": {
+    "es": "Palabras para hoy",
+    "fr": "Des mots pour aujourd’hui"
+  },
+  "Mix your quote themes": {
+    "es": "Combinar los temas de citas",
+    "fr": "Mélanger les thèmes de citations"
+  },
+  "Wording": {
+    "es": "Estilo del texto",
+    "fr": "Style de formulation"
+  },
+  "A mix of styles": {
+    "es": "Una mezcla de estilos",
+    "fr": "Un mélange de styles"
+  },
+  "Gentler reminders": {
+    "es": "Recordatorios más suaves",
+    "fr": "Des rappels plus doux"
+  },
+  "Direct, practical prompts": {
+    "es": "Propuestas directas y prácticas",
+    "fr": "Des pistes directes et pratiques"
+  },
+  "Length": {
+    "es": "Longitud",
+    "fr": "Longueur"
+  },
+  "Any length": {
+    "es": "Cualquier longitud",
+    "fr": "Sans limite de longueur"
+  },
+  "Short · up to 12 words": {
+    "es": "Breves · hasta 12 palabras",
+    "fr": "Courtes · jusqu’à 12 mots"
+  },
+  "Medium · 13–23 words": {
+    "es": "Medias · de 13 a 23 palabras",
+    "fr": "Moyennes · de 13 à 23 mots"
+  },
+  "Longer · 24 words or more": {
+    "es": "Largas · 24 palabras o más",
+    "fr": "Longues · 24 mots ou plus"
+  },
+  "What is happening today?": {
+    "es": "¿Qué está pasando hoy?",
+    "fr": "Que se passe-t-il aujourd’hui ?"
+  },
+  "Everyday encouragement": {
+    "es": "Ánimo para cada día",
+    "fr": "Encouragement au quotidien"
+  },
+  "Starting something": {
+    "es": "Empezar algo",
+    "fr": "Commencer quelque chose"
+  },
+  "After a setback": {
+    "es": "Después de un contratiempo",
+    "fr": "Après un revers"
+  },
+  "A busy day": {
+    "es": "Un día ajetreado",
+    "fr": "Une journée chargée"
+  },
+  "Trusting yourself": {
+    "es": "Confiar en ti",
+    "fr": "Se faire confiance"
+  },
+  "Making room to rest": {
+    "es": "Hacer espacio para descansar",
+    "fr": "Faire une place au repos"
+  },
+  "A season of change": {
+    "es": "Una etapa de cambios",
+    "fr": "Une période de changement"
+  },
+  "Words or phrases to leave out · separated by commas": {
+    "es": "Palabras o frases que excluir · separadas por comas",
+    "fr": "Mots ou expressions à exclure · séparés par des virgules"
+  },
+  "For example: competition, deadlines": {
+    "es": "Por ejemplo: competition, deadlines",
+    "fr": "Par exemple : competition, deadlines"
+  },
+  "Suggest a saved favorite to revisit": {
+    "es": "Sugerir una cita favorita para releer",
+    "fr": "Suggérer un favori enregistré à relire"
+  },
+  "Preferences guide future quotes. Search and saved favorites remain available. Wording groups are approximate; no emotional assessment is made.": {
+    "es": "Las preferencias orientan las próximas citas. La búsqueda y las favoritas siguen disponibles. Los grupos de estilo son aproximados; no se evalúan tus emociones.",
+    "fr": "Les préférences orientent les prochaines citations. La recherche et les favoris restent accessibles. Les groupes de formulation sont approximatifs ; aucune évaluation émotionnelle n’est faite."
+  },
+  "For built-in quotes, style, length, situations and excluded words use the original English. Personal words are matched as written.": {
+    "es": "En las citas incluidas, el estilo, la longitud, las situaciones y las palabras excluidas usan el original en inglés. Tus palabras personales se comparan tal como las escribiste.",
+    "fr": "Pour les citations intégrées, le style, la longueur, les situations et les mots exclus utilisent l’anglais d’origine. Vos mots personnels sont comparés tels que vous les avez écrits."
+  },
+  "Save quote preferences": {
+    "es": "Guardar preferencias de citas",
+    "fr": "Enregistrer les préférences de citations"
+  },
+  "{count} quote hidden from future rotation. Saved favorites stay accessible.": {
+    "es": "{count} cita oculta de la rotación futura. Las favoritas siguen disponibles.",
+    "fr": "{count} citation masquée des prochaines sélections. Les favoris restent accessibles."
+  },
+  "{count} quotes hidden from future rotation. Saved favorites stay accessible.": {
+    "es": "{count} citas ocultas de la rotación futura. Las favoritas siguen disponibles.",
+    "fr": "{count} citations masquées des prochaines sélections. Les favoris restent accessibles."
+  },
+  "Choose at least one theme.": {
+    "es": "Elige al menos un tema.",
+    "fr": "Choisissez au moins un thème."
+  },
+  "No quotes match that combination. Try fewer muted words, another length, or another tone.": {
+    "es": "Ninguna cita coincide con esa combinación. Prueba a excluir menos palabras, otra longitud u otro estilo.",
+    "fr": "Aucune citation ne correspond à cette combinaison. Essayez moins de mots exclus, une autre longueur ou un autre style."
+  },
+  "Preferences saved. Your saved quotes and reading history were kept.": {
+    "es": "Preferencias guardadas. Tus citas guardadas y el historial de lectura se conservan.",
+    "fr": "Préférences enregistrées. Vos citations enregistrées et votre historique de lecture sont conservés."
+  },
+  "This is your last matching quote. Broaden your preferences before hiding it.": {
+    "es": "Esta es la última cita que coincide. Amplía tus preferencias antes de ocultarla.",
+    "fr": "C’est votre dernière citation correspondante. Élargissez vos préférences avant de la masquer."
+  },
+  "Hidden from future rotation. Your saved favorites were kept.": {
+    "es": "Oculta de la rotación futura. Tus favoritas se conservan.",
+    "fr": "Masquée des prochaines sélections. Vos favoris enregistrés sont conservés."
+  },
+  "Quote restored to future rotation.": {
+    "es": "Cita devuelta a la rotación futura.",
+    "fr": "Citation rétablie dans les prochaines sélections."
+  },
+  "Hidden quotes restored. Reading history stays where it was.": {
+    "es": "Citas ocultas restauradas. El historial de lectura sigue donde estaba.",
+    "fr": "Citations masquées rétablies. L’historique de lecture reste à sa place."
+  },
+  "Quote preferences reset. Your saved words are still here.": {
+    "es": "Preferencias de citas restablecidas. Tus palabras guardadas siguen aquí.",
+    "fr": "Préférences de citations réinitialisées. Vos mots enregistrés sont toujours là."
+  },
+  "Restore hidden quotes": {
+    "es": "Restaurar citas ocultas",
+    "fr": "Rétablir les citations masquées"
+  },
+  "Reset quote preferences": {
+    "es": "Restablecer preferencias de citas",
+    "fr": "Réinitialiser les préférences de citations"
+  },
+  "Why this reminder?": {
+    "es": "¿Por qué este recordatorio?",
+    "fr": "Pourquoi ce rappel ?"
+  },
+  "One of your own reminders.": {
+    "es": "Uno de tus propios recordatorios.",
+    "fr": "Un de vos propres rappels."
+  },
+  "A reminder in {category}.": {
+    "es": "Un recordatorio de {category}.",
+    "fr": "Un rappel sur le thème {category}."
+  },
+  "Situation: {pack} · Theme: {category}.": {
+    "es": "Situación: {pack} · Tema: {category}.",
+    "fr": "Situation : {pack} · Thème : {category}."
+  },
+  "Attribution you supplied: {author}": {
+    "es": "Autoría que indicaste: {author}",
+    "fr": "Attribution que vous avez indiquée : {author}"
+  },
+  "Original Motive reminder. No celebrity attribution.": {
+    "es": "Recordatorio original de Motive. Sin atribución a una persona famosa.",
+    "fr": "Rappel original de Motive. Aucune attribution à une célébrité."
+  },
+  "Original Motive reminder · added {date}. No celebrity attribution.": {
+    "es": "Recordatorio original de Motive · añadido el {date}. Sin atribución a una persona famosa.",
+    "fr": "Rappel original de Motive · ajouté le {date}. Aucune attribution à une célébrité."
+  },
+  "Your context note · outside the journal vault": {
+    "es": "Tu nota de contexto · fuera del diario cifrado",
+    "fr": "Votre note de contexte · hors du journal chiffré"
+  },
+  "What would you like to remember about this quote?": {
+    "es": "¿Qué te gustaría recordar sobre esta cita?",
+    "fr": "Que souhaitez-vous retenir de cette citation ?"
+  },
+  "Save quote note": {
+    "es": "Guardar nota de la cita",
+    "fr": "Enregistrer la note de citation"
+  },
+  "Copy link to this built-in quote": {
+    "es": "Copiar enlace a esta cita incluida",
+    "fr": "Copier le lien de cette citation intégrée"
+  },
+  "Quote note saved here. It is outside the journal vault and included in backups.": {
+    "es": "Nota guardada aquí. Está fuera del diario cifrado y se incluye en las copias de seguridad.",
+    "fr": "Note enregistrée ici. Elle reste hors du journal chiffré et figure dans les sauvegardes."
+  },
+  "Quote link copied. Personal notes and saved preferences are not in the link.": {
+    "es": "Enlace copiado. El enlace no incluye notas personales ni preferencias guardadas.",
+    "fr": "Lien copié. Les notes personnelles et les préférences enregistrées ne figurent pas dans le lien."
+  },
+  "Clipboard unavailable. Use Share quote to share its words instead.": {
+    "es": "Portapapeles no disponible. Usa Compartir cita para compartir sus palabras.",
+    "fr": "Presse-papiers indisponible. Utilisez Partager la citation pour partager ses mots."
+  },
+  "Words to practice": {
+    "es": "Palabras para practicar",
+    "fr": "Des mots à pratiquer"
+  },
+  "I": {
+    "es": "Yo",
+    "fr": "Je"
+  },
+  "You": {
+    "es": "Tú",
+    "fr": "Vous"
+  },
+  "Read practice words": {
+    "es": "Leer palabras de práctica",
+    "fr": "Lire les mots à pratiquer"
+  },
+  "A separate original affirmation for this theme.": {
+    "es": "Una afirmación original independiente para este tema.",
+    "fr": "Une affirmation originale distincte pour ce thème."
+  },
+  "A saved reminder to revisit": {
+    "es": "Un recordatorio guardado para releer",
+    "fr": "Un rappel enregistré à relire"
+  },
+  "Explore a related reminder": {
+    "es": "Explorar un recordatorio relacionado",
+    "fr": "Explorer un rappel proche"
+  },
+  "Matched locally by shared wording and themes. Reading again keeps the unread rotation where it is.": {
+    "es": "Se relacionan en este dispositivo por palabras y temas compartidos. Volver a leer conserva tu recorrido de citas sin leer.",
+    "fr": "Rapprochement sur cet appareil par les mots et les thèmes communs. Relire conserve votre progression parmi les citations non lues."
+  },
+  "I can give my own experience a place in this decision.": {
+    "es": "Puedo dar lugar a mi propia experiencia en esta decisión.",
+    "fr": "Je peux donner une place à ma propre expérience dans cette décision."
+  },
+  "You can give your own experience a place in this decision.": {
+    "es": "Puedes dar lugar a tu propia experiencia en esta decisión.",
+    "fr": "Vous pouvez donner une place à votre propre expérience dans cette décision."
+  },
+  "I can choose one useful task and give it a little attention.": {
+    "es": "Puedo elegir una tarea útil y dedicarle un poco de atención.",
+    "fr": "Je peux choisir une tâche utile et lui accorder un peu d’attention."
+  },
+  "You can choose one useful task and give it a little attention.": {
+    "es": "Puedes elegir una tarea útil y dedicarle un poco de atención.",
+    "fr": "Vous pouvez choisir une tâche utile et lui accorder un peu d’attention."
+  },
+  "I can adjust this attempt without deciding the whole story is over.": {
+    "es": "Puedo ajustar este intento sin decidir que toda la historia terminó.",
+    "fr": "Je peux ajuster cet essai sans décider que toute l’histoire est finie."
+  },
+  "You can adjust this attempt without deciding the whole story is over.": {
+    "es": "Puedes ajustar este intento sin decidir que toda la historia terminó.",
+    "fr": "Vous pouvez ajuster cet essai sans décider que toute l’histoire est finie."
+  },
+  "I can be curious before I expect myself to be skilled.": {
+    "es": "Puedo sentir curiosidad antes de exigirme habilidad.",
+    "fr": "Je peux faire preuve de curiosité avant d’attendre de moi de l’habileté."
+  },
+  "You can be curious before you expect yourself to be skilled.": {
+    "es": "Puedes sentir curiosidad antes de exigirte habilidad.",
+    "fr": "Vous pouvez faire preuve de curiosité avant d’attendre de vous de l’habileté."
+  },
+  "I can leave a little space around the next thing I do.": {
+    "es": "Puedo dejar un poco de espacio alrededor de lo próximo que haga.",
+    "fr": "Je peux laisser un peu d’espace autour de ma prochaine action."
+  },
+  "You can leave a little space around the next thing you do.": {
+    "es": "Puedes dejar un poco de espacio alrededor de lo próximo que hagas.",
+    "fr": "Vous pouvez laisser un peu d’espace autour de votre prochaine action."
   }
 };
 const motiveInterfaceContexts={'save-state':{'Saved':{es:'Guardada',fr:'Enregistrée'}}};
