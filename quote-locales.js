@@ -2099,6 +2099,741 @@ const motiveQuoteLocales={
     "sourceAuthor": "A Motive reminder",
     "es": "Tus intereses no tienen que convertirse en un negocio para merecer tu tiempo.",
     "fr": "Vos centres d’intérêt n’ont pas à devenir une activité commerciale pour mériter votre temps."
+  },
+  "motive-extra-growth-46": {
+    "sourceText": "Let a small experiment test a large assumption.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que un pequeño experimento ponga a prueba una gran suposición.",
+    "fr": "Laissez une petite expérience mettre à l’épreuve une grande supposition."
+  },
+  "motive-extra-growth-47": {
+    "sourceText": "Make learning visible by using something you just discovered.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Haz visible lo que aprendes usando algo que acabas de descubrir.",
+    "fr": "Rendez votre apprentissage visible en utilisant ce que vous venez de découvrir."
+  },
+  "motive-extra-growth-48": {
+    "sourceText": "You can choose a mentor for a skill without borrowing their whole life.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes elegir a alguien que te guíe en una habilidad sin adoptar toda su vida.",
+    "fr": "Vous pouvez choisir une personne pour vous guider dans une compétence sans adopter toute sa vie."
+  },
+  "motive-extra-growth-49": {
+    "sourceText": "Become familiar with the feeling of improving through repetition.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Familiarízate con la sensación de mejorar mediante la repetición.",
+    "fr": "Familiarisez-vous avec la sensation de progresser par la répétition."
+  },
+  "motive-extra-growth-50": {
+    "sourceText": "Some progress begins with admitting that the old method has stopped helping.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "A veces, el progreso empieza por admitir que el método anterior ya no ayuda.",
+    "fr": "Certains progrès commencent par reconnaître que l’ancienne méthode n’aide plus."
+  },
+  "motive-extra-growth-51": {
+    "sourceText": "Read something that makes your familiar question feel new.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Lee algo que haga que una pregunta de siempre parezca nueva.",
+    "fr": "Lisez quelque chose qui vous fait voir votre question habituelle sous un jour nouveau."
+  },
+  "motive-extra-growth-52": {
+    "sourceText": "Leave a little room in your plans for a better idea.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja un poco de espacio en tus planes para una idea mejor.",
+    "fr": "Laissez un peu de place dans vos plans pour une meilleure idée."
+  },
+  "motive-extra-growth-53": {
+    "sourceText": "You can change your habits without changing everything at once.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes cambiar tus hábitos sin cambiarlo todo a la vez.",
+    "fr": "Vous pouvez changer vos habitudes sans tout changer à la fois."
+  },
+  "motive-extra-growth-54": {
+    "sourceText": "Let the work show you which skill needs your next hour.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que el trabajo te muestre qué habilidad necesita tu próxima hora.",
+    "fr": "Laissez le travail vous montrer quelle compétence mérite votre prochaine heure."
+  },
+  "motive-extra-growth-55": {
+    "sourceText": "The ability to ask for feedback is a skill worth practicing too.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La capacidad de pedir comentarios también merece práctica.",
+    "fr": "La capacité de demander des retours mérite elle aussi de la pratique."
+  },
+  "motive-extra-growth-56": {
+    "sourceText": "Your understanding can deepen even when the answer becomes less simple.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu comprensión puede profundizarse aunque la respuesta se vuelva menos sencilla.",
+    "fr": "Votre compréhension peut s’approfondir même lorsque la réponse devient moins simple."
+  },
+  "motive-extra-growth-57": {
+    "sourceText": "Try the unfamiliar route when the cost of experimenting is small.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Prueba el camino desconocido cuando el coste de experimentar sea pequeño.",
+    "fr": "Essayez le chemin inhabituel lorsque le coût de l’expérience est faible."
+  },
+  "motive-extra-growth-58": {
+    "sourceText": "You can move beyond a label that no longer describes you.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar atrás una etiqueta que ya no te describe.",
+    "fr": "Vous pouvez dépasser une étiquette qui ne vous décrit plus."
+  },
+  "motive-extra-growth-59": {
+    "sourceText": "The skill you admire may have an ordinary first lesson you can take today.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La habilidad que admiras puede tener una primera lección sencilla que puedas tomar hoy.",
+    "fr": "La compétence que vous admirez commence peut-être par une leçon simple que vous pouvez suivre aujourd’hui."
+  },
+  "motive-extra-growth-60": {
+    "sourceText": "Use comparison to find a technique, not to assign yourself a rank.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Usa la comparación para encontrar una técnica, no para asignarte un puesto.",
+    "fr": "Utilisez la comparaison pour trouver une technique, pas pour vous attribuer un rang."
+  },
+  "motive-extra-growth-61": {
+    "sourceText": "Notice when a former challenge becomes something you can help others with.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Observa cuándo un antiguo reto se convierte en algo con lo que puedes ayudar a otras personas.",
+    "fr": "Remarquez quand un ancien défi devient un domaine où vous pouvez aider les autres."
+  },
+  "motive-extra-growth-62": {
+    "sourceText": "Give your new habits enough repetitions to become familiar.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale a tus nuevos hábitos suficientes repeticiones para que se vuelvan familiares.",
+    "fr": "Donnez à vos nouvelles habitudes assez de répétitions pour devenir familières."
+  },
+  "motive-extra-growth-63": {
+    "sourceText": "Keep a record of questions that deserve more than a hurried answer.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Lleva un registro de las preguntas que merecen algo más que una respuesta apresurada.",
+    "fr": "Gardez une trace des questions qui méritent plus qu’une réponse précipitée."
+  },
+  "motive-extra-growth-64": {
+    "sourceText": "You are allowed to leave an achievement behind when your values change.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar atrás un logro cuando cambien tus valores.",
+    "fr": "Vous avez le droit de laisser une réussite derrière vous lorsque vos valeurs changent."
+  },
+  "motive-extra-growth-65": {
+    "sourceText": "Let your definition of progress include becoming easier to live with.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tu definición de progreso incluya hacer más fácil la convivencia contigo.",
+    "fr": "Laissez votre définition du progrès inclure le fait de devenir une personne avec qui il est plus facile de vivre."
+  },
+  "motive-extra-growth-66": {
+    "sourceText": "Learning to listen can improve work that has nothing to do with speaking.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Aprender a escuchar puede mejorar un trabajo que no tiene nada que ver con hablar.",
+    "fr": "Apprendre à écouter peut améliorer un travail qui n’a rien à voir avec la parole."
+  },
+  "motive-extra-growth-67": {
+    "sourceText": "Choose one assumption to examine before you build another plan on it.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Elige una suposición que examinar antes de construir otro plan sobre ella.",
+    "fr": "Choisissez une supposition à examiner avant de bâtir un autre plan dessus."
+  },
+  "motive-extra-growth-68": {
+    "sourceText": "You can learn a great deal by finishing something modest.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes aprender mucho al terminar algo modesto.",
+    "fr": "Vous pouvez apprendre beaucoup en terminant quelque chose de modeste."
+  },
+  "motive-extra-growth-69": {
+    "sourceText": "Be curious about the person you are when you feel most at ease.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Siente curiosidad por la persona que eres cuando estás más a gusto.",
+    "fr": "Faites preuve de curiosité envers la personne que vous êtes lorsque vous vous sentez le plus à l’aise."
+  },
+  "motive-extra-growth-70": {
+    "sourceText": "Your next useful insight may arrive while you are trying rather than planning.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu próxima idea útil puede llegar mientras lo intentas, no mientras planificas.",
+    "fr": "Votre prochaine idée utile peut survenir pendant que vous essayez plutôt que pendant que vous planifiez."
+  },
+  "motive-extra-growth-71": {
+    "sourceText": "Make room for a version of success that includes your well-being.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Haz espacio para una versión del éxito que incluya tu bienestar.",
+    "fr": "Faites une place à une version de la réussite qui inclut votre bien-être."
+  },
+  "motive-extra-growth-72": {
+    "sourceText": "You do not need to erase your starting point to appreciate how far you have come.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No necesitas borrar tu punto de partida para valorar lo lejos que has llegado.",
+    "fr": "Vous n’avez pas besoin d’effacer votre point de départ pour apprécier le chemin parcouru."
+  },
+  "motive-extra-growth-73": {
+    "sourceText": "Let the outcome of a small test refine the direction of your ambition.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que el resultado de una pequeña prueba afine la dirección de tus aspiraciones.",
+    "fr": "Laissez le résultat d’un petit essai préciser la direction de vos ambitions."
+  },
+  "motive-extra-growth-74": {
+    "sourceText": "Develop the patience to understand before you try to master.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Cultiva la paciencia de comprender antes de intentar dominar.",
+    "fr": "Cultivez la patience de comprendre avant de chercher à maîtriser."
+  },
+  "motive-extra-growth-75": {
+    "sourceText": "Become someone who can say that you learned something today.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Conviértete en alguien que pueda decir que hoy aprendió algo.",
+    "fr": "Devenez une personne qui peut dire qu’elle a appris quelque chose aujourd’hui."
+  },
+  "motive-extra-calm-1": {
+    "sourceText": "You can leave an unanswered message until you have the space to respond.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar un mensaje sin responder hasta tener espacio para hacerlo.",
+    "fr": "Vous pouvez laisser un message sans réponse jusqu’à avoir la disponibilité pour y répondre."
+  },
+  "motive-extra-calm-2": {
+    "sourceText": "Let the next breath arrive without trying to improve it.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que llegue la próxima respiración sin intentar mejorarla.",
+    "fr": "Laissez venir la prochaine respiration sans chercher à l’améliorer."
+  },
+  "motive-extra-calm-3": {
+    "sourceText": "There is no prize for carrying tomorrow's worries through tonight.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No hay premio por cargar esta noche con las preocupaciones de mañana.",
+    "fr": "Il n’y a pas de prix à gagner en portant ce soir les soucis de demain."
+  },
+  "motive-extra-calm-4": {
+    "sourceText": "Set down your phone and notice the room that is holding you.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja el teléfono y observa la habitación que te acoge.",
+    "fr": "Posez votre téléphone et remarquez la pièce qui vous accueille."
+  },
+  "motive-extra-calm-5": {
+    "sourceText": "You are allowed a few minutes that produce nothing measurable.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tienes derecho a unos minutos que no produzcan nada medible.",
+    "fr": "Vous avez le droit de prendre quelques minutes qui ne produisent rien de mesurable."
+  },
+  "motive-extra-calm-6": {
+    "sourceText": "Unclench your hands before you decide what to do next.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Relaja las manos antes de decidir qué hacer después.",
+    "fr": "Desserrez les mains avant de décider de la suite."
+  },
+  "motive-extra-calm-7": {
+    "sourceText": "Let a familiar sound bring your attention back to the present.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que un sonido familiar traiga tu atención de vuelta al presente.",
+    "fr": "Laissez un son familier ramener votre attention au présent."
+  },
+  "motive-extra-calm-8": {
+    "sourceText": "Your day can have a quiet corner that belongs to nobody else's urgency.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu día puede tener un rincón tranquilo que no pertenezca a las prisas de nadie más.",
+    "fr": "Votre journée peut avoir un coin tranquille qui n’appartient à l’urgence de personne d’autre."
+  },
+  "motive-extra-calm-9": {
+    "sourceText": "Take a sip of water and give yourself a moment between tasks.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Toma un sorbo de agua y date un momento entre tareas.",
+    "fr": "Buvez une gorgée d’eau et accordez-vous un moment entre deux tâches."
+  },
+  "motive-extra-calm-10": {
+    "sourceText": "You can appreciate a peaceful moment without making it last forever.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes apreciar un momento de paz sin hacerlo durar para siempre.",
+    "fr": "Vous pouvez apprécier un moment paisible sans le faire durer éternellement."
+  },
+  "motive-extra-calm-11": {
+    "sourceText": "Some questions become easier after a night of rest.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Algunas preguntas se vuelven más fáciles después de una noche de descanso.",
+    "fr": "Certaines questions deviennent plus faciles après une nuit de repos."
+  },
+  "motive-extra-calm-12": {
+    "sourceText": "Open a window if you can and notice the air against your skin.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Si puedes, abre una ventana y siente el aire sobre la piel.",
+    "fr": "Si vous le pouvez, ouvrez une fenêtre et remarquez l’air sur votre peau."
+  },
+  "motive-extra-calm-13": {
+    "sourceText": "You do not have to solve a feeling to sit with it kindly.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No tienes que resolver una emoción para acompañarla con amabilidad.",
+    "fr": "Vous n’avez pas à résoudre une émotion pour lui faire une place avec bienveillance."
+  },
+  "motive-extra-calm-14": {
+    "sourceText": "Let the ordinary comfort of a warm drink have your full attention.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale toda tu atención al sencillo consuelo de una bebida caliente.",
+    "fr": "Accordez toute votre attention au réconfort ordinaire d’une boisson chaude."
+  },
+  "motive-extra-calm-15": {
+    "sourceText": "Your body deserves care before it has to demand it.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu cuerpo merece cuidados antes de tener que reclamarlos.",
+    "fr": "Votre corps mérite des soins avant de devoir les réclamer."
+  },
+  "motive-extra-calm-16": {
+    "sourceText": "Make a little less noise around the thing you are trying to understand.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Reduce un poco el ruido alrededor de lo que intentas comprender.",
+    "fr": "Réduisez un peu le bruit autour de ce que vous essayez de comprendre."
+  },
+  "motive-extra-calm-17": {
+    "sourceText": "You can let a conversation end without replaying every sentence tonight.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar que una conversación termine sin repasar cada frase esta noche.",
+    "fr": "Vous pouvez laisser une conversation se terminer sans repasser chaque phrase ce soir."
+  },
+  "motive-extra-calm-18": {
+    "sourceText": "Sit somewhere comfortable without turning the pause into a task.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Siéntate en un lugar cómodo sin convertir la pausa en una tarea.",
+    "fr": "Installez-vous confortablement sans transformer la pause en tâche."
+  },
+  "motive-extra-calm-19": {
+    "sourceText": "Choose one gentle thing to do before the day becomes busy again.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Elige algo amable que hacer antes de que el día vuelva a llenarse.",
+    "fr": "Choisissez une chose douce à faire avant que la journée redevienne chargée."
+  },
+  "motive-extra-calm-20": {
+    "sourceText": "Let the light in the room be something you notice.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Fíjate en la luz de la habitación.",
+    "fr": "Prenez un instant pour remarquer la lumière dans la pièce."
+  },
+  "motive-extra-calm-21": {
+    "sourceText": "You can put a boundary around how much news you carry today.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes poner un límite a la cantidad de noticias que llevas contigo hoy.",
+    "fr": "Vous pouvez limiter la quantité d’actualités que vous portez avec vous aujourd’hui."
+  },
+  "motive-extra-calm-22": {
+    "sourceText": "An unhurried meal is a worthwhile part of a full life.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una comida sin prisas es una parte valiosa de una vida plena.",
+    "fr": "Un repas sans hâte est une part précieuse d’une vie bien remplie."
+  },
+  "motive-extra-calm-23": {
+    "sourceText": "Give the evening a softer beginning than the afternoon had.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale a la noche un comienzo más suave que el que tuvo la tarde.",
+    "fr": "Donnez à la soirée un début plus doux que celui de l’après-midi."
+  },
+  "motive-extra-calm-24": {
+    "sourceText": "It is okay to want silence after a day full of voices.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Está bien querer silencio después de un día lleno de voces.",
+    "fr": "Il est normal de vouloir du silence après une journée pleine de voix."
+  },
+  "motive-extra-calm-25": {
+    "sourceText": "You can choose a simple pleasure without making it a reward.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes elegir un placer sencillo sin convertirlo en una recompensa.",
+    "fr": "Vous pouvez choisir un plaisir simple sans en faire une récompense."
+  },
+  "motive-extra-calm-26": {
+    "sourceText": "Let your feet remind you that you are here, on this ground.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tus pies te recuerden que estás aquí, sobre este suelo.",
+    "fr": "Laissez vos pieds vous rappeler que vous êtes ici, sur ce sol."
+  },
+  "motive-extra-calm-27": {
+    "sourceText": "Not every open space in your schedule needs to be filled.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No todos los huecos de tu agenda necesitan llenarse.",
+    "fr": "Tous les espaces libres de votre emploi du temps n’ont pas à être remplis."
+  },
+  "motive-extra-calm-28": {
+    "sourceText": "Pause long enough to tell the difference between hunger, fatigue, and urgency.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Haz una pausa lo bastante larga para distinguir entre hambre, cansancio y urgencia.",
+    "fr": "Faites une pause assez longue pour distinguer la faim, la fatigue et l’urgence."
+  },
+  "motive-extra-calm-29": {
+    "sourceText": "You can enjoy the walk without counting what it accomplishes.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes disfrutar del paseo sin contar lo que consigues con él.",
+    "fr": "Vous pouvez profiter de la promenade sans compter ce qu’elle accomplit."
+  },
+  "motive-extra-calm-30": {
+    "sourceText": "Give yourself a transition between the workday and the rest of your life.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Date una transición entre la jornada laboral y el resto de tu vida.",
+    "fr": "Accordez-vous une transition entre la journée de travail et le reste de votre vie."
+  },
+  "motive-extra-calm-31": {
+    "sourceText": "Let a harmless imperfection remain unfixed for a while.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja sin arreglar por un tiempo una imperfección que no hace daño.",
+    "fr": "Laissez une imperfection sans conséquence telle quelle pendant un moment."
+  },
+  "motive-extra-calm-32": {
+    "sourceText": "You are allowed to choose the quieter plan.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes elegir el plan más tranquilo.",
+    "fr": "Vous avez le droit de choisir le programme le plus calme."
+  },
+  "motive-extra-calm-33": {
+    "sourceText": "Release one expectation that the day no longer has room to hold.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Suelta una expectativa para la que el día ya no tiene espacio.",
+    "fr": "Laissez tomber une attente pour laquelle la journée n’a plus de place."
+  },
+  "motive-extra-calm-34": {
+    "sourceText": "Turn down the volume of the room before asking more of your mind.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Baja el volumen de la habitación antes de pedirle más a tu mente.",
+    "fr": "Baissez le volume dans la pièce avant d’en demander davantage à votre esprit."
+  },
+  "motive-extra-calm-35": {
+    "sourceText": "You do not have to rehearse every possible conversation in advance.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No tienes que ensayar de antemano todas las conversaciones posibles.",
+    "fr": "Vous n’avez pas à répéter à l’avance toutes les conversations possibles."
+  },
+  "motive-extra-calm-36": {
+    "sourceText": "Let your attention rest on one ordinary object for a moment.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tu atención repose un momento sobre un objeto cotidiano.",
+    "fr": "Laissez votre attention se poser un instant sur un objet ordinaire."
+  },
+  "motive-extra-calm-37": {
+    "sourceText": "A familiar routine can offer comfort without needing to be exciting.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una rutina familiar puede reconfortarte sin necesidad de ser emocionante.",
+    "fr": "Une routine familière peut apporter du réconfort sans avoir besoin d’être passionnante."
+  },
+  "motive-extra-calm-38": {
+    "sourceText": "You can take the scenic route when there is no need to hurry.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes tomar el camino con mejores vistas cuando no haga falta apresurarse.",
+    "fr": "Vous pouvez prendre le chemin qui offre de belles vues quand rien ne presse."
+  },
+  "motive-extra-calm-39": {
+    "sourceText": "Put your work somewhere you can leave it until tomorrow.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja tu trabajo en un lugar donde pueda quedarse hasta mañana.",
+    "fr": "Rangez votre travail dans un endroit où vous pourrez le laisser jusqu’à demain."
+  },
+  "motive-extra-calm-40": {
+    "sourceText": "The sky can be worth looking at even on a completely ordinary day.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Vale la pena mirar el cielo incluso en un día completamente normal.",
+    "fr": "Le ciel peut mériter un regard même lors d’une journée tout à fait ordinaire."
+  },
+  "motive-extra-calm-41": {
+    "sourceText": "You are allowed to be unavailable while you recover your energy.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes no estar disponible mientras recuperas energía.",
+    "fr": "Vous avez le droit de ne pas être disponible pendant que vous retrouvez votre énergie."
+  },
+  "motive-extra-calm-42": {
+    "sourceText": "Make your next movement a little less rushed.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Haz tu próximo movimiento con un poco menos de prisa.",
+    "fr": "Faites votre prochain mouvement avec un peu moins de précipitation."
+  },
+  "motive-extra-calm-43": {
+    "sourceText": "There is room for a quiet yes to something you enjoy.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Hay espacio para un sí tranquilo a algo que disfrutas.",
+    "fr": "Il y a de la place pour un oui tranquille à quelque chose que vous aimez."
+  },
+  "motive-extra-calm-44": {
+    "sourceText": "Let a pleasant moment stay simple instead of documenting every part of it.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que un momento agradable siga siendo sencillo en lugar de documentar cada parte.",
+    "fr": "Laissez un moment agréable rester simple au lieu d’en documenter chaque détail."
+  },
+  "motive-extra-calm-45": {
+    "sourceText": "You can stop preparing for the day once the day is over.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar de prepararte para el día cuando el día haya terminado.",
+    "fr": "Vous pouvez cesser de préparer la journée une fois qu’elle est terminée."
+  },
+  "motive-extra-calm-46": {
+    "sourceText": "Give your senses something gentle to pay attention to.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale a tus sentidos algo suave a lo que prestar atención.",
+    "fr": "Offrez à vos sens quelque chose de doux sur quoi porter leur attention."
+  },
+  "motive-extra-calm-47": {
+    "sourceText": "Choose a little order where it brings comfort, and leave the rest for later.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Elige un poco de orden donde aporte bienestar y deja lo demás para después.",
+    "fr": "Choisissez un peu d’ordre là où il apporte du réconfort et gardez le reste pour plus tard."
+  },
+  "motive-extra-calm-48": {
+    "sourceText": "A slow stretch can be a kind way to mark a new beginning.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un estiramiento lento puede ser una forma amable de marcar un nuevo comienzo.",
+    "fr": "Un étirement lent peut être une façon douce de marquer un nouveau départ."
+  },
+  "motive-extra-calm-49": {
+    "sourceText": "You do not have to make every free hour useful to someone else.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No tienes que hacer que cada hora libre sea útil para otra persona.",
+    "fr": "Vous n’avez pas à rendre chaque heure libre utile à quelqu’un d’autre."
+  },
+  "motive-extra-calm-50": {
+    "sourceText": "Notice whether the pace you are keeping is a pace you chose.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Observa si el ritmo que llevas es uno que has elegido.",
+    "fr": "Remarquez si le rythme que vous suivez est celui que vous avez choisi."
+  },
+  "motive-extra-calm-51": {
+    "sourceText": "Allow the music to be the only thing you do for a few minutes.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que escuchar música sea lo único que hagas durante unos minutos.",
+    "fr": "Laissez la musique être votre seule activité pendant quelques minutes."
+  },
+  "motive-extra-calm-52": {
+    "sourceText": "You can let another person have the last word without losing your peace.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar que otra persona tenga la última palabra sin perder tu paz.",
+    "fr": "Vous pouvez laisser le dernier mot à une autre personne sans perdre votre tranquillité."
+  },
+  "motive-extra-calm-53": {
+    "sourceText": "The task will still exist after you have taken a proper break.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La tarea seguirá ahí después de que te hayas tomado un descanso de verdad.",
+    "fr": "La tâche sera toujours là après une vraie pause."
+  },
+  "motive-extra-calm-54": {
+    "sourceText": "Make a place for beauty that does not ask anything of you.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Hazle un lugar a la belleza que no te pide nada.",
+    "fr": "Faites une place à une beauté qui ne vous demande rien."
+  },
+  "motive-extra-calm-55": {
+    "sourceText": "You are allowed to stop checking for a result you cannot change tonight.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar de comprobar un resultado que no puedes cambiar esta noche.",
+    "fr": "Vous avez le droit de cesser de vérifier un résultat que vous ne pouvez pas changer ce soir."
+  },
+  "motive-extra-calm-56": {
+    "sourceText": "Let a small household ritual become an invitation to slow down.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que un pequeño ritual doméstico sea una invitación a bajar el ritmo.",
+    "fr": "Laissez un petit rituel du quotidien devenir une invitation à ralentir."
+  },
+  "motive-extra-calm-57": {
+    "sourceText": "You can care deeply without staying constantly on alert.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes preocuparte profundamente por algo sin estar siempre en alerta.",
+    "fr": "Vous pouvez vous soucier profondément de quelque chose sans rester constamment en alerte."
+  },
+  "motive-extra-calm-58": {
+    "sourceText": "Rest your eyes on something farther away than a screen.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Descansa la mirada en algo que esté más lejos que una pantalla.",
+    "fr": "Posez les yeux sur quelque chose de plus éloigné qu’un écran."
+  },
+  "motive-extra-calm-59": {
+    "sourceText": "A quiet morning can begin with one less thing to rush through.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una mañana tranquila puede empezar con una cosa menos que hacer deprisa.",
+    "fr": "Une matinée tranquille peut commencer avec une chose de moins à faire dans la précipitation."
+  },
+  "motive-extra-calm-60": {
+    "sourceText": "Let the room be quiet enough for you to hear what you need.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que la habitación esté lo bastante tranquila para escuchar lo que necesitas.",
+    "fr": "Laissez la pièce être assez calme pour entendre ce dont vous avez besoin."
+  },
+  "motive-extra-calm-61": {
+    "sourceText": "You do not have to earn the right to feel comfortable in your own home.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No tienes que ganarte el derecho a sentirte a gusto en tu propia casa.",
+    "fr": "Vous n’avez pas à mériter le droit de vous sentir à l’aise chez vous."
+  },
+  "motive-extra-calm-62": {
+    "sourceText": "Choose one place where you will let good enough be enough today.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Elige un ámbito en el que hoy baste con hacerlo lo bastante bien.",
+    "fr": "Choisissez un domaine où vous accepterez un résultat suffisamment bon aujourd’hui."
+  },
+  "motive-extra-calm-63": {
+    "sourceText": "Leave a little breathing space between your commitments.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja un pequeño respiro entre tus compromisos.",
+    "fr": "Laissez un peu d’espace pour respirer entre vos engagements."
+  },
+  "motive-extra-calm-64": {
+    "sourceText": "You can take a moment to settle before you answer.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes tomarte un momento para serenarte antes de responder.",
+    "fr": "Vous pouvez prendre un moment pour vous poser avant de répondre."
+  },
+  "motive-extra-calm-65": {
+    "sourceText": "Notice the weight of the chair supporting you without needing to do anything.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Nota cómo la silla sostiene tu peso sin que tengas que hacer nada.",
+    "fr": "Remarquez comment la chaise soutient votre poids sans que vous ayez rien à faire."
+  },
+  "motive-extra-calm-66": {
+    "sourceText": "Let yourself enjoy the absence of a problem for a little while.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Permítete disfrutar un rato de la ausencia de un problema.",
+    "fr": "Autorisez-vous à profiter un moment de l’absence de problème."
+  },
+  "motive-extra-calm-67": {
+    "sourceText": "You can make tomorrow's plan and then stop working on tomorrow.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes hacer el plan de mañana y después dejar de trabajar en mañana.",
+    "fr": "Vous pouvez préparer le programme de demain puis cesser de travailler sur demain."
+  },
+  "motive-extra-calm-68": {
+    "sourceText": "Give your mind a familiar, gentle place to return to.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale a tu mente un lugar familiar y amable al que volver.",
+    "fr": "Offrez à votre esprit un endroit familier et doux où revenir."
+  },
+  "motive-extra-calm-69": {
+    "sourceText": "It is possible to care about the future and still enjoy this afternoon.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes preocuparte por el futuro y aun así disfrutar de esta tarde.",
+    "fr": "Vous pouvez vous soucier de l’avenir tout en profitant de cet après-midi."
+  },
+  "motive-extra-calm-70": {
+    "sourceText": "You are allowed to let a slow day remain slow.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar que un día lento siga siendo lento.",
+    "fr": "Vous avez le droit de laisser une journée lente rester lente."
+  },
+  "motive-extra-calm-71": {
+    "sourceText": "Put one unnecessary obligation back where it came from.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Devuelve una obligación innecesaria al lugar de donde vino.",
+    "fr": "Remettez une obligation inutile là d’où elle vient."
+  },
+  "motive-extra-calm-72": {
+    "sourceText": "Let a little fresh air be part of how you begin again.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que un poco de aire fresco forme parte de tu nuevo comienzo.",
+    "fr": "Laissez un peu d’air frais faire partie de votre nouveau départ."
+  },
+  "motive-extra-calm-73": {
+    "sourceText": "You can lower the demands on yourself without lowering your worth.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes reducir lo que te exiges sin reducir tu valor.",
+    "fr": "Vous pouvez réduire vos exigences envers vous-même sans diminuer votre valeur."
+  },
+  "motive-extra-calm-74": {
+    "sourceText": "Make time for the kind of company that lets your shoulders relax.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Haz tiempo para la compañía que te permite relajar los hombros.",
+    "fr": "Faites une place à la compagnie qui vous permet de détendre les épaules."
+  },
+  "motive-extra-calm-75": {
+    "sourceText": "This pause does not need an explanation to be worthwhile.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Esta pausa no necesita una explicación para merecer la pena.",
+    "fr": "Cette pause n’a pas besoin d’une explication pour en valoir la peine."
   }
 };
 if(typeof module!=='undefined')module.exports=motiveQuoteLocales;
