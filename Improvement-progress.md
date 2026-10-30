@@ -36,3 +36,5 @@ October 29 quote-language checkpoint: the first 30 built-in reminders now have S
 October 29 second quote-language batch: 30 additional Confidence reminders now have Spanish/French mappings. Current coverage is 60/955 per language, with 895 remaining. The prior presentation and privacy guards remain unchanged. Item 85 remains in progress.
 
 October 29 third quote-language batch: 45 remaining original Confidence reminders and the first 35 original Focus reminders now have Spanish/French mappings. Current coverage is 140/955 per language, with 815 remaining. Tests validate every mapped ID and exact source text/category/author, nonempty distinct translations and unchanged canonical data. Full interface coverage remains unfinished; item 85 is still in progress.
+
+October 29 fourth quote-language batch: the remaining 40 original Focus reminders and first 40 original Resilience reminders now have Spanish/French mappings. Current coverage is 220/955 per language, with 735 remaining. Exact-source guards and canonical history/filter/scene/backup/widget behavior remain unchanged. Item 85 and the wider interface translation remain in progress.
