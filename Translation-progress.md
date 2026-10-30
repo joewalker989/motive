@@ -10,7 +10,7 @@ Item 85 is **in progress**, not complete. This checkpoint translates reviewed, b
 | Journey steps | 21 / 21 | 21 / 21 |
 | Daily guided pauses, complete | 14 / 14 | 14 / 14 |
 | Sleep stories, complete | 8 / 8 | 8 / 8 |
-| Built-in quote records at this checkpoint | 805 / 955 | 805 / 955 |
+| Built-in quote records at this checkpoint | 955 / 955 | 955 / 955 |
 | Entire app interface | Incomplete | Incomplete |
 
 Selected session labels, sounds, minute choices, safety wording, lifecycle messages, journey day labels/summaries and primary story read/stop/resume controls are translated. Many surrounding controls remain English. Settings displays measured guidance coverage and the current built-in quote count instead of claiming the whole app is translated. Existing translated affirmation cards are a separate set, not translations of library quotes.
@@ -29,10 +29,13 @@ Next: expand the reviewed stable-ID quote bank and explicit interface coverage. 
 
 Story IDs and paragraph indexes are shared across languages, so Resume can continue at the same paragraph after a language change. Old one-paragraph stories still resume at their beginning. The four newer multi-paragraph stories keep their three paragraph positions. Canonical English stories and date rotation are not modified. Imported personal recordings, titles and transcripts are never translated. Surrounding UI and the remaining quote records still need translation.
 
-## First quote translation bank
+## Current quote translation bank
 
-`quote-locales.js` contains reviewed Spanish/French text for `motive-1` through `motive-30` plus all 75 extras in each of the five themes and all daily records from October 18 through 24: 805 of the current 955 built-in quotes in each language. Another 150 quotes and much of the interface still need translation. `quote-locale-core.js` requires exact original text, category and author matches; missing or stale mappings fall back to English. Personal quotes stay as written. No original record is changed.
+`quote-locales.js` now contains reviewed Spanish/French mappings for all 955 currently published built-in quotes: all 405 originals and 550 daily records. Wider interface translation is still incomplete. New daily content can increase the library after this checkpoint; Settings computes coverage from actual exact-source matches rather than assuming future records are translated. `quote-locale-core.js` requires matching original text, category and author; missing or stale mappings use English. Personal quotes stay as written, and no original record is changed.
 
 Mapped words agree across the main card, library, collections, recent/related reminders, quote queue, copy/share text, print packs and both canvas download paths. Speech and optional highlighting use the actual presented language. Changing languages does not consume quote history, change a scene match or erase unfinished content-review notes. Search, filters, scene rules, source-content review JSON, backups and widget/native feeds retain canonical English records and IDs. Public quote links contain only IDs; their recipient sees their own selected available language.
 
-All 211 tests passed, including exact-source/private fallback, copy/share/speech/canvas consistency, queue highlighting and stale speech events. Desktop and phone-width extra-large layouts were checked, and an actual French quote PNG was downloaded and visually inspected. Device voice availability and physical iPhone audibility remain unverified.
+All 212 tests passed, including exact-source/private fallback, copy/share/speech/canvas consistency, queue highlighting and stale speech events. Desktop and phone-width extra-large layouts were checked, and an actual French quote PNG was downloaded and visually inspected. Device voice availability and physical iPhone audibility remain unverified.
+
+
+The complete current quote bank does not mark item 85 complete. Remaining interface controls need explicit reviewed translations. An added regression test checks that a newly published unmapped public record increases the measured gap, keeps English speech metadata, and does not borrow another translation or mutate source data. The separate daily content publication can continue while translations catch up; no paid or external translation service is used.
