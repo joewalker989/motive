@@ -152,3 +152,14 @@ The timeline remains activity metadata only: it never decrypts or displays journ
 All 249 tests and 74 syntax checks passed. New regressions cover journal-word exclusion without decryption, literal private-title collisions, unchanged record and view identity on language changes, selected-language time spans with invalid-timestamp fallback, empty states and unchanged quiet/celebration choices. French desktop and Spanish extra-large 390px phone layouts were checked using public sample entries. The history buttons now wrap; the phone dialog/panel measure 334/334 and 296/296 with no overflowing children. Desktop measures 923/923 and 867/867.
 
 Item 85 stays open for the remaining habit-planning, session, audio/rest/movement, studio/privacy/settings and surrounding interface. Earlier 1005/1005 quote and 15/15 scene mappings, personal records, encryption, backups, feeds and widgets are unchanged. Physical iPhone audibility/assistive-technology checks and qualified wellbeing review remain pending.
+
+
+## Habit forms, plans and action cards
+
+The common table now contains 720 reviewed strings/templates. Habit creation labels/placeholders, canonical repeat-period options, target guidance/statuses, the smaller-step/cue plan, seven weekday labels, planned-day guidance, progress counts, action buttons, empty states and optional celebration wording now have Spanish/French presentation. Habit titles and the user's step/cue words stay literal; saved cadence keys and weekday numbers remain canonical.
+
+Language refresh translates named labels, public card fragments and status sources in place. It does not invoke renderHabits or renderPracticeHabitPlan, so it retains unfinished name/target/cadence/step/cue fields, selected habit and weekday choices, card identity, disabled actions, tracking records and history. A displayed celebration can change wording without replaying its animation or changing its opt-in preference. Unknown cadence or status sources keep literal English fallback.
+
+All 252 tests and 74 syntax checks passed. New regressions cover private words equal to public labels, dirty plan inputs and selections, disabled off-plan actions, weekday presentation, stable records/counts and mark/undo/archive behavior, unknown-source fallback, plus status/celebration refresh without another animation. French desktop and Spanish extra-large 390px phone layouts were checked with public sample habits/plans. Dialog/panel widths are 923/923 and 867/867 on desktop, 334/334 and 296/296 on phone. Habit buttons wrap, the weekday fieldset can shrink and its checkboxes remain 22px.
+
+Item 85 remains open for session/audio/rest/movement, quote tags, studio/privacy/settings and surrounding interface. Existing 1005/1005 quote and 15/15 scene translations, original personal records, encrypted collections, backups, widgets and feeds are unchanged. Physical-device checks and qualified wellbeing review remain pending.

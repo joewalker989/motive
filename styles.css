@@ -91,3 +91,5 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #growth-dialog .mood-day{padding:1px 0;white-space:nowrap;letter-spacing:0}
 
 #practice-timeline-refresh,#practice-mood-history{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+
+#growth-1 button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#practice-habit-days{min-inline-size:0}#practice-habit-days legend{max-width:100%;white-space:normal}#practice-habit-days input[type=checkbox]{width:22px;height:22px;min-width:22px}
