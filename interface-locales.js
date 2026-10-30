@@ -672,6 +672,418 @@ const motiveInterfaceLocales={
   "Built-in quote search uses the original English wording. Your personal words are searched as written.": {
     "es": "La búsqueda de citas incluidas usa el texto original en inglés. Tus palabras personales se buscan tal como las escribiste.",
     "fr": "La recherche des citations intégrées utilise le texte anglais d’origine. Vos mots personnels sont recherchés tels que vous les avez écrits."
+  },
+  "A LITTLE CHECK-IN": {
+    "es": "UN PEQUEÑO MOMENTO PARA TI",
+    "fr": "UN PETIT POINT"
+  },
+  "How are you arriving today?": {
+    "es": "¿Cómo te sientes al llegar hoy?",
+    "fr": "Comment vous sentez-vous en arrivant aujourd’hui ?"
+  },
+  "Check in ＋": {
+    "es": "Cómo estoy ＋",
+    "fr": "Faire le point ＋"
+  },
+  "Choose how you are arriving": {
+    "es": "Elige cómo te sientes al llegar",
+    "fr": "Choisissez comment vous vous sentez en arrivant"
+  },
+  "☀ A bit low": {
+    "es": "☀ Un poco de desánimo",
+    "fr": "☀ Un peu à plat"
+  },
+  "◎ Scattered": {
+    "es": "◎ Con la mente dispersa",
+    "fr": "◎ L’esprit dispersé"
+  },
+  "↗ Feeling stuck": {
+    "es": "↗ Sin saber cómo avanzar",
+    "fr": "↗ L’impression de stagner"
+  },
+  "♧ Ready to grow": {
+    "es": "♧ Con ganas de aprender",
+    "fr": "♧ Prêt à apprendre"
+  },
+  "≈ Need some calm": {
+    "es": "≈ Necesito calma",
+    "fr": "≈ Besoin de calme"
+  },
+  "A little encouragement, at your pace.": {
+    "es": "Un poco de ánimo, a tu ritmo.",
+    "fr": "Un peu d’encouragement, à votre rythme."
+  },
+  "One thing at a time is a place to start.": {
+    "es": "Una cosa a la vez es un buen comienzo.",
+    "fr": "Une chose à la fois, c’est un point de départ."
+  },
+  "Let’s look for a manageable way forward.": {
+    "es": "Busquemos una forma de avanzar que puedas manejar.",
+    "fr": "Cherchons une façon accessible d’avancer."
+  },
+  "Make a little room for curiosity.": {
+    "es": "Haz un poco de espacio para la curiosidad.",
+    "fr": "Faites une petite place à la curiosité."
+  },
+  "Nothing to prove here. Take a little space.": {
+    "es": "Aquí no tienes que demostrar nada. Date un poco de espacio.",
+    "fr": "Rien à prouver ici. Accordez-vous un peu d’espace."
+  },
+  "Choose a starting point, or go straight to your quotes.": {
+    "es": "Elige un punto de partida o ve directamente a tus citas.",
+    "fr": "Choisissez un point de départ, ou passez directement aux citations."
+  },
+  "A reason to keep showing up, in your own words.": {
+    "es": "Una razón para seguir adelante, con tus propias palabras.",
+    "fr": "Une raison de continuer, avec vos propres mots."
+  },
+  "MY WHY": {
+    "es": "MI MOTIVO",
+    "fr": "MA RAISON"
+  },
+  "Edit my why": {
+    "es": "Editar mi motivo",
+    "fr": "Modifier ma raison"
+  },
+  "Add my why": {
+    "es": "Añadir mi motivo",
+    "fr": "Ajouter ma raison"
+  },
+  "What makes it matter to you?": {
+    "es": "¿Qué hace que sea importante para ti?",
+    "fr": "Qu’est-ce qui rend cela important pour vous ?"
+  },
+  "Close personal reason": {
+    "es": "Cerrar mi motivo",
+    "fr": "Fermer ma raison"
+  },
+  "A person, a hope, or a way you want to live. Keep your own reason close.": {
+    "es": "Una persona, una esperanza o una forma de vivir. Ten presente tu propio motivo.",
+    "fr": "Une personne, un espoir ou une façon de vivre. Gardez votre raison près de vous."
+  },
+  "My why": {
+    "es": "Mi motivo",
+    "fr": "Ma raison"
+  },
+  "I’m showing up because…": {
+    "es": "Sigo adelante porque…",
+    "fr": "Je continue parce que…"
+  },
+  "Only saved in this browser and backups you download. Leave this empty to clear your reason.": {
+    "es": "Solo se guarda en este navegador y en las copias que descargues. Deja este campo vacío para borrar tu motivo.",
+    "fr": "Enregistré uniquement dans ce navigateur et les sauvegardes téléchargées. Laissez ce champ vide pour effacer votre raison."
+  },
+  "Keep my reason →": {
+    "es": "Guardar mi motivo →",
+    "fr": "Garder ma raison →"
+  },
+  "Your reason is saved on this device.": {
+    "es": "Tu motivo está guardado en este dispositivo.",
+    "fr": "Votre raison est enregistrée sur cet appareil."
+  },
+  "FROM WORDS TO A SMALL STEP": {
+    "es": "DE LAS PALABRAS A UN PEQUEÑO PASO",
+    "fr": "DES MOTS À UN PETIT PAS"
+  },
+  "Something you could try.": {
+    "es": "Algo que podrías probar.",
+    "fr": "Une idée à essayer."
+  },
+  "Use this idea": {
+    "es": "Usar esta idea",
+    "fr": "Utiliser cette idée"
+  },
+  "Another idea ↻": {
+    "es": "Otra idea ↻",
+    "fr": "Une autre idée ↻"
+  },
+  "Review your intention, then tap the arrow to save it.": {
+    "es": "Revisa tu intención y toca la flecha para guardarla.",
+    "fr": "Relisez votre intention, puis touchez la flèche pour l’enregistrer."
+  },
+  "One small thing. Just for today.": {
+    "es": "Una pequeña cosa. Solo por hoy.",
+    "fr": "Une petite chose. Juste pour aujourd’hui."
+  },
+  "Turn a little inspiration into a little action.": {
+    "es": "Convierte un poco de inspiración en una pequeña acción.",
+    "fr": "Transformez un peu d’inspiration en une petite action."
+  },
+  "Your intention for today": {
+    "es": "Tu intención para hoy",
+    "fr": "Votre intention pour aujourd’hui"
+  },
+  "Today, I’ll make time for…": {
+    "es": "Hoy, dedicaré tiempo a…",
+    "fr": "Aujourd’hui, je prendrai du temps pour…"
+  },
+  "Save today's intention": {
+    "es": "Guardar la intención de hoy",
+    "fr": "Enregistrer l’intention du jour"
+  },
+  "A small promise to yourself. Saved for today.": {
+    "es": "Una pequeña promesa para ti. Guardada para hoy.",
+    "fr": "Une petite promesse envers vous-même. Enregistrée pour aujourd’hui."
+  },
+  "Kept for this visit. Browser storage is unavailable.": {
+    "es": "Se conserva durante esta visita. El almacenamiento del navegador no está disponible.",
+    "fr": "Conservé pour cette visite. Le stockage du navigateur est indisponible."
+  },
+  "I followed through on today’s intention": {
+    "es": "Cumplí mi intención de hoy",
+    "fr": "J’ai concrétisé mon intention du jour"
+  },
+  "You made a little room for what matters.": {
+    "es": "Hiciste un poco de espacio para lo que importa.",
+    "fr": "Vous avez fait une petite place à ce qui compte."
+  },
+  "A MOMENT TO NOTICE": {
+    "es": "UN MOMENTO PARA OBSERVAR",
+    "fr": "UN INSTANT POUR REMARQUER"
+  },
+  "What do you want to carry from today?": {
+    "es": "¿Qué quieres llevarte de hoy?",
+    "fr": "Que souhaitez-vous retenir de cette journée ?"
+  },
+  "Write a reflection": {
+    "es": "Escribir una reflexión",
+    "fr": "Écrire une réflexion"
+  },
+  "Your reflection for today is saved.": {
+    "es": "Tu reflexión de hoy está guardada.",
+    "fr": "Votre réflexion du jour est enregistrée."
+  },
+  "A few words about what mattered today.": {
+    "es": "Unas palabras sobre lo que importó hoy.",
+    "fr": "Quelques mots sur ce qui a compté aujourd’hui."
+  },
+  "A few words for yourself.": {
+    "es": "Unas palabras para ti.",
+    "fr": "Quelques mots pour vous-même."
+  },
+  "Close reflection": {
+    "es": "Cerrar reflexión",
+    "fr": "Fermer la réflexion"
+  },
+  "What mattered today, or what would you like to remember?": {
+    "es": "¿Qué importó hoy o qué te gustaría recordar?",
+    "fr": "Qu’est-ce qui a compté aujourd’hui, ou que souhaitez-vous retenir ?"
+  },
+  "A small win, something I noticed, or a thought to keep…": {
+    "es": "Un pequeño logro, algo que noté o un pensamiento para recordar…",
+    "fr": "Une petite réussite, une observation ou une pensée à garder…"
+  },
+  "Private to this browser. Download a backup in Your space to keep your notes. Your latest 90 daily entries are kept.": {
+    "es": "Privado en este navegador. Descarga una copia en Mi espacio para conservar tus notas. Se guardan tus últimas 90 entradas diarias.",
+    "fr": "Privé dans ce navigateur. Téléchargez une sauvegarde dans Mon espace pour conserver vos notes. Les 90 dernières entrées quotidiennes sont conservées."
+  },
+  "Save reflection →": {
+    "es": "Guardar reflexión →",
+    "fr": "Enregistrer la réflexion →"
+  },
+  "Saved on this device. Included when you download a backup.": {
+    "es": "Guardado en este dispositivo. Se incluye al descargar una copia de seguridad.",
+    "fr": "Enregistré sur cet appareil. Inclus lorsque vous téléchargez une sauvegarde."
+  },
+  "Earlier moments": {
+    "es": "Momentos anteriores",
+    "fr": "Moments précédents"
+  },
+  "Your most recent seven reflections from earlier days.": {
+    "es": "Tus siete reflexiones más recientes de días anteriores.",
+    "fr": "Vos sept dernières réflexions des jours précédents."
+  },
+  "Words you’ve crossed paths with.": {
+    "es": "Palabras que has encontrado.",
+    "fr": "Des mots que vous avez croisés."
+  },
+  "Close recently seen quotes": {
+    "es": "Cerrar citas recientes",
+    "fr": "Fermer les citations récentes"
+  },
+  "Your last 30 quotes. Reading one again keeps your new-quote rotation where it is.": {
+    "es": "Tus últimas 30 citas. Volver a leer una mantiene tu recorrido de citas nuevas donde estaba.",
+    "fr": "Vos 30 dernières citations. En relire une conserve votre progression parmi les nouvelles citations."
+  },
+  "Your recently seen quotes will appear here.": {
+    "es": "Tus citas recientes aparecerán aquí.",
+    "fr": "Vos citations récentes apparaîtront ici."
+  },
+  "Reading now": {
+    "es": "Leyendo ahora",
+    "fr": "Lecture actuelle"
+  },
+  "Read again": {
+    "es": "Volver a leer",
+    "fr": "Relire"
+  },
+  "Revisited. Your new-quote rotation is kept.": {
+    "es": "Has vuelto a leerla. Tu recorrido de citas nuevas se conserva.",
+    "fr": "Citation relue. Votre progression parmi les nouvelles citations est conservée."
+  },
+  "Keep these words together.": {
+    "es": "Guarda estas palabras juntas.",
+    "fr": "Gardez ces mots ensemble."
+  },
+  "Close collection dialog": {
+    "es": "Cerrar colecciones",
+    "fr": "Fermer les collections"
+  },
+  "Create a new collection below": {
+    "es": "Crear una nueva colección abajo",
+    "fr": "Créer une collection ci-dessous"
+  },
+  "Or name a new collection": {
+    "es": "O nombra una nueva colección",
+    "fr": "Ou nommer une nouvelle collection"
+  },
+  "Morning courage, Workday focus…": {
+    "es": "Ánimo por la mañana, Concentración en el trabajo…",
+    "fr": "Courage du matin, Concentration au travail…"
+  },
+  "Add quote to collection →": {
+    "es": "Añadir cita a la colección →",
+    "fr": "Ajouter la citation à la collection →"
+  },
+  "Choose a collection, or give your new one a name.": {
+    "es": "Elige una colección o ponle nombre a una nueva.",
+    "fr": "Choisissez une collection ou donnez un nom à la nouvelle."
+  },
+  "Kept in {name}.": {
+    "es": "Guardado en {name}.",
+    "fr": "Conservé dans {name}."
+  },
+  "Remove this collection?": {
+    "es": "¿Eliminar esta colección?",
+    "fr": "Supprimer cette collection ?"
+  },
+  "Your quotes and saved favorites will stay in your library.": {
+    "es": "Tus citas y favoritos guardados seguirán en tu biblioteca.",
+    "fr": "Vos citations et favoris enregistrés resteront dans votre bibliothèque."
+  },
+  "Keep collection": {
+    "es": "Conservar colección",
+    "fr": "Garder la collection"
+  },
+  "Name one contribution you made today, even if nobody noticed.": {
+    "es": "Nombra una contribución que hiciste hoy, aunque nadie la haya notado.",
+    "fr": "Nommez une contribution faite aujourd’hui, même si personne ne l’a remarquée."
+  },
+  "Write one preference you want to express kindly.": {
+    "es": "Escribe una preferencia que quieras expresar con amabilidad.",
+    "fr": "Notez une préférence que vous souhaitez exprimer avec bienveillance."
+  },
+  "Keep one encouraging message somewhere you can find it.": {
+    "es": "Guarda un mensaje de ánimo donde puedas encontrarlo.",
+    "fr": "Gardez un message encourageant dans un endroit facile à retrouver."
+  },
+  "Give yourself credit for one thing you prepared for.": {
+    "es": "Reconoce algo para lo que te preparaste.",
+    "fr": "Reconnaissez le mérite d’une chose que vous avez préparée."
+  },
+  "Ask one clear question instead of guessing what is expected.": {
+    "es": "Haz una pregunta clara en lugar de adivinar qué se espera.",
+    "fr": "Posez une question claire plutôt que de deviner ce qui est attendu."
+  },
+  "Choose one task and write what finished would look like.": {
+    "es": "Elige una tarea y escribe cómo sabrás que está terminada.",
+    "fr": "Choisissez une tâche et décrivez ce qu’elle serait une fois terminée."
+  },
+  "Put one distraction out of reach for your next short work session.": {
+    "es": "Deja una distracción fuera de tu alcance durante tu próxima sesión breve de trabajo.",
+    "fr": "Éloignez une distraction pour votre prochaine courte séance de travail."
+  },
+  "Give an unfinished task a clear next instruction.": {
+    "es": "Escribe el siguiente paso concreto de una tarea sin terminar.",
+    "fr": "Donnez une prochaine consigne claire à une tâche inachevée."
+  },
+  "Prepare the materials for one manageable beginning.": {
+    "es": "Prepara lo que necesitas para empezar con algo manejable.",
+    "fr": "Préparez le matériel pour un début accessible."
+  },
+  "Decide which request can wait while you finish your priority.": {
+    "es": "Decide qué petición puede esperar mientras terminas lo prioritario.",
+    "fr": "Décidez quelle demande peut attendre pendant que vous terminez votre priorité."
+  },
+  "Name one part of today that you can make easier.": {
+    "es": "Nombra una parte de hoy que puedas hacer más sencilla.",
+    "fr": "Nommez une partie de cette journée que vous pouvez rendre plus facile."
+  },
+  "Ask someone for one specific kind of help.": {
+    "es": "Pide a alguien una ayuda concreta.",
+    "fr": "Demandez à quelqu’un une aide précise."
+  },
+  "Adjust one commitment to fit the time and energy you have.": {
+    "es": "Ajusta un compromiso al tiempo y la energía que tienes.",
+    "fr": "Adaptez un engagement au temps et à l’énergie dont vous disposez."
+  },
+  "Write down a useful option that is still available.": {
+    "es": "Anota una opción útil que todavía tengas.",
+    "fr": "Notez une option utile qui reste possible."
+  },
+  "Choose one small comfort to accompany a difficult task.": {
+    "es": "Elige algo reconfortante para acompañar una tarea difícil.",
+    "fr": "Choisissez un petit réconfort pour accompagner une tâche difficile."
+  },
+  "Try one small part of a skill you are curious about.": {
+    "es": "Prueba una pequeña parte de una habilidad que te dé curiosidad.",
+    "fr": "Essayez une petite partie d’une compétence qui vous intrigue."
+  },
+  "Write a question you would like to understand better.": {
+    "es": "Escribe una pregunta que quieras comprender mejor.",
+    "fr": "Notez une question que vous aimeriez mieux comprendre."
+  },
+  "Compare two attempts and notice one useful change.": {
+    "es": "Compara dos intentos y observa un cambio útil.",
+    "fr": "Comparez deux essais et remarquez un changement utile."
+  },
+  "Ask someone how they learned to do something you admire.": {
+    "es": "Pregunta a alguien cómo aprendió a hacer algo que admiras.",
+    "fr": "Demandez à quelqu’un comment il a appris une chose que vous admirez."
+  },
+  "Use one idea you recently learned in an ordinary task.": {
+    "es": "Usa una idea que aprendiste hace poco en una tarea cotidiana.",
+    "fr": "Appliquez une idée récemment apprise à une tâche ordinaire."
+  },
+  "Spend a minute enjoying something without recording it.": {
+    "es": "Dedica un minuto a disfrutar de algo sin grabarlo.",
+    "fr": "Prenez une minute pour apprécier quelque chose sans l’enregistrer."
+  },
+  "Let one comfortable moment remain free of a to-do list.": {
+    "es": "Deja que un momento agradable quede libre de tareas pendientes.",
+    "fr": "Laissez un moment agréable sans liste de choses à faire."
+  },
+  "Listen to the end of a favorite song before starting another task.": {
+    "es": "Escucha una canción que te guste hasta el final antes de empezar otra tarea.",
+    "fr": "Écoutez une chanson favorite jusqu’au bout avant de commencer une autre tâche."
+  },
+  "Give yourself an unhurried transition between two activities.": {
+    "es": "Date una transición sin prisas entre dos actividades.",
+    "fr": "Accordez-vous une transition sans hâte entre deux activités."
+  },
+  "Look for one ordinary detail that you find beautiful.": {
+    "es": "Busca un detalle cotidiano que te parezca bonito.",
+    "fr": "Cherchez un détail ordinaire que vous trouvez beau."
+  },
+  "Write one specific request you could make to someone you trust.": {
+    "es": "Escribe una petición concreta que puedas hacer a alguien de confianza.",
+    "fr": "Notez une demande précise à faire à une personne de confiance."
+  },
+  "Try one small part once, then name what you noticed.": {
+    "es": "Prueba una pequeña parte una vez y describe lo que notaste.",
+    "fr": "Essayez une petite partie une fois, puis nommez ce que vous avez remarqué."
+  },
+  "Make the next transition a little slower, without forcing your breathing.": {
+    "es": "Haz la próxima transición un poco más despacio, sin forzar la respiración.",
+    "fr": "Ralentissez un peu la prochaine transition, sans forcer votre respiration."
+  },
+  "Write what finished would look like for one small task.": {
+    "es": "Escribe cómo sabrás que una pequeña tarea está terminada.",
+    "fr": "Décrivez ce que serait une petite tâche une fois terminée."
+  },
+  "Write one sentence about what matters to you in this choice.": {
+    "es": "Escribe una frase sobre lo que te importa en esta elección.",
+    "fr": "Écrivez une phrase sur ce qui compte pour vous dans ce choix."
   }
 };
 const motiveInterfaceContexts={'save-state':{'Saved':{es:'Guardada',fr:'Enregistrée'}}};

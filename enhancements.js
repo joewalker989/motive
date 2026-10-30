@@ -71,9 +71,10 @@ function collectionOptions() {
   for(const [value,label] of [['featured','A few for today'],['all','All quotes'],['saved','Saved quotes'],['personal','My own words'],...state.collections.map(c=>[c.id,c.name])]){const option=document.createElement('option');option.value=value;option.textContent=label;selector.append(option);}
   selector.value=previous;
 }
+function renderCollectionPreview(){const quote=allQuotes().find(q=>q.id===collectionQuoteId);if(!quote)return;const shown=typeof presentMotiveQuote==='function'?presentMotiveQuote(quote):{...quote,language:'en'};$('collection-preview').textContent=`“${shown.text}”`;$('collection-preview').setAttribute('lang',shown.language);}
 function openCollection(quote) {
-  collectionQuoteId=quote.id;$('collection-preview').textContent=`“${typeof presentMotiveQuote==='function'?presentMotiveQuote(quote).text:quote.text}”`;$('collection-preview').setAttribute('lang',typeof presentMotiveQuote==='function'?presentMotiveQuote(quote).language:'en');$('collection-error').textContent='';$('collection-name').value='';
-  $('collection-picker').replaceChildren();const first=document.createElement('option');first.value='';first.textContent='Create a new collection below';$('collection-picker').append(first);
+  collectionQuoteId=quote.id;renderCollectionPreview();personalInterfaceNode('collection-error','');$('collection-name').value='';
+  $('collection-picker').replaceChildren();const first=document.createElement('option');first.value='';const label=appInterface('Create a new collection below');first.textContent=label.text;first.setAttribute('lang',label.language);$('collection-picker').append(first);
   for(const c of state.collections){const option=document.createElement('option');option.value=c.id;option.textContent=c.name;$('collection-picker').append(option);}
   $('collection-dialog').showModal();
 }
@@ -86,10 +87,10 @@ $('close-collection').addEventListener('click',()=>$('collection-dialog').close(
 $('collection-form').addEventListener('submit',event=>{
   event.preventDefault();const name=$('collection-name').value.trim();let selected=state.collections.find(c=>c.id===$('collection-picker').value);
   if(name){selected=state.collections.find(c=>c.name.toLowerCase()===name.toLowerCase());if(!selected){selected={id:`collection-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,name:name.slice(0,40),quoteIds:[]};state.collections.push(selected);}}
-  if(!selected){$('collection-error').textContent='Choose a collection, or give your new one a name.';return;}
+  if(!selected){personalInterfaceNode('collection-error','Choose a collection, or give your new one a name.');return;}
   if(!selected.quoteIds.includes(collectionQuoteId))selected.quoteIds.push(collectionQuoteId);
   if(!state.saved.includes(collectionQuoteId))state.saved.push(collectionQuoteId);
-  persist();updateSave();collectionOptions();renderCollection();$('collection-dialog').close();toast(`Kept in ${selected.name}.`);
+  persist();updateSave();collectionOptions();renderCollection();$('collection-dialog').close();personalInterfaceToast('Kept in {name}.',{name:selected.name});
 });
 $('remove-collection').addEventListener('click',()=>$('remove-collection-dialog').showModal());
 $('cancel-remove-collection').addEventListener('click',()=>$('remove-collection-dialog').close());
@@ -101,7 +102,7 @@ $('quote-search').placeholder=`Search all ${reminders.length} quotes…`;
 $('library-summary').textContent=`${reminders.length} unique built-in quotes, plus your own words. Reopen online to receive new published additions. Your non-repeating history is kept.`;
 $('settings-button').addEventListener('click',()=>$('settings-dialog').showModal());
 $('close-settings').addEventListener('click',()=>$('settings-dialog').close());
-$('intention-done').addEventListener('change',()=>{const today=dayKey();state.activity.completed=state.activity.completed.filter(day=>day!==today);if($('intention-done').checked)state.activity.completed.push(today);persist();$('intention-feedback').textContent=$('intention-done').checked?'You made a little room for what matters.':'';});
+$('intention-done').addEventListener('change',()=>{const today=dayKey();state.activity.completed=state.activity.completed.filter(day=>day!==today);if($('intention-done').checked)state.activity.completed.push(today);persist();personalInterfaceNode('intention-feedback',$('intention-done').checked?'You made a little room for what matters.':'');});
 function downloadFile(blob,name) { const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=name;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),30000); }
 function backupData() { return {app:'motive',version:1,exportedAt:new Date().toISOString(),data:{name:state.name,custom:state.custom,saved:state.saved,seen:state.seen,collections:state.collections,activity:state.activity,intention:state.intention,theme:state.theme,companion:state.companion,studio:state.studio,experience:state.experience,preferences:state.preferences,pictures:state.pictures,audio:state.audio,calm:state.calm,rest:state.rest,practice:state.practice,access:state.access}}; }
 function mergeBackup(backup) {

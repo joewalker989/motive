@@ -58,7 +58,7 @@ let pendingDelete = null;
 let toastTimer;
 function allQuotes() { return uniqueQuotes([...reminders, ...state.custom]); }
 function persist() { try { localStorage.setItem('motive-v1', JSON.stringify(state)); } catch { storageAvailable = false; toast('Browser storage is unavailable. Changes last for this visit only.'); } if (typeof updateStats === 'function') updateStats(); }
-function toast(message) { $('toast').textContent = message; $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').classList.remove('show'), 3500); }
+function toast(message,language='en') { $('toast').textContent = message; $('toast').setAttribute('lang',language); $('toast').classList.add('show'); clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').classList.remove('show'), 3500); }
 function nextQuote(theme = category) {
   let pool = allQuotes().filter(q => theme === 'All' || q.category === theme);
   if(typeof filterMotivePool==='function')pool=filterMotivePool(pool,state.preferences);
@@ -78,6 +78,9 @@ function dailyQuote() {
 function appInterface(source,values={}) { return typeof motiveInterfaceCurrent==='function'?motiveInterfaceCurrent(source,values):{text:source.replace(/\{(\w+)\}/g,(token,key)=>Object.prototype.hasOwnProperty.call(values,key)?String(values[key]):token),language:'en'}; }
 function appInterfaceNode(id,source,values={}) { const result=appInterface(source,values);$(id).textContent=result.text;$(id).setAttribute('lang',result.language); }
 function appInterfaceAttribute(node,attribute,source,values={}) { const result=appInterface(source,values);node.setAttribute(attribute,result.text);node.setAttribute('lang',result.language); }
+function personalInterfaceNode(id,source){$(id).dataset.motivePersonalSource=source;appInterfaceNode(id,source);}
+function personalInterfaceToast(source,values={}){const result=appInterface(source,values);toast(result.text,result.language);}
+
 function updateGreeting() {
   const language=appInterface('Make room for a little inspiration.').language;
   const date=typeof motiveInterfaceDate==='function'?motiveInterfaceDate(new Date(),language):{text:new Date().toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'}).toUpperCase(),language:'en'};
@@ -160,8 +163,8 @@ $('confirm-delete').addEventListener('click', () => { const id = pendingDelete; 
 $('profile-button').addEventListener('click', () => { $('name-input').value = state.name; $('profile-dialog').showModal(); $('name-input').focus(); });
 $('close-profile').addEventListener('click', () => $('profile-dialog').close());
 $('profile-form').addEventListener('submit', event => { event.preventDefault(); state.name = $('name-input').value.trim(); persist(); updateGreeting(); $('profile-dialog').close(); });
-$('intention-form').addEventListener('submit', event => { event.preventDefault(); const text = $('intention-input').value.trim(); state.intention = {day:dayKey(), text}; persist(); $('intention-status').textContent = text ? (storageAvailable ? 'A small promise to yourself. Saved for today.' : 'Kept for this visit. Browser storage is unavailable.') : ''; });
-function loadIntention() { const today = state.intention.day === dayKey() && typeof state.intention.text === 'string'; $('intention-input').value = today ? state.intention.text : ''; $('intention-status').textContent = today && state.intention.text ? 'A small promise to yourself. Saved for today.' : ''; }
+$('intention-form').addEventListener('submit', event => { event.preventDefault(); const text = $('intention-input').value.trim(); state.intention = {day:dayKey(), text}; persist(); appInterfaceNode('intention-status',text ? (storageAvailable ? 'A small promise to yourself. Saved for today.' : 'Kept for this visit. Browser storage is unavailable.') : '');$('intention-status').dataset.motivePersonalSource=text?(storageAvailable?'A small promise to yourself. Saved for today.':'Kept for this visit. Browser storage is unavailable.'):''; });
+function loadIntention() { const today = state.intention.day === dayKey() && typeof state.intention.text === 'string'; $('intention-input').value = today ? state.intention.text : ''; appInterfaceNode('intention-status',today && state.intention.text ? 'A small promise to yourself. Saved for today.' : '');$('intention-status').dataset.motivePersonalSource=today&&state.intention.text?'A small promise to yourself. Saved for today.':''; }
 document.addEventListener('visibilitychange', () => { if (!document.hidden) {if(currentDay !== dayKey()){currentDay = dayKey(); updateGreeting(); loadIntention();showQuote(category==='All'?dailyQuote():nextQuote());}else if(state.freshOnOpen)showQuote(nextQuote());} });
 const restoredQuote = !state.freshOnOpen && state.currentQuote?.day === dayKey() && allQuotes().find(q => q.id === state.currentQuote.id);
 if (restoredQuote && (typeof filterMotivePool!=='function'||filterMotivePool([restoredQuote],state.preferences).length) && categories.includes(state.currentQuote.category)) category = state.currentQuote.category;
