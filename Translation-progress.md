@@ -39,3 +39,11 @@ All 212 tests passed, including exact-source/private fallback, copy/share/speech
 
 
 The complete current quote bank does not mark item 85 complete. Remaining interface controls need explicit reviewed translations. An added regression test checks that a newly published unmapped public record increases the measured gap, keeps English speech metadata, and does not borrow another translation or mutate source data. The separate daily content publication can continue while translations catch up; no paid or external translation service is used.
+
+## Named interface controls checkpoint
+
+`interface-locales.js` adds 100 reviewed common built-in strings, a separate saved-card grammatical form, and exact numeric progress/English-voice-count formats for Spanish/French. `interface-locale.js` targets shared navigation, category buttons, main-card actions, voice settings and sound-check help. It preserves child icons/counts/output nodes, canonical category keys, explicit option values and device voice IDs. Recreated photo/speech/voice labels are localized after their original rendering functions. Unknown source messages stay English with English language metadata. The sound-check sentence is deliberately still English; the localized guidance states this and audibility confirmation remains manual.
+
+This is explicit named-control coverage, not a full-interface translation. The hero/date and many other headings, library and personal-entry forms, mini-card action labels, picture meanings, and much of the studio/practice/privacy UI remain pending. Personal names, collection names, quotes, journals, recording titles/transcripts and other private content are never passed through the control translator. The document remains English with translated surfaces tagged individually.
+
+All 217 tests passed, including preserved count/arrow/output references, canonical voice choices, private drafts/history and language round trips, speech stop-state/source fallback and recreated photo labels. Desktop French and extra-large phone Spanish controls were checked; the voice dialog had equal client/scroll widths, manual hearing confirmation stayed disabled, and English restoration retained saved counts. Physical iPhone audibility and assistive-technology checks remain pending.
