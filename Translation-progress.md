@@ -10,7 +10,7 @@ Item 85 is **in progress**, not complete. This checkpoint translates reviewed, b
 | Journey steps | 21 / 21 | 21 / 21 |
 | Daily guided pauses, complete | 14 / 14 | 14 / 14 |
 | Sleep stories, complete | 8 / 8 | 8 / 8 |
-| Built-in quote records at this checkpoint | 220 / 955 | 220 / 955 |
+| Built-in quote records at this checkpoint | 300 / 955 | 300 / 955 |
 | Entire app interface | Incomplete | Incomplete |
 
 Selected session labels, sounds, minute choices, safety wording, lifecycle messages, journey day labels/summaries and primary story read/stop/resume controls are translated. Many surrounding controls remain English. Settings displays measured guidance coverage and the current built-in quote count instead of claiming the whole app is translated. Existing translated affirmation cards are a separate set, not translations of library quotes.
@@ -31,7 +31,7 @@ Story IDs and paragraph indexes are shared across languages, so Resume can conti
 
 ## First quote translation bank
 
-`quote-locales.js` contains reviewed Spanish/French text for `motive-1` through `motive-30` plus all 75 original Confidence and Focus extras and `motive-extra-resilience-1` through `motive-extra-resilience-40`: 220 of the current 955 built-in quotes in each language. Another 735 quotes and much of the interface still need translation. `quote-locale-core.js` requires exact original text, category and author matches; missing or stale mappings fall back to English. Personal quotes stay as written. No original record is changed.
+`quote-locales.js` contains reviewed Spanish/French text for `motive-1` through `motive-30` plus all 75 original Confidence, Focus and Resilience extras and `motive-extra-growth-1` through `motive-extra-growth-45`: 300 of the current 955 built-in quotes in each language. Another 655 quotes and much of the interface still need translation. `quote-locale-core.js` requires exact original text, category and author matches; missing or stale mappings fall back to English. Personal quotes stay as written. No original record is changed.
 
 Mapped words agree across the main card, library, collections, recent/related reminders, quote queue, copy/share text, print packs and both canvas download paths. Speech and optional highlighting use the actual presented language. Changing languages does not consume quote history, change a scene match or erase unfinished content-review notes. Search, filters, scene rules, source-content review JSON, backups and widget/native feeds retain canonical English records and IDs. Public quote links contain only IDs; their recipient sees their own selected available language.
 

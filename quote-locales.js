@@ -1539,6 +1539,566 @@ const motiveQuoteLocales={
     "sourceAuthor": "A Motive reminder",
     "es": "Que duela no significa que lo estés afrontando mal.",
     "fr": "Le fait que cela fasse mal ne signifie pas que vous vous y prenez mal."
+  },
+  "motive-extra-resilience-41": {
+    "sourceText": "Choose the next safe step when the larger path is unclear.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Elige el siguiente paso seguro cuando el camino completo no esté claro.",
+    "fr": "Choisissez le prochain pas sûr lorsque l’ensemble du chemin reste flou."
+  },
+  "motive-extra-resilience-42": {
+    "sourceText": "There may be more ways forward than the one that just closed.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puede haber más caminos para avanzar que el que acaba de cerrarse.",
+    "fr": "Il existe peut-être d’autres voies pour avancer que celle qui vient de se fermer."
+  },
+  "motive-extra-resilience-43": {
+    "sourceText": "Keep the lessons from the attempt without keeping every harsh thought about it.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Conserva lo que aprendiste del intento sin guardar cada pensamiento duro sobre él.",
+    "fr": "Gardez les leçons de la tentative sans conserver toutes les pensées sévères à son sujet."
+  },
+  "motive-extra-resilience-44": {
+    "sourceText": "You can lower the pace without giving up your direction.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes reducir el ritmo sin renunciar a tu dirección.",
+    "fr": "Vous pouvez ralentir sans renoncer à votre direction."
+  },
+  "motive-extra-resilience-45": {
+    "sourceText": "Let today be a day of repair if that is what you need.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que hoy sea un día para reparar si eso es lo que necesitas.",
+    "fr": "Laissez cette journée être consacrée à réparer si c’est ce dont vous avez besoin."
+  },
+  "motive-extra-resilience-46": {
+    "sourceText": "You are allowed to need more time after something difficult.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tienes derecho a necesitar más tiempo después de algo difícil.",
+    "fr": "Vous avez le droit d’avoir besoin de plus de temps après une épreuve."
+  },
+  "motive-extra-resilience-47": {
+    "sourceText": "The ability to adapt can matter more than the ability to insist.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La capacidad de adaptarte puede importar más que la de insistir.",
+    "fr": "La capacité de vous adapter peut compter davantage que celle d’insister."
+  },
+  "motive-extra-resilience-48": {
+    "sourceText": "A fresh start can happen in the middle of an ordinary afternoon.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes volver a empezar en medio de una tarde cualquiera.",
+    "fr": "Un nouveau départ peut survenir au milieu d’un après-midi ordinaire."
+  },
+  "motive-extra-resilience-49": {
+    "sourceText": "Allow a little kindness into the place where you expected criticism.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja entrar un poco de amabilidad donde esperabas críticas.",
+    "fr": "Laissez entrer un peu de bienveillance là où vous attendiez des critiques."
+  },
+  "motive-extra-resilience-50": {
+    "sourceText": "You can miss the old plan and still make a useful new one.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes echar de menos el plan anterior y aun así crear uno nuevo que sirva.",
+    "fr": "Vous pouvez regretter l’ancien plan tout en en créant un nouveau qui soit utile."
+  },
+  "motive-extra-resilience-51": {
+    "sourceText": "One uncomfortable conversation can be the beginning of a lighter burden.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una conversación incómoda puede ser el comienzo de una carga más ligera.",
+    "fr": "Une conversation inconfortable peut être le début d’un fardeau moins lourd."
+  },
+  "motive-extra-resilience-52": {
+    "sourceText": "Your next chapter can be shaped by more than what went wrong.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Lo que salió mal no tiene por qué ser lo único que dé forma a tu próxima etapa.",
+    "fr": "Votre prochain chapitre peut prendre forme à partir d’autre chose que ce qui s’est mal passé."
+  },
+  "motive-extra-resilience-53": {
+    "sourceText": "Keep looking for what is possible without denying what is hard.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Sigue buscando lo posible sin negar lo difícil.",
+    "fr": "Continuez à chercher ce qui est possible sans nier ce qui est difficile."
+  },
+  "motive-extra-resilience-54": {
+    "sourceText": "You can learn to carry uncertainty without letting it lead every choice.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes aprender a llevar la incertidumbre sin dejar que guíe cada decisión.",
+    "fr": "Vous pouvez apprendre à vivre avec l’incertitude sans lui laisser guider chaque choix."
+  },
+  "motive-extra-resilience-55": {
+    "sourceText": "An honest rest can be part of a determined response.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un descanso de verdad puede formar parte de una respuesta decidida.",
+    "fr": "Un vrai repos peut faire partie d’une réponse déterminée."
+  },
+  "motive-extra-resilience-56": {
+    "sourceText": "Let your recovery have its own rhythm.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tu recuperación tenga su propio ritmo.",
+    "fr": "Laissez votre rétablissement suivre son propre rythme."
+  },
+  "motive-extra-resilience-57": {
+    "sourceText": "You are not required to turn pain into productivity.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No tienes la obligación de convertir el dolor en productividad.",
+    "fr": "Vous n’avez pas à transformer la douleur en productivité."
+  },
+  "motive-extra-resilience-58": {
+    "sourceText": "The strength you need today may be quieter than you expected.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La fuerza que necesitas hoy puede ser más discreta de lo que esperabas.",
+    "fr": "La force dont vous avez besoin aujourd’hui peut être plus discrète que prévu."
+  },
+  "motive-extra-resilience-59": {
+    "sourceText": "Give tomorrow the benefit of not being decided by today's mood.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale a mañana la oportunidad de no quedar definido por tu ánimo de hoy.",
+    "fr": "Ne laissez pas votre humeur d’aujourd’hui décider d’avance de demain."
+  },
+  "motive-extra-resilience-60": {
+    "sourceText": "You can return with a smaller plan and a wiser boundary.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes volver con un plan más pequeño y un límite más sensato.",
+    "fr": "Vous pouvez revenir avec un plan plus modeste et une limite plus sage."
+  },
+  "motive-extra-resilience-61": {
+    "sourceText": "Reach for what steadies you before reaching for what numbs the question.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Busca lo que te dé estabilidad antes de lo que acalle la pregunta.",
+    "fr": "Cherchez ce qui vous stabilise avant ce qui fait taire la question."
+  },
+  "motive-extra-resilience-62": {
+    "sourceText": "Let one trusted person know that the day has been heavy.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Cuéntale a una persona de confianza que el día ha sido pesado.",
+    "fr": "Dites à une personne de confiance que la journée a été lourde."
+  },
+  "motive-extra-resilience-63": {
+    "sourceText": "A difficult result can change your strategy without changing your values.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un resultado difícil puede cambiar tu estrategia sin cambiar tus valores.",
+    "fr": "Un résultat difficile peut changer votre stratégie sans changer vos valeurs."
+  },
+  "motive-extra-resilience-64": {
+    "sourceText": "You can feel discouraged and still complete one caring action.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes sentir desánimo y aun así hacer un gesto de cuidado.",
+    "fr": "Vous pouvez ressentir du découragement et tout de même accomplir un geste attentionné."
+  },
+  "motive-extra-resilience-65": {
+    "sourceText": "Do not measure your entire future from the bottom of a difficult hour.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "No midas todo tu futuro desde el punto más bajo de una hora difícil.",
+    "fr": "Ne mesurez pas tout votre avenir depuis le point le plus bas d’une heure difficile."
+  },
+  "motive-extra-resilience-66": {
+    "sourceText": "Some doors open only after you give yourself permission to look elsewhere.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Algunas puertas solo se abren cuando te das permiso para buscar en otro lugar.",
+    "fr": "Certaines portes ne s’ouvrent que lorsque vous vous autorisez à chercher ailleurs."
+  },
+  "motive-extra-resilience-67": {
+    "sourceText": "You can keep your heart open while becoming more careful with your trust.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes mantener el corazón abierto y ser más prudente al confiar.",
+    "fr": "Vous pouvez garder le cœur ouvert tout en accordant votre confiance avec plus de prudence."
+  },
+  "motive-extra-resilience-68": {
+    "sourceText": "The effort of rebuilding deserves as much respect as the first achievement.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "El esfuerzo de reconstruir merece tanto respeto como el primer logro.",
+    "fr": "L’effort de reconstruire mérite autant de respect que la première réussite."
+  },
+  "motive-extra-resilience-69": {
+    "sourceText": "Meet the unexpected with the resources of the present.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Afronta lo inesperado con los recursos del presente.",
+    "fr": "Faites face à l’imprévu avec les ressources du présent."
+  },
+  "motive-extra-resilience-70": {
+    "sourceText": "There is courage in letting a workable plan replace a perfect one.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Hay valor en dejar que un plan viable sustituya a uno perfecto.",
+    "fr": "Il y a du courage à laisser un plan réalisable remplacer un plan parfait."
+  },
+  "motive-extra-resilience-71": {
+    "sourceText": "You are allowed to let a good day be good without preparing for its loss.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar que un buen día sea bueno sin prepararte para perderlo.",
+    "fr": "Vous avez le droit de profiter d’une bonne journée sans vous préparer à la perdre."
+  },
+  "motive-extra-resilience-72": {
+    "sourceText": "Remember the small comforts that have helped you through before.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Recuerda las pequeñas cosas reconfortantes que ya te han ayudado antes.",
+    "fr": "Rappelez-vous les petits réconforts qui vous ont déjà aidé à traverser des difficultés."
+  },
+  "motive-extra-resilience-73": {
+    "sourceText": "When you cannot solve the whole problem, reduce one part of the strain.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Cuando no puedas resolver todo el problema, alivia una parte de la tensión.",
+    "fr": "Quand vous ne pouvez pas résoudre tout le problème, allégez une partie de la tension."
+  },
+  "motive-extra-resilience-74": {
+    "sourceText": "Your willingness to seek another route is a form of progress.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu disposición a buscar otro camino es una forma de progreso.",
+    "fr": "Votre volonté de chercher un autre chemin est une forme de progrès."
+  },
+  "motive-extra-resilience-75": {
+    "sourceText": "Leave room for a future that surprises your disappointment.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja espacio para un futuro que sorprenda a tu decepción.",
+    "fr": "Laissez de la place à un avenir qui surprendra votre déception."
+  },
+  "motive-extra-growth-1": {
+    "sourceText": "Curiosity can turn an uncomfortable gap into a useful question.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La curiosidad puede convertir una laguna que te incomoda en una pregunta útil.",
+    "fr": "La curiosité peut transformer une lacune inconfortable en une question utile."
+  },
+  "motive-extra-growth-2": {
+    "sourceText": "Let a mistake become something you examine instead of something you hide.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que un error sea algo que examinas en lugar de algo que escondes.",
+    "fr": "Faites d’une erreur quelque chose à examiner plutôt que quelque chose à cacher."
+  },
+  "motive-extra-growth-3": {
+    "sourceText": "Try listening for the part of the feedback that you can use.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Intenta escuchar la parte de los comentarios que puedas aprovechar.",
+    "fr": "Essayez d’écouter la partie des retours qui peut vous être utile."
+  },
+  "motive-extra-growth-4": {
+    "sourceText": "You are allowed to revise a belief when experience gives you better evidence.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes revisar una creencia cuando la experiencia te aporta mejores pruebas.",
+    "fr": "Vous avez le droit de revoir une conviction lorsque l’expérience vous apporte de meilleurs éléments."
+  },
+  "motive-extra-growth-5": {
+    "sourceText": "Make a little room each week for learning without performing.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Reserva un poco de espacio cada semana para aprender sin tener que demostrar nada.",
+    "fr": "Gardez un peu de place chaque semaine pour apprendre sans avoir à faire vos preuves."
+  },
+  "motive-extra-growth-6": {
+    "sourceText": "Practice the skill at the level where you can actually improve it.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Practica la habilidad al nivel en el que realmente puedas mejorarla.",
+    "fr": "Exercez cette compétence au niveau où vous pouvez réellement progresser."
+  },
+  "motive-extra-growth-7": {
+    "sourceText": "Your first version only needs to teach you what the second version needs.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu primera versión solo necesita enseñarte qué necesita la segunda.",
+    "fr": "Votre première version a seulement besoin de vous apprendre ce dont la deuxième a besoin."
+  },
+  "motive-extra-growth-8": {
+    "sourceText": "Ask what changed when something finally starts to work.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Pregúntate qué cambió cuando algo por fin empiece a funcionar.",
+    "fr": "Demandez-vous ce qui a changé lorsque quelque chose commence enfin à fonctionner."
+  },
+  "motive-extra-growth-9": {
+    "sourceText": "Let your questions become more specific as your understanding deepens.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tus preguntas sean más concretas a medida que comprendes mejor.",
+    "fr": "Laissez vos questions devenir plus précises à mesure que votre compréhension s’approfondit."
+  },
+  "motive-extra-growth-10": {
+    "sourceText": "The next useful teacher may be someone you did not expect.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La próxima persona que te enseñe algo útil puede ser alguien inesperado.",
+    "fr": "La prochaine personne qui vous apprendra quelque chose d’utile sera peut-être inattendue."
+  },
+  "motive-extra-growth-11": {
+    "sourceText": "Being challenged can reveal a skill worth developing.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un reto puede mostrarte una habilidad que vale la pena desarrollar.",
+    "fr": "Un défi peut révéler une compétence qui mérite d’être développée."
+  },
+  "motive-extra-growth-12": {
+    "sourceText": "You can appreciate your old choices while making better-informed ones now.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes valorar tus decisiones anteriores y tomar ahora otras con más información.",
+    "fr": "Vous pouvez apprécier vos anciens choix tout en faisant aujourd’hui des choix mieux éclairés."
+  },
+  "motive-extra-growth-13": {
+    "sourceText": "Make something small enough to finish and real enough to learn from.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Crea algo lo bastante pequeño para terminarlo y lo bastante real para aprender de ello.",
+    "fr": "Créez quelque chose d’assez petit pour le terminer et d’assez concret pour en tirer des leçons."
+  },
+  "motive-extra-growth-14": {
+    "sourceText": "An honest reflection can save you from repeating an expensive lesson.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una reflexión sincera puede evitarte repetir una lección costosa.",
+    "fr": "Une réflexion honnête peut vous éviter de répéter une leçon coûteuse."
+  },
+  "motive-extra-growth-15": {
+    "sourceText": "Go looking for an example that expands what you think is possible.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Busca un ejemplo que amplíe lo que crees posible.",
+    "fr": "Cherchez un exemple qui élargit votre idée de ce qui est possible."
+  },
+  "motive-extra-growth-16": {
+    "sourceText": "Learn the principle behind the advice before applying it everywhere.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Aprende el principio que hay detrás de un consejo antes de aplicarlo en todas partes.",
+    "fr": "Comprenez le principe derrière un conseil avant de l’appliquer partout."
+  },
+  "motive-extra-growth-17": {
+    "sourceText": "You can be proud of a skill that still needs practice.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes sentir orgullo por una habilidad que todavía necesita práctica.",
+    "fr": "Vous pouvez ressentir de la fierté pour une compétence qui demande encore de la pratique."
+  },
+  "motive-extra-growth-18": {
+    "sourceText": "Give yourself a chance to be surprised by a new interest.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Date la oportunidad de sorprenderte con un nuevo interés.",
+    "fr": "Donnez-vous la chance de découvrir un nouvel intérêt qui vous surprenne."
+  },
+  "motive-extra-growth-19": {
+    "sourceText": "Understanding someone else's perspective can strengthen your own thinking.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Comprender el punto de vista de otra persona puede fortalecer tu propia forma de pensar.",
+    "fr": "Comprendre le point de vue d’une autre personne peut renforcer votre propre réflexion."
+  },
+  "motive-extra-growth-20": {
+    "sourceText": "Change becomes practical when you name the behavior you want to practice.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "El cambio se vuelve práctico cuando nombras la conducta que quieres practicar.",
+    "fr": "Le changement devient concret lorsque vous nommez le comportement que vous voulez pratiquer."
+  },
+  "motive-extra-growth-21": {
+    "sourceText": "You are allowed to become interested in a different future.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes empezar a interesarte por un futuro diferente.",
+    "fr": "Vous avez le droit de vous intéresser à un autre avenir."
+  },
+  "motive-extra-growth-22": {
+    "sourceText": "An experiment can be worthwhile even when its answer is no.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un experimento puede merecer la pena aunque su respuesta sea no.",
+    "fr": "Une expérience peut valoir la peine même si sa réponse est non."
+  },
+  "motive-extra-growth-23": {
+    "sourceText": "Let practice be a conversation with the work, not a trial of your worth.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que la práctica sea un diálogo con el trabajo, no un juicio sobre tu valor.",
+    "fr": "Faites de la pratique un dialogue avec le travail, pas un procès de votre valeur."
+  },
+  "motive-extra-growth-24": {
+    "sourceText": "The habit of asking why can lead you beyond the familiar answer.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "El hábito de preguntar por qué puede llevarte más allá de la respuesta de siempre.",
+    "fr": "L’habitude de demander pourquoi peut vous mener au-delà de la réponse habituelle."
+  },
+  "motive-extra-growth-25": {
+    "sourceText": "Look for the difference between what feels difficult and what is truly impossible.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Busca la diferencia entre lo que parece difícil y lo que es realmente imposible.",
+    "fr": "Cherchez la différence entre ce qui semble difficile et ce qui est réellement impossible."
+  },
+  "motive-extra-growth-26": {
+    "sourceText": "You can begin learning without announcing a new identity.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes empezar a aprender sin anunciar una nueva identidad.",
+    "fr": "Vous pouvez commencer à apprendre sans annoncer une nouvelle identité."
+  },
+  "motive-extra-growth-27": {
+    "sourceText": "Write down what worked so that improvement has a memory.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Anota lo que funcionó para que la mejora tenga memoria.",
+    "fr": "Notez ce qui a fonctionné pour donner une mémoire à vos progrès."
+  },
+  "motive-extra-growth-28": {
+    "sourceText": "Growth sometimes means choosing a healthier definition of success.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "A veces, crecer significa elegir una definición del éxito que te haga más bien.",
+    "fr": "Grandir signifie parfois choisir une définition de la réussite plus saine pour vous."
+  },
+  "motive-extra-growth-29": {
+    "sourceText": "Spend time with people who make thoughtful questions feel welcome.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Pasa tiempo con personas que acojan las preguntas reflexivas.",
+    "fr": "Passez du temps avec des personnes qui accueillent les questions réfléchies."
+  },
+  "motive-extra-growth-30": {
+    "sourceText": "You can learn something useful from a person you do not agree with entirely.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes aprender algo útil de alguien con quien no estás totalmente de acuerdo.",
+    "fr": "Vous pouvez apprendre quelque chose d’utile d’une personne avec laquelle vous n’êtes pas entièrement d’accord."
+  },
+  "motive-extra-growth-31": {
+    "sourceText": "Give a new method a fair attempt before deciding it is not for you.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale una oportunidad justa a un método nuevo antes de decidir que no es para ti.",
+    "fr": "Donnez une vraie chance à une nouvelle méthode avant de décider qu’elle n’est pas pour vous."
+  },
+  "motive-extra-growth-32": {
+    "sourceText": "The willingness to be corrected keeps your understanding alive.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La disposición a aceptar correcciones mantiene viva tu comprensión.",
+    "fr": "La volonté d’accepter les corrections garde votre compréhension vivante."
+  },
+  "motive-extra-growth-33": {
+    "sourceText": "Your future options can grow with the skills you practice today.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tus opciones futuras pueden ampliarse con las habilidades que practicas hoy.",
+    "fr": "Vos possibilités futures peuvent s’élargir grâce aux compétences que vous pratiquez aujourd’hui."
+  },
+  "motive-extra-growth-34": {
+    "sourceText": "Make a little room between receiving feedback and defending yourself.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja un poco de espacio entre recibir comentarios y ponerte a la defensiva.",
+    "fr": "Laissez un peu d’espace entre recevoir un retour et vous défendre."
+  },
+  "motive-extra-growth-35": {
+    "sourceText": "Explore the interest that keeps returning when the day gets quiet.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Explora ese interés que vuelve cuando el día se calma.",
+    "fr": "Explorez cet intérêt qui revient quand la journée se calme."
+  },
+  "motive-extra-growth-36": {
+    "sourceText": "Let your goals change as your knowledge of yourself becomes clearer.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que tus metas cambien a medida que te conoces mejor.",
+    "fr": "Laissez vos objectifs changer à mesure que vous vous connaissez mieux."
+  },
+  "motive-extra-growth-37": {
+    "sourceText": "You can outgrow a habit without turning your past into an enemy.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes dejar atrás un hábito sin convertir tu pasado en un enemigo.",
+    "fr": "Vous pouvez dépasser une habitude sans faire de votre passé un ennemi."
+  },
+  "motive-extra-growth-38": {
+    "sourceText": "Improvement often begins with noticing a pattern honestly.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La mejora suele empezar al reconocer un patrón con sinceridad.",
+    "fr": "L’amélioration commence souvent par l’observation honnête d’un schéma qui se répète."
+  },
+  "motive-extra-growth-39": {
+    "sourceText": "Take the time to understand the part you usually rush past.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dedica tiempo a comprender la parte por la que sueles pasar de prisa.",
+    "fr": "Prenez le temps de comprendre la partie que vous traversez habituellement trop vite."
+  },
+  "motive-extra-growth-40": {
+    "sourceText": "A good question can be a more useful achievement than a quick answer.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una buena pregunta puede ser un logro más útil que una respuesta rápida.",
+    "fr": "Une bonne question peut être une réussite plus utile qu’une réponse rapide."
+  },
+  "motive-extra-growth-41": {
+    "sourceText": "Share what you are learning while leaving room for what you do not know.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Comparte lo que estás aprendiendo y deja espacio para lo que no sabes.",
+    "fr": "Partagez ce que vous apprenez tout en laissant de la place à ce que vous ne savez pas."
+  },
+  "motive-extra-growth-42": {
+    "sourceText": "Practice explaining the idea simply enough to discover your own gaps.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Practica explicar la idea con suficiente sencillez para descubrir tus propias lagunas.",
+    "fr": "Exercez-vous à expliquer l’idée assez simplement pour découvrir vos propres lacunes."
+  },
+  "motive-extra-growth-43": {
+    "sourceText": "You can ask for an example instead of pretending to understand.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes pedir un ejemplo en lugar de fingir que entiendes.",
+    "fr": "Vous pouvez demander un exemple au lieu de faire semblant de comprendre."
+  },
+  "motive-extra-growth-44": {
+    "sourceText": "Keep the curiosity that made you begin before comparison made you hesitate.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Conserva la curiosidad que te hizo empezar antes de que la comparación te hiciera dudar.",
+    "fr": "Gardez la curiosité qui vous a fait commencer avant que la comparaison vous fasse hésiter."
+  },
+  "motive-extra-growth-45": {
+    "sourceText": "Your interests do not have to become a business to deserve your time.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tus intereses no tienen que convertirse en un negocio para merecer tu tiempo.",
+    "fr": "Vos centres d’intérêt n’ont pas à devenir une activité commerciale pour mériter votre temps."
   }
 };
 if(typeof module!=='undefined')module.exports=motiveQuoteLocales;
