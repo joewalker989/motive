@@ -89,3 +89,5 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #growth-dialog .studio-tabs button{flex-shrink:0}
 
 #growth-dialog .mood-day{padding:1px 0;white-space:nowrap;letter-spacing:0}
+
+#practice-timeline-refresh,#practice-mood-history{max-width:100%;white-space:normal;overflow-wrap:anywhere}

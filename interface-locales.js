@@ -1,6 +1,22 @@
 'use strict';
 // Reviewed built-in control text only. Never pass personal records to these helpers.
 const motiveInterfaceLocales={
+"Progress at your pace":{"es": "Progreso a tu ritmo", "fr": "Avancer à votre rythme"},
+"Hide visit streaks, completion totals and habit counts":{"es": "Ocultar rachas de visitas, totales de tareas y recuentos de hábitos", "fr": "Masquer les séries de visites, les totaux et les comptes d’habitudes"},
+"Show a small celebration after a habit step":{"es": "Mostrar una pequeña celebración tras un paso de hábito", "fr": "Afficher une petite célébration après une étape d’habitude"},
+"Habit plans are ordinary unencrypted preferences included in quote backups. Tracking stays saved when counts are hidden. Celebrations are off by default and respect reduced motion.":{"es": "Los planes de hábitos son preferencias sin cifrar incluidas en las copias de citas. El seguimiento se conserva aunque ocultes los recuentos. Las celebraciones están desactivadas al principio y respetan la reducción de movimiento.", "fr": "Les plans d’habitudes sont des préférences non chiffrées incluses dans les sauvegardes de citations. Le suivi reste enregistré lorsque les nombres sont masqués. Les célébrations sont désactivées par défaut et respectent la réduction des animations."},
+"My recent timeline":{"es": "Mi actividad reciente", "fr": "Mon activité récente"},
+"Dates of saved journal entries, mood check-ins and habit steps. Journal words are excluded; this list is ordinary local activity metadata.":{"es": "Fechas de entradas guardadas del diario, registros de ánimo y pasos de hábitos. No incluye las palabras del diario; esta lista es información local de actividad sin cifrar.", "fr": "Dates des entrées du journal, des bilans d’humeur et des étapes d’habitudes enregistrés. Les mots du journal sont exclus ; cette liste contient des métadonnées locales d’activité non chiffrées."},
+"Show recent activity":{"es": "Mostrar actividad reciente", "fr": "Afficher l’activité récente"},
+"Journal entry":{"es": "Entrada del diario", "fr": "Entrée du journal"},
+"Habit step":{"es": "Paso de hábito", "fr": "Étape d’habitude"},
+"No activity to show yet":{"es": "Todavía no hay actividad para mostrar", "fr": "Aucune activité à afficher pour le moment"},
+"Check-ins throughout a day":{"es": "Registros de ánimo a lo largo del día", "fr": "Des bilans d’humeur au fil de la journée"},
+"Save check-in adds another moment; the calendar shows the most recently saved feeling for each date. The earlier arrival shortcut still updates its one daily check-in.":{"es": "Guardar registro de ánimo añade otro momento; el calendario muestra la última emoción guardada de cada fecha. El acceso rápido de llegada sigue actualizando su único registro diario.", "fr": "Enregistrer le bilan d’humeur ajoute un moment ; le calendrier affiche la dernière émotion enregistrée pour chaque date. Le raccourci d’accueil continue de mettre à jour son unique bilan quotidien."},
+"Show recent check-ins":{"es": "Mostrar registros de ánimo recientes", "fr": "Afficher les bilans d’humeur récents"},
+"Earlier check-in":{"es": "Registro de ánimo anterior", "fr": "Bilan d’humeur antérieur"},
+"No recent check-ins yet":{"es": "Todavía no hay registros de ánimo recientes", "fr": "Aucun bilan d’humeur récent pour le moment"},
+
 "Your daily practice":{"es": "Tu práctica diaria", "fr": "Votre pratique quotidienne"},
 "Today":{"es": "Hoy", "fr": "Aujourd’hui"},
 "Habits":{"es": "Hábitos", "fr": "Habitudes"},
