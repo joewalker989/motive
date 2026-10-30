@@ -59,3 +59,6 @@ October 30 homepage/library checkpoint: localized greeting/date, library heading
 
 
 October 30 personal-tools/collection checkpoint: reviewed Spanish/French labels now cover arrival, personal reasons, all ordinary/tailored action ideas, intentions, recent quotes and collection dialogs. Language refresh preserves drafts, canonical moods/actions/history and verbatim personal names/words. Legacy reflection view/date rendering is draft-safe; the main reflection button opens the newer studio journal whose controls remain unfinished. All 223 tests and desktop/extra-large phone checks passed. Continue scene presentation and remaining studio/practice/privacy/settings/onboarding UI; item 85 stays open.
+
+
+October 30 picture-language checkpoint: all 14 current public scene labels/meanings and the background/image-design dialog now have source-specific Spanish/French presentation. Canonical rules/keys, feeds, picture history, pins, favorites, crops and private design names/drafts remain unchanged; future/stale scene fields fall back to English. Fixed image-dialog grid/checkbox overflow with desktop/extra-large phone checks. All 226 tests and 74 syntax checks passed. Continue remaining studio/practice/privacy/settings/onboarding interface text, then 91–100 audit; item 85 stays open.

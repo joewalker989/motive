@@ -69,3 +69,8 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 .library-toolbar input[type=checkbox]{flex:0 0 auto;width:22px;min-width:22px;max-width:22px}
 .library-toolbar>label:has(input[type=checkbox]){flex:0 1 auto;min-width:0;max-width:100%;white-space:normal}
 @media(max-width:600px){html[data-text-size]:not([data-text-size=standard]) .library-toolbar select{flex-basis:100%;width:100%;min-width:0;max-width:100%}}
+
+/* Keep translated image controls inside the dialog at large text sizes. */
+#background-dialog .image-studio{grid-template-columns:minmax(0,1fr);min-width:0}#background-dialog .image-studio>*{min-width:0;max-width:100%;box-sizing:border-box}#background-dialog fieldset{min-inline-size:0}#background-dialog legend{max-width:100%;white-space:normal}#background-dialog .dialog-actions{flex-wrap:wrap}#background-dialog button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#background-dialog select,#background-dialog input{min-width:0;max-width:100%;box-sizing:border-box}
+
+#background-dialog input[type=checkbox]{width:22px;height:22px;flex:0 0 22px}

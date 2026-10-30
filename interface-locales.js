@@ -1084,6 +1084,434 @@ const motiveInterfaceLocales={
   "Write one sentence about what matters to you in this choice.": {
     "es": "Escribe una frase sobre lo que te importa en esta elección.",
     "fr": "Écrivez une phrase sur ce qui compte pour vous dans ce choix."
+  },
+  "Room for new roots": {
+    "es": "Espacio para nuevas raíces",
+    "fr": "De la place pour de nouvelles racines"
+  },
+  "Patient observation and looking for growth in more than one place.": {
+    "es": "Observar con paciencia y buscar crecimiento en más de un lugar.",
+    "fr": "Observer avec patience et chercher la croissance à plusieurs endroits."
+  },
+  "A rhythm you can keep": {
+    "es": "Un ritmo que puedes mantener",
+    "fr": "Un rythme que vous pouvez tenir"
+  },
+  "Patient practice, deliberate attention, and room between commitments.": {
+    "es": "Practicar con paciencia, prestar atención y dejar espacio entre compromisos.",
+    "fr": "Pratiquer avec patience, porter une attention réfléchie et laisser de l’espace entre les engagements."
+  },
+  "Something to share": {
+    "es": "Algo para compartir",
+    "fr": "Quelque chose à partager"
+  },
+  "Cooperation, belonging, and the everyday value of a contribution.": {
+    "es": "Cooperación, pertenencia y el valor cotidiano de aportar algo.",
+    "fr": "La coopération, le sentiment d’appartenance et la valeur quotidienne d’une contribution."
+  },
+  "One fold at a time": {
+    "es": "Un pliegue a la vez",
+    "fr": "Un pli à la fois"
+  },
+  "Learning through small adjustments and letting an unfamiliar shape emerge.": {
+    "es": "Aprender con pequeños ajustes y dejar que surja una forma nueva.",
+    "fr": "Apprendre par de petits ajustements et laisser apparaître une forme nouvelle."
+  },
+  "A soft place to rest": {
+    "es": "Un lugar acogedor para descansar",
+    "fr": "Un endroit douillet pour se reposer"
+  },
+  "Everyday comfort and permission to leave a quiet moment unmeasured.": {
+    "es": "El bienestar cotidiano y el permiso de disfrutar un momento tranquilo sin medirlo.",
+    "fr": "Le réconfort quotidien et la liberté de ne pas mesurer un moment de calme."
+  },
+  "A patient repair": {
+    "es": "Una reparación con paciencia",
+    "fr": "Une réparation patiente"
+  },
+  "Care, resourcefulness, and continuing with what can still be useful.": {
+    "es": "Cuidar, buscar recursos y seguir con lo que todavía puede servir.",
+    "fr": "Le soin, l’ingéniosité et la poursuite avec ce qui peut encore être utile."
+  },
+  "Hands at work": {
+    "es": "Manos que crean",
+    "fr": "Des mains à l’œuvre"
+  },
+  "Patience, practice, and the courage to make something imperfect.": {
+    "es": "Paciencia, práctica y el valor de crear algo imperfecto.",
+    "fr": "La patience, la pratique et le courage de créer quelque chose d’imparfait."
+  },
+  "A little support": {
+    "es": "Un poco de apoyo",
+    "fr": "Un peu de soutien"
+  },
+  "A reminder that help, friendship, and belonging can be part of your strength.": {
+    "es": "Un recordatorio de que la ayuda, la amistad y la pertenencia pueden ser parte de tu fortaleza.",
+    "fr": "Un rappel que l’aide, l’amitié et le sentiment d’appartenance peuvent faire partie de votre force."
+  },
+  "Room for possibility": {
+    "es": "Espacio para lo posible",
+    "fr": "De la place pour les possibles"
+  },
+  "Color and movement for fresh ideas, self-expression, and a new direction.": {
+    "es": "Color y movimiento para nuevas ideas, expresarte y encontrar otro rumbo.",
+    "fr": "Des couleurs et du mouvement pour des idées nouvelles, l’expression de soi et une nouvelle direction."
+  },
+  "Mountain path": {
+    "es": "Sendero de montaña",
+    "fr": "Sentier de montagne"
+  },
+  "A reminder that progress is made one step at a time.": {
+    "es": "Un recordatorio de que se avanza un paso a la vez.",
+    "fr": "Un rappel que l’on avance un pas à la fois."
+  },
+  "Open horizon": {
+    "es": "Horizonte abierto",
+    "fr": "Horizon ouvert"
+  },
+  "A little light for courage, confidence, and new possibilities.": {
+    "es": "Un poco de luz para el valor, la confianza y nuevas posibilidades.",
+    "fr": "Un peu de lumière pour le courage, la confiance et de nouvelles possibilités."
+  },
+  "Growing forest": {
+    "es": "Bosque en crecimiento",
+    "fr": "Forêt en croissance"
+  },
+  "Growth takes patience, curiosity, and room to change.": {
+    "es": "Crecer requiere paciencia, curiosidad y espacio para cambiar.",
+    "fr": "Grandir demande de la patience, de la curiosité et de la place pour changer."
+  },
+  "Still water": {
+    "es": "Agua en calma",
+    "fr": "Eau paisible"
+  },
+  "Space to breathe, rest, and return to the present.": {
+    "es": "Espacio para respirar, descansar y volver al presente.",
+    "fr": "De l’espace pour respirer, se reposer et revenir au présent."
+  },
+  "A quiet workspace": {
+    "es": "Un espacio tranquilo para trabajar",
+    "fr": "Un espace de travail calme"
+  },
+  "A clear space for attention, practice, and purposeful work.": {
+    "es": "Un espacio despejado para la atención, la práctica y el trabajo con intención.",
+    "fr": "Un espace dégagé pour l’attention, la pratique et un travail réfléchi."
+  },
+  "A scene for your words.": {
+    "es": "Una imagen para tus palabras.",
+    "fr": "Une image pour vos mots."
+  },
+  "Close background settings": {
+    "es": "Cerrar ajustes del fondo",
+    "fr": "Fermer les réglages du fond"
+  },
+  "Choose automatic matching, a different picture with every quote, or one favorite picture. Automatic matching can keep the same scene for quotes with a similar meaning.": {
+    "es": "Elige el ajuste automático, una imagen distinta con cada cita o una imagen favorita. El ajuste automático puede conservar la misma imagen para citas con un significado parecido.",
+    "fr": "Choisissez l’association automatique, une image différente à chaque citation ou une image favorite. L’association automatique peut garder la même image pour des citations de sens proche."
+  },
+  "Quote background": {
+    "es": "Fondo de la cita",
+    "fr": "Fond de la citation"
+  },
+  "Match the quote automatically": {
+    "es": "Ajustar a la cita automáticamente",
+    "fr": "Associer automatiquement à la citation"
+  },
+  "Change picture with every quote": {
+    "es": "Cambiar imagen con cada cita",
+    "fr": "Changer d’image à chaque citation"
+  },
+  "Plain background": {
+    "es": "Fondo liso",
+    "fr": "Fond uni"
+  },
+  "Photo darkness": {
+    "es": "Oscuridad de la foto",
+    "fr": "Assombrissement de la photo"
+  },
+  "Darker photos make the words easier to read. Your choice is remembered and used in quote images and phone wallpapers.": {
+    "es": "Las fotos más oscuras facilitan la lectura. Tu elección se guarda y se usa en las imágenes de citas y fondos del teléfono.",
+    "fr": "Des photos plus sombres facilitent la lecture. Votre choix est mémorisé et utilisé pour les images de citations et les fonds du téléphone."
+  },
+  "Choose a picture": {
+    "es": "Elegir una imagen",
+    "fr": "Choisir une image"
+  },
+  "Browse backgrounds": {
+    "es": "Explorar fondos",
+    "fr": "Parcourir les fonds"
+  },
+  "All subjects": {
+    "es": "Todos los temas",
+    "fr": "Tous les sujets"
+  },
+  "My photo favorites": {
+    "es": "Mis fotos favoritas",
+    "fr": "Mes photos favorites"
+  },
+  "Scenery": {
+    "es": "Paisajes",
+    "fr": "Paysages"
+  },
+  "Objects": {
+    "es": "Objetos",
+    "fr": "Objets"
+  },
+  "People": {
+    "es": "Personas",
+    "fr": "Personnes"
+  },
+  "Creative work": {
+    "es": "Trabajo creativo",
+    "fr": "Création"
+  },
+  "Animals": {
+    "es": "Animales",
+    "fr": "Animaux"
+  },
+  "Abstract artwork": {
+    "es": "Arte abstracto",
+    "fr": "Art abstrait"
+  },
+  "Subjects for matching and rotation": {
+    "es": "Temas para el ajuste y la rotación",
+    "fr": "Sujets pour l’association et la rotation"
+  },
+  "Use these picture subjects": {
+    "es": "Usar estos temas de imágenes",
+    "fr": "Utiliser ces sujets d’images"
+  },
+  "Avoid the last few pictures": {
+    "es": "Evitar las últimas imágenes",
+    "fr": "Éviter les dernières images"
+  },
+  "Only the usual consecutive-picture rule": {
+    "es": "Solo la regla habitual de imágenes consecutivas",
+    "fr": "Uniquement la règle habituelle des images consécutives"
+  },
+  "Last picture": {
+    "es": "Última imagen",
+    "fr": "Dernière image"
+  },
+  "Last 3 pictures": {
+    "es": "Últimas 3 imágenes",
+    "fr": "3 dernières images"
+  },
+  "Last 5 pictures": {
+    "es": "Últimas 5 imágenes",
+    "fr": "5 dernières images"
+  },
+  "Last 9 pictures": {
+    "es": "Últimas 9 imágenes",
+    "fr": "9 dernières images"
+  },
+  "When there are too few eligible pictures, the least recent available picture is reused. Fixed scenes and per-quote pins override rotation choices.": {
+    "es": "Si hay pocas imágenes disponibles, se reutiliza la menos reciente. Las imágenes fijas y las fijadas a una cita tienen prioridad sobre la rotación.",
+    "fr": "Si trop peu d’images conviennent, l’image disponible la moins récente est réutilisée. Les images fixes et celles épinglées à une citation priment sur la rotation."
+  },
+  "Keep this picture for this quote": {
+    "es": "Conservar esta imagen para esta cita",
+    "fr": "Garder cette image pour cette citation"
+  },
+  "Remove this quote's picture pin": {
+    "es": "Quitar la imagen fijada a esta cita",
+    "fr": "Retirer l’image épinglée à cette citation"
+  },
+  "Make an image to keep": {
+    "es": "Crear una imagen para guardar",
+    "fr": "Créer une image à garder"
+  },
+  "Quote image shape": {
+    "es": "Forma de la imagen de cita",
+    "fr": "Format de l’image de citation"
+  },
+  "Portrait · 1080 × 1350": {
+    "es": "Vertical · 1080 × 1350",
+    "fr": "Portrait · 1080 × 1350"
+  },
+  "Square · 1080 × 1080": {
+    "es": "Cuadrada · 1080 × 1080",
+    "fr": "Carré · 1080 × 1080"
+  },
+  "Story · 1080 × 1920": {
+    "es": "Historia · 1080 × 1920",
+    "fr": "Story · 1080 × 1920"
+  },
+  "Wide · 1600 × 900": {
+    "es": "Horizontal · 1600 × 900",
+    "fr": "Paysage · 1600 × 900"
+  },
+  "Download format": {
+    "es": "Formato de descarga",
+    "fr": "Format de téléchargement"
+  },
+  "WebP · where supported": {
+    "es": "WebP · si es compatible",
+    "fr": "WebP · si pris en charge"
+  },
+  "Automatic readability · high contrast colors and at least 70% photo shade": {
+    "es": "Legibilidad automática · alto contraste y al menos un 70 % de oscurecimiento",
+    "fr": "Lisibilité automatique · contraste élevé et assombrissement d’au moins 70 %"
+  },
+  "Turn this off to use your own download text color and shading. Personal photo/video choices still take precedence over Motive scenes. These choices apply to the website, not your installed widget.": {
+    "es": "Desactívalo para usar tu propio color de texto y oscuridad en las descargas. Tus fotos y vídeos personales siguen teniendo prioridad. Estos ajustes se aplican al sitio web, no al widget instalado.",
+    "fr": "Désactivez cette option pour utiliser vos couleurs de texte et votre assombrissement dans les téléchargements. Vos photos et vidéos personnelles restent prioritaires. Ces choix s’appliquent au site, pas au widget installé."
+  },
+  "Picture crop · left to right": {
+    "es": "Recorte de imagen · de izquierda a derecha",
+    "fr": "Cadrage de l’image · de gauche à droite"
+  },
+  "Picture crop · top to bottom": {
+    "es": "Recorte de imagen · de arriba abajo",
+    "fr": "Cadrage de l’image · de haut en bas"
+  },
+  "Quote text · horizontal position": {
+    "es": "Texto de la cita · posición horizontal",
+    "fr": "Texte de la citation · position horizontale"
+  },
+  "Quote text · vertical position": {
+    "es": "Texto de la cita · posición vertical",
+    "fr": "Texte de la citation · position verticale"
+  },
+  "Drag on the preview to move the text, or use the sliders. Text fitting keeps it inside the readable area. Phone wallpaper downloads keep the top space for your clock.": {
+    "es": "Arrastra sobre la vista previa para mover el texto o usa los controles. El texto se ajusta al área legible. Los fondos de teléfono dejan espacio arriba para el reloj.",
+    "fr": "Faites glisser le texte sur l’aperçu ou utilisez les curseurs. Le texte reste dans la zone lisible. Les fonds du téléphone gardent de la place en haut pour l’horloge."
+  },
+  "Preview of this quote image": {
+    "es": "Vista previa de esta imagen de cita",
+    "fr": "Aperçu de cette image de citation"
+  },
+  "Save this design": {
+    "es": "Guardar este diseño",
+    "fr": "Enregistrer ce modèle"
+  },
+  "Design name": {
+    "es": "Nombre del diseño",
+    "fr": "Nom du modèle"
+  },
+  "My quiet card": {
+    "es": "Mi tarjeta tranquila",
+    "fr": "Ma carte paisible"
+  },
+  "Save design preset": {
+    "es": "Guardar diseño",
+    "fr": "Enregistrer le modèle"
+  },
+  "Saved designs": {
+    "es": "Diseños guardados",
+    "fr": "Modèles enregistrés"
+  },
+  "Apply saved design": {
+    "es": "Aplicar diseño guardado",
+    "fr": "Appliquer le modèle enregistré"
+  },
+  "Presets keep your font, alignment, size, color, shape, and text position. They do not copy private photo files or quote text.": {
+    "es": "Los diseños guardan la fuente, la alineación, el tamaño, el color, la forma y la posición del texto. No copian fotos privadas ni el texto de las citas.",
+    "fr": "Les modèles conservent la police, l’alignement, la taille, la couleur, le format et la position du texte. Ils ne copient ni photos privées ni texte des citations."
+  },
+  "Download this quote image": {
+    "es": "Descargar esta imagen de cita",
+    "fr": "Télécharger cette image de citation"
+  },
+  "Download phone wallpaper": {
+    "es": "Descargar fondo para el teléfono",
+    "fr": "Télécharger le fond du téléphone"
+  },
+  "Choose a saved design": {
+    "es": "Elegir un diseño guardado",
+    "fr": "Choisir un modèle enregistré"
+  },
+  "This quote keeps in Auto match: {label}": {
+    "es": "Esta cita conserva en ajuste automático: {label}",
+    "fr": "Cette citation conserve en association automatique : {label}"
+  },
+  "This quote follows your current picture choice.": {
+    "es": "Esta cita sigue tu elección actual de imagen.",
+    "fr": "Cette citation suit votre choix d’image actuel."
+  },
+  "♥ {label} is a favorite": {
+    "es": "♥ {label} está en favoritas",
+    "fr": "♥ {label} est dans les favoris"
+  },
+  "♡ Favorite {label}": {
+    "es": "♡ Añadir {label} a favoritas",
+    "fr": "♡ Ajouter {label} aux favoris"
+  },
+  "Preview unavailable. Your original photo and quote are still kept.": {
+    "es": "Vista previa no disponible. Tu foto original y la cita se conservan.",
+    "fr": "Aperçu indisponible. Votre photo originale et la citation sont conservées."
+  },
+  "Choose a Motive scene first. Personal photos and videos keep their separate setting.": {
+    "es": "Elige primero una imagen de Motive. Las fotos y vídeos personales mantienen su ajuste independiente.",
+    "fr": "Choisissez d’abord une image de Motive. Les photos et vidéos personnelles gardent leur réglage distinct."
+  },
+  "Choose at least one picture subject.": {
+    "es": "Elige al menos un tema de imágenes.",
+    "fr": "Choisissez au moins un sujet d’image."
+  },
+  "Matching and rotation now use your selected subjects. Manual pictures and pinned quotes keep their explicit choices.": {
+    "es": "El ajuste y la rotación usan ahora los temas elegidos. Las imágenes manuales y fijadas a citas conservan su elección.",
+    "fr": "L’association et la rotation utilisent vos sujets choisis. Les images manuelles et épinglées gardent leur choix explicite."
+  },
+  "Give this design a name.": {
+    "es": "Ponle nombre a este diseño.",
+    "fr": "Donnez un nom à ce modèle."
+  },
+  "Design preset saved on this device and included in backups.": {
+    "es": "Diseño guardado en este dispositivo e incluido en las copias de seguridad.",
+    "fr": "Modèle enregistré sur cet appareil et inclus dans les sauvegardes."
+  },
+  "Choose a saved design first.": {
+    "es": "Elige primero un diseño guardado.",
+    "fr": "Choisissez d’abord un modèle enregistré."
+  },
+  "Image downloaded. Personal photos and quote words are included only in this local file.": {
+    "es": "Imagen descargada. Las fotos personales y las palabras de la cita solo se incluyen en este archivo local.",
+    "fr": "Image téléchargée. Les photos personnelles et les mots de la citation sont inclus uniquement dans ce fichier local."
+  },
+  "Could not make the image. Your original photo and quote are still kept.": {
+    "es": "No se pudo crear la imagen. Tu foto original y la cita se conservan.",
+    "fr": "Impossible de créer l’image. Votre photo originale et la citation sont conservées."
+  },
+  "Your personal photo · Change it in Wellbeing studio → Settings": {
+    "es": "Tu foto personal · Cámbiala en Bienestar → Ajustes",
+    "fr": "Votre photo personnelle · À modifier dans Bien-être → Réglages"
+  },
+  "Your muted video · A still frame is used in downloads.": {
+    "es": "Tu vídeo sin sonido · Las descargas usan una imagen fija.",
+    "fr": "Votre vidéo sans son · Une image fixe est utilisée dans les téléchargements."
+  },
+  "This photo could not load. Your quote is still here. Reconnect and retry, or use a plain background.": {
+    "es": "No se pudo cargar esta foto. Tu cita sigue aquí. Vuelve a conectarte y reinténtalo o usa un fondo liso.",
+    "fr": "Cette photo n’a pas pu se charger. Votre citation est toujours là. Reconnectez-vous et réessayez, ou utilisez un fond uni."
+  },
+  "Plain background · A little room for your words.": {
+    "es": "Fondo liso · Un poco de espacio para tus palabras.",
+    "fr": "Fond uni · Un peu de place pour vos mots."
+  },
+  "Pictures will change with every new quote.": {
+    "es": "Las imágenes cambiarán con cada cita nueva.",
+    "fr": "Les images changeront à chaque nouvelle citation."
+  },
+  "Backgrounds now follow each quote’s meaning.": {
+    "es": "Los fondos siguen ahora el significado de cada cita.",
+    "fr": "Les fonds suivent maintenant le sens de chaque citation."
+  },
+  "Auto match": {
+    "es": "Ajuste automático",
+    "fr": "Association automatique"
+  },
+  "Changes with every quote": {
+    "es": "Cambia con cada cita",
+    "fr": "Change à chaque citation"
+  },
+  "Fixed picture": {
+    "es": "Imagen fija",
+    "fr": "Image fixe"
+  },
+  "Your photo ▾": {
+    "es": "Tu foto ▾",
+    "fr": "Votre photo ▾"
   }
 };
 const motiveInterfaceContexts={'save-state':{'Saved':{es:'Guardada',fr:'Enregistrée'}}};

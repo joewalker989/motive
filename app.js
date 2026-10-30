@@ -78,6 +78,11 @@ function dailyQuote() {
 function appInterface(source,values={}) { return typeof motiveInterfaceCurrent==='function'?motiveInterfaceCurrent(source,values):{text:source.replace(/\{(\w+)\}/g,(token,key)=>Object.prototype.hasOwnProperty.call(values,key)?String(values[key]):token),language:'en'}; }
 function appInterfaceNode(id,source,values={}) { const result=appInterface(source,values);$(id).textContent=result.text;$(id).setAttribute('lang',result.language); }
 function appInterfaceAttribute(node,attribute,source,values={}) { const result=appInterface(source,values);node.setAttribute(attribute,result.text);node.setAttribute('lang',result.language); }
+function appSceneWords(scene){const source=typeof quoteScenes==='undefined'?null:quoteScenes[scene?.key];const publicScene=source&&source.label===scene.label&&source.meaning===scene.meaning&&source.image===scene.image;return {label:publicScene?appInterface(scene.label):{text:scene?.label||'',language:'en'},meaning:publicScene?appInterface(scene.meaning):{text:scene?.meaning||'',language:'en'}};}
+function appSceneMessage(source,label){const result=appInterface(source,{label:label.text});return result.language===label.language?result:{text:source.replace('{label}',()=>label.text),language:'en'};}
+function renderMotiveSceneCaption(scene=displayedQuoteScene){const node=$('scene-caption');delete node.dataset.motiveSceneSource;if(!scene){appInterfaceNode('scene-caption','Plain background · A little room for your words.');return;}const mode=appInterface(state.background==='auto'?'Auto match':state.background==='rotate'?'Changes with every quote':'Fixed picture'),words=appSceneWords(scene);node.replaceChildren();for(const [index,result]of [mode,words.label,words.meaning].entries()){const part=document.createElement('span');part.textContent=(index?' · ':'')+result.text;part.setAttribute('lang',result.language);node.append(part);}node.setAttribute('lang','en');}
+function motivePrivateSceneCaption(source){$('scene-caption').dataset.motiveSceneSource=source;appInterfaceNode('scene-caption',source);}
+
 function personalInterfaceNode(id,source){$(id).dataset.motivePersonalSource=source;appInterfaceNode(id,source);}
 function personalInterfaceToast(source,values={}){const result=appInterface(source,values);toast(result.text,result.language);}
 

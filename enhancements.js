@@ -21,16 +21,16 @@ function updateQuoteBackground(quote=current,changePicture=false){
   card.style.setProperty('--quote-scene',scene?`url("${scene.image}")`:'none');
   card.style.setProperty('--scene-darkness',String(state.backgroundDarkness));
   const mode=state.background==='auto'?'Auto match':state.background==='rotate'?'Changes with every quote':'Fixed picture';
-  $('scene-caption').textContent=scene?`${mode} · ${scene.label} · ${scene.meaning}`:'Plain background · A little room for your words.';
+  renderMotiveSceneCaption(scene);
   $('scene-options-button').textContent=scene?`${mode} ▾`:'Background settings ▾';
   $('background-button').textContent=scene?'▧ Photo on':'▧ Photo off';$('background-button').setAttribute('aria-pressed',String(!!scene));
   $('background-select').value=state.background;$('background-darkness').value=String(Math.round(state.backgroundDarkness*100));$('darkness-value').textContent=`${Math.round(state.backgroundDarkness*100)}%`;
   watchQuotePhoto(scene);
 }
 function watchQuotePhoto(scene){
- const generation=++photoWatchGeneration;const recovery=$('photo-recovery');recovery.hidden=true;$('photo-recovery-status').textContent='';
+ const generation=++photoWatchGeneration;const recovery=$('photo-recovery');recovery.hidden=true;personalInterfaceNode('photo-recovery-status','');
  if(!scene||typeof Image==='undefined')return;
- const card=$('quote-card');loadQuotePhoto(scene).then(()=>{if(generation!==photoWatchGeneration||displayedQuoteScene?.key!==scene.key)return;card.style.setProperty('--quote-scene',`url("${scene.image}")`);card.classList.add('has-scene');}).catch(()=>{if(generation!==photoWatchGeneration||displayedQuoteScene?.key!==scene.key)return;card.style.setProperty('--quote-scene','none');card.classList.remove('has-scene');recovery.hidden=false;$('photo-recovery-status').textContent='This photo could not load. Your quote is still here. Reconnect and retry, or use a plain background.';});
+ const card=$('quote-card');loadQuotePhoto(scene).then(()=>{if(generation!==photoWatchGeneration||displayedQuoteScene?.key!==scene.key)return;card.style.setProperty('--quote-scene',`url("${scene.image}")`);card.classList.add('has-scene');}).catch(()=>{if(generation!==photoWatchGeneration||displayedQuoteScene?.key!==scene.key)return;card.style.setProperty('--quote-scene','none');card.classList.remove('has-scene');recovery.hidden=false;personalInterfaceNode('photo-recovery-status','This photo could not load. Your quote is still here. Reconnect and retry, or use a plain background.');});
 }
 $('photo-retry').addEventListener('click',()=>{if(displayedQuoteScene)quotePhotoCache.delete(displayedQuoteScene.key);updateQuoteBackground();});
 $('photo-use-plain').addEventListener('click',()=>{state.background='none';persist();updateQuoteBackground();});
@@ -39,8 +39,8 @@ function loadQuotePhoto(scene){
   return quotePhotoCache.get(scene.key);
 }
 $('background-button').addEventListener('click',()=>{state.background=state.background==='none'?'auto':'none';persist();updateQuoteBackground();});
-$('change-picture-button').addEventListener('click',()=>{state.photoRotation={quoteId:current.id,key:displayedQuoteScene?.key};state.background='rotate';updateQuoteBackground(current,true);persist();toast('Pictures will change with every new quote.');});
-$('auto-picture-button').addEventListener('click',()=>{state.background='auto';persist();updateQuoteBackground();toast('Backgrounds now follow each quote’s meaning.');});
+$('change-picture-button').addEventListener('click',()=>{state.photoRotation={quoteId:current.id,key:displayedQuoteScene?.key};state.background='rotate';updateQuoteBackground(current,true);persist();personalInterfaceToast('Pictures will change with every new quote.');});
+$('auto-picture-button').addEventListener('click',()=>{state.background='auto';persist();updateQuoteBackground();personalInterfaceToast('Backgrounds now follow each quote’s meaning.');});
 $('scene-options-button').addEventListener('click',()=>$('background-dialog').showModal());
 $('close-background').addEventListener('click',()=>$('background-dialog').close());
 $('background-select').addEventListener('change',()=>{const value=$('background-select').value;state.background=['auto','rotate','none',...Object.keys(quoteScenes)].includes(value)?value:'auto';persist();updateQuoteBackground();});

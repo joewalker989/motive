@@ -25,12 +25,12 @@ test('changing the picture rotates every new quote without repeating consecutive
     assert.equal(app.get('quote-card').dataset.scene,scene,'Settings must not change the displayed image');
     assert.equal(app.run('displayedQuoteScene.key'),scene,'Downloads must use the displayed image');
   }
-  assert.match(app.get('scene-caption').textContent,/Changes with every quote/);
+  assert.match(app.get('scene-caption').children.map(n=>n.textContent).join(''),/Changes with every quote/);
 });
 
 test('automatic matching restores a fixed picture and rotation settings survive reopening',()=>{
   let app=openApp();app.loadExtras();app.get('background-select').value='sunrise';app.get('background-select').handlers.change();
-  assert.match(app.get('scene-caption').textContent,/Fixed picture/);
+  assert.match(app.get('scene-caption').children.map(n=>n.textContent).join(''),/Fixed picture/);
   app.get('auto-picture-button').handlers.click();assert.equal(app.run('state.background'),'auto');
   assert.equal(app.get('quote-card').dataset.scene,app.run('getQuoteScene(current).key'));
   app.get('change-picture-button').handlers.click();app.run('state.freshOnOpen=false;persist()');
