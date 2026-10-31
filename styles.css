@@ -95,3 +95,5 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #growth-1 button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#practice-habit-days{min-inline-size:0}#practice-habit-days legend{max-width:100%;white-space:normal}#practice-habit-days input[type=checkbox]{width:22px;height:22px;min-width:22px}
 
 #growth-3 button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#tag-quote{white-space:pre-wrap;overflow-wrap:anywhere}
+
+#panel-calm .studio-box{min-width:0}#panel-calm button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#calm-bell,#calm-stages{width:22px;height:22px;min-width:22px}
