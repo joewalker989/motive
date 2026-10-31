@@ -127,3 +127,7 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 
 #privacy-scopes{min-width:0}
 #privacy-scopes input[type="checkbox"]{width:22px;height:22px;min-width:22px}
+
+#backup-preview-dialog{max-width:min(720px,calc(100vw - 32px));box-sizing:border-box}
+#backup-preview-dialog .dialog-actions,#quote-backup-controls .dialog-actions{flex-wrap:wrap}
+#backup-preview-dialog button,#quote-backup-controls button{max-width:100%;white-space:normal;overflow-wrap:anywhere}

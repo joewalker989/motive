@@ -7034,6 +7034,356 @@ const motiveQuoteLocales={
     "sourceAuthor": "A Motive reminder",
     "es": "El rincón más tranquilo de una reunión también es un lugar donde pertenecer.",
     "fr": "Le coin le plus calme d’une réunion est aussi un endroit où vous avez votre place."
+  },
+  "daily-2026-10-31-confidence-01": {
+    "sourceText": "Reserve a little speaking time for the part of the story only you can tell.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Reserva un poco de tiempo para contar la parte de la historia que solo tú puedes contar.",
+    "fr": "Réservez un peu de temps de parole à la partie de l’histoire que vous seul pouvez raconter."
+  },
+  "daily-2026-10-31-confidence-02": {
+    "sourceText": "Let your answer include a genuine maybe when you need more information.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu respuesta puede incluir un quizá sincero cuando necesitas más información.",
+    "fr": "Votre réponse peut contenir un véritable peut-être quand il vous manque des informations."
+  },
+  "daily-2026-10-31-confidence-03": {
+    "sourceText": "It is reasonable to ask how long a commitment will last before agreeing to it.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Es razonable preguntar cuánto durará un compromiso antes de aceptarlo.",
+    "fr": "Il est raisonnable de demander combien de temps durera un engagement avant de l’accepter."
+  },
+  "daily-2026-10-31-confidence-04": {
+    "sourceText": "Before a difficult conversation, write the one request you most want the other person to hear.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Antes de una conversación difícil, escribe la petición que más quieres que la otra persona escuche.",
+    "fr": "Avant une conversation difficile, écrivez la demande que vous souhaitez le plus faire entendre à l’autre personne."
+  },
+  "daily-2026-10-31-confidence-05": {
+    "sourceText": "The person learning the route is still allowed to ask where the door is.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Quien está aprendiendo el camino también puede preguntar dónde está la puerta.",
+    "fr": "La personne qui découvre le chemin a aussi le droit de demander où se trouve la porte."
+  },
+  "daily-2026-10-31-confidence-06": {
+    "sourceText": "Your preference belongs in the plan before everyone has already agreed to it.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tu preferencia tiene cabida en el plan antes de que todo el mundo lo haya acordado.",
+    "fr": "Votre préférence a sa place dans le projet avant que tout le monde l’ait déjà approuvé."
+  },
+  "daily-2026-10-31-confidence-07": {
+    "sourceText": "You can ask for a slower explanation without making a case against your ability.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes pedir una explicación más pausada sin poner en duda tu capacidad.",
+    "fr": "Vous pouvez demander une explication plus lente sans mettre vos capacités en cause."
+  },
+  "daily-2026-10-31-confidence-08": {
+    "sourceText": "A small disagreement does not have to become a judgment of your whole character.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un pequeño desacuerdo no tiene por qué convertirse en un juicio sobre todo tu carácter.",
+    "fr": "Un petit désaccord n’a pas à devenir un jugement sur toute votre personnalité."
+  },
+  "daily-2026-10-31-confidence-09": {
+    "sourceText": "Knowing what you would like to learn can be a useful way to introduce yourself.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Saber qué te gustaría aprender puede ser una forma útil de presentarte.",
+    "fr": "Savoir ce que vous aimeriez apprendre peut être une façon utile de vous présenter."
+  },
+  "daily-2026-10-31-confidence-10": {
+    "sourceText": "A brief visit can still count as showing up; you do not need to occupy the whole afternoon.",
+    "sourceCategory": "Confidence",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una visita breve también cuenta como estar presente; no necesitas ocupar toda la tarde.",
+    "fr": "Une courte visite compte aussi comme une présence ; vous n’avez pas à y consacrer tout l’après-midi."
+  },
+  "daily-2026-10-31-focus-01": {
+    "sourceText": "Give the next ten minutes a visible edge: one page, one shelf, or one reply.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Dale un límite visible a los próximos diez minutos: una página, un estante o una respuesta.",
+    "fr": "Donnez une limite visible aux dix prochaines minutes : une page, une étagère ou une réponse."
+  },
+  "daily-2026-10-31-focus-02": {
+    "sourceText": "Separate the items that need a decision from the items that only need to be filed.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Separa lo que necesita una decisión de lo que solo necesita archivarse.",
+    "fr": "Séparez les éléments qui demandent une décision de ceux qu’il suffit de classer."
+  },
+  "daily-2026-10-31-focus-03": {
+    "sourceText": "A task can stay important without staying open in every tab.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una tarea puede seguir siendo importante sin permanecer abierta en todas las pestañas.",
+    "fr": "Une tâche peut rester importante sans rester ouverte dans tous les onglets."
+  },
+  "daily-2026-10-31-focus-04": {
+    "sourceText": "Read the question once more before collecting another answer.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Lee la pregunta una vez más antes de buscar otra respuesta.",
+    "fr": "Relisez la question avant de recueillir une autre réponse."
+  },
+  "daily-2026-10-31-focus-05": {
+    "sourceText": "Keep a place for interesting detours so they do not have to occupy the path you are on.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Guarda un lugar para los desvíos interesantes, para que no tengan que ocupar el camino que sigues.",
+    "fr": "Gardez une place pour les détours intéressants, afin qu’ils n’occupent pas le chemin que vous suivez."
+  },
+  "daily-2026-10-31-focus-06": {
+    "sourceText": "Name the decision this information will help you make; the rest can wait outside the search.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Nombra la decisión que esta información te ayudará a tomar; lo demás puede esperar fuera de la búsqueda.",
+    "fr": "Nommez la décision que ces informations vous aideront à prendre ; le reste peut attendre en dehors de la recherche."
+  },
+  "daily-2026-10-31-focus-07": {
+    "sourceText": "An empty line between two commitments is usable time, not a printing mistake.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un espacio en blanco entre dos compromisos es tiempo disponible, no un error de impresión.",
+    "fr": "Une ligne vide entre deux engagements est du temps disponible, pas une erreur d’impression."
+  },
+  "daily-2026-10-31-focus-08": {
+    "sourceText": "Check the units beside the number before redoing the calculation.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Comprueba las unidades junto al número antes de repetir el cálculo.",
+    "fr": "Vérifiez les unités à côté du nombre avant de refaire le calcul."
+  },
+  "daily-2026-10-31-focus-09": {
+    "sourceText": "Your notes do not need to record everything to preserve the part you will use.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Tus notas no necesitan registrarlo todo para conservar la parte que vas a usar.",
+    "fr": "Vos notes n’ont pas besoin de tout consigner pour préserver la partie que vous utiliserez."
+  },
+  "daily-2026-10-31-focus-10": {
+    "sourceText": "Check whether the task needs more effort or simply a clearer ending.",
+    "sourceCategory": "Focus",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Comprueba si la tarea necesita más esfuerzo o simplemente un final más claro.",
+    "fr": "Vérifiez si la tâche demande plus d’effort ou simplement une fin mieux définie."
+  },
+  "daily-2026-10-31-resilience-01": {
+    "sourceText": "When a plan unravels, list what is still available before you decide that nothing is.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Cuando un plan se deshace, enumera lo que sigue disponible antes de decidir que no queda nada.",
+    "fr": "Quand un projet se défait, faites la liste de ce qui reste disponible avant de décider qu’il ne reste rien."
+  },
+  "daily-2026-10-31-resilience-02": {
+    "sourceText": "An inconvenient restart can include a better place to keep the supplies.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un reinicio inoportuno puede incluir un lugar mejor para guardar los materiales.",
+    "fr": "Un redémarrage malvenu peut inclure un meilleur endroit où ranger le matériel."
+  },
+  "daily-2026-10-31-resilience-03": {
+    "sourceText": "Keep a record of the solutions that worked during a disruption; you may need them in quieter times.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Guarda un registro de las soluciones que funcionaron durante un contratiempo; quizá las necesites en tiempos más tranquilos.",
+    "fr": "Gardez une trace des solutions qui ont fonctionné pendant une perturbation ; elles pourront vous servir dans des moments plus calmes."
+  },
+  "daily-2026-10-31-resilience-04": {
+    "sourceText": "After a refusal, give yourself a moment before drafting the next request.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Después de una negativa, date un momento antes de redactar la siguiente petición.",
+    "fr": "Après un refus, accordez-vous un moment avant de rédiger la demande suivante."
+  },
+  "daily-2026-10-31-resilience-05": {
+    "sourceText": "A conversation that ended badly can have a different purpose when you return to it.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una conversación que terminó mal puede tener otro propósito cuando vuelvas a ella.",
+    "fr": "Une conversation qui s’est mal terminée peut avoir un autre but quand vous y revenez."
+  },
+  "daily-2026-10-31-resilience-06": {
+    "sourceText": "Give an unfinished project a short label: waiting for help, waiting for time, or ready to try.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Pon una etiqueta breve a un proyecto pendiente: en espera de ayuda, en espera de tiempo o listo para intentarlo.",
+    "fr": "Donnez une courte étiquette à un projet inachevé : en attente d’aide, en attente de temps ou prêt à être essayé."
+  },
+  "daily-2026-10-31-resilience-07": {
+    "sourceText": "A missing ingredient can change the recipe without making the meal a failure.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "La falta de un ingrediente puede cambiar la receta sin convertir la comida en un fracaso.",
+    "fr": "Un ingrédient manquant peut changer la recette sans faire du repas un échec."
+  },
+  "daily-2026-10-31-resilience-08": {
+    "sourceText": "Getting through a disruption may involve asking someone to hold one ordinary part of the day steady.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Superar un contratiempo puede implicar pedir a alguien que mantenga estable una parte cotidiana del día.",
+    "fr": "Traverser une perturbation peut impliquer de demander à quelqu’un de maintenir stable une partie ordinaire de la journée."
+  },
+  "daily-2026-10-31-resilience-09": {
+    "sourceText": "When returning takes longer than expected, choose a recognizable landmark for the next check-in.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Cuando volver lleva más tiempo del previsto, elige un punto de referencia reconocible para la próxima revisión.",
+    "fr": "Quand le retour prend plus de temps que prévu, choisissez un repère reconnaissable pour le prochain point d’étape."
+  },
+  "daily-2026-10-31-resilience-10": {
+    "sourceText": "If a deadline has become unrealistic, an early update can be part of repairing the plan.",
+    "sourceCategory": "Resilience",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Si un plazo se ha vuelto poco realista, informar pronto puede ser parte de reparar el plan.",
+    "fr": "Si une échéance est devenue irréaliste, donner rapidement des nouvelles peut contribuer à réparer le projet."
+  },
+  "daily-2026-10-31-growth-01": {
+    "sourceText": "Compare your prediction with what happened before explaining why it happened.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Compara tu predicción con lo que pasó antes de explicar por qué pasó.",
+    "fr": "Comparez votre prévision à ce qui s’est passé avant d’expliquer pourquoi cela s’est passé."
+  },
+  "daily-2026-10-31-growth-02": {
+    "sourceText": "Follow a small mistake backward until you find the assumption that made it seem sensible.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Rastrea un pequeño error hacia atrás hasta encontrar la suposición que lo hizo parecer razonable.",
+    "fr": "Remontez le fil d’une petite erreur jusqu’à l’hypothèse qui la faisait paraître raisonnable."
+  },
+  "daily-2026-10-31-growth-03": {
+    "sourceText": "An old method can be useful evidence and still be ready for revision.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Un método antiguo puede aportar información útil y aun así necesitar una revisión.",
+    "fr": "Une ancienne méthode peut apporter des éléments utiles tout en étant prête à être révisée."
+  },
+  "daily-2026-10-31-growth-04": {
+    "sourceText": "Ask someone how they learned the part that now looks effortless.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Pregunta a alguien cómo aprendió la parte que ahora parece no costarle esfuerzo.",
+    "fr": "Demandez à quelqu’un comment il a appris ce qui paraît aujourd’hui si facile."
+  },
+  "daily-2026-10-31-growth-05": {
+    "sourceText": "Leave a little space in your explanation for what you have not checked yet.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja un poco de espacio en tu explicación para lo que todavía no has comprobado.",
+    "fr": "Laissez un peu de place dans votre explication à ce que vous n’avez pas encore vérifié."
+  },
+  "daily-2026-10-31-growth-06": {
+    "sourceText": "The first useful distinction may be noticing that two similar problems need different tools.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una primera distinción útil puede ser notar que dos problemas parecidos necesitan herramientas distintas.",
+    "fr": "Une première distinction utile peut être de remarquer que deux problèmes similaires demandent des outils différents."
+  },
+  "daily-2026-10-31-growth-07": {
+    "sourceText": "Try making the instructions clearer before deciding you are bad at the task.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Prueba a aclarar las instrucciones antes de decidir que la tarea se te da mal.",
+    "fr": "Essayez de clarifier les consignes avant de décider que vous êtes mauvais dans cette tâche."
+  },
+  "daily-2026-10-31-growth-08": {
+    "sourceText": "A question written in the margin can be the beginning of a new skill.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una pregunta escrita en el margen puede ser el comienzo de una nueva habilidad.",
+    "fr": "Une question écrite dans la marge peut être le début d’une nouvelle compétence."
+  },
+  "daily-2026-10-31-growth-09": {
+    "sourceText": "Refilling the courtyard water dish is small work; noticing who visits can teach you something new.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Rellenar el recipiente de agua del patio es una tarea pequeña; observar quién lo visita puede enseñarte algo nuevo.",
+    "fr": "Remplir le récipient d’eau de la cour est un petit travail ; observer qui vient peut vous apprendre quelque chose de nouveau."
+  },
+  "daily-2026-10-31-growth-10": {
+    "sourceText": "Keep one example of how your understanding changed, not only a count of what you finished.",
+    "sourceCategory": "Growth",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Conserva un ejemplo de cómo cambió tu comprensión, no solo una cuenta de lo que terminaste.",
+    "fr": "Gardez un exemple de l’évolution de votre compréhension, pas seulement le nombre de choses terminées."
+  },
+  "daily-2026-10-31-calm-01": {
+    "sourceText": "The sparrow at the water dish has no update to give you. You can watch without making a task of it.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "El gorrión junto al recipiente de agua no tiene novedades que darte. Puedes observarlo sin convertirlo en una tarea.",
+    "fr": "Le moineau au bord du récipient d’eau n’a aucune nouvelle à vous donner. Vous pouvez l’observer sans en faire une tâche."
+  },
+  "daily-2026-10-31-calm-02": {
+    "sourceText": "Leave one sound in the room unnamed for a moment.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja por un momento un sonido de la habitación sin ponerle nombre.",
+    "fr": "Laissez un son de la pièce sans le nommer pendant un instant."
+  },
+  "daily-2026-10-31-calm-03": {
+    "sourceText": "Let the cup sit on the saucer between sips.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja reposar la taza en el platillo entre sorbos.",
+    "fr": "Reposez la tasse sur sa soucoupe entre deux gorgées."
+  },
+  "daily-2026-10-31-calm-04": {
+    "sourceText": "At dusk, you can leave the garden as it is and go inside.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Al anochecer, puedes dejar el jardín tal como está y entrar en casa.",
+    "fr": "À la tombée du jour, vous pouvez laisser le jardin tel qu’il est et rentrer."
+  },
+  "daily-2026-10-31-calm-05": {
+    "sourceText": "Before choosing what fills the evening, notice how much of it is already spoken for.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Antes de decidir qué llenará la noche, observa cuánto de ella ya está comprometido.",
+    "fr": "Avant de choisir ce qui remplira la soirée, remarquez quelle part est déjà réservée."
+  },
+  "daily-2026-10-31-calm-06": {
+    "sourceText": "Keep your place in the book; the page will still be there after you look out the window.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Marca tu página en el libro; seguirá ahí después de que mires por la ventana.",
+    "fr": "Gardez votre page dans le livre ; elle sera toujours là après un regard par la fenêtre."
+  },
+  "daily-2026-10-31-calm-07": {
+    "sourceText": "A notification can wait while you finish noticing the person beside you.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Una notificación puede esperar mientras terminas de prestar atención a la persona que tienes al lado.",
+    "fr": "Une notification peut attendre pendant que vous prêtez encore attention à la personne à vos côtés."
+  },
+  "daily-2026-10-31-calm-08": {
+    "sourceText": "Set the bag down where it belongs before deciding what to carry into the evening.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja la bolsa en su sitio antes de decidir qué llevarás contigo esta noche.",
+    "fr": "Posez le sac à sa place avant de décider ce que vous voulez emporter pour la soirée."
+  },
+  "daily-2026-10-31-calm-09": {
+    "sourceText": "You may enjoy the ordinary part of the day without first finding a lesson in it.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Puedes disfrutar de la parte cotidiana del día sin tener que encontrar primero una lección en ella.",
+    "fr": "Vous pouvez apprécier la partie ordinaire de la journée sans devoir d’abord y trouver une leçon."
+  },
+  "daily-2026-10-31-calm-10": {
+    "sourceText": "Let the last small chore have an ending; the room does not need to become perfect tonight.",
+    "sourceCategory": "Calm",
+    "sourceAuthor": "A Motive reminder",
+    "es": "Deja que la última tarea pequeña tenga un final; la habitación no necesita quedar perfecta esta noche.",
+    "fr": "Laissez la dernière petite corvée se terminer ; la pièce n’a pas besoin d’être parfaite ce soir."
   }
 };
 if(typeof module!=='undefined')module.exports=motiveQuoteLocales;
