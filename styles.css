@@ -108,3 +108,7 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #growth-4 .studio-row{flex-wrap:wrap}
 #growth-4 .studio-box{min-width:0}
 #growth-4 button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+
+#growth-5 .studio-box{min-width:0}
+#growth-5 button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+#growth-5 .studio-row{flex-wrap:wrap}
