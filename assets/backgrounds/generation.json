@@ -83,5 +83,11 @@
     "tool": "built-in image_gen",
     "date": "2026-10-30",
     "prompt": "Use case: photorealistic-natural. Asset type: original background photograph for Motive motivational quote cards and small phone widgets. Horizontal 1536 by 1024 natural editorial photograph of an ordinary adult seated just inside a modest home doorway, calmly tying the laces of a pair of worn plain rust-brown walking shoes before going outside. Show only natural hands, lower legs in dark trousers, and the shoes; no face or recognizable person. The tied bow and one hand finishing the other lace are clearly recognizable in the lower right third. Theme: practical preparation, adjusting what supports you, and choosing a manageable beginning. Broad uncluttered shadowed dark slate door panel across the middle and upper left allows white quote text under a dark overlay. Soft morning side light, realistic hand anatomy and fabric/leather texture, comfortable unhurried everyday atmosphere. One continuous full-bleed photograph. No text, lettering, readable labels, numbers, logos, branding, watermark, collage, borders, or advertising."
+  },
+  {
+    "asset": "assets/backgrounds/daily-2026-10-31-courtyard-bird.jpg",
+    "tool": "built-in image_gen",
+    "date": "2026-10-31",
+    "prompt": "Use case: photorealistic-natural. Create one original photographic background for a gentle everyday motivation app. A small brown house sparrow, anatomically natural and clearly recognizable, pauses on the broad rim of a shallow weathered blue ceramic water dish in a modest leafy courtyard. The entire bird and its feet are visible, with a little clean water and subtle concentric ripples below. Soft overcast autumn daylight, muted blue, warm brown and sage tones, natural ceramic and feather textures, quiet candid editorial photography. Landscape 3:2 composition, bird slightly right of center, uncluttered soft greenery and a few fallen leaves around the dish; generous calm negative space above and to the left so a dark text overlay will remain readable. Keep bird and dish silhouettes distinct enough to recognize beneath a dark overlay. No text, letters, logos, borders, collage, people, or imitation of a named artist. One coherent scene, no decorative quote typography."
   }
 ]

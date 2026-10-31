@@ -4,6 +4,7 @@ const widgetDefaults = {category:'All',style:'photo',refreshMinutes:60};
 'use strict';
 // Local keyword matching; personal quote text never leaves this browser.
 const quoteScenes = {
+  courtyardBird:{label:'A quiet visitor',meaning:'Everyday observation, a small act of care, and a pause without an assignment.',category:'Calm',kind:'animal',added:'2026-10-31',image:'./assets/backgrounds/daily-2026-10-31-courtyard-bird.jpg',words:['sparrow','courtyard','birdbath','water dish','perch','refill']},
   walkingShoes:{label:'A beginning that fits',meaning:'Practical preparation, adjusting your support, and starting at an unhurried pace.',category:'Focus',kind:'people',added:'2026-10-30',image:'./assets/backgrounds/daily-2026-10-30-walking-shoes.jpg',words:['shoelace','shoe','walking shoes','tying','laces','doorway','muddy','knot','before the walk','preparation']},
   propagation:{label:'Room for new roots',meaning:'Patient observation and looking for growth in more than one place.',category:'Growth',kind:'object',added:'2026-10-29',image:'./assets/backgrounds/daily-2026-10-29-plant-cutting.jpg',words:['plant cutting','cutting','propagat','rooted','roots','new leaves','windowsill']},
   metronome:{label:'A rhythm you can keep',meaning:'Patient practice, deliberate attention, and room between commitments.',category:'Focus',kind:'object',added:'2026-10-28',image:'./assets/backgrounds/daily-2026-10-28-metronome.jpg',words:['metronome','tempo','rhythm','instrument','piano','notes','song','measure slowly','pace you can follow']},
