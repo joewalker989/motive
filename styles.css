@@ -103,3 +103,8 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #panel-listen .studio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#panel-listen .studio-box{min-width:0}#panel-listen button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#queue-repeat-item{width:22px;height:22px;min-width:22px}@media(max-width:650px){#panel-listen .studio-grid{grid-template-columns:minmax(0,1fr)}}
 
 #audio-repeat-recordings,#audio-highlight{width:22px;height:22px;min-width:22px}
+
+#rest-dim,#rest-routine-list input[type="checkbox"]{width:22px;height:22px;min-width:22px}
+#growth-4 .studio-row{flex-wrap:wrap}
+#growth-4 .studio-box{min-width:0}
+#growth-4 button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
