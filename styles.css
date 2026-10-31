@@ -99,3 +99,5 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #panel-calm .studio-box{min-width:0}#panel-calm button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#calm-bell,#calm-stages{width:22px;height:22px;min-width:22px}
 
 #access-timer-announcements{width:22px;height:22px;min-width:22px}
+
+#panel-listen .studio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#panel-listen .studio-box{min-width:0}#panel-listen button{max-width:100%;white-space:normal;overflow-wrap:anywhere}#queue-repeat-item{width:22px;height:22px;min-width:22px}@media(max-width:650px){#panel-listen .studio-grid{grid-template-columns:minmax(0,1fr)}}
