@@ -124,3 +124,6 @@ html[data-text-size]:not([data-text-size=standard]) #primary-navigation,html[dat
 #panel-settings button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
 #panel-settings .studio-row{flex-wrap:wrap}
 #media-vault-voice,#media-vault-narration,#media-vault-vision{width:22px;height:22px;min-width:22px}
+
+#privacy-scopes{min-width:0}
+#privacy-scopes input[type="checkbox"]{width:22px;height:22px;min-width:22px}
